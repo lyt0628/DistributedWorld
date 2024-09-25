@@ -4,27 +4,9 @@ namespace GameLib {
     using System.Collections.Generic;   
     using UnityEngine;
 
-    public class Messager : ISington<Messager> 
+    public class Messager : Sington<Messager> 
     {
-        #region Sington
-        private static Messager _instance;
-        private static readonly object _lock = new();
-        public static Messager Instance
-        {
-            get
-            {
-                if (_instance == null)
-                {
-                    lock (_lock)
-                    {
-                        _instance ??= new();
-                    }
-                }
-                return _instance;
-            }
-        }
-        #endregion
-       
+      
         private Dictionary<string, Action<IMessage>> m_broker = new();
 
        
