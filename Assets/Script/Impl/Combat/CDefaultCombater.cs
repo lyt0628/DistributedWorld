@@ -11,8 +11,9 @@ namespace QS
     class CDefaultCombater :  AbstractCombater
     {
 
-        public void Awake() 
+        public override void Start() 
         {
+            base.Start();
             var data = new CCombatData
             {
                 Hp = 100,

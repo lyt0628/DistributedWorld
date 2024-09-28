@@ -8,6 +8,8 @@ namespace QS
     using UnityEngine;
     
     using QS.API;
+    using Unity.VisualScripting;
+
     public abstract class AbstractCombater : MonoBehaviour, IBuffedCombater
     {
         public ICombatData CombatData { get; set; }
@@ -30,7 +32,12 @@ namespace QS
             BeforeInjured += (x) => x;
             AfterInjured += (x) => x;
 
+        }
 
+        public virtual void Start()
+        {
+            var playerManager = GameManager.Instance.GetManager<IPlayerManager>();
+            playerManager?.RegisterCharacter(this.gameObject);
         }
 
         public IAttack Attack()
