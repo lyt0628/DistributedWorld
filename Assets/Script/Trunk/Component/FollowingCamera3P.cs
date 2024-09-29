@@ -1,3 +1,4 @@
+using GameLib;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -48,8 +49,8 @@ public class FollowingCamera3P : MonoBehaviour
     void Start()
     {
 
-        //Cursor.visible = false;
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
         var eulerDistance = horizontalDistance / Mathf.Cos(m_InitAngle * Mathf.Deg2Rad);
 
@@ -68,12 +69,10 @@ public class FollowingCamera3P : MonoBehaviour
 
     private void Rotate()
     {
-        // Clamp rotation bound
-        if (_m_RotateY > 180) _m_RotateY -= 180;
-        if (_m_RotateY < -180) _m_RotateY += 180;
-        if (_m_RotateX > 180) _m_RotateX -= 180;
-        if (_m_RotateX < -180) _m_RotateX += 180;
-
+        // Clamp rotation bound 
+        _m_RotateY = MathUtil.Clamp(_m_RotateY, -180f, 180f);
+        _m_RotateX = MathUtil.Clamp(_m_RotateX, -180f, 180f);
+;
 
         float hor = Input.GetAxis("Mouse X");
         float ver = Input.GetAxis("Mouse Y");
@@ -82,8 +81,8 @@ public class FollowingCamera3P : MonoBehaviour
             _m_RotateY += hor * sensitive;
             _m_RotateX += ver * sensitive;
 
-            if (_m_RotateY > 80) _m_RotateY = 80;
-            if (_m_RotateY < -80) _m_RotateY = -80;
+            //if (_m_RotateY > 80) _m_RotateY = 80;
+            //if (_m_RotateY < -80) _m_RotateY = -80;
             if (_m_RotateX > 80) _m_RotateX = 80;
             if (_m_RotateX < -30) _m_RotateX = -30;
 
