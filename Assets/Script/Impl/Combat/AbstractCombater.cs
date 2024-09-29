@@ -9,13 +9,29 @@ namespace QS
     
     using QS.API;
     using Unity.VisualScripting;
+    using GameLib;
 
-    public abstract class AbstractCombater : MonoBehaviour, IBuffedCombater
+    public abstract class AbstractCombater : MonoBehaviour, IBuffedCombater, IMessagerProvider
     {
-        public ICombatData CombatData { get; set; }
+        protected ICombatData combatData;
+        public ICombatData CombatData {
+            get {  return combatData; }
+            set {
+                   combatData = value;
+                   this.Messager.Boardcast("HP", new SingleArgMessage<float>(CombatData.Hp));
+            } }
         public bool Combating {get; set;}
         public List<ICombatable> Enemies { get; set; }
 
+        private IMessager _messager = new Messager();
+        public IMessager Messager
+        {
+            get
+            {
+                return _messager;
+            }
+        }
+        
 
         private Func<ICombatData, ICombatData> BeforeAttack;
         private Func<IAttack, IAttack> AfterAttack;
@@ -37,7 +53,8 @@ namespace QS
         public virtual void Start()
         {
             var playerManager = GameManager.Instance.GetManager<IPlayerManager>();
-            playerManager?.RegisterCharacter(this.gameObject);
+            playerManager?.RegisterCharacter(gameObject);
+
         }
 
         public IAttack Attack()
@@ -59,6 +76,7 @@ namespace QS
             combatData = CAttack.ComputeCombatData(combatData, attack);
             CombatData = AfterInjured.Invoke(combatData);
 
+            this.Messager.Boardcast("HP", new SingleArgMessage<float>(CombatData.Hp));
             Debug.LogFormat("Hp Of {0} is {1}", name, CombatData.Hp);
         }
 
@@ -86,6 +104,7 @@ namespace QS
                     throw new ArgumentException(string.Format("Unknown Attack Stage {0}", buff.GetAttackStage())); 
             }
         }
+
 
     }
 }
