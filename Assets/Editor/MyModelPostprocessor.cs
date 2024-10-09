@@ -7,7 +7,7 @@ public class MyModelPostprocessor : AssetPostprocessor
 {
 
     /*
-     * Disable to import materials from model files
+     * Disable to import materials from Model files
      */
     private void OnPreprocessModel()
     {

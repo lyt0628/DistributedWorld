@@ -17,16 +17,16 @@ namespace QS
             return EBuffStage.None;
         }
 
-        public ICombatData BuffOnCombatData(ICombatData state)
+        public override ICombatData BuffOnCombatData(ICombatData state)
         {
             return state;
         }
-        public IAttack BuffOnAttack(IAttack attack)
+        public  override IAttack BuffOnAttack(IAttack attack)
         {
             return attack;
         }
 
-        public void DoBuff(IBuffable buffable)
+        public override void DoBuff(IBuffable buffable)
         {
             foreach (IBuff buff in buffs)
             {

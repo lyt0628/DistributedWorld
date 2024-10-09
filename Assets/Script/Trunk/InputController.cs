@@ -36,7 +36,7 @@ public class InputController : IController
         //Debug.Log(moveVec);
         //Debug.Log(camera.forward);
 
-        controlable.CVelocity =  velocityFactor * moveVec * Time.deltaTime;
+        controlable.CVelocity =  velocityFactor * moveVec ;
     }
 
 }

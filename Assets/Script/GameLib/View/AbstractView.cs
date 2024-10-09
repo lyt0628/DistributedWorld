@@ -5,7 +5,6 @@ using UnityEngine;
 
 namespace GameLib.View
 {
-
     public abstract class AbstractView : IViewNode
     {
         virtual public bool IsVisible
@@ -13,7 +12,7 @@ namespace GameLib.View
             get; protected set;
         }
 
-        protected static Messager globalMessager = new();
+        protected static IMessager globalMessager = new Messager();
 
         public GameObject Widget { get; protected set; }
 
@@ -61,6 +60,10 @@ namespace GameLib.View
         virtual public void OnActive()
         {
         }
+        virtual public void Preload()
+        {
+        }
+
 
          virtual public void OnDeActive()
         {
@@ -77,6 +80,10 @@ namespace GameLib.View
         virtual public void OnUpdate()
         {
         }
+        virtual public void OnModelChanged()
+        {
+        }
+
 
         #endregion
 
@@ -89,15 +96,16 @@ namespace GameLib.View
         #endregion
 
         #region [[Template Method]]
-        protected GameObject CreateWidget() {
+        virtual protected GameObject CreateWidget() {
             throw new System.NotImplementedException();
         }
-        protected void ReleaseWidget(GameObject widget) { }
+        virtual protected void ReleaseWidget(GameObject widget) { }
 
-        public Messager GetMessager()
+        virtual public IMessager GetMessager()
         {
             return globalMessager;
         }
+
         #endregion
     }
 }

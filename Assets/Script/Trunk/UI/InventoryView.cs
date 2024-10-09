@@ -23,5 +23,9 @@ public class InventoryView : AbstractView
     {
         Debug.Log(Widget.name);
     }
+    public override void OnModelChanged()
+    {
+        base.OnModelChanged();
+    }
 
 }

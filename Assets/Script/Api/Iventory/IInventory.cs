@@ -1,0 +1,21 @@
+
+
+
+
+using GameLib;
+using System;
+using System.Collections.Generic;
+
+namespace QS.API
+{
+    interface IInventory : IListenable<Action>
+    {
+        void AddItem(IItem item, int count);
+        void AddItem(IItem item);
+
+        List<string> GetItemNames();
+        int GetItemCount(string name);
+        int GetItemCountByUUID(string uuid);
+
+    }
+}

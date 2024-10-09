@@ -7,17 +7,19 @@ public interface IControllable
     /*
      * CVelocity of Character
      */
-    public Vector3 CVelocity { get; set; }
+    Vector3 CVelocity { get; set; }
+
+    bool IsGrounded { get; set; }
 
     /*
      * Main camera
      */
-    public Camera CCamera{ get; set; }
+    Camera CCamera{ get; set; }
 
     /*
      * T
      */
-    public GameObject CGameObject{ get; set; }
+    GameObject CGameObject{ get; set; }
 
 
 }

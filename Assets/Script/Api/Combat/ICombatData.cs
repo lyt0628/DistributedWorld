@@ -6,6 +6,9 @@ namespace QS.API{
     using GameLib;
     using System;
 
+    /*
+     * TODO: Make ICombatData all accessors   Pure Functions
+     */
     public interface ICombatData : IClonable<ICombatData>
     {
         public float Hp {get;set;}

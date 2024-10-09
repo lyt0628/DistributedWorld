@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace GameLib
 {
-    public  interface Spawner<T> 
+    public interface ISpawner<T> 
     {
         public T Spawn();
     }
 
-    public class SpawnFor<T,U> : Spawner<T> where U : T, new()
+    public class SpawnFor<T,U> : ISpawner<T>  where U : T, new()
     {
         public T Spawn()
         {
@@ -17,4 +17,5 @@ namespace GameLib
         }
 
     }
+
 }

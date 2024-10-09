@@ -24,7 +24,10 @@ namespace GameLib.View
          */
         void Show();
 
+        void Preload();
         void OnUpdate();
+        void OnModelChanged();
+
 
         /*
          * From Front to background
@@ -38,7 +41,7 @@ namespace GameLib.View
          */
         void OnRealse();
 
-        Messager GetMessager();
+        IMessager GetMessager();
 
     }
 

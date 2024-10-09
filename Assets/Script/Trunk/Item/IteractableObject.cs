@@ -8,7 +8,8 @@ using QS.API;
 using QS;
 
 
-[RequireComponent(typeof(DestroySelfWhenInteract))]
+//[RequireComponent(typeof(DestroySelfWhenInteract))]
+[RequireComponent(typeof(AttackedWhenInteract))]
 public class InteractalbleObject : MonoBehaviour
 {
     SphereInteractTrigger trigger;
@@ -21,8 +22,9 @@ public class InteractalbleObject : MonoBehaviour
             radius = 1.5f
         };
 
-        trigger.AddListener(GetComponent<DestroySelfWhenInteract>());
-
+        //trigger.AddListener(GetComponent<DestroySelfWhenInteract>());
+        trigger.AddListener(GetComponent<AttackedWhenInteract>());
+        
     }
     private void Update()
     {

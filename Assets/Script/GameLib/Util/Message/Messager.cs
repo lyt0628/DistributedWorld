@@ -4,7 +4,7 @@ namespace GameLib {
     using System.Collections.Generic;   
     using UnityEngine;
 
-    public class Messager : Sington<Messager> 
+    public class Messager  : IMessager
     {
       
         private Dictionary<string, Action<IMessage>> m_broker = new();
