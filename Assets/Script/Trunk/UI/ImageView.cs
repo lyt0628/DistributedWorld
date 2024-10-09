@@ -15,9 +15,8 @@ class ImageView :  AbstractView
         var image = ret.GetComponent<Image>();
         image.sprite = sprite;
 
-        var cur = GameManager.Instance.GetManager<ItemManager>()
-                                        .ItemPool
-                                        .Get(GameConstants.REALITY_PIECE);
+        var cur = GameManager.Instance.GetManager<InventoryManager>()
+                                        .Inventory.GetItemEntry(GameConstants.REALITY_PIECE);
         image.sprite = cur.sprite;
         return  ret;
     }

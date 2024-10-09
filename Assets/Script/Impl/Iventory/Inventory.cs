@@ -46,7 +46,10 @@ class Inventory : IInventory
         AddItem(item, 1);
     }
 
-
+    public IItem GetItemEntry(string name)
+    {
+        return _itemMap[name].Item;
+    }
     public int GetItemCount(string name)
     {
         if (_itemMap.ContainsKey(name))
@@ -65,4 +68,6 @@ class Inventory : IInventory
     {
         return new List<string>(_itemMap.Keys);
     }
+
+    
 }

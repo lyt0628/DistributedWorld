@@ -15,6 +15,7 @@ class InventoryManager : IGameManager
     public IMessager Messager => _messager;
 
     private IInventory _inventory;
+    public IInventory Inventory => _inventory;
 
     private IView _inventoryView;
 
@@ -28,6 +29,8 @@ class InventoryManager : IGameManager
         _inventory = new Inventory();
         _inventory.AddListener(_inventoryView.OnModelChanged);
 
+        var itemPool = GameManager.Instance.GetManager<ItemManager>().ItemPool;
+        _inventory.AddItem(itemPool.Get(GameConstants.REALITY_PIECE));
 
         //_tabView = new TabView();
         //_tabView.Show();

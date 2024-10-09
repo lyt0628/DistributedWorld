@@ -14,6 +14,7 @@ namespace QS.API
         void AddItem(IItem item);
 
         List<string> GetItemNames();
+        IItem GetItemEntry(string name);
         int GetItemCount(string name);
         int GetItemCountByUUID(string uuid);
 
