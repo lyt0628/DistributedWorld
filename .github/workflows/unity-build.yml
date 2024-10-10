@@ -36,6 +36,7 @@ jobs:
 
           # Test
           - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
+            continue-on-error: true
 
           - name: Run tests
             uses: game-ci/unity-test-runner@v4
