@@ -48,7 +48,7 @@ jobs:
               githubToken: ${{ secrets. GITHUB_TOKEN}}
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
               projectPath: ${{ env.TEST_DIR}}
-          - run: rd /s /q ${{env.TEST_DIR}}
+          - run: rd -Recurse -Force ${{env.TEST_DIR}}
 
           # Build
           - name: Build project
