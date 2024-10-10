@@ -36,7 +36,7 @@ jobs:
 
           # Test
           - run: md ${{ env.TEST_DIR}}
-          - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}}
+          - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
 
           - name: Run tests
             uses: game-ci/unity-test-runner@v4
