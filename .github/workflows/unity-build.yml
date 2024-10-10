@@ -30,6 +30,8 @@ jobs:
                 Library-
 
           # Test
+          - run: md tmp 
+          - run: move * tmp 
           - name: Run tests
             uses: game-ci/unity-test-runner@v4
             env:
@@ -39,6 +41,7 @@ jobs:
             with:
               githubToken: ${{ secrets. GITHUB_TOKEN}}
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
+              projectPath: tmp
 
           # Build
           - name: Build project
