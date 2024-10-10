@@ -4,7 +4,6 @@ using QS;
 using QS.API;
 using System;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 
 class Inventory : IInventory 
 {
