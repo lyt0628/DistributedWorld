@@ -32,6 +32,8 @@ public class RealityPiece :  AbstractItem
 
         public bool Consumable => false;
 
+        public GameObject Prefab => throw new System.NotImplementedException();
+
         public void Use()
         {
         }

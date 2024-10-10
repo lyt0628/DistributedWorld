@@ -20,7 +20,9 @@ namespace QS.API
         void Use();
         bool Consumable { get; }
 
-        Sprite sprite { get; }
+        Sprite SpriteImg { get; }
+
+        GameObject Prefab { get; }
 
     }
 }

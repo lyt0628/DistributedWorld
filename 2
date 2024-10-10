@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace QS.API
 {
-   public abstract  class AbstractItem : IItem
+   public abstract   class AbstractItem : IItem
     {
         public virtual IItemModel Model { protected get; set; }
 
@@ -19,12 +19,11 @@ namespace QS.API
 
         public string SubType => Model.SubType;
 
-        public Sprite SpriteImg => Model.SpriteImg;
+        public Sprite sprite => Model.SpriteImg;
 
-        public bool Usable => Model.Usable;
-        public void Use() => Model.Use();
-        public bool Consumable => Model.Consumable;
+        public abstract bool Usable => Model.Usable;
+        public virtual void Use() { }
+        public abstract bool Consumable => Model.Comsumable;
 
-        public GameObject Prefab => Model.Prefab;
     }
 }

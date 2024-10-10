@@ -25,5 +25,7 @@ namespace QS.API
 
         Sprite SpriteImg { get; }
 
+        GameObject Prefab { get; }
+
     }
 }

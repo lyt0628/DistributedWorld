@@ -14,6 +14,7 @@ namespace QS.API
         public abstract bool Usable { get; }
         public abstract bool Consumable { get; }
         public abstract Sprite SpriteImg { get; }
+        public abstract GameObject Prefab { get; }
 
         public abstract void Use();
     }

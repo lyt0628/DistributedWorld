@@ -17,7 +17,7 @@ class ImageView :  AbstractView
 
         var cur = GameManager.Instance.GetManager<InventoryManager>()
                                         .Inventory.GetItemEntry(GameConstants.REALITY_PIECE);
-        image.sprite = cur.sprite;
+        image.sprite = cur.SpriteImg;
         return  ret;
     }
     public override void OnInit()

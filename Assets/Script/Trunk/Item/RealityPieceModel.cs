@@ -25,6 +25,7 @@ public class RealityPieceModel : IItemModel
 
     public bool Consumable => false;
 
+    public GameObject Prefab => throw new System.NotImplementedException();
 
     public void Use()
     {
