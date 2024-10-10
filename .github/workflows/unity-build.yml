@@ -24,6 +24,7 @@ jobs:
           - name: Cache
             uses: actions/cache@v3
             with:
+              projectPath: src
               path: Library
               key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
               restore-keys: |
@@ -39,6 +40,7 @@ jobs:
             with:
               githubToken: ${{ secrets. GITHUB_TOKEN}}
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
+              projectPath: src
 
           # Build
           - name: Build project
@@ -50,9 +52,11 @@ jobs:
             with:
               targetPlatform: StandaloneWindows
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
+              projectPath: src
 
           # Output
           - uses: actions/upload-artifact@v3
             with:
+              projectPath: src
               name: Build
               path: build
