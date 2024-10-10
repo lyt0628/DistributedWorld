@@ -1,0 +1,22 @@
+name: Build Project
+
+on:
+    push:
+        branches:
+            - main
+            - next
+            - feat-github_action
+            
+
+jobs:
+    build:
+        runs-on: windows-latest
+        steps:
+        - uses: actions/checkout@v2
+        - name: Setup Unity
+          uses: webbertakken/unity-setup@v1
+          with: 
+            unity-version: '2022.3.45f1'
+        - name: Build Project
+          run :
+            Unity.exe -batchmode -projectPath "." -buildWindows64Player "build/DistributedWorld.exe"
