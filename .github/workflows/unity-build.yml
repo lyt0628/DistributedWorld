@@ -35,7 +35,6 @@ jobs:
                 Library-
 
           # Test
-          - run: md ${{ env.TEST_DIR}}
           - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
 
           - name: Run tests
