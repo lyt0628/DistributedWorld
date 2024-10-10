@@ -6,7 +6,11 @@ on:
             - main
             - next
             - feat-github_action
+ 
             
+env: 
+  SRC_DIR: src
+  TEST_DIR: test
 
 jobs:
     build:
@@ -24,13 +28,16 @@ jobs:
           - name: Cache
             uses: actions/cache@v3
             with:
-              projectPath: src
+              projectPath: ${{ env.SRC_DIR}}
               path: Library
               key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
               restore-keys: |
                 Library-
 
           # Test
+          - run: md ${{ env.TEST_DIR}}
+          - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}}
+
           - name: Run tests
             uses: game-ci/unity-test-runner@v4
             env:
@@ -40,7 +47,8 @@ jobs:
             with:
               githubToken: ${{ secrets. GITHUB_TOKEN}}
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
-              projectPath: src
+              projectPath: ${{ env.TEST_DIR}}
+          - run: rm /s /q ${{env.TEST_DIR}}
 
           # Build
           - name: Build project
@@ -52,11 +60,10 @@ jobs:
             with:
               targetPlatform: StandaloneWindows
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
-              projectPath: src
+              projectPath: ${{ env.SRC_DIR}}
 
           # Output
           - uses: actions/upload-artifact@v3
             with:
-              projectPath: src
               name: Build
               path: build
