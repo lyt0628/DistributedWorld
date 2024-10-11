@@ -49,6 +49,8 @@ jobs:
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
               projectPath: ${{ env.TEST_DIR}}
          # - run: rd -Recurse -Force ${{env.TEST_DIR}}
+          - run: git config --global user.email "lyt.0628@qq.com"
+          - run: git config --global user.name "lyt0628"
           - run: git add .
           - run: git commit -m "tmp"
 
