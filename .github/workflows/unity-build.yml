@@ -35,7 +35,7 @@ jobs:
                 Library-
 
           # Test
-          #- run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
+          - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
             continue-on-error: true
 
           - name: Run tests
