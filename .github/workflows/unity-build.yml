@@ -35,7 +35,7 @@ jobs:
                 Library-
 
           # Test
-          - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
+          #- run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
             continue-on-error: true
 
           - name: Run tests
@@ -48,7 +48,9 @@ jobs:
               githubToken: ${{ secrets. GITHUB_TOKEN}}
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
               projectPath: ${{ env.TEST_DIR}}
-          - run: rd -Recurse -Force ${{env.TEST_DIR}}
+         # - run: rd -Recurse -Force ${{env.TEST_DIR}}
+          - run: git add .
+          - run: git commit -m "tmp"
 
           # Build
           - name: Build project
