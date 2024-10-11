@@ -1,0 +1,73 @@
+name: Build Project
+
+on:
+    push:
+        branches:
+            - main
+            - next
+            - feat-github_action
+ 
+            
+env: 
+  SRC_DIR: src
+  TEST_DIR: test
+
+jobs:
+    build:
+        runs-on: windows-latest
+        environment: Unity
+
+        steps:
+          # Check
+          - name: Checkout project
+            uses: actions/checkout@v4
+            with:
+              lfs: true
+
+          # Cache
+          - name: Cache
+            uses: actions/cache@v3
+            with:
+              projectPath: ${{ env.SRC_DIR}}
+              path: Library
+              key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+              restore-keys: |
+                Library-
+
+          # Test
+          - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
+            continue-on-error: true
+
+          - name: Run tests
+            uses: game-ci/unity-test-runner@v4
+            env:
+              UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+              UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+              UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+            with:
+              githubToken: ${{ secrets. GITHUB_TOKEN}}
+              customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
+              projectPath: ${{ env.TEST_DIR}}
+         # - run: rd -Recurse -Force ${{env.TEST_DIR}}
+          - run: git config --global user.email "lyt.0628@qq.com"
+          - run: git config --global user.name "lyt0628"
+          - run: git add .
+          - run: git commit -m "tmp"
+
+          # Build
+          - name: Build project
+            uses: game-ci/unity-builder@v4
+            env:
+              UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+              UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+              UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+            with:
+              targetPlatform: StandaloneWindows
+              customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
+              projectPath: ${{ env.SRC_DIR}}
+
+          # Output
+          - uses: actions/upload-artifact@v3
+            with:
+              name: Build
+              path: build
