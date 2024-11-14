@@ -11,7 +11,7 @@ using UnityEngine;
 public class MoveCtl :  IController
 {
     private float gravity = -10f  * 3;
-    private float initVertSpeed = 50 * 2f;
+    private readonly float initVertSpeed = 10 * 2f;
 
 
     // States 
@@ -27,6 +27,7 @@ public class MoveCtl :  IController
 
 
         animator.SetFloat("Speed", velocity.magnitude);
+        animator.SetFloat("Speed", 1);
 
         jumping = !controlable.IsGrounded;
 
@@ -47,7 +48,7 @@ public class MoveCtl :  IController
         var lastCollider = RaycastUtil.GetNearestColliderDistance(position, Vector3.down);
         if (lastCollider != 0 && lastCollider < -velocity.y)
         {
-            velocity.y = -lastCollider + 1;
+            velocity.y = -lastCollider + 1f;
             jumping = false;
             vertSpeed = 0f;
         }

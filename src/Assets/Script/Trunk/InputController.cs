@@ -9,7 +9,6 @@ using UnityEngine;
 public class InputController : IController
 {
 
-    public float velocityFactor = 100f;
     public void Control(IControllable controlable)
     {
         var camera = controlable.CCamera.transform;
@@ -36,7 +35,7 @@ public class InputController : IController
         //Debug.Log(moveVec);
         //Debug.Log(camera.forward);
 
-        controlable.CVelocity =  velocityFactor * moveVec ;
+        controlable.CVelocity =  moveVec ;
     }
 
 }

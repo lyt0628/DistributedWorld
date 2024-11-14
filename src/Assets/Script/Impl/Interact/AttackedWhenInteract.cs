@@ -34,6 +34,10 @@ namespace QS
                     combator.Injured(Attack());
                 }
             }
+            else
+            {
+                Debug.LogError("activedCharacter does not exists!!!");
+            }
         }
     }
 }

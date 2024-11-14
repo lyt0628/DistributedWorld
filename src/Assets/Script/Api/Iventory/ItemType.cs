@@ -8,6 +8,7 @@ namespace QS.API
         Weapon,
         Accessory,
         Crystal,
+        Curse,
         Biography,
         Misc
     }

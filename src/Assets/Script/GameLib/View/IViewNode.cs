@@ -2,9 +2,9 @@
 
 namespace GameLib.View
 {
-    interface IViewNode : IView
+    public interface IViewNode : IView
     {
-        void Add(IView view);   
+        void Add(IViewNode view);   
 
     }
 }
