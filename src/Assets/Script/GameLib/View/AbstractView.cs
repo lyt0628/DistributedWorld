@@ -1,5 +1,6 @@
 
 
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -10,9 +11,15 @@ namespace GameLib.View
         virtual public bool IsVisible
         {
             get; protected set;
-        }
+        } = false;
+        virtual public bool Initialed
+        {
+            get; protected set;
+        } = false;
+        virtual public bool IsLeaf { get; }  = true;
 
         protected static IMessager globalMessager = new Messager();
+        protected List<IViewNode> children = new();
 
         public GameObject Widget { get; protected set; }
 
@@ -27,24 +34,37 @@ namespace GameLib.View
         }
 
         #region [[View]]
+        /*
+         * Show This View. If View is not a Leaf, Show Children 
+         */
         virtual public void Show()
         {
-                if (Widget == null) { 
-                    Widget = CreateWidget();
+                if (!Initialed ) { 
+                    //Widget = CreateWidget();
+                    OnInit(); 
                 }
                 if (Widget) {
                     Widget.SetActive(true);
-                    IsVisible = true;
                     OnActive();
                 }
+                if (!IsLeaf) {
+                    children.ForEach(x => x.Show());
+                }
+
+                IsVisible = true;
         }
 
        virtual  public void Hide()
         {
+            if (!IsLeaf)
+            {
+                children.ForEach(x => x.Hide());
+            }
+
             if (Widget && Widget.activeSelf == true) { 
-                OnDeActive();
                 if (IsResident)
                 {
+                    OnDeActive();
                     Widget.SetActive(false);
                 }
                 else
@@ -54,20 +74,29 @@ namespace GameLib.View
                 }
 
             }
+
             IsVisible = false;
         }
 
+        /*
+         * Called When Widget Show
+         */
         virtual public void OnActive()
         {
         }
+
+        /*
+         * Called when widget hidden
+         */
+         virtual public void OnDeActive()
+        {
+        }
+
+
         virtual public void Preload()
         {
         }
 
-
-         virtual public void OnDeActive()
-        {
-        }
 
         virtual public void OnRealse()
         {
@@ -75,6 +104,19 @@ namespace GameLib.View
 
         virtual public void OnInit()
         {
+            if(!Initialed)
+            {
+               Load();
+            }
+            Initialed=true;
+        }
+        virtual protected void Load()
+        {
+                if (!IsLeaf) {
+                    children.FindAll(x => !x.Initialed)
+                    .ForEach(x => x.OnInit());
+                }
+                Widget = CreateWidget();
         }
 
         virtual public void OnUpdate()
@@ -88,9 +130,9 @@ namespace GameLib.View
         #endregion
 
         #region [[ViewNode]]
-        virtual public void Add(IView view)
+        virtual public void Add(IViewNode view)
         {
-            throw new System.NotImplementedException();
+            children.Add(view);
         }
 
         #endregion

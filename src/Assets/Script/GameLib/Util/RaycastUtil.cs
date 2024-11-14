@@ -12,7 +12,7 @@ namespace GameLib
         {
             if (Physics.Raycast(position, direction, out RaycastHit hit))
             {
-                Debug.Log("RaycastUtil ::: NearsetCollider distance is : " + hit.distance);
+                //Debug.Log("RaycastUtil ::: NearsetCollider distance is : " + hit.distance);
                 if (hit.distance > distance)
                 {
                     return true;

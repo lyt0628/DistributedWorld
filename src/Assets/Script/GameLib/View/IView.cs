@@ -8,6 +8,7 @@ namespace GameLib.View
     public interface IView {
         bool IsVisible { get; }
         bool IsResident { get; }
+        bool Initialed { get;  }
         /*
          * Init
          */
