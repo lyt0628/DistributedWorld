@@ -19,6 +19,6 @@ class GroundedCtl : IController
         controlable.IsGrounded = ! RaycastUtil.IsNearestColliderFartherThan(transform.position, Vector3.down , 
                                                     (collider.height + collider.radius) / 1.9f);
 
-        Debug.Log("GroundedCtl ::: Character is grounded??? :" + controlable.IsGrounded);
+        //Debug.Log("GroundedCtl ::: Character is grounded??? :" + controlable.IsGrounded);
     }
 }

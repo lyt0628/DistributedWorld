@@ -37,9 +37,4 @@ class HpView :  AbstractView
         Widget = CreateWidget();
     }
 
-    public override void OnUpdate()
-    {
-    }
-
-
 }

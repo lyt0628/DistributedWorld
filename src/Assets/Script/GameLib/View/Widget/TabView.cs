@@ -8,9 +8,19 @@ namespace GameLib.View
 {
     public class TabView : AbstractView
     {
-        public bool isVertical = false;
-        private TabBar _tabBar;
-        private TabContent _tabContent;
+        public override bool IsLeaf => false;
+        public bool isVertical = true;
+        protected TabBar tabBar;
+        protected TabContent tabContent;
+
+        public TabView()
+        {
+            tabBar = new TabBar(this);
+            tabContent = new TabContent(this);
+
+            Add(tabBar);
+            Add(tabContent);
+        }
 
         protected override GameObject CreateWidget()
         {
@@ -22,38 +32,53 @@ namespace GameLib.View
             {
                 name = "TabView"
             };
-            Widget = widget;
-
+            
             widget.AddComponent<RectTransform>();
+            var sizeFilter = widget.AddComponent<ContentSizeFitter>();
+            sizeFilter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+            sizeFilter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
 
-            _tabBar = new TabBar(this);
-            _tabContent = new TabContent();
+            if (isVertical) {
+                widget.AddComponent<VerticalLayoutGroup>();
+            }
+            else
+            {
+                widget.AddComponent<HorizontalLayoutGroup>();
+            }
+        
+            tabBar.Widget.transform.SetParent(widget.transform);
+            tabContent.Widget.transform.SetParent(widget.transform);
 
-
-            _tabBar.Widget.transform.SetParent(widget.transform, false);
-            _tabContent.Widget.transform.SetParent(widget.transform, false);
-
-            _tabBar.AddTab();
             return widget;
         }
 
+        public override void OnInit()
+        {
+            base.OnInit();
 
-        private class TabBar : AbstractView
+            tabBar.AddTab();
+            tabBar.AddTab();
+            tabBar.AddTab();
+            tabBar.AddTab();
+            tabBar.AddTab();
+
+            var canvas = GameObject.Find("Canvas");
+            Widget.transform.SetParent(canvas.transform);
+
+            Hide();
+        }
+
+        protected class TabBar : AbstractView
         {
             public Sprite background;
+            protected TabView _tabView;
 
-            private TabView _tabView;
-            private List<GameObject> tabs = new();
+            protected List<GameObject> tabs = new();
+
             public TabBar(TabView tabView)
             {
                 _tabView = tabView;
                 
-                Preload();
-            }
-            public override void Preload()
-            {
-               Widget = CreateWidget();
-
             }
 
             protected override GameObject CreateWidget()
@@ -62,6 +87,8 @@ namespace GameLib.View
                 {
                     name = "TabBar"
                 };
+
+
                 tabBar.AddComponent<RectTransform>();
                 tabBar.AddComponent<CanvasRenderer>();
 
@@ -73,32 +100,32 @@ namespace GameLib.View
 
                 tabBar.AddComponent<ToggleGroup>();
 
-                tabBar.AddComponent<ContentSizeFitter>();
-                var sizeFiltter = tabBar.GetComponent<ContentSizeFitter>();
-                if (_tabView.isVertical)
-                {
-                    sizeFiltter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
-                }else
-                {
-                    sizeFiltter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
-                }
+                //tabBar.AddComponent<ContentSizeFitter>();
+                //var sizeFiltter = tabBar.GetComponent<ContentSizeFitter>();
+                //if (_tabView.isVertical)
+                //{
+                //    sizeFiltter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+                //}else
+                //{
+                //    sizeFiltter.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
+                //}
 
                 tabBar.AddComponent<GridLayoutGroup>();
                 var grid = tabBar.GetComponent<GridLayoutGroup>();
                 if (_tabView.isVertical)
                 {
-                    grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
+                    grid.constraint = GridLayoutGroup.Constraint.FixedRowCount;
                     grid.constraintCount = 1;
                 }else
                 {
-                    grid.constraint = GridLayoutGroup.Constraint.FixedRowCount;
+                    grid.constraint = GridLayoutGroup.Constraint.FixedColumnCount;
                     grid.constraintCount = 1;
                 }
-
 
                 return tabBar; 
             }
  
+
             public void AddTab()
             {
                 var background = new GameObject("Background");
@@ -112,22 +139,24 @@ namespace GameLib.View
                 tab.GetComponent<Toggle>().group = Widget.GetComponent<ToggleGroup>();
                 tab.GetComponent<Toggle>().targetGraphic = background.GetComponent<Image>();
         
-                tab.transform.SetParent(Widget.transform, false);
-                background.transform.SetParent(tab.transform, false);
+                tab.transform.SetParent(Widget.transform);
+                background.transform.SetParent(tab.transform);
+                Debug.Log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"+tab);
+                Debug.Log(background);
                 tabs.Add(tab);
             }
         }
 
-        private class TabContent : AbstractView
+
+        protected class TabContent : AbstractView
         {
-            public TabContent()
+            protected TabView _tabView;
+            public TabContent(TabView tabView)
             {
-                Preload();
+                _tabView = tabView;
             }
-            public override void Preload()
-            {
-                Widget = CreateWidget();
-            }
+
+            
             protected override GameObject CreateWidget()
             {
 
@@ -135,7 +164,14 @@ namespace GameLib.View
                 {
                     name = "TabContent"
                 };
+                content.AddComponent<RectTransform>();
 
+                content.AddComponent<CanvasRenderer>();
+                var lo = content.AddComponent<LayoutElement>();
+                lo.preferredWidth = 100;
+                lo.preferredHeight = 100;
+
+                content.AddComponent<Image>();
                 return content; 
             }
         }

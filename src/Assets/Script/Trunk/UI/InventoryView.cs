@@ -10,22 +10,18 @@ public class InventoryView : AbstractView
         get { return true; }
     }
 
+    protected override GameObject CreateWidget()
+    {
+        return GameObject.Find("Inventory");
+    }
     public override void OnInit()
     {
-        Widget = new GameObject
-        {
-            name = "InventoryView"
-        };
-        Widget.SetActive(false);
+        base.OnInit();
+        Hide();
     }
 
-    public override void OnUpdate()
-    {
-        Debug.Log(Widget.name);
-    }
     public override void OnModelChanged()
     {
-        base.OnModelChanged();
     }
 
 }
