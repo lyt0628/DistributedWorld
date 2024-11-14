@@ -18,8 +18,8 @@ public class GameManager : SingtonBehaviour<GameManager>
         base.Awake();
         _managers.Add(new PlayerManager());
         _managers.Add(new ItemManager());
-        _managers.Add(new InventoryManager());
-        _managers.Add(new ViewManager());
+        //_managers.Add(new InventoryManager());
+        //_managers.Add(new ViewManager());
 
         _managers.ForEach(manager => { manager.Startup(); });
     }
