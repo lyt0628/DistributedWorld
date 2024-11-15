@@ -82,7 +82,7 @@ namespace QS
 
         public void AcceptBuff(IBuff buff)
         {
-            Debug.Log(buff.GetAttackStage().ToString());
+            //Debug.Log(buff.GetAttackStage().ToString());
             switch (buff.GetAttackStage())
             {
                 case EBuffStage.IMMEDIATE: 

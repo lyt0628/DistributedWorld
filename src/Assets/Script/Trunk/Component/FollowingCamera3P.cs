@@ -61,7 +61,7 @@ public class FollowingCamera3P : MonoBehaviour
     }
 
 
-    // Update is called once per frame
+    // UpdateIfNeed is called once per frame
     void LateUpdate()
     {
         Rotate();

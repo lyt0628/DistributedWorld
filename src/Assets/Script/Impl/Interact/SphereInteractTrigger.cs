@@ -13,7 +13,6 @@ namespace QS
         public float radius;
         public override bool IsOneshot => true;
 
-
         public override bool TryTrig()
         {
             bool flag = false;

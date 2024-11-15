@@ -8,11 +8,10 @@ using UnityEngine.UI;
 
 class HpView :  AbstractView
 {
-    protected override GameObject CreateWidget()
+    protected override bool CreateWidget(out GameObject widget)
     {
-        var ret = GameObject.Find("HP");
-
-        return  ret;
+        widget = GameObject.Find("HP");
+        return true;
     }
     public override void OnInit()
     {
@@ -25,16 +24,13 @@ class HpView :  AbstractView
             combater.Messager.AddListener("HP", msg =>
            {
                var msg0 = (SingleArgMessage<float>)msg;
-               Widget.GetComponent<Text>().text = msg0.Value.ToString();
+               Widget.GetComponent<Text>().text = "Hp:" + msg0.Value.ToString();
            });
         });
 
 
     }
 
-    public override void Preload()
-    {
-        Widget = CreateWidget();
-    }
+    
 
 }
