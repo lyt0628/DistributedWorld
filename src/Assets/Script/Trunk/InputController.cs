@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ using UnityEngine;
  */
 public class InputController : IController
 {
-
+    private float speedFactor = 1f;
     public void Control(IControllable controlable)
     {
         var camera = controlable.CCamera.transform;
@@ -23,6 +24,7 @@ public class InputController : IController
         baseForward = baseForward.normalized;
 
         Vector3 moveVec = hor * baseRight + ver * baseForward;
+        moveVec = moveVec.normalized;
 
 
         //moveVec = new Vector3(0, 0, 1f);
@@ -34,6 +36,7 @@ public class InputController : IController
 
         //Debug.Log(moveVec);
         //Debug.Log(camera.forward);
+
 
         controlable.CVelocity =  moveVec ;
     }

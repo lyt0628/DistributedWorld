@@ -42,7 +42,7 @@ public class Character : MonoBehaviour, IControllable
         rotateCtl = new RotateCtl();
     }
 
-    // Update is called once per frame
+    // UpdateIfNeed is called once per frame
     void Update()
     {
         inputCtl.Control(this);

@@ -2,6 +2,8 @@
 
 
 using GameLib;
+using GameLib.Uitl.RayCast;
+using GameLib.Util.Raycast;
 using UnityEngine;
 
 class GroundedCtl : IController
@@ -12,13 +14,16 @@ class GroundedCtl : IController
         var collider = controlable.CGameObject.GetComponent<CapsuleCollider>();
         if (collider == null)
         {
-            Debug.LogError("Controlable must be attached with CapsuleCollier");
+            Debug.LogError("Controlable must be attached with CapsuleCollier.");
             return;
         }
 
-        controlable.IsGrounded = ! RaycastUtil.IsNearestColliderFartherThan(transform.position, Vector3.down , 
-                                                    (collider.height + collider.radius) / 1.9f);
+        //controlable.IsGrounded = ! RaycastUtil.IsNearestColliderFartherThan(transform.position, Vector3.down , 
+        //(collider.height + collider.radius) / 1.9f);
 
+        controlable.IsGrounded = RaycastHelper
+            .Of(CastedObject.Ray(transform.position, Vector3.down))
+            .IsCloserThan(0.01f);
         //Debug.Log("GroundedCtl ::: Character is grounded??? :" + controlable.IsGrounded);
     }
 }

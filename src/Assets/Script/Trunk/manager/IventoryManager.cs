@@ -23,7 +23,6 @@ class InventoryManager : IGameManager
     public void Startup()
     {
 
-        _inventoryView = new InventoryView();
         _inventoryView.OnInit();
 
         _inventory = new Inventory();
@@ -32,13 +31,10 @@ class InventoryManager : IGameManager
         var itemPool = GameManager.Instance.GetManager<ItemManager>().ItemPool;
         _inventory.AddItem(itemPool.Get(GameConstants.REALITY_PIECE));
 
-        //_tabView = new TabView();
-        //_tabView.Show();
     }
 
     public void Update()
     {
-        _inventoryView.OnUpdate();
         Debug.Log("InventoryManage is running");
     }
 }

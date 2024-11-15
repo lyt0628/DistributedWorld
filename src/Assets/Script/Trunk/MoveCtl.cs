@@ -1,6 +1,9 @@
 using GameLib;
+using GameLib.Uitl.RayCast;
+using GameLib.Util.Raycast;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -10,8 +13,8 @@ using UnityEngine;
  */
 public class MoveCtl :  IController
 {
-    private float gravity = -10f  * 3;
-    private readonly float initVertSpeed = 10 * 2f;
+    private float gravity = -10f;
+    private readonly float initVertSpeed = 10f;
 
 
     // States 
@@ -22,42 +25,77 @@ public class MoveCtl :  IController
     public void Control(IControllable controlable)
     {
         var animator = controlable.CGameObject.GetComponent<Animator>();
-        var velocity = controlable.CVelocity * Time.deltaTime;
+        var transform = controlable.CGameObject.transform;
+        var velocity = controlable.CVelocity;
+        var horizontalDisp = velocity * Time.deltaTime;
+        var verticalDisp = 0f;
         var position = controlable.CGameObject.transform.position;
+        var capsuleCollider = controlable.CGameObject.GetComponent<CapsuleCollider>();
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            velocity *= 4;
+            horizontalDisp = velocity * Time.deltaTime;
+        }
 
 
         animator.SetFloat("Speed", velocity.magnitude);
-        animator.SetFloat("Speed", 1);
+        //Debug.Log("Character speed is:" + velocity.magnitude);
 
-        jumping = !controlable.IsGrounded;
 
+        if (!controlable.IsGrounded) {
+            vertSpeed += gravity * Time.deltaTime;
+        }
+        
         if (!jumping && Input.GetButtonDown("Jump"))
         {
             jumping = true;
             animator.SetTrigger("Jump");
             vertSpeed = initVertSpeed;
         }
-        if (jumping)
+        verticalDisp = vertSpeed * Time.deltaTime;
+
+        if(RaycastHelper
+            .Of(CastedObject
+                    .Ray(position, Vector3.down)
+                    .IgnoreTrigger())
+            .IsCloserThan(-verticalDisp))
         {
-            vertSpeed += 5 * gravity * Time.deltaTime;
-        }
-
-        velocity.y = vertSpeed * Time.deltaTime;
-
-
-        var lastCollider = RaycastUtil.GetNearestColliderDistance(position, Vector3.down);
-        if (lastCollider != 0 && lastCollider < -velocity.y)
-        {
-            velocity.y = -lastCollider + 1f;
-            jumping = false;
             vertSpeed = 0f;
-        }
-        if (RaycastUtil.IsNearestColliderCloserThan(position, velocity.normalized, 1f, out var casthit))
-        {
-              velocity = Vector3.zero;
+            verticalDisp = 0f;
+            jumping = false;
         }
 
-        animator.SetFloat("vertSpeed", velocity.y);
-        controlable.CGameObject.transform.position += velocity;
+
+
+        if (capsuleCollider != null) {
+            Vector3 point1 = position;
+            Vector3 point2 = point1 + capsuleCollider.height * transform.up;
+            float redius = capsuleCollider.radius;
+
+            var castedCapsule = CastedObject
+                .Capsule(point1, point2, redius, horizontalDisp.normalized)
+                .IgnoreTrigger();
+
+            if(RaycastHelper
+                .Of(castedCapsule)
+                .IsCloserThan(0.01f))
+            {
+                    horizontalDisp = Vector3.zero;
+            }
+        }else
+        {
+            Debug.Log("CapsuleCoolider is null");
+        }
+
+        //if (RaycastUtil.IsNearestColliderCloserThan(position, disp.normalized, 0.01f, out var casthit))
+        //{
+
+        //      disp = Vector3.zero;
+        //}
+
+        var disp = new Vector3(horizontalDisp.x, verticalDisp, horizontalDisp.z);
+
+        transform.position += disp;
     }
 }
