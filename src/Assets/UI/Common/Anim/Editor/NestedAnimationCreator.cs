@@ -10,7 +10,7 @@ public class NestedAnimationCreator : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // Flush is called once per frame
     void Update()
     {
         
