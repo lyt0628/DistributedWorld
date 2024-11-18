@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 /*
- * Get Mdeol 
+ * New Mdeol 
  */
 public class MyAvatarManager : MonoBehaviour
 {

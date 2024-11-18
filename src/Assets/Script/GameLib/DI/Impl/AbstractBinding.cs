@@ -9,11 +9,16 @@ namespace GameLib.DI
         private readonly Key target;
         private readonly ISet<Key> dependencies;
         private ScopeFlag scope;
+        private int priority;
 
-        public AbstractBinding(Key target, ISet<Key> dependencies, ScopeFlag scope = ScopeFlag.Sington) {
+        public AbstractBinding(Key target, 
+                            ISet<Key> dependencies, 
+                            ScopeFlag scope = ScopeFlag.Sington,
+                            int priority = 0) {
             this.target = target;
             this.dependencies = dependencies;
             this.scope = scope;
+            this.priority = priority;
         }
 
         public Key Target => target;
@@ -26,6 +31,7 @@ namespace GameLib.DI
 
         public bool IsPrototype => scope == ScopeFlag.Prototype;
 
+        public int Priority { get => priority; set => priority=value; }
 
         public abstract Builder GenBuilder(BindingLookup lookup);
     }

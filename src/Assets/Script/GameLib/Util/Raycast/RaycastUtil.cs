@@ -9,7 +9,6 @@ namespace GameLib.Uitl.RayCast
     static class RaycastUtil
     {
 
-
        public static float GetNearestColliderDistance(Vector3 position, Vector3 direction)
         {
             if (Physics.Raycast(position, direction, out RaycastHit hit))

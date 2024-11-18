@@ -3,116 +3,204 @@
   "WorkspaceRootPath": "F:\\dev\\data\\Unity\\learn-u3d\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\defaultdicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\defaultdicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\instancebinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\instancebinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\reflectionutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\reflectionutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|f:\\dev\\data\\unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\defaultdicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\defaultdicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\abstractinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\abstractinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\typekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\typekey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\bindingtocontructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\bindingtocontructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{494C5664-BBFD-9E41-BDAA-024DB9C4555B}|Tests.csproj|f:\\dev\\data\\unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\tests\\injectedconstructorbindingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{494C5664-BBFD-9E41-BDAA-024DB9C4555B}|Tests.csproj|solutionrelative:assets\\script\\gamelib\\di\\tests\\injectedconstructorbindingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\reflectionutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\reflectionutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\idicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\idicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\multipleinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\multipleinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\setterinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\setterinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\injected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\injected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\abstractbinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\abstractbinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\bindings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\bindings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\abstractinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\abstractinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\didelegages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\didelegages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\setterinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\setterinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\ibinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\ibinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\injected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\injected.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\abstractbinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\abstractbinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\multipleinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\multipleinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\diexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\diexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{494C5664-BBFD-9E41-BDAA-024DB9C4555B}|Tests.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\tests\\injectionlessinstancebindingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{494C5664-BBFD-9E41-BDAA-024DB9C4555B}|Tests.csproj|solutionrelative:assets\\script\\gamelib\\di\\tests\\injectionlessinstancebindingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\idicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\idicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{494C5664-BBFD-9E41-BDAA-024DB9C4555B}|Tests.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\tests\\injectionlessconstructorbindingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{494C5664-BBFD-9E41-BDAA-024DB9C4555B}|Tests.csproj|solutionrelative:assets\\script\\gamelib\\di\\tests\\injectionlessconstructorbindingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\constructorbinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\constructorbinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\bindings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\bindings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\didelegages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\didelegages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\ibinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\ibinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\gamlibdiassembly.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\gamlibdiassembly.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{494C5664-BBFD-9E41-BDAA-024DB9C4555B}|Tests.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\tests\\tests.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{494C5664-BBFD-9E41-BDAA-024DB9C4555B}|Tests.csproj|solutionrelative:assets\\script\\gamelib\\di\\tests\\tests.asmdef||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\diexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\diexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\dev\\data\\Unity\\learn-u3d\\src\\Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEditor.TestRunner\\GUI\\Views\\EditModeTestListGUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEditor.TestRunner\\GUI\\Views\\EditModeTestListGUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\scope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\scope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE080A33-8C18-1ED7-C6FB-847CDE7184F9}|GamLibDIAssembly.csproj|solutionrelative:assets\\script\\gamelib\\di\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\DiTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\GameLib\\DI\\Tests\\DiTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\impl\\service\\playercontrollservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\impl\\service\\playercontrollservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\rotatectl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\rotatectl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\impl\\service\\dto\\charactertranslationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\impl\\service\\dto\\charactertranslationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\api\\service\\iplayercontrollservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\api\\service\\iplayercontrollservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\api\\service\\dto\\icharactertranslationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\api\\service\\dto\\icharactertranslationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\impl\\globalphysicsettging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\impl\\globalphysicsettging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\impl\\data\\playerinputdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\impl\\data\\playerinputdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\impl\\data\\characterlocationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\impl\\data\\characterlocationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\api\\service\\manager\\igamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\api\\service\\manager\\igamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\movectl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\movectl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\impl\\service\\combat\\ccombatdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\impl\\service\\combat\\ccombatdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\groundedctl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\groundedctl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\mountlocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\mountlocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\api\\data\\icharacterlocationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\api\\data\\icharacterlocationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\api\\data\\iplayerinputdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\api\\data\\iplayerinputdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\followingcamera3p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\followingcamera3p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\util\\raycast\\raycastutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\util\\raycast\\raycastutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\manager\\configurationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\manager\\configurationmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\gameconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\manager\\iventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\manager\\iventorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\manager\\viewmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\manager\\viewmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\domain\\item\\t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\domain\\item\\t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\manager\\itemmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\iinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\iinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\api\\iglobalphysicsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\api\\iglobalphysicsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\injectedbinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\injectedbinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\emptyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\emptyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\pattern\\isington.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\pattern\\isington.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\domain\\item\\realitypiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\domain\\item\\realitypiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\service\\domain\\item\\realitypiecemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\service\\domain\\item\\realitypiecemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\api\\service\\inventory\\abstractitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\api\\service\\inventory\\abstractitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\gamelib\\di\\scope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\gamelib\\di\\scope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|F:\\dev\\data\\Unity\\learn-u3d\\src\\assets\\script\\trunk\\cabuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\cabuff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,121 +210,395 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Injected.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Injected.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Injected.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Injected.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Injected.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T06:34:49.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DIException.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\DIException.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\DIException.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\DIException.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\DIException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T05:32:22.192Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DefaultDIContext.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
+              "ViewState": "AgIAAKQAAAAAAAAAAAASwKkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:35:03.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AbstractInjection.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\AbstractInjection.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\AbstractInjection.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\AbstractInjection.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\AbstractInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:36:57.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AbstractBinding.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\AbstractBinding.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\AbstractBinding.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\AbstractBinding.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\AbstractBinding.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:36:56.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDIContext.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\IDIContext.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\IDIContext.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\IDIContext.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\IDIContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAjwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T00:34:56.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Manager\\GameManager.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Manager\\GameManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:30:11.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "InjectedConstructorBindingTest.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\InjectedConstructorBindingTest.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Tests\\InjectedConstructorBindingTest.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\InjectedConstructorBindingTest.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Tests\\InjectedConstructorBindingTest.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T12:38:07.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Key.cs",
               "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Key.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Key.cs",
               "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Key.cs",
               "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Key.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAASwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T05:32:14.635Z",
+              "WhenOpened": "2024-11-18T10:42:23.264Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ViewManager.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\ViewManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Manager\\ViewManager.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\ViewManager.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Manager\\ViewManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T05:32:09.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "T.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Domain\\Item\\T.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Domain\\Item\\T.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Domain\\Item\\T.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Domain\\Item\\T.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAlwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T05:21:51.246Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "InstanceBinding.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\InstanceBinding.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\InstanceBinding.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\InstanceBinding.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\InstanceBinding.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Title": "ReflectionUtil.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\ReflectionUtil.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\ReflectionUtil.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\ReflectionUtil.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\ReflectionUtil.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAASwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:18:33.326Z",
+              "WhenOpened": "2024-11-17T21:38:55.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ISington.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\Pattern\\ISington.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\Pattern\\ISington.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\Pattern\\ISington.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\Pattern\\ISington.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA0wBAAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "TypeKey.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\TypeKey.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\TypeKey.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\TypeKey.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\TypeKey.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAEwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:59:26.612Z"
+              "WhenOpened": "2024-11-18T10:42:21.875Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "EmptyInjection.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\EmptyInjection.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\EmptyInjection.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\EmptyInjection.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\EmptyInjection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAswAgAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Injected.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Injected.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Injected.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Injected.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Injected.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:55:35.83Z"
+              "WhenOpened": "2024-11-18T10:42:01.638Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AbstractItem.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Service\\Inventory\\AbstractItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Api\\Service\\Inventory\\AbstractItem.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Service\\Inventory\\AbstractItem.cs",
-              "RelativeToolTip": "Assets\\Script\\Api\\Service\\Inventory\\AbstractItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAkAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "SetterInjection.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\SetterInjection.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\SetterInjection.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\SetterInjection.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\SetterInjection.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:40:31.668Z"
+              "WhenOpened": "2024-11-18T11:21:46.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConstructorBinding.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\ConstructorBinding.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\ConstructorBinding.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\ConstructorBinding.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\ConstructorBinding.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:07:19.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InjectionlessConstructorBindingTest.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\InjectionlessConstructorBindingTest.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Tests\\InjectionlessConstructorBindingTest.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\InjectionlessConstructorBindingTest.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Tests\\InjectionlessConstructorBindingTest.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:22:23.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MultipleInjection.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\MultipleInjection.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\MultipleInjection.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\MultipleInjection.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\MultipleInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:43:59.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InjectionlessInstanceBindingTest.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\InjectionlessInstanceBindingTest.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Tests\\InjectionlessInstanceBindingTest.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\InjectionlessInstanceBindingTest.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Tests\\InjectionlessInstanceBindingTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T12:33:10.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Bindings.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\Bindings.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\Bindings.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\Bindings.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\Bindings.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:40:51.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DIDelegages.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DIDelegages.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\DIDelegages.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DIDelegages.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\DIDelegages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:47:03.699Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "IBinding.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\IBinding.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\IBinding.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\IBinding.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\IBinding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T13:40:36.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EditModeTestListGUI.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEditor.TestRunner\\GUI\\Views\\EditModeTestListGUI.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEditor.TestRunner\\GUI\\Views\\EditModeTestListGUI.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEditor.TestRunner\\GUI\\Views\\EditModeTestListGUI.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.test-framework@1.1.33\\UnityEditor.TestRunner\\GUI\\Views\\EditModeTestListGUI.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAvwDsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:44:36.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GamLibDIAssembly.asmdef",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\GamLibDIAssembly.asmdef",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\GamLibDIAssembly.asmdef",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\GamLibDIAssembly.asmdef",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\GamLibDIAssembly.asmdef",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "WhenOpened": "2024-11-18T12:04:57.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Tests.asmdef",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\Tests.asmdef",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Tests\\Tests.asmdef",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\Tests.asmdef",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Tests\\Tests.asmdef",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001874|",
+              "WhenOpened": "2024-11-18T10:46:04.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DIException.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\DIException.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\DIException.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\DIException.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\DIException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T11:01:29.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Scope.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Scope.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Scope.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Scope.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Scope.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:47:01.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CCombatData.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Service\\Combat\\CCombatData.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Impl\\Service\\Combat\\CCombatData.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Service\\Combat\\CCombatData.cs",
+              "RelativeToolTip": "Assets\\Script\\Impl\\Service\\Combat\\CCombatData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:47:24.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Priority.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Priority.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Priority.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Priority.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Priority.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:42:11.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IGameManager.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Service\\Manager\\IGameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Api\\Service\\Manager\\IGameManager.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Service\\Manager\\IGameManager.cs",
+              "RelativeToolTip": "Assets\\Script\\Api\\Service\\Manager\\IGameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:00:48.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "RaycastUtil.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\Util\\Raycast\\RaycastUtil.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\Util\\Raycast\\RaycastUtil.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\Util\\Raycast\\RaycastUtil.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\Util\\Raycast\\RaycastUtil.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:20:54.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ICharacterTranslationDTO.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Service\\DTO\\ICharacterTranslationDTO.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Api\\Service\\DTO\\ICharacterTranslationDTO.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Service\\DTO\\ICharacterTranslationDTO.cs",
+              "RelativeToolTip": "Assets\\Script\\Api\\Service\\DTO\\ICharacterTranslationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:36:06.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Character.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\Character.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\Character.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\Character.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\Character.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:19:27.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DiTest.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\DiTest.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Tests\\DiTest.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Tests\\DiTest.cs",
+              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Tests\\DiTest.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T10:19:20.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CharacterTranslationDTO.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Service\\DTO\\CharacterTranslationDTO.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Impl\\Service\\DTO\\CharacterTranslationDTO.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Service\\DTO\\CharacterTranslationDTO.cs",
+              "RelativeToolTip": "Assets\\Script\\Impl\\Service\\DTO\\CharacterTranslationDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:35:18.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
               "Title": "IventoryManager.cs",
               "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\IventoryManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Manager\\IventoryManager.cs",
@@ -244,11 +606,11 @@
               "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Manager\\IventoryManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:40:44.936Z"
+              "WhenOpened": "2024-11-18T01:31:50.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 47,
               "Title": "ItemManager.cs",
               "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\ItemManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Manager\\ItemManager.cs",
@@ -256,212 +618,211 @@
               "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Manager\\ItemManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:40:44.2Z"
+              "WhenOpened": "2024-11-18T01:31:46.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DIDelegages.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DIDelegages.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\DIDelegages.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DIDelegages.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\DIDelegages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 38,
+              "Title": "MountLocation.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\MountLocation.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\MountLocation.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\MountLocation.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\MountLocation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:29:07.813Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SetterInjection.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\SetterInjection.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\SetterInjection.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\SetterInjection.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\SetterInjection.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:12:36.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IDIContext.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\IDIContext.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\IDIContext.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\IDIContext.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\IDIContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T03:09:11.761Z"
+              "WhenOpened": "2024-11-18T01:28:05.372Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "Scope.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Scope.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Scope.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Scope.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Scope.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAEAAAAAAAAAA==",
+              "Title": "RotateCtl.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\RotateCtl.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\RotateCtl.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\RotateCtl.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\RotateCtl.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:34:18.346Z"
+              "WhenOpened": "2024-11-18T01:26:55.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AbstractBinding.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\AbstractBinding.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\AbstractBinding.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\AbstractBinding.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\AbstractBinding.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADgvxIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 46,
+              "Title": "PlayerManager.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\PlayerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Manager\\PlayerManager.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\PlayerManager.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Manager\\PlayerManager.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:22:20.029Z"
+              "WhenOpened": "2024-11-18T01:08:57.021Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Manager\\GameManager.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Manager\\GameManager.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAADwvz0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 31,
+              "Title": "GlobalPhysicSettging.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\GlobalPhysicSettging.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Impl\\GlobalPhysicSettging.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\GlobalPhysicSettging.cs",
+              "RelativeToolTip": "Assets\\Script\\Impl\\GlobalPhysicSettging.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:20:57.376Z"
+              "WhenOpened": "2024-11-18T00:43:47.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AbstractInjection.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\AbstractInjection.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\AbstractInjection.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\AbstractInjection.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\AbstractInjection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 48,
+              "Title": "IGlobalPhysicSetting.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\IGlobalPhysicSetting.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Api\\IGlobalPhysicSetting.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\IGlobalPhysicSetting.cs",
+              "RelativeToolTip": "Assets\\Script\\Api\\IGlobalPhysicSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:16:39.464Z"
+              "WhenOpened": "2024-11-18T00:41:23.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IInjection.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\IInjection.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\IInjection.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\IInjection.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\IInjection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 35,
+              "Title": "MoveCtl.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\MoveCtl.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\MoveCtl.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\MoveCtl.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\MoveCtl.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAmwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:16:23.527Z"
+              "WhenOpened": "2024-11-18T00:40:31.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "InjectedBinding.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\InjectedBinding.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\InjectedBinding.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\InjectedBinding.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\InjectedBinding.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBgAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "PlayerControllService.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Service\\PlayerControllService.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Impl\\Service\\PlayerControllService.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Service\\PlayerControllService.cs",
+              "RelativeToolTip": "Assets\\Script\\Impl\\Service\\PlayerControllService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAqwCYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T02:13:07.657Z"
+              "WhenOpened": "2024-11-18T00:30:37.062Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReflectionUtil.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\ReflectionUtil.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\ReflectionUtil.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\ReflectionUtil.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\ReflectionUtil.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 29,
+              "Title": "IPlayerControllService.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Service\\IPlayerControllService.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Api\\Service\\IPlayerControllService.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Service\\IPlayerControllService.cs",
+              "RelativeToolTip": "Assets\\Script\\Api\\Service\\IPlayerControllService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:35:08.779Z"
+              "WhenOpened": "2024-11-18T00:29:21.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RealityPiece.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Domain\\Item\\RealityPiece.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Domain\\Item\\RealityPiece.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Domain\\Item\\RealityPiece.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Domain\\Item\\RealityPiece.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 41,
+              "Title": "FollowingCamera3P.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\FollowingCamera3P.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\FollowingCamera3P.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\FollowingCamera3P.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\FollowingCamera3P.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T20:17:40.601Z"
+              "WhenOpened": "2024-11-17T21:35:46.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RealityPieceModel.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Domain\\Item\\RealityPieceModel.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Domain\\Item\\RealityPieceModel.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Domain\\Item\\RealityPieceModel.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Domain\\Item\\RealityPieceModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 43,
+              "Title": "ConfigurationManager.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\ConfigurationManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Service\\Manager\\ConfigurationManager.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Service\\Manager\\ConfigurationManager.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Service\\Manager\\ConfigurationManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T20:17:37.621Z"
+              "WhenOpened": "2024-11-17T21:32:46.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Bindings.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\Bindings.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\Bindings.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\Bindings.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\Bindings.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAADgvxMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 49,
+              "Title": "CABuff.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\CABuff.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\CABuff.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\CABuff.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\CABuff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T20:09:32.227Z"
+              "WhenOpened": "2024-11-17T21:32:44.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MultipleInjection.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\MultipleInjection.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\MultipleInjection.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\MultipleInjection.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\MultipleInjection.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwBYAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 44,
+              "Title": "GameConstants.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\GameConstants.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\GameConstants.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\GameConstants.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\GameConstants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T20:03:35.897Z"
+              "WhenOpened": "2024-11-17T21:32:43.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IBinding.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\IBinding.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\IBinding.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\IBinding.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\IBinding.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowAgAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 33,
+              "Title": "CharacterLocationData.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Data\\CharacterLocationData.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Impl\\Data\\CharacterLocationData.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Data\\CharacterLocationData.cs",
+              "RelativeToolTip": "Assets\\Script\\Impl\\Data\\CharacterLocationData.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAD4vxsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T20:03:35.138Z"
+              "WhenOpened": "2024-11-17T21:31:21.919Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DefaultDIContext.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAAALEAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 37,
+              "Title": "GroundedCtl.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\GroundedCtl.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\GroundedCtl.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\GroundedCtl.cs",
+              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\GroundedCtl.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T20:02:39.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T21:30:41.455Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BindingToContructor.cs",
-              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\BindingToContructor.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\BindingToContructor.cs",
-              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\BindingToContructor.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\BindingToContructor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 32,
+              "Title": "PlayerInputData.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Data\\PlayerInputData.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Impl\\Data\\PlayerInputData.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Impl\\Data\\PlayerInputData.cs",
+              "RelativeToolTip": "Assets\\Script\\Impl\\Data\\PlayerInputData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T20:02:01.109Z"
+              "WhenOpened": "2024-11-17T21:26:30.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IPlayerInputData.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Data\\IPlayerInputData.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Api\\Data\\IPlayerInputData.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Data\\IPlayerInputData.cs",
+              "RelativeToolTip": "Assets\\Script\\Api\\Data\\IPlayerInputData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:23:15.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ICharacterLocationData.cs",
+              "DocumentMoniker": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Data\\ICharacterLocationData.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Api\\Data\\ICharacterLocationData.cs",
+              "ToolTip": "F:\\dev\\data\\Unity\\learn-u3d\\src\\Assets\\Script\\Api\\Data\\ICharacterLocationData.cs",
+              "RelativeToolTip": "Assets\\Script\\Api\\Data\\ICharacterLocationData.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvw4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:22:50.404Z"
             }
           ]
         }

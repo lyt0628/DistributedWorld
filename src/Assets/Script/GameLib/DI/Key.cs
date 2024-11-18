@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 
 namespace GameLib.DI
@@ -11,13 +12,15 @@ namespace GameLib.DI
         {
             _name = name; 
             _type = type;
+            _typeKey = new TypeKey(type);
         }
 
         private readonly Type _type;
-        private readonly object _name;
-
+        private readonly string _name;
+        private readonly TypeKey _typeKey;
+        public TypeKey KeyType { get { return _typeKey; } } 
         public Type Type { get { return _type; }  }
-        public object Name { get { return _name; } }
+        public string Name { get { return _name; } }
 
         public override bool Equals(object obj)
         {
@@ -34,13 +37,27 @@ namespace GameLib.DI
             return hash;
         }
 
-        private static readonly IDictionary<Type, Key> keyCache = new Dictionary<Type, Key>();
+        private static readonly ISet<Key> keyCache = new HashSet<Key>();
         public static Key Get(Type type)
         {
-            if (keyCache.ContainsKey(type)) {  return keyCache[type]; }
             var k = new Key(ReflectionUtil.GenerateNameOf(type), type);
-            keyCache.Add(type, k);
+            return Resolve(k);
+        }
+
+        private static Key Resolve(Key k)
+        {
+            if (keyCache.Contains(k))
+            {
+                return keyCache.Where(key => key.Equals(k)).First();
+            }
+            keyCache.Add(k);
             return k;
+        }
+
+        public static Key Get(string name, Type type)
+        {
+             var k = new Key(name, type);
+            return Resolve(k);
         }
     }
 }

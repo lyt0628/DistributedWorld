@@ -7,7 +7,7 @@ using UnityEngine.Assertions;
 
 public class FollowingCamera3P : MonoBehaviour
 {
-    [SerializeField]public Transform m_Target;
+    [SerializeField] public Transform m_Target;
 
     /*
      * The distance between camera and target object
@@ -28,6 +28,12 @@ public class FollowingCamera3P : MonoBehaviour
      */
     public float rotateDelay = 5f;
 
+    private void Awake()
+    {
+        var ctx = GameManager.Instance.GlobalDIContext;
+        ctx.BindInstance("MainCamera",GetType(), this);
+
+    }
 
     #region [[Private Fields]]
     /*
@@ -48,7 +54,6 @@ public class FollowingCamera3P : MonoBehaviour
 
     void Start()
     {
-
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -59,7 +64,6 @@ public class FollowingCamera3P : MonoBehaviour
         _m_Offset = _m_InitOffset;
         _m_RotateX = m_InitAngle;
     }
-
 
     // UpdateIfNeed is called once per frame
     void LateUpdate()
@@ -72,7 +76,6 @@ public class FollowingCamera3P : MonoBehaviour
         // Clamp rotation bound 
         _m_RotateY = MathUtil.Clamp(_m_RotateY, -180f, 180f);
         _m_RotateX = MathUtil.Clamp(_m_RotateX, -180f, 180f);
-;
 
         float hor = Input.GetAxis("Mouse X");
         float ver = Input.GetAxis("Mouse Y");
