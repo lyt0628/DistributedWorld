@@ -27,6 +27,7 @@ public class MoveCtl :  IController
         var animator = controlable.CGameObject.GetComponent<Animator>();
         var transform = controlable.CGameObject.transform;
         var velocity = controlable.CVelocity;
+
         var horizontalDisp = velocity * Time.deltaTime;
         var verticalDisp = 0f;
         var position = controlable.CGameObject.transform.position;
@@ -65,7 +66,6 @@ public class MoveCtl :  IController
             verticalDisp = 0f;
             jumping = false;
         }
-
 
 
         if (capsuleCollider != null) {

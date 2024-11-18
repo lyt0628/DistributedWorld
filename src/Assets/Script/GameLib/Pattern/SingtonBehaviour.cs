@@ -17,7 +17,7 @@ namespace GameLib
                     _instance = FindObjectOfType(typeof(T)) as T;
                     if (_instance == null)
                     {
-                        GameObject obj = new GameObject
+                        GameObject obj = new()
                         {
                             hideFlags = HideFlags.HideAndDontSave
                         };
@@ -30,12 +30,14 @@ namespace GameLib
 
         public virtual void Awake()
         {
-            DontDestroyOnLoad(this.gameObject);
+            DontDestroyOnLoad(gameObject);
             if (_instance == null)
             {
                 _instance = this as T;
             }
-            else
+            else if(_instance != this)
+                // I cannot directly destroy it, 
+                // Sometimes, The Static Instance is called before Awake
             {
                 Destroy(gameObject);
             }

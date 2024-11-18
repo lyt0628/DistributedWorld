@@ -52,8 +52,6 @@ namespace QS
 
         public virtual void Start()
         {
-            var playerManager = GameManager.Instance.GetManager<IPlayerManager>();
-            playerManager?.RegisterCharacter(gameObject);
 
         }
 
@@ -77,7 +75,7 @@ namespace QS
             CombatData = AfterInjured.Invoke(combatData);
 
             this.Messager.Boardcast("HP", new SingleArgMessage<float>(CombatData.Hp));
-            Debug.LogFormat("Hp Get {0} is {1}", name, CombatData.Hp);
+            Debug.LogFormat("Hp New {0} is {1}", name, CombatData.Hp);
         }
 
         public void AcceptBuff(IBuff buff)

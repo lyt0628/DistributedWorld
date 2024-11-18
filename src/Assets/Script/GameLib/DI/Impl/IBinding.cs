@@ -9,6 +9,7 @@ namespace GameLib.DI
         public Key Target { get; }
         public ISet<Key> Dependencies { get; }
         public ScopeFlag Scope { get; set; }
+        public int Priority { get; set; }
 
         public bool IsSington { get; }
         public bool IsPrototype { get; }

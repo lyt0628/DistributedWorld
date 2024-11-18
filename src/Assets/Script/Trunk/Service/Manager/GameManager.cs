@@ -1,24 +1,19 @@
 using GameLib;
-using GameLib.View;
-using GameLib.Util.Raycast;
-using QS;
 using QS.API;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
-using GameLib.Uitl.RayCast;
 
 using GameLib.DI;
+using GameLib.Impl;
+using QS.Impl;
 
-[Scope(Value =ScopeFlag.Sington)]
 public class GameManager : SingtonBehaviour<GameManager>
 {
-
     private readonly List<IGameManager> _managers = new();
     private readonly IMessager _globalMessager = new Messager();
     public IMessager GlobalMessager { get { return _globalMessager; } }
+    private readonly IDIContext _globalDIContext = IDIContext.New();
+    public IDIContext GlobalDIContext { get { return _globalDIContext; } }
 
     public override void Awake()
     {
@@ -30,11 +25,19 @@ public class GameManager : SingtonBehaviour<GameManager>
 
         _managers.ForEach(manager => { manager.Startup(); });
 
-        var ctx = IDIContext.Get();
-        ctx.Bind(typeof(A));
-        ctx.Bind(typeof(B));
-        var b = ctx.GetInstance<B>(typeof(B));
-        b.MyA.SayHello();
+        GlobalDIContext.Bind(typeof(A))
+                        .Bind(typeof(B))
+                        // Unity Service
+                        .BindInstance(Camera.main)
+                        // Gloal Setting
+                        .Bind(typeof(GlobalPhysicSetting))
+                        // Data Layer
+                        .Bind(typeof(CharacterLocationData))
+                        .Bind(typeof(PlayerInputData))
+                        // Service Layer
+                        .Bind(typeof(PlayerControllService))
+                        .Bind(typeof(CharacterTranslationDTO));
+        
     }
 
     void Update()

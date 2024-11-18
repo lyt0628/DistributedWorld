@@ -5,17 +5,15 @@ using UnityEngine;
 
 
 /*
- * Get input from end device, and convert it into states of game of character
+ * New input from end device, and convert it into states of game of character
  */
 public class InputController : IController
 {
-    private float speedFactor = 1f;
     public void Control(IControllable controlable)
     {
         var camera = controlable.CCamera.transform;
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
-
 
         Vector3 baseRight = camera.right;
 
