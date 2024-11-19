@@ -1,6 +1,6 @@
 
 
-namespace QS.API
+namespace QS.API.Data
 {
 
     interface IPlayerInputData

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace QS.API
+namespace QS.API.Data
 {
-    public interface ICharacterLocationData 
+    public interface IPlayerLocationData 
     {
         Vector3 Location { get; }
         Quaternion Rotation { get; }

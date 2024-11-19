@@ -1,6 +1,7 @@
 using GameLib.DI;
 using GameLib.Impl;
 using QS.API;
+using QS.API.Data;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,25 +36,26 @@ public class Character : MonoBehaviour, IControllable
     [Injected]
     IPlayerInputData PlayerInput {  get; set; }
 
+    [Injected]
+    IPlayerCharacterData PlayerCharacter { get; set; }
+
     void Awake()
     {
         var ctx = GameManager.Instance.GlobalDIContext;
 
-        ctx.BindInstance("Player", gameObject)
-           .BindInstance("PlayerTransform",transform)
-           .BindInstance(this);
-
-        var pm = GameManager.Instance.GetManager<IPlayerManager>();
-        pm.RegisterCharacter(gameObject);
-
+        _ = ctx.BindInstance("Player", gameObject)
+           .BindInstance("PlayerTransform", transform);
+           //.BindInstance(this);
     }
+
 
 
     // Start is called before the first frame update
     void Start()
     {
+        GameManager.Instance.GlobalDIContext.Inject(this);
 
-        GameManager.Instance.GlobalDIContext.GetInstance<Character>(GetType());
+        PlayerCharacter.ActivedCharacter = gameObject;
         CCamera = Camera.main;
         CVelocity = Vector3.zero;
         CGameObject = gameObject;

@@ -3,11 +3,12 @@
 
 using GameLib.DI;
 using QS.API;
+using QS.API.Data;
 using UnityEngine;
 
 namespace GameLib.Impl
 {
-    class CharacterLocationData : ICharacterLocationData
+    class PlayerLocationData : IPlayerLocationData
     {
 
         [Injected(Name ="Player")]

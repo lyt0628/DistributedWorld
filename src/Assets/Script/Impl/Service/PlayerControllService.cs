@@ -2,6 +2,7 @@ using GameLib.DI;
 using GameLib.Uitl.RayCast;
 using GameLib.Util.Raycast;
 using QS.API;
+using QS.API.Data;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,7 @@ public class PlayerControllService : IPlayerControllService
     IGlobalPhysicSetting globalPhysicSetting;
 
     [Injected]
-    ICharacterLocationData characterLocationData;
+    IPlayerLocationData characterLocationData;
 
     [Injected]
     IPlayerInputData playerInputData;
