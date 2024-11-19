@@ -21,7 +21,8 @@ namespace GameLib.DI
         {
             return (instance) =>
             {
-                var value = lookup(typeKey).GenBuilder(lookup)();
+                var value = lookup(typeKey)
+                            .GenBuilder(lookup)();
                 setter(instance, value);
             };
         }

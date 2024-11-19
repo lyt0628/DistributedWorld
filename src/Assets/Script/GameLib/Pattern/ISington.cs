@@ -7,7 +7,7 @@ namespace GameLib
 {
     public interface ISington<T>
     {
-        public static T Instance{ get;}
+        public static  T Instance{ get;}
     }
 
     public class Sington<T> : ISington<T> where T: new(){

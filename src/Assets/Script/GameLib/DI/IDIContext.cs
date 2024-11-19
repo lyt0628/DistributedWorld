@@ -22,5 +22,15 @@ namespace GameLib.DI
 
         T GetInstance<T>(Type type);
         T GetInstance<T>(string name, Type type);
+
+
+        /// <summary>
+        /// Inject into target, but not bind it to DIContext.
+        /// All MonoBehaviour should get injected, using this method.
+        /// </summary>
+        /// <typeparam name="T">Type of target</typeparam>
+        /// <param name="target">object you want get injected</param>
+        /// <returns></returns>
+        IDIContext Inject(object target);
     }
 }

@@ -11,7 +11,7 @@ namespace QS.API
     /// 
     /// 玩家外观 调用 玩家控制器服务 来获取 计算后的 玩家 位移信息.
     /// 
-    /// <seealso cref="QS.API.ICharacterLocationData"/>
+    /// <seealso cref="QS.API.IPlayerLocationData"/>
     /// <seealso cref="QS.API.IPlayerInputData"/>
     /// </summary>
     public interface IPlayerControllService

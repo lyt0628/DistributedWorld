@@ -6,18 +6,39 @@ using UnityEngine;
 using GameLib.DI;
 using GameLib.Impl;
 using QS.Impl;
+using QS.Impl.Data;
 
 public class GameManager : SingtonBehaviour<GameManager>
 {
+    public IMessager GlobalMessager { get { return _globalMessager; } }
+    public IDIContext GlobalDIContext { get { return _globalDIContext; } }
+
     private readonly List<IGameManager> _managers = new();
     private readonly IMessager _globalMessager = new Messager();
-    public IMessager GlobalMessager { get { return _globalMessager; } }
     private readonly IDIContext _globalDIContext = IDIContext.New();
-    public IDIContext GlobalDIContext { get { return _globalDIContext; } }
+    [Injected]
+    private readonly ILifecycleProivder lifecycle;
 
     public override void Awake()
     {
         base.Awake();
+        GlobalDIContext.BindInstance(DINames.SINGLE_GAME_MANAGER,this)
+                        // Unity Service
+                        .BindInstance(Camera.main)
+                        // Base Component
+                        .BindInstance(LifecycleProvider.Instance)
+                        // Gloal Setting
+                        .Bind(typeof(GlobalPhysicSetting))
+                        // Data Layer
+                        .Bind(typeof(PlayerLocationData))
+                        .Bind(typeof(PlayerInputData))
+                        .Bind(typeof(PlayerCharacterData))
+                        // Service Layer
+                        .Bind(typeof(PlayerControllService))
+                        .Bind(typeof(CharacterTranslationDTO));
+
+        GlobalDIContext.Inject(this);
+
         _managers.Add(new PlayerManager());
         _managers.Add(new ItemManager());
         //_managers.Add(new InventoryManager());
@@ -25,21 +46,14 @@ public class GameManager : SingtonBehaviour<GameManager>
 
         _managers.ForEach(manager => { manager.Startup(); });
 
-        GlobalDIContext.Bind(typeof(A))
-                        .Bind(typeof(B))
-                        // Unity Service
-                        .BindInstance(Camera.main)
-                        // Gloal Setting
-                        .Bind(typeof(GlobalPhysicSetting))
-                        // Data Layer
-                        .Bind(typeof(CharacterLocationData))
-                        .Bind(typeof(PlayerInputData))
-                        // Service Layer
-                        .Bind(typeof(PlayerControllService))
-                        .Bind(typeof(CharacterTranslationDTO));
-        
-    }
 
+
+        lifecycle.Request(Lifecycles.Update, () =>
+        {
+            _managers.ForEach(manager => { manager.Update(); });
+        });
+    }
+ 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -47,13 +61,13 @@ public class GameManager : SingtonBehaviour<GameManager>
             Application.Quit();
             Debug.Log("Quit");
         }
-        _managers.ForEach(manager => { manager.Update(); });
     }
 
+    // 什么时候会使用 SPI,问题是什么时候不能使用 DI
+    // 在实例绑定时, 实例 可能运行时改变的话 不能使用DI, 因为 DI不可抢占
     public T GetManager<T>()
     {
         return (T)_managers.Find(manager => manager is T );
-
     }
 
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using NUnit.Framework;
+using UnityEditor.TestTools;
 using UnityEngine.TestTools;
 
 
@@ -15,8 +16,12 @@ namespace GameLib.DI.Test
         [Injected]
         public A a;
     }
+    class C {
+        [Injected]
+        public A a;
+    }
 
-    interface IAnim{}
+    interface IAnim {}
 
     class Cat : IAnim { }
     class CatHolder
@@ -82,7 +87,7 @@ namespace GameLib.DI.Test
             var holder = ctx.GetInstance<DogHolder>(typeof(DogHolder));
             Assert.IsNotNull(holder);
             Assert.IsNotNull(holder.dog);
-            Assert.IsTrue(typeof(Dog)== holder.dog.GetType());
+            Assert.IsTrue(typeof(Dog) == holder.dog.GetType());
         }
 
         [Test]
@@ -95,14 +100,14 @@ namespace GameLib.DI.Test
 
             var kingdom = ctx.GetInstance<Kingdom>(typeof(Kingdom));
             Assert.IsNotNull(kingdom);
-            Assert.IsTrue(typeof(RedKing)== kingdom.king.GetType());
+            Assert.IsTrue(typeof(RedKing) == kingdom.king.GetType());
         }
 
 
         class Head
         {
             [Injected]
-           public Tail tail;
+            public Tail tail;
         }
         class Tail
         {
@@ -114,15 +119,29 @@ namespace GameLib.DI.Test
         public void Circur_Dependencies_Can_Be_Sloved()
         {
             var ctx = IDIContext.New();
-                ctx.Bind(typeof(Head))
-                .Bind(typeof(Tail));
-            
+            ctx.Bind(typeof(Head))
+            .Bind(typeof(Tail));
+
             var head = ctx.GetInstance<Head>(typeof(Head));
             Assert.IsNotNull(head);
             Assert.IsNotNull(head.tail);
             var tail = ctx.GetInstance<Tail>(typeof(Tail));
-            Assert.IsNotNull (tail.head);
+            Assert.IsNotNull(tail.head);
 
         }
-    }
+
+        [Test]
+        public void SetterInjection_Can_Be_Scoped()
+        {
+            var ctx = IDIContext.New();
+            ctx.Bind(typeof(A))
+                .Bind(typeof(B))
+                .Bind(typeof(C));
+            var b = ctx.GetInstance<B>(typeof(B));
+            var c = ctx.GetInstance<C>(typeof(C));
+            Assert.AreEqual(b.a, c.a);
+        }
+             
+
+        }
 }

@@ -8,7 +8,6 @@ namespace GameLib {
     {
       
         private Dictionary<string, Action<IMessage>> m_broker = new();
-
        
         public void AddListener(string type, Action<IMessage> handler)
         {

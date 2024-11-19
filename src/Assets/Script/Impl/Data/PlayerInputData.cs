@@ -1,5 +1,5 @@
 
-using QS.API;
+using QS.API.Data;
 using UnityEngine;
 
 namespace QS.Impl

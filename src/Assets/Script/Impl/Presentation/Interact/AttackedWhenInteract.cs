@@ -1,12 +1,24 @@
 
 
+using GameLib.DI;
 using QS.API;
+using QS.API.Data;
 using UnityEngine;
 
 namespace QS
 {
     class AttackedWhenInteract : MonoBehaviour, IInteractable, IAttackable
     {
+        [Injected]
+        IPlayerCharacterData PlayerCharacter { get; set; }
+        
+        void Start()
+        {
+            var ctx = GameManager.Instance.GlobalDIContext;
+            ctx.Inject(this);
+        }
+        
+
         public IAttack Attack()
         {
             return new CAttack()
@@ -17,15 +29,8 @@ namespace QS
 
         public void Interact()
         {
-            Debug.Log(typeof(IPlayerManager).IsAssignableFrom(typeof(PlayerManager)));
-           var playerManaer =  GameManager.Instance.GetManager<IPlayerManager>();
-            if (playerManaer == null)
-            {
-                Debug.LogWarning("Player Manager is null");
-                return;
-            }
 
-            var character = playerManaer.GetActivedCharacter();
+            var character = PlayerCharacter.ActivedCharacter;
             if (character != null)
             {
                 var combator = character.GetComponent<CDefaultCombater>();
