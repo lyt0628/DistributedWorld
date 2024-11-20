@@ -1,19 +1,19 @@
-name: Build Project
+name: Build For Windows
 
 on:
     push:
-        branches:
-            - main
-            - next
-            - feat-github_action
+      branches: [main, next, pu*, feat*]
+    pull_request:
+      branches: [main, next, pu*, feat*]
  
             
 env: 
-  SRC_DIR: src
-  TEST_DIR: test
+  SRC_DIR: src # Souce Dir
+  TEST_DIR: test # Another temp dir for test
 
 jobs:
     build:
+        name: Build QS in Windows
         runs-on: windows-latest
         environment: Unity
 
@@ -34,7 +34,7 @@ jobs:
               restore-keys: |
                 Library-
 
-          # Test
+          # Run Test In Another Dir For A Clean Workspace
           - run: robocopy ${{env.SRC_DIR}} ${{env.TEST_DIR}} /E
             continue-on-error: true
 
@@ -45,9 +45,10 @@ jobs:
               UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
               UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
             with:
-              githubToken: ${{ secrets. GITHUB_TOKEN}}
+              githubToken: ${{ secrets.GITHUB_TOKEN}}
               customImage: 'unityci/editor:windows-2022.3.42f1-base-3.1.0'
-              projectPath: ${{ env.TEST_DIR}}
+              projectPath: ${{ env.TEST_DIR }}
+         # For A Clean Git WorkSpace
          # - run: rd -Recurse -Force ${{env.TEST_DIR}}
           - run: git config --global user.email "lyt.0628@qq.com"
           - run: git config --global user.name "lyt0628"
@@ -69,5 +70,5 @@ jobs:
           # Output
           - uses: actions/upload-artifact@v3
             with:
-              name: Build
-              path: build
+              name: Build_Windows
+              path: build_Windows
