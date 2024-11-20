@@ -1,0 +1,90 @@
+name: Build For Linux
+
+on:
+    push:
+      branches: [main, next, pu*, feat*]
+    pull_request:
+      branches: [main, next, pu*, feat*]
+
+env: 
+  SRC_DIR: src # Souce Dir
+
+jobs:
+    test:
+        name: Run TestRunner
+        runs-on: ubuntu-latest
+        steps:
+        # Check
+          - name: Checkout project
+            uses: actions/checkout@v4
+            with:
+                lfs: true
+
+          - name: Cache
+            uses: actions/cache@v3
+            with:
+                path: ${{env.SRC_DIR}}/Library
+                key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+                restore-keys: |
+                    Library-
+      # Test
+          - name: Run tests
+            id: testLinux
+            uses: game-ci/unity-test-runner@v4
+            env:
+                UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+                UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+                UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+            with:
+                githubToken: ${{ secrets.GITHUB_TOKEN }}
+                projectPath: ${{ env.SRC_DIR }}
+                unityVersion: "2022.3.45f1"
+            # Output
+          - name : Upload Test Results
+            uses: actions/upload-artifact@v3
+            with:
+                name: Linux Test Result
+                path: ${{ steps.testLinux.outputs.artifactsPath }}
+
+          - name: Upload Test Coverage Results
+            uses: actions/upload-artifact@v3
+            if: always()
+            with:
+                name: Coverage results
+                path: ${{ steps.testLinux.outputs.coveragePath }}
+
+    build:
+        name: Build my project ✨
+        runs-on: ubuntu-latest
+        steps:
+            # Checkout
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                lfs: true
+    
+            # Cache
+            - uses: actions/cache@v3
+              with:
+                path: ${{env.SRC_DIR}}/Library
+                key: Library-QS-Linux 
+                restore-keys: |
+                    Library-QS-
+                    Library-
+    
+            # Build
+            - name: Build project
+              uses: game-ci/unity-builder@v4
+              env:
+                UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+                UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+                UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+              with:
+                targetPlatform: StandaloneLinux64
+                allowDirtyBuild: true
+    
+            # Output
+            - uses: actions/upload-artifact@v3
+              with:
+                name: Build
+                path: Build_Linux
