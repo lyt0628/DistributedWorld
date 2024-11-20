@@ -10,7 +10,7 @@ env:
   SRC_DIR: src # Souce Dir
 
 jobs:
-    test:
+    StandaloneLinux64_TestRunner_Test:
         name: StandaloneLinux64_TestRunner_Test
         environment: Unity
         runs-on: ubuntu-latest
@@ -55,7 +55,7 @@ jobs:
                 name: Coverage results
                 path: ${{ steps.StandaloneLinux64_Test.outputs.coveragePath }}
 
-    build:
+    StandaloneLinux64_Build:
         name: StandaloneLinux64_Build
         environment: Unity
         runs-on: ubuntu-latest

@@ -12,7 +12,7 @@ env:
   TEST_DIR: test # Another temp dir for test
 
 jobs:
-    build:
+    StandaloneWindows_Build:
         name: StandaloneWindows_Build
         runs-on: windows-latest
         environment: Unity
