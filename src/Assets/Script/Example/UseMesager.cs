@@ -12,8 +12,8 @@
 //        Messager.Instance.AddListener("test", DoHandle);
 //    }
 
-//    // Update is called once per frame
-//    void Update()
+//    // UpdateIfNeed is called once per frame
+//    void UpdateIfNeed()
 //    {
         
 //        Messager.Instance.Boardcast("test",new SingleArgMessage<int>(3));

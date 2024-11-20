@@ -21,14 +21,13 @@ namespace GameLib.View
         void OnActive();
 
         /*
-         * Update Per Frame
+         * UpdateIfNeed Per Frame
          */
         void Show();
 
         void Preload();
         void OnUpdate();
         void OnModelChanged();
-
 
         /*
          * From Front to background
