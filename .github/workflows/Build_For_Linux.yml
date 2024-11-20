@@ -11,7 +11,7 @@ env:
 
 jobs:
     test:
-        name: Run TestRunner
+        name: StandaloneLinux64_TestRunner_Test
         environment: Unity
         runs-on: ubuntu-latest
         steps:
@@ -25,12 +25,13 @@ jobs:
             uses: actions/cache@v3
             with:
                 path: ${{env.SRC_DIR}}/Library
-                key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+                key: Library-Test-QS-StandaloneLinux64 # Library-<purpose>-<prihect name>-<target platform>
                 restore-keys: |
+                    Library-QS-
                     Library-
       # Test
           - name: Run tests
-            id: testLinux
+            id: StandaloneLinux64_Test
             uses: game-ci/unity-test-runner@v4
             env:
                 UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -45,17 +46,17 @@ jobs:
             uses: actions/upload-artifact@v3
             with:
                 name: Linux Test Result
-                path: ${{ steps.testLinux.outputs.artifactsPath }}
+                path: ${{ steps.StandaloneLinux64_Test.outputs.artifactsPath }}
 
           - name: Upload Test Coverage Results
             uses: actions/upload-artifact@v3
             if: always()
             with:
                 name: Coverage results
-                path: ${{ steps.testLinux.outputs.coveragePath }}
+                path: ${{ steps.StandaloneLinux64_Test.outputs.coveragePath }}
 
     build:
-        name: Build my project ✨
+        name: StandaloneLinux64_Build
         environment: Unity
         runs-on: ubuntu-latest
         steps:
@@ -69,9 +70,9 @@ jobs:
             - uses: actions/cache@v3
               with:
                 path: ${{env.SRC_DIR}}/Library
-                key: Library-QS-Linux 
+                key: Library-Build-QS-StandaloneLinux64
                 restore-keys: |
-                    Library-QS-
+                    Library-Build-QS-
                     Library-
     
             # Build
@@ -89,5 +90,5 @@ jobs:
             # Output
             - uses: actions/upload-artifact@v3
               with:
-                name: Build
-                path: Build_Linux
+                name: Build_StandaloneLinux64
+                path: build
