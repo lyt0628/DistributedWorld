@@ -12,6 +12,7 @@ env:
 jobs:
     test:
         name: Run TestRunner
+        environment: Unity
         runs-on: ubuntu-latest
         steps:
         # Check
@@ -37,8 +38,8 @@ jobs:
                 UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
             with:
                 githubToken: ${{ secrets.GITHUB_TOKEN }}
-                projectPath: ${{ env.SRC_DIR }}
-                unityVersion: "2022.3.45f1"
+                projectPath: ${{ env.SRC_DIR}}
+                # unityVersion: "2022.3.45f1" CI will lookup auto
             # Output
           - name : Upload Test Results
             uses: actions/upload-artifact@v3
@@ -55,6 +56,7 @@ jobs:
 
     build:
         name: Build my project ✨
+        environment: Unity
         runs-on: ubuntu-latest
         steps:
             # Checkout
@@ -82,6 +84,7 @@ jobs:
               with:
                 targetPlatform: StandaloneLinux64
                 allowDirtyBuild: true
+                projectPath: ${{ env.SRC_DIR}}
     
             # Output
             - uses: actions/upload-artifact@v3
