@@ -13,7 +13,7 @@ env:
 
 jobs:
     build:
-        name: Build QS in Windows
+        name: StandaloneWindows_Build
         runs-on: windows-latest
         environment: Unity
 
@@ -70,5 +70,5 @@ jobs:
           # Output
           - uses: actions/upload-artifact@v3
             with:
-              name: Build_Windows
-              path: build_Windows
+              name: Build_StandaloneWindows
+              path: build
