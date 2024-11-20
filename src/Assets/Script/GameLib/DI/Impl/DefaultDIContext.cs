@@ -144,7 +144,9 @@ namespace GameLib.DI
             var k = Key.Get(target.GetType());
             var binding = Bindings.ToInstance(k, target);
             binding = BindingWithInjection(k, binding);
-            GenInstance<object>(k, binding);
+            binding.Scope = ScopeFlag.Prototype; // All Directly Inject into a object see as  prototype, which was created by client
+            var _ = GenInstance<object>(k, binding);
+            
             return this;
         }
         #endregion

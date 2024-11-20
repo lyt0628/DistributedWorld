@@ -4,36 +4,48 @@
 using GameLib.DI;
 using QS.API;
 using QS.API.Data;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameLib.Impl
 {
+
     class PlayerLocationData : IPlayerLocationData
     {
 
-        [Injected(Name ="Player")]
-        GameObject player;
-        [Injected(Name ="PlayerTransform")]
-        Transform Transform { get; set; }
+        [Injected]
+        readonly IPlayerCharacterData playerCharacter;
 
-        [Injected(Name ="MainCamera")]
-        Camera MainCamera { get; set; }
+        public Vector3 Location => playerCharacter.ActivedCharacter.transform.position;
 
-        public Vector3 Location => Transform.position;
+        public Quaternion Rotation => playerCharacter.ActivedCharacter.transform.rotation;
 
-        public Quaternion Rotation => Transform.rotation;
+        public Vector3 Right {
+            get {
+               var r = Camera.main.transform.right;
+               r.y = 0;
+                return r.normalized;     
+            } 
+        }
 
-        public Vector3 Right => MainCamera.transform.right;
-
-        public Vector3 Forward => MainCamera.transform.forward;
-        public Vector3 Up => player.transform.up;
+        public Vector3 Forward
+        {
+            get
+            {
+               var f = Camera.main.transform.forward;
+                f.y = 0;
+                return f.normalized;
+            }
+        }
+        public Vector3 Up => playerCharacter.ActivedCharacter.transform.up;
 
         public CapsuleCollider Collider { get
             {
-                var collider = player.GetComponent<CapsuleCollider>();
+                var collider = playerCharacter.ActivedCharacter.GetComponent<CapsuleCollider>();
                 if(collider == null)
                 {
-                    throw new System.Exception("Can not get Collider from Player Character:" + player);
+                    throw new System.Exception("Can not get Collider from Player Character:" +
+                                               playerCharacter.ActivedCharacter);
                 }
                 return collider;
             } }

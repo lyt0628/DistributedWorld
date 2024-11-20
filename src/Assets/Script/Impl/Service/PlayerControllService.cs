@@ -3,6 +3,7 @@ using GameLib.Uitl.RayCast;
 using GameLib.Util.Raycast;
 using QS.API;
 using QS.API.Data;
+using QS.API.DataGateway;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,42 +19,69 @@ using UnityEngine;
 public class PlayerControllService : IPlayerControllService
 {
     [Injected]
-    IGlobalPhysicSetting globalPhysicSetting;
+    readonly InventoryItemActiveRepoWrapper<InventoryItemActiveRecord> InventoryItem;
 
     [Injected]
-    IPlayerLocationData characterLocationData;
+    readonly IGlobalPhysicSetting globalPhysicSetting;
 
     [Injected]
-    IPlayerInputData playerInputData;
+    readonly IPlayerLocationData playerLocation;
+
+    [Injected]
+    readonly IPlayerInputData playerInput;
+
 
     bool jumping = false;
     float vertSpeed = 0f;
+
+    Quaternion rotation = Quaternion.identity;
     public Quaternion GetRotation()
     {
-        var vert =  playerInputData.Vertical;
-        var hor = playerInputData.Horizontal;
-        //var targetRotation = Quaternion.LookRotation(moveVec);
 
-        //transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 
-        //5f * Time.deltaTime);
+        var item = InventoryItem.CreateT();
+        item.UUID = "666";
+        item.Name = "FFF";
+        item.Save();
 
-        return Quaternion.identity;
+        var vert =  playerInput.Vertical;
+        var hor = playerInput.Horizontal;
+        var baseRight = playerLocation.Right;
+        var baseForward = playerLocation.Forward;
+
+        var face = hor * baseRight + vert * baseForward;
+        if (face.magnitude == 0f) return rotation;
+        face.y = 0;
+        face = face.normalized;
+
+
+        // Do not delete this Comments
+        //
+        //Quaternion tmp = camera.rotation;
+        //camera.eulerAngles = new Vector3(0, camera.eulerAngles.y, 0);
+        //moveVec = camera.TransformDirection(moveVec);
+
+
+        rotation = Quaternion.LookRotation(face);
+
+        return Quaternion.Slerp(playerLocation.Rotation, 
+            rotation, 
+            5f * Time.deltaTime);
     }
 
     public ICharacterTranslationDTO GetTranslation()
     {
         var horizontalDisp = Vector3.zero;
         var vertDisp = 0f;
-        
 
-        var collider = characterLocationData.Collider;
-        var position = characterLocationData.Location;
-        var baseUp = characterLocationData.Up;
+        var collider = playerLocation.Collider;
+        var position = playerLocation.Location;
+        var baseUp = playerLocation.Up;
 
-        var hor = playerInputData.Horizontal;
-        var vert = playerInputData.Vertical;
-        var baseRight = characterLocationData.Right;
-        var baseForward = characterLocationData.Forward;
+        var hor = playerInput.Horizontal;
+        var vert = playerInput.Vertical;
+
+        var baseRight = playerLocation.Right;
+        var baseForward = playerLocation.Forward;
 
         var horizontalVelocity = hor * baseRight + vert * baseForward;
         horizontalVelocity.y = 0f;
@@ -108,7 +136,6 @@ public class PlayerControllService : IPlayerControllService
             vertDisp = 0f;
             jumping = false;
         }
-
 
         var translationDTO = new CharacterTranslationDTO
         {

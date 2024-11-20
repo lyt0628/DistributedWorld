@@ -4,6 +4,14 @@ using UnityEngine;
 
 namespace QS.API.Data
 {
+
+
+    /// <summary>
+    /// PlayerLocationData is a datasource to provide information 
+    /// about the location of character that player is used now.
+    /// All API in this Interface is the pure-function like, 
+    /// having nothing side-effect.
+    /// </summary>
     public interface IPlayerLocationData 
     {
         Vector3 Location { get; }
@@ -14,6 +22,7 @@ namespace QS.API.Data
 
         Vector3 Up { get; }
         CapsuleCollider Collider { get; }
+
 
     }
 }

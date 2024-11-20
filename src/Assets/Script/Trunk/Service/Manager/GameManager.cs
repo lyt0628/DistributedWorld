@@ -7,6 +7,7 @@ using GameLib.DI;
 using GameLib.Impl;
 using QS.Impl;
 using QS.Impl.Data;
+using QS.API.DataGateway;
 
 public class GameManager : SingtonBehaviour<GameManager>
 {
@@ -22,9 +23,8 @@ public class GameManager : SingtonBehaviour<GameManager>
     public override void Awake()
     {
         base.Awake();
-        GlobalDIContext.BindInstance(DINames.SINGLE_GAME_MANAGER,this)
+        GlobalDIContext.BindInstance(DINames.SINGLE_GAME_MANAGER, this)
                         // Unity Service
-                        .BindInstance(Camera.main)
                         // Base Component
                         .BindInstance(LifecycleProvider.Instance)
                         // Gloal Setting
@@ -33,19 +33,21 @@ public class GameManager : SingtonBehaviour<GameManager>
                         .Bind(typeof(PlayerLocationData))
                         .Bind(typeof(PlayerInputData))
                         .Bind(typeof(PlayerCharacterData))
+                        .Bind(typeof(InventoryData))
+                        // Gata Gateway Layer
+                        .BindInstance(
+                            new InventoryItemActiveRepoWrapper<InventoryItemActiveRecord>(
+                                new InventoryItemActiveRepo()))
                         // Service Layer
                         .Bind(typeof(PlayerControllService))
                         .Bind(typeof(CharacterTranslationDTO));
 
         GlobalDIContext.Inject(this);
 
-        _managers.Add(new PlayerManager());
-        _managers.Add(new ItemManager());
-        //_managers.Add(new InventoryManager());
         _managers.Add(new ViewManager());
 
-        _managers.ForEach(manager => { manager.Startup(); });
 
+        _managers.ForEach(manager => { manager.Startup(); });
 
 
         lifecycle.Request(Lifecycles.Update, () =>
