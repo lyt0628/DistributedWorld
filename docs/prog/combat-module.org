@@ -1,0 +1,28 @@
+
+
+#+BEGIN_SRC plantuml :file ../assets/combat-classes.png
+@startuml
+class Combat {
+
+}
+@enduml
+#+END_SRC
+
+#+RESULTS:
+[[file:../assets/combat-classes.png]]
+
+
+
+#+BEGIN_SRC plantuml :file ../assets/damage-computing.png
+@startuml
+start
+
+
+end
+@enduml
+#+END_SRC
+
+#+RESULTS:
+[[file:../assets/damage-computing.png]]
+
+

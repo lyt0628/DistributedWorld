@@ -40,7 +40,6 @@ namespace GameLib.View
         virtual public void Show()
         {
                 if (!Initialed ) { 
-                    //Widget = CreateWidget();
                     OnInit(); 
                 }
                 if (Widget) {
@@ -81,50 +80,45 @@ namespace GameLib.View
         /*
          * Called When Widget Show
          */
-        virtual public void OnActive()
-        {
-        }
+        virtual public void OnActive(){}
 
         /*
          * Called when widget hidden
          */
-         virtual public void OnDeActive()
-        {
-        }
+         virtual public void OnDeActive(){}
 
 
         virtual public void Preload()
         {
-        }
-
-
-        virtual public void OnRealse()
-        {
+            if (!IsLeaf) {
+                children.ForEach(x => x.Preload());
+            }
+            if (CreateWidget(out GameObject widget))
+            {
+                OnInit();
+            }
+            Widget = widget;
+            
         }
 
         virtual public void OnInit()
         {
-            if(!Initialed)
-            {
-               Load();
-            }
-            Initialed=true;
-        }
-        virtual protected void Load()
-        {
-                if (!IsLeaf) {
-                    children.FindAll(x => !x.Initialed)
-                    .ForEach(x => x.OnInit());
+               if (!IsLeaf) {
+                    children.ForEach(x => x.OnInit());
                 }
-                Widget = CreateWidget();
+
+               Initialed = true;
+        }
+        virtual public void OnRealse(){
+               if (!IsLeaf) {
+                    children.ForEach(x => x.OnRealse());
+                }
+
+               Initialed = false;
         }
 
-        virtual public void OnUpdate()
-        {
-        }
-        virtual public void OnModelChanged()
-        {
-        }
+        virtual public void OnUpdate(){}
+        virtual public void OnModelChanged(){}
 
 
         #endregion
@@ -138,10 +132,20 @@ namespace GameLib.View
         #endregion
 
         #region [[Template Method]]
-        virtual protected GameObject CreateWidget() {
+
+        /**
+         * Callback to create GameObject
+         * @Return: if true the view will be preloaded.
+         */
+        virtual protected bool CreateWidget(out GameObject widget) {
             throw new System.NotImplementedException();
         }
-        virtual protected void ReleaseWidget(GameObject widget) { }
+
+        virtual protected void ReleaseWidget(GameObject widget) {
+            if (widget != null) {
+                GameObject.Destroy(widget);
+            }
+        }
 
         virtual public IMessager GetMessager()
         {
