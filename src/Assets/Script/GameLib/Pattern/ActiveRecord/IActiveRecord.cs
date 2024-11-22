@@ -29,7 +29,6 @@ namespace GameLib.Pattern
         /// </summary>
         bool Destroy();
 
-        int ID {  get; }
 
         bool NewRecord { get; }
         bool Persisted { get; } 

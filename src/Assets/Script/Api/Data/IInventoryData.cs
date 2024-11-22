@@ -1,5 +1,7 @@
 
 
+using QS.API.Data.Model;
+
 namespace QS.API.Data
 {
     interface IInventoryData

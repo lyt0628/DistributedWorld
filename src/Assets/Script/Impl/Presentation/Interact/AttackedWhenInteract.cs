@@ -33,11 +33,8 @@ namespace QS
             var character = PlayerCharacter.ActivedCharacter;
             if (character != null)
             {
-                var combator = character.GetComponent<CDefaultCombater>();
-                if(combator != null)
-                {
-                    combator.Injured(Attack());
-                }
+                //var combator = character.GetComponent<CDefaultCombater>();
+                //combator?.Injured(Attack());
             }
             else
             {

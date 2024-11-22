@@ -2,6 +2,7 @@
 
 
 using QS.API.Data;
+using QS.API.Data.Model;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,7 @@ namespace QS.Impl.Data
         Dictionary<IItem, int> items = new ();
         public void Add(IItem item)
         {
-            Debug.Log("Add Item" + item.Name);
+            Debug.Log("Add SimpleItem" + item.Name);
             //if (items.ContainsKey(item)) {
             //    items[item] += 1;
             //}

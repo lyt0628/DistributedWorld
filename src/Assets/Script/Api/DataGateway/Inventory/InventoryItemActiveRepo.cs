@@ -4,6 +4,8 @@
 using GameLib.DI;
 using GameLib.Pattern;
 using QS.API.Data;
+using QS.API.Data.Model;
+using QS.Impl.Data.Model;
 using System;
 using System.Collections.Generic;
 
@@ -16,7 +18,8 @@ namespace QS.API.DataGateway
 
         public override InventoryItemActiveRecord Create()
         {
-            return new InventoryItemActiveRecord(new Item());
+            return new InventoryItemActiveRecord(new SimpleItem(
+                new SimpleItemBreed()));
         }
 
         public override void DestroyAll(Predicate<InventoryItemActiveRecord> condition)

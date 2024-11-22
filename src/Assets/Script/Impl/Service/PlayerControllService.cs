@@ -4,6 +4,8 @@ using GameLib.Util.Raycast;
 using QS.API;
 using QS.API.Data;
 using QS.API.DataGateway;
+using QS.Impl.Service;
+using QS.Impl.Service.DTO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,6 +31,10 @@ public class PlayerControllService : IPlayerControllService
 
     [Injected]
     readonly IPlayerInputData playerInput;
+
+
+    [Injected]
+    readonly CharacterTranslationDTO translationDTO;
 
 
     bool jumping = false;
@@ -137,13 +143,10 @@ public class PlayerControllService : IPlayerControllService
             jumping = false;
         }
 
-        var translationDTO = new CharacterTranslationDTO
-        {
-            Displacement = horizontalDisp + new Vector3(0, vertDisp, 0),
-            Speed = horizontalVelocity.magnitude,
-            Jumping = jumping
-        };
 
+        translationDTO.Displacement = horizontalDisp + new Vector3(0, vertDisp, 0);
+        translationDTO.Speed = horizontalVelocity.magnitude;
+        translationDTO.Jumping = jumping;
         return translationDTO;    
     }
 }

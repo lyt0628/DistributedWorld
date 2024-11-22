@@ -32,8 +32,6 @@ namespace QS
                                 attack.Matk - combatData.Res: 1;
 
             
-            //Debug.Log("Atn Damage is:"+ atnDamage);
-            //Debug.Log("Matk Damage is :" + matkDamage);
             ret.Hp = combatData.Hp - atnDamage - matkDamage ;
             return ret;
         }

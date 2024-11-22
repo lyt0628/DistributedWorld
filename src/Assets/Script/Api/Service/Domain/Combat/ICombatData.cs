@@ -9,6 +9,7 @@ namespace QS.API{
     /*
      * TODO: Make ICombatData all accessors   Pure Functions
      */
+
     public interface ICombatData : IClonable<ICombatData>
     {
         public float Hp {get;set;}
@@ -17,7 +18,7 @@ namespace QS.API{
         public float Def {get;set;}
         public float Matk { get;set;}
         public float Res { get;set;}
-
+        
     }
 
 }

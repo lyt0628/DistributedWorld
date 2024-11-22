@@ -11,7 +11,7 @@ using UnityEngine.UI;
 class HpView :  AbstractView
 {
     [Injected]
-    IPlayerCharacterData PlayerCharacter;
+    readonly IPlayerCharacterData PlayerCharacter;
 
     protected override bool CreateWidget(out GameObject widget)
     {
@@ -37,13 +37,13 @@ class HpView :  AbstractView
     private void OnActivaedCharacterChanged()
     {
         var character = PlayerCharacter.ActivedCharacter;
-        var combater = character.GetComponent<CDefaultCombater>();
-        if (combater == null) Debug.LogError("Combater Is Null");    
+        //var combater = character.GetComponent<CDefaultCombater>();
+        //if (combater == null) Debug.LogError("Combater Is Null");    
 
-        combater.Messager.AddListener("HP", msg =>
-        {
-           var msg0 = (SingleArgMessage<float>)msg;
-           Widget.GetComponent<Text>().text = "Hp:" + msg0.Value.ToString();
-        });
+        //combater.Messager.AddListener("HP", msg =>
+        //{
+        //   var msg0 = (SingleArgMessage<float>)msg;
+        //   Widget.GetComponent<Text>().text = "Hp:" + msg0.Value.ToString();
+        //});
     }
 }

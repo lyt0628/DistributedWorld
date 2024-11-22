@@ -8,7 +8,8 @@ namespace QS.API
 
     public interface IBuff : IClonable<IBuff>
     {
-        public EBuffStage GetAttackStage();
+        public BuffStages AttackStage { get; }
+
         public ICombatData BuffOnCombatData(ICombatData state);
         public IAttack BuffOnAttack(IAttack attack);
 

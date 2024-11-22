@@ -6,7 +6,6 @@ namespace GameLib.Pattern
     
    public abstract class AbstractActiveRecord : IActiveRecord
    {
-            public abstract int ID { get; }
             bool newRecord = true;
             public bool NewRecord { get { return newRecord; } }
             public abstract bool Persisted { get; protected set; }
