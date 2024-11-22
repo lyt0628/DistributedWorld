@@ -8,6 +8,8 @@ using GameLib.Impl;
 using QS.Impl;
 using QS.Impl.Data;
 using QS.API.DataGateway;
+using QS.Impl.Service;
+using QS.Impl.Service.DTO;
 
 public class GameManager : SingtonBehaviour<GameManager>
 {

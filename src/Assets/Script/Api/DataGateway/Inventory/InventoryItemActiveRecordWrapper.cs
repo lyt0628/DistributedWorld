@@ -15,7 +15,6 @@ namespace QS.API.DataGateway
         { 
             delegat = activeRecord;
         }
-        public override int ID => delegat.ID;
 
         public override bool Persisted { get => delegat.Persisted; protected set { return; } }
 

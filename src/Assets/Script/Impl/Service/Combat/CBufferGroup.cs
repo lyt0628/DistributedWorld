@@ -2,29 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using QS.API;
+using QS.API.Service.Domain;
 
 
-namespace QS
+namespace QS.Impl.Service.Domain
 {
-    using QS.API;
-
     public class CBuffGroup : AbstractBuff
     {
-        private List<IBuff> buffs = new List<IBuff> ();
+        private readonly ICollection<IBuff> buffs;
 
-        override public EBuffStage GetAttackStage()
+        public CBuffGroup(ICollection<IBuff> buffs) : base(null)
         {
-            return EBuffStage.None;
+            this.buffs = buffs;
         }
 
-        public override ICombatData BuffOnCombatData(ICombatData state)
-        {
-            return state;
-        }
-        public  override IAttack BuffOnAttack(IAttack attack)
-        {
-            return attack;
-        }
+        override public BuffStages AttackStage => BuffStages.None;
 
         public override void DoBuff(IBuffable buffable)
         {
@@ -32,7 +25,6 @@ namespace QS
             {
                 buff.DoBuff(buffable);
             }
-                
         }
     }
 }

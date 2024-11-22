@@ -4,6 +4,7 @@
 using GameLib.DI;
 using GameLib.Pattern;
 using QS.API.Data;
+using QS.API.Data.Model;
 
 namespace QS.API.DataGateway
 {
@@ -14,11 +15,11 @@ namespace QS.API.DataGateway
         readonly IInventoryData inventory;
 
         public IItem model;
-        public override int ID => throw new System.NotImplementedException();
 
         public override bool Persisted { get => throw new System.NotImplementedException(); protected set => throw new System.NotImplementedException(); }
         public string UUID { get =>model.UUID; set => model.UUID=value; }
         public string Name { get => model.Name; set => model.Name=value; }
+        public ItemType Type { get => model.Type; set => model.Type = value; }
 
         public InventoryItemActiveRecord(IItem item)
         {
