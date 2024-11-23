@@ -1,12 +1,18 @@
 
 
-using QS.API.Data.Model;
 
-namespace QS.API.Data
+using QS.Domain.Item;
+
+namespace QS.Api.Data
 {
-    interface IInventoryData
+
+    /// <summary>
+    /// The difinition for inventory of player.
+    /// </summary>
+    public interface IInventoryData
     {
         void Add(IItem item);
         void Remove(IItem item);
     }
-}   
+
+}

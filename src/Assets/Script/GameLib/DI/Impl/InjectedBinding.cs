@@ -1,6 +1,3 @@
-
-
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -13,11 +10,11 @@ namespace GameLib.DI
         private readonly IDictionary<Key, IBinding> depChain;
         public InjectedBinding(IBinding rawBinding,
                                IInjection injection,
-                               IDictionary<Key, IBinding> depChain) 
-            : base(rawBinding.Target, 
+                               IDictionary<Key, IBinding> depChain)
+            : base(rawBinding.Target,
                   rawBinding.Dependencies
                   .Union(injection.Dependencies)
-                  .ToHashSet(), 
+                  .ToHashSet(),
                   rawBinding.Scope)
         {
             this.injection = injection;

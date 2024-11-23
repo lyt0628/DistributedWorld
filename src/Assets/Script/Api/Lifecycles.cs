@@ -1,10 +1,11 @@
 
 
 
-namespace QS.API
+namespace QS.Api
 {
-     public enum Lifecycles{
-            Update,
-            LateUpdate
-     }
+    public enum Lifecycles
+    {
+        Update,
+        LateUpdate
+    }
 }

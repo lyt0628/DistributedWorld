@@ -1,10 +1,14 @@
 
 
-namespace QS.API.Data
+namespace QS.Api.Data
 {
 
-    interface IPlayerInputData
-    { 
+    /// <summary>
+    /// IPlaerInputData takes the responsibility for accepting direct input form
+    /// player, and provide them to other scripts.
+    /// </summary>
+    public interface IPlayerInputData
+    {
         float Horizontal { get; }
         float Vertical { get; }
     }

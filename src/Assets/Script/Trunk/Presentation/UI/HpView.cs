@@ -1,14 +1,12 @@
 
-using GameLib;
 using GameLib.DI;
+using GameLib.Pattern.Message;
 using GameLib.View;
-using QS;
-using QS.API;
-using QS.API.Data;
+using QS.Api.Data;
 using UnityEngine;
 using UnityEngine.UI;
 
-class HpView :  AbstractView
+class HpView : AbstractView
 {
     [Injected]
     readonly IPlayerCharacterData PlayerCharacter;
@@ -33,17 +31,17 @@ class HpView :  AbstractView
             .AddListenerForActivatedCharacterChanged(OnActivaedCharacterChanged);
     }
 
-    
+
     private void OnActivaedCharacterChanged()
     {
         var character = PlayerCharacter.ActivedCharacter;
-        //var combater = character.GetComponent<CDefaultCombater>();
-        //if (combater == null) Debug.LogError("Combater Is Null");    
+        var combater = character.GetComponent<CombatorBehaviour>();
+        if (combater == null) Debug.LogError("Combater Is Null");
 
-        //combater.Messager.AddListener("HP", msg =>
-        //{
-        //   var msg0 = (SingleArgMessage<float>)msg;
-        //   Widget.GetComponent<Text>().text = "Hp:" + msg0.Value.ToString();
-        //});
+        combater.Messager.AddListener("HP", msg =>
+        {
+            var msg0 = (SingleArgMessage<float>)msg;
+            Widget.GetComponent<Text>().text = "Hp:" + msg0.Value.ToString();
+        });
     }
 }

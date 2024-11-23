@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -27,12 +24,12 @@ public class MyAvatarManager : MonoBehaviour
         }
         var replacement = CloneSkinnedMesh(mesh);
         replacement.transform.parent = target.transform;
-        
+
     }
     private static GameObject CloneSkinnedMesh(SkinnedMeshRenderer mesh)
     {
-        
-        if ( mesh == null)
+
+        if (mesh == null)
         {
             return null;
         }

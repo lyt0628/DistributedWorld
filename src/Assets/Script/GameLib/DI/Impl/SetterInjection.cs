@@ -1,7 +1,3 @@
-
-
-using System;
-using System.Reflection;
 using System.Collections.Generic;
 
 namespace GameLib.DI
@@ -10,14 +6,14 @@ namespace GameLib.DI
     {
         private readonly SpecSetter setter;
         private readonly Key typeKey;
-        public SetterInjection(SpecSetter setter ,Key dependency) 
+        public SetterInjection(SpecSetter setter, Key dependency)
             : base(new HashSet<Key>() { dependency })
         {
             this.setter = setter;
             this.typeKey = dependency;
         }
 
-        public override Injector  GenInjector(BindingLookup lookup)
+        public override Injector GenInjector(BindingLookup lookup)
         {
             return (instance) =>
             {

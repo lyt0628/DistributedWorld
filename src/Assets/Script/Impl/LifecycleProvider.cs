@@ -2,25 +2,25 @@
 
 
 using GameLib;
-using QS.API;
+using QS.Api;
 using System;
-using UnityEngine;
 
 namespace QS.Impl
 {
-    class LifecycleProvider : SingtonBehaviour<LifecycleProvider>, ILifecycleProivder
+    public class LifecycleProvider : SingtonBehaviour<LifecycleProvider>, ILifecycleProivder
     {
-        private Action updateCallbacks = ()=> { };
-        private Action lateUPdateCallbacks = ()=> { };
+        private event Action UpdateCallbacks = () => { };
+        private event Action LateUPdateCallbacks = () => { };
 
         public bool Request(Lifecycles statge, Action callback)
         {
-            switch (statge) {
+            switch (statge)
+            {
                 case Lifecycles.Update:
-                    updateCallbacks += callback;
+                    UpdateCallbacks += callback;
                     break;
                 case Lifecycles.LateUpdate:
-                    lateUPdateCallbacks += callback;
+                    LateUPdateCallbacks += callback;
                     break;
                 default:
                     return false;
@@ -28,12 +28,13 @@ namespace QS.Impl
             return true;
         }
 
-        void Update() {
-            updateCallbacks.Invoke();
+        void Update()
+        {
+            UpdateCallbacks.Invoke();
         }
         void LateUpdate()
         {
-            lateUPdateCallbacks.Invoke();
+            LateUPdateCallbacks.Invoke();
         }
     }
 }

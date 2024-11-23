@@ -1,10 +1,10 @@
 
-using QS.API.Data;
+using QS.Api.Data;
 using UnityEngine;
 
 namespace QS.Impl
 {
-    class PlayerInputData : IPlayerInputData
+    public class PlayerInputData : IPlayerInputData
     {
         public float Horizontal => Input.GetAxis("Horizontal");
 

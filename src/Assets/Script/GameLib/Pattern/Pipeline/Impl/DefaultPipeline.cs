@@ -1,14 +1,8 @@
-
-
-
-using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace GameLib.Pattern
 {
-    class DefaultPipeline : IPipeline
+    internal class DefaultPipeline : IPipeline
     {
         public DefaultPipelineHandlerContext root;
         public DefaultPipelineHandlerContext tail;
@@ -44,7 +38,7 @@ namespace GameLib.Pattern
             pre.NextHandlerContext = n;
             next.PreHandlerContext = n;
 
-            if(n.NextHandlerContext == null)
+            if (n.NextHandlerContext == null)
             {
                 tail = n;
             }
@@ -83,19 +77,18 @@ namespace GameLib.Pattern
             next.PreHandlerContext = n;
             pre.NextHandlerContext = n;
 
-            if(n.PreHandlerContext == null)
+            if (n.PreHandlerContext == null)
             {
                 root = n;
             }
         }
 
-
         public void AddFirst(string name, IPipelineHandler handler)
         {
-            var handlerCtx =new DefaultPipelineHandlerContext(this, name, handler);
-            if(root == null)
+            var handlerCtx = new DefaultPipelineHandlerContext(this, name, handler);
+            if (root == null)
             {
-               tail = root = handlerCtx;
+                tail = root = handlerCtx;
             }
             else
             {
@@ -111,31 +104,31 @@ namespace GameLib.Pattern
             next.PreHandlerContext = handlerCtx;
             handlerCtx.NextHandlerContext = next;
             handlerCtx.PreHandlerContext = pre;
-            
+
             root = handlerCtx;
         }
 
         public void AddLast(string name, IPipelineHandler handler)
         {
-            var handlerCtx =new DefaultPipelineHandlerContext(this, name, handler);
-            if(tail == null)
+            var handlerCtx = new DefaultPipelineHandlerContext(this, name, handler);
+            if (tail == null)
             {
-               root = tail = handlerCtx;
+                root = tail = handlerCtx;
             }
             else
             {
-         
+
                 DefaultPipelineHandlerContext pre = tail.NextHandlerContext;
                 DefaultPipelineHandlerContext next = tail;
                 tail.PreHandlerContext = handlerCtx;
                 pre.NextHandlerContext = handlerCtx;
                 handlerCtx.NextHandlerContext = next;
                 handlerCtx.PreHandlerContext = pre;
-            
-                tail = handlerCtx;       
-            }           
+
+                tail = handlerCtx;
+            }
         }
-        
+
         public void Remove(string name)
         {
             DefaultPipelineHandlerContext n = root;

@@ -1,27 +1,28 @@
 
 
 using GameLib.DI;
-using QS.API;
-using QS.API.Data;
+using QS.Api.Data;
+using QS.Api.Presentation.Interact;
+using QS.Domain.Combat;
 using UnityEngine;
 
 namespace QS
 {
-    class AttackedWhenInteract : MonoBehaviour, IInteractable, IAttackable
+    public class AttackedWhenInteract : MonoBehaviour, IInteractable, IAttackable
     {
         [Injected]
         IPlayerCharacterData PlayerCharacter { get; set; }
-        
+
         void Start()
         {
             var ctx = GameManager.Instance.GlobalDIContext;
             ctx.Inject(this);
         }
-        
+
 
         public IAttack Attack()
         {
-            return new CAttack()
+            return new Attack()
             {
                 Atn = 120
             };
@@ -29,12 +30,11 @@ namespace QS
 
         public void Interact()
         {
-
             var character = PlayerCharacter.ActivedCharacter;
             if (character != null)
             {
-                //var combator = character.GetComponent<CDefaultCombater>();
-                //combator?.Injured(Attack());
+                var combator = character.GetComponent<CombatorBehaviour>();
+                combator?.Injured(Attack());
             }
             else
             {

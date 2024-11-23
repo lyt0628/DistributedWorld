@@ -1,7 +1,7 @@
 
 
+using GameLib.Pattern.Message;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace GameLib.View
@@ -16,7 +16,7 @@ namespace GameLib.View
         {
             get; protected set;
         } = false;
-        virtual public bool IsLeaf { get; }  = true;
+        virtual public bool IsLeaf { get; } = true;
 
         protected static IMessager globalMessager = new Messager();
         protected List<IViewNode> children = new();
@@ -29,7 +29,7 @@ namespace GameLib.View
             get { return _IsResident; }
             protected set
             {
-                _IsResident=value;
+                _IsResident = value;
             }
         }
 
@@ -39,28 +39,32 @@ namespace GameLib.View
          */
         virtual public void Show()
         {
-                if (!Initialed ) { 
-                    OnInit(); 
-                }
-                if (Widget) {
-                    Widget.SetActive(true);
-                    OnActive();
-                }
-                if (!IsLeaf) {
-                    children.ForEach(x => x.Show());
-                }
+            if (!Initialed)
+            {
+                OnInit();
+            }
+            if (Widget)
+            {
+                Widget.SetActive(true);
+                OnActive();
+            }
+            if (!IsLeaf)
+            {
+                children.ForEach(x => x.Show());
+            }
 
-                IsVisible = true;
+            IsVisible = true;
         }
 
-       virtual  public void Hide()
+        virtual public void Hide()
         {
             if (!IsLeaf)
             {
                 children.ForEach(x => x.Hide());
             }
 
-            if (Widget && Widget.activeSelf == true) { 
+            if (Widget && Widget.activeSelf == true)
+            {
                 if (IsResident)
                 {
                     OnDeActive();
@@ -80,17 +84,18 @@ namespace GameLib.View
         /*
          * Called When Widget Show
          */
-        virtual public void OnActive(){}
+        virtual public void OnActive() { }
 
         /*
          * Called when widget hidden
          */
-         virtual public void OnDeActive(){}
+        virtual public void OnDeActive() { }
 
 
         virtual public void Preload()
         {
-            if (!IsLeaf) {
+            if (!IsLeaf)
+            {
                 children.ForEach(x => x.Preload());
             }
             if (CreateWidget(out GameObject widget))
@@ -98,27 +103,30 @@ namespace GameLib.View
                 OnInit();
             }
             Widget = widget;
-            
+
         }
 
         virtual public void OnInit()
         {
-               if (!IsLeaf) {
-                    children.ForEach(x => x.OnInit());
-                }
+            if (!IsLeaf)
+            {
+                children.ForEach(x => x.OnInit());
+            }
 
-               Initialed = true;
+            Initialed = true;
         }
-        virtual public void OnRealse(){
-               if (!IsLeaf) {
-                    children.ForEach(x => x.OnRealse());
-                }
+        virtual public void OnRealse()
+        {
+            if (!IsLeaf)
+            {
+                children.ForEach(x => x.OnRealse());
+            }
 
-               Initialed = false;
+            Initialed = false;
         }
 
-        virtual public void OnUpdate(){}
-        virtual public void OnModelChanged(){}
+        virtual public void OnUpdate() { }
+        virtual public void OnModelChanged() { }
 
 
         #endregion
@@ -137,12 +145,15 @@ namespace GameLib.View
          * Callback to create GameObject
          * @Return: if true the view will be preloaded.
          */
-        virtual protected bool CreateWidget(out GameObject widget) {
+        virtual protected bool CreateWidget(out GameObject widget)
+        {
             throw new System.NotImplementedException();
         }
 
-        virtual protected void ReleaseWidget(GameObject widget) {
-            if (widget != null) {
+        virtual protected void ReleaseWidget(GameObject widget)
+        {
+            if (widget != null)
+            {
                 GameObject.Destroy(widget);
             }
         }

@@ -1,6 +1,3 @@
-
-using GameLib.Pattern;
-
 namespace GameLib.Pattern
 {
     interface ICommandInvoker

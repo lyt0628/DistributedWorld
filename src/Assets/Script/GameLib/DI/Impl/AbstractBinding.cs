@@ -1,5 +1,3 @@
-
-using System;
 using System.Collections.Generic;
 
 namespace GameLib.DI
@@ -11,10 +9,11 @@ namespace GameLib.DI
         private ScopeFlag scope;
         private int priority;
 
-        public AbstractBinding(Key target, 
-                            ISet<Key> dependencies, 
+        public AbstractBinding(Key target,
+                            ISet<Key> dependencies,
                             ScopeFlag scope = ScopeFlag.Sington,
-                            int priority = 0) {
+                            int priority = 0)
+        {
             this.target = target;
             this.dependencies = dependencies;
             this.scope = scope;
@@ -25,13 +24,13 @@ namespace GameLib.DI
 
         public ISet<Key> Dependencies => dependencies;
 
-        public ScopeFlag Scope {  get { return scope; } set { scope = value; } }
+        public ScopeFlag Scope { get { return scope; } set { scope = value; } }
 
         public bool IsSington => scope == ScopeFlag.Sington;
 
         public bool IsPrototype => scope == ScopeFlag.Prototype;
 
-        public int Priority { get => priority; set => priority=value; }
+        public int Priority { get => priority; set => priority = value; }
 
         public abstract Builder GenBuilder(BindingLookup lookup);
     }

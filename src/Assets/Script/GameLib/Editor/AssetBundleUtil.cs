@@ -1,10 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-public class AssetBundleUtil 
+public class AssetBundleUtil
 {
     static readonly string assetFile = Path.Combine(Application.streamingAssetsPath, "StreamingAssets");
 
@@ -31,9 +30,9 @@ public class AssetBundleUtil
             }
         };
 
-        BuildPipeline.BuildAssetBundles(outDir, 
+        BuildPipeline.BuildAssetBundles(outDir,
                             builds.ToArray(),
-                            BuildAssetBundleOptions.ChunkBasedCompression, 
+                            BuildAssetBundleOptions.ChunkBasedCompression,
                             EditorUserBuildSettings.activeBuildTarget);
 
 
@@ -47,7 +46,7 @@ public class AssetBundleUtil
     static void LoadAssetBundle()
     {
         var bundle = AssetBundle.LoadFromFile(assetFile);
-        AssetBundleManifest manifest = 
+        AssetBundleManifest manifest =
             bundle.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
 
         foreach (var item in manifest.GetAllDependencies("man.unity3d"))
@@ -58,7 +57,7 @@ public class AssetBundleUtil
 
         bundle = AssetBundle.LoadFromFile(Path.Combine(
             Application.streamingAssetsPath, "man.unity3d"));
-        
+
         var asset = bundle.LoadAsset("Man");
         GameObject.Instantiate(asset);
     }
@@ -69,5 +68,5 @@ public class AssetBundleUtil
         AssetBundle.UnloadAllAssetBundles(true);
         Debug.Log("All AssetBundles were unload.");
     }
- 
+
 }

@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+using GameLib.Pattern.Message;
 
 namespace GameLib.View
 {
-    public interface IView {
+    public interface IView
+    {
         bool IsVisible { get; }
         bool IsResident { get; }
-        bool Initialed { get;  }
+        bool Initialed { get; }
         /*
          * Init
          */

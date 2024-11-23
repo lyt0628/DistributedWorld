@@ -2,15 +2,13 @@
 
 
 using GameLib.DI;
-using QS.API;
-using QS.API.Data;
-using Unity.VisualScripting;
+using QS.Api.Data;
 using UnityEngine;
 
 namespace GameLib.Impl
 {
 
-    class PlayerLocationData : IPlayerLocationData
+    public class PlayerLocationData : IPlayerLocationData
     {
 
         [Injected]
@@ -20,35 +18,40 @@ namespace GameLib.Impl
 
         public Quaternion Rotation => playerCharacter.ActivedCharacter.transform.rotation;
 
-        public Vector3 Right {
-            get {
-               var r = Camera.main.transform.right;
-               r.y = 0;
-                return r.normalized;     
-            } 
+        public Vector3 Right
+        {
+            get
+            {
+                var r = Camera.main.transform.right;
+                r.y = 0;
+                return r.normalized;
+            }
         }
 
         public Vector3 Forward
         {
             get
             {
-               var f = Camera.main.transform.forward;
+                var f = Camera.main.transform.forward;
                 f.y = 0;
                 return f.normalized;
             }
         }
         public Vector3 Up => playerCharacter.ActivedCharacter.transform.up;
 
-        public CapsuleCollider Collider { get
+        public CapsuleCollider Collider
+        {
+            get
             {
                 var collider = playerCharacter.ActivedCharacter.GetComponent<CapsuleCollider>();
-                if(collider == null)
+                if (collider == null)
                 {
                     throw new System.Exception("Can not get Collider from Player Character:" +
                                                playerCharacter.ActivedCharacter);
                 }
                 return collider;
-            } }
+            }
+        }
 
     }
 }

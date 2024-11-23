@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
-using UnityEngine;
 
 public class MyModelPostprocessor : AssetPostprocessor
 {
@@ -11,7 +8,7 @@ public class MyModelPostprocessor : AssetPostprocessor
      */
     private void OnPreprocessModel()
     {
-        ModelImporter importer = (ModelImporter) assetImporter;
+        ModelImporter importer = (ModelImporter)assetImporter;
         importer.materialImportMode = ModelImporterMaterialImportMode.None;
     }
 

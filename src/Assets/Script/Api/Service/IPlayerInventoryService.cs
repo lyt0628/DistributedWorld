@@ -1,8 +1,13 @@
 
 
-namespace QS.API.Service
+namespace QS.Api.Service
 {
-    interface IPlayerInventoryService
+
+    /// <summary>
+    /// IPlayerInventoryService Provides Operation on Inventory.
+    /// <seealso cref="Data.IInventoryData"/>
+    /// </summary>
+    public interface IPlayerInventoryService
     {
 
     }

@@ -4,7 +4,7 @@
 using System;
 using UnityEngine;
 
-namespace QS.API.Data
+namespace QS.Api.Data
 {
 
     /// <summary>
@@ -13,7 +13,7 @@ namespace QS.API.Data
     /// e.g. How much Character that player can use, or now which character 
     /// plyaer is using.
     /// </summary>
-    interface IPlayerCharacterData
+    public interface IPlayerCharacterData
     {
         GameObject ActivedCharacter { get; set; }
         void AddListenerForActivatedCharacterChanged(Action callback);

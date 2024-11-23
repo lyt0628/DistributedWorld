@@ -3,14 +3,15 @@ using GameLib;
 using System;
 
 
-namespace QS.API
+namespace QS.Api
 {
     /// <summary>
-    /// Providing Lifecycle for those non-component Classes.
+    /// Providing Lifecycle for those no Unity Component Classes.
+    /// <seealso cref="Lifecycles"/>
     /// </summary>
-    interface ILifecycleProivder : ISington<ILifecycleProivder>
+    public interface ILifecycleProivder : ISington<ILifecycleProivder>
     {
-        
+
 
         bool Request(Lifecycles statge, Action callback);
 

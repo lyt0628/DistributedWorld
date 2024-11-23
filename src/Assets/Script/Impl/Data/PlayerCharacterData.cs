@@ -1,26 +1,22 @@
 
 
 
-using QS.API.Data;
+using QS.Api.Data;
 using System;
 using UnityEngine;
 
 namespace QS.Impl.Data
 {
-    class PlayerCharacterData : IPlayerCharacterData
+    public class PlayerCharacterData : IPlayerCharacterData
     {
-        public PlayerCharacterData()
-        {
-            Debug.LogWarning("Reenter");
-        }
 
         private GameObject activedCharacter;
-        private event Action activatedCharacterChangedCallback = ()=>{};
-        public GameObject ActivedCharacter 
-        { 
+        private event Action activatedCharacterChangedCallback = () => { };
+        public GameObject ActivedCharacter
+        {
             get { return activedCharacter; }
-            set 
-            { 
+            set
+            {
                 activedCharacter = value;
                 activatedCharacterChangedCallback();
             }

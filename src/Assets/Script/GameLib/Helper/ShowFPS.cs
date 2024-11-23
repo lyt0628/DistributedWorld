@@ -2,7 +2,7 @@
 using UnityEngine;
 public class ShowFPS : MonoBehaviour
 {
-    public static ShowFPS Instance{private set;get;}
+    public static ShowFPS Instance { private set; get; }
 
 
     void OnEnable()

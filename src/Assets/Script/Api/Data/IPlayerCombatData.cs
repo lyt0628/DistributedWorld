@@ -1,13 +1,13 @@
 
 
-namespace QS.API.Data
+namespace QS.Api.Data
 {
 
     /// <summary>
     /// IPlayerCombatData stores the information about the combat data.
     /// e.g. HP,ATK, Armed Weapon
     /// </summary>
-    interface IPlayerCombatData
+    public interface IPlayerCombatData
     {
 
     }

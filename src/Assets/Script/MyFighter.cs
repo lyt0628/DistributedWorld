@@ -1,20 +1,18 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
-public class MyFighter  
+public class MyFighter
 {
     [SerializeField] private string xname;
     [SerializeField] private string description;
-    [SerializeField] public List<string> scripts = new List<string>();
-     private MyDictionary<string, int> kvPairs  = new();
+    [SerializeField] public List<string> scripts = new();
+    private readonly MyDictionary<string, int> kvPairs = new();
 
     public MyFighter()
     {
         xname = "666";
         description = "FFF";
-        
+
         scripts.Add("666");
         scripts.Add(description);
 
@@ -31,7 +29,7 @@ public class MyFighter
         obj.xname = xname;
         obj.description = description;
         obj.scripts = new List<string>(scripts);
-       
+
         return obj;
     }
 }

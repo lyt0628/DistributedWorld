@@ -2,7 +2,7 @@
 
 namespace GameLib.Pattern
 {
-   public interface IPipelineHandlerContext
+    public interface IPipelineHandlerContext
     {
         IPipeline Pipeline { get; }
         string HandlerName { get; }

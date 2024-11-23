@@ -23,12 +23,12 @@ namespace GameLib
 
         private void Update()
         {
-            transform.position = target.position -_offset;
+            transform.position = target.position - _offset;
 
             var targetRotation = transform.rotation;
-            if(!targetRotation.Equals(_targetInitRotation))
+            if (!targetRotation.Equals(_targetInitRotation))
             {
-                
+
             }
         }
     }
