@@ -1,10 +1,10 @@
 
-using QS.API;
+using QS.Api.Presentation.Interact;
 using UnityEngine;
 
 namespace QS
 {
-    class DestroySelfWhenInteract : MonoBehaviour, IInteractable
+    public class DestroySelfWhenInteract : MonoBehaviour, IInteractable
     {
         public void Interact()
         {

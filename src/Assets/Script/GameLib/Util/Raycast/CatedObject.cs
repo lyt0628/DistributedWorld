@@ -1,10 +1,6 @@
 using GameLib.Util.Raycast;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
 
 using UnityEngine;
-using UnityEngine.UIElements;
 
 
 namespace GameLib.Uitl.RayCast
@@ -12,12 +8,13 @@ namespace GameLib.Uitl.RayCast
 
     public abstract class CastedObject : ICastedObject
     {
-        
+
         private float _maxDistance = float.PositiveInfinity;
         public int _layerMask = -5;
         public QueryTriggerInteraction _triggerInteraction = QueryTriggerInteraction.UseGlobal;
 
-        public bool Cast(out RaycastHit hitInfo) {
+        public bool Cast(out RaycastHit hitInfo)
+        {
 
             return CastOne(_maxDistance, _layerMask, _triggerInteraction, out hitInfo);
         }
@@ -44,7 +41,8 @@ namespace GameLib.Uitl.RayCast
             if (ignore)
             {
                 _triggerInteraction = QueryTriggerInteraction.Ignore;
-            }else
+            }
+            else
             {
                 _triggerInteraction = QueryTriggerInteraction.Collide;
             }
@@ -86,7 +84,7 @@ namespace GameLib.Uitl.RayCast
 
             protected override RaycastHit[] CastEvery(float maxDistance, int layermask, QueryTriggerInteraction triggerInteraction)
             {
-                return Physics.RaycastAll( _position, _direction, maxDistance, layermask, triggerInteraction);
+                return Physics.RaycastAll(_position, _direction, maxDistance, layermask, triggerInteraction);
             }
         }
 
@@ -111,12 +109,12 @@ namespace GameLib.Uitl.RayCast
 
             protected override bool CastOne(float maxDistance, int layermask, QueryTriggerInteraction triggerInteraction, out RaycastHit hitInfo)
             {
-                return Physics.CapsuleCast(_point1, _point2, _radius, _direction, out hitInfo, maxDistance, layermask ,triggerInteraction);
+                return Physics.CapsuleCast(_point1, _point2, _radius, _direction, out hitInfo, maxDistance, layermask, triggerInteraction);
             }
         }
-  
-    
-    
+
+
+
     }
 
 }

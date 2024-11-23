@@ -9,14 +9,17 @@ namespace GameLib.DI
     {
         private readonly HashSet<T> _set;
 
-        public ImmutableHashSet(IEnumerable<T> data) {
+        public ImmutableHashSet(IEnumerable<T> data)
+        {
             _set = new HashSet<T>(data);
         }
-        public ImmutableHashSet() {
+        public ImmutableHashSet()
+        {
             _set = new HashSet<T>();
         }
 
-        public static ISet<T> Empty() {
+        public static ISet<T> Empty()
+        {
             return new ImmutableHashSet<T>();
         }
         public int Count => _set.Count;

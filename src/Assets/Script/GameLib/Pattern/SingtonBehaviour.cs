@@ -35,9 +35,9 @@ namespace GameLib
             {
                 _instance = this as T;
             }
-            else if(_instance != this)
-                // I cannot directly destroy it, 
-                // Sometimes, The Static Instance is called before Awake
+            else if (_instance != this)
+            // I cannot directly destroy it, 
+            // Sometimes, The Static Instance is called before Awake
             {
                 Destroy(gameObject);
             }

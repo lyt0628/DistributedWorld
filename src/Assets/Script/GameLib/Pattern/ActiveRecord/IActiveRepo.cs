@@ -11,7 +11,7 @@ namespace GameLib.DI.Pattern
     /// A resources that are accessed by activeRecord Pattern.
     /// </summary>
     /// <typeparam name="T">The actual type of the Record</typeparam>
-    interface IActiveRepo< T> where T : IActiveRecord
+    interface IActiveRepo<T> where T : IActiveRecord
     {
 
         /// <summary>

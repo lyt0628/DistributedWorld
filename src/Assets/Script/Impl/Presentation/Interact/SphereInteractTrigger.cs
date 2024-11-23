@@ -1,15 +1,12 @@
-
-
-using QS.API;
+using QS.Api.Presentation.Interact;
 using UnityEngine;
 
 namespace QS
 {
 
-    class SphereInteractTrigger : AbstractInteractTrigger
-
+    public class SphereInteractTrigger : AbstractInteractTrigger
     {
-        public Transform item;
+        public Vector3 position;
         public float radius;
         public override bool IsOneshot => true;
 
@@ -19,7 +16,7 @@ namespace QS
             if (Input.GetButtonDown("Interact"))
             {
 
-                var hitColliders = Physics.OverlapSphere(item.position, radius);
+                var hitColliders = Physics.OverlapSphere(position, radius);
                 foreach (var hitCollider in hitColliders)
                 {
                     if (hitCollider.gameObject.CompareTag("Player"))
@@ -42,6 +39,6 @@ namespace QS
             return flag;
         }
 
-        
+
     }
 }

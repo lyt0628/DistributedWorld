@@ -2,14 +2,13 @@
 
 
 using GameLib;
-using QS.API;
 using System.Collections.Generic;
 
-namespace QS
+namespace QS.Api.Presentation.Interact
 {
-    abstract class AbstractInteractTrigger : IInteractTrigger
-    {
 
+    public abstract class AbstractInteractTrigger : IInteractTrigger
+    {
         #region [[Listener]]
         private readonly ListenableWrapper<IInteractable> wrapper = new();
         protected List<IInteractable> listners

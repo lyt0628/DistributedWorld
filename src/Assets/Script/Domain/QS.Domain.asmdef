@@ -1,0 +1,17 @@
+{
+    "name": "QS.Domain",
+    "rootNamespace": "",
+    "references": [
+        "GUID:c720f9517ccc66d46937442510310776",
+        "GUID:6f8aefceb089d824db5dea3dea157fa1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

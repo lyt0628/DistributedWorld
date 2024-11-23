@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace QS.API.Data
+namespace QS.Api.Data
 {
 
 
     /// <summary>
     /// PlayerLocationData is a datasource to provide information 
     /// about the location of character that player is used now.
-    /// All API in this Interface is the pure-function like, 
+    /// All Domain in this Interface is the pure-function like, 
     /// having nothing side-effect.
     /// </summary>
-    public interface IPlayerLocationData 
+    public interface IPlayerLocationData
     {
         Vector3 Location { get; }
         Quaternion Rotation { get; }

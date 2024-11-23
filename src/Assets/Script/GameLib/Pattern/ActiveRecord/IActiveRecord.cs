@@ -1,8 +1,3 @@
-
-
-
-using GameLib.DI.Pattern;
-
 namespace GameLib.Pattern
 {
     public interface IActiveRecord
@@ -31,7 +26,7 @@ namespace GameLib.Pattern
 
 
         bool NewRecord { get; }
-        bool Persisted { get; } 
+        bool Persisted { get; }
 
     }
 }

@@ -10,7 +10,7 @@ namespace GameLib.DI
     {
         private Key(string name, Type type)
         {
-            _name = name; 
+            _name = name;
             _type = type;
             _typeKey = new TypeKey(type);
         }
@@ -18,15 +18,15 @@ namespace GameLib.DI
         private readonly Type _type;
         private readonly string _name;
         private readonly TypeKey _typeKey;
-        public TypeKey KeyType { get { return _typeKey; } } 
-        public Type Type { get { return _type; }  }
+        public TypeKey KeyType { get { return _typeKey; } }
+        public Type Type { get { return _type; } }
         public string Name { get { return _name; } }
 
         public override bool Equals(object obj)
         {
-            if (obj == null && GetType()!=obj.GetType()) return false;
+            if (obj == null && GetType() != obj.GetType()) return false;
             Key other = obj as Key;
-            return Name == other.Name && Type == other.Type; 
+            return Name == other.Name && Type == other.Type;
         }
 
         public override int GetHashCode()
@@ -56,7 +56,7 @@ namespace GameLib.DI
 
         public static Key Get(string name, Type type)
         {
-             var k = new Key(name, type);
+            var k = new Key(name, type);
             return Resolve(k);
         }
     }

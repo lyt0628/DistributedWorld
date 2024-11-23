@@ -4,7 +4,7 @@ namespace GameLib.View
 {
     public interface IViewNode : IView
     {
-        void Add(IViewNode view);   
+        void Add(IViewNode view);
 
     }
 }

@@ -1,12 +1,9 @@
-﻿
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 namespace GameLib.DI
 {
-    class ConstructorBinding : AbstractBinding 
+    class ConstructorBinding : AbstractBinding
     {
         private readonly Construct construct;
         private readonly ISet<Key> arguments;
@@ -24,7 +21,7 @@ namespace GameLib.DI
         {
             var args = arguments
                 .Select(key => lookup(key))
-                .Select(binding=> binding.GenBuilder(lookup)())
+                .Select(binding => binding.GenBuilder(lookup)())
                 .ToArray();
             return () => construct(args);
         }

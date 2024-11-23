@@ -1,12 +1,6 @@
-
-
-
-using System.Collections;
-using System.Collections.Generic;
-
 namespace GameLib.Pattern
 {
-    class DefaultPipelineHandlerContext : IPipelineHandlerContext
+    internal class DefaultPipelineHandlerContext : IPipelineHandlerContext
     {
         public DefaultPipelineHandlerContext(
             IPipeline pipeline, string handlerName, IPipelineHandler handler,
@@ -32,7 +26,7 @@ namespace GameLib.Pattern
 
             ctx.Next(msg);
         }
-        
+
         public void Next(object msg)
         {
             Handler.Write(this, msg);

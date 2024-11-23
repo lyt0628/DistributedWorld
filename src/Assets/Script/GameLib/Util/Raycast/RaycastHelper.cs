@@ -25,28 +25,31 @@ namespace GameLib.Util.Raycast
             needUpdate = true;
         }
 
-        
-       public float Distance()
+
+        public float Distance()
         {
             UpdateIfNeed();
-            return Hit? hitInfo.distance : float.PositiveInfinity;
+            return Hit ? hitInfo.distance : float.PositiveInfinity;
         }
 
         public bool IsCloserThan(float d)
         {
             UpdateIfNeed();
-            if(!Hit) return false;
+            if (!Hit) return false;
             return Distance() < d;
-         }
+        }
 
         public bool IsFartherThan(float d)
         {
             return !IsCloserThan(d);
         }
-        private void UpdateIfNeed() {
-            if (needUpdate) {
+        private void UpdateIfNeed()
+        {
+            if (needUpdate)
+            {
                 needUpdate = false;
-                if (_castedObject.Cast(out RaycastHit hit)) {
+                if (_castedObject.Cast(out RaycastHit hit))
+                {
                     _hit = true;
                     hitInfo = hit;
                 }

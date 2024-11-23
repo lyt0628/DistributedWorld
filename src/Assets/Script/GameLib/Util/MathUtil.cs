@@ -1,9 +1,9 @@
 
 
 
-namespace GameLib
+namespace GameLib.Util
 {
-    static class MathUtil
+    public static class MathUtil
     {
         public static float Clamp(float value, float min, float max)
         {
@@ -19,6 +19,13 @@ namespace GameLib
             }
 
             return ret;
+        }
+
+        private static int i = 0;
+        public static string UUID()
+        {
+            i++;
+            return i.ToString();
         }
     }
 }

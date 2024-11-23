@@ -1,6 +1,5 @@
 
 using System;
-using System.Reflection;
 
 namespace GameLib.DI
 {
@@ -12,6 +11,7 @@ namespace GameLib.DI
     public enum ScopeFlag
     {
         Sington,
-        Prototype
+        Prototype,
+        Default
     }
 }

@@ -15,20 +15,20 @@ namespace GameLib.DI
         /// <summary>
         /// Bind for type, using The Type.FullName as name
         /// </summary>
-        public IDIContext Bind(Type type)
+        public IDIContext Bind(Type type, ScopeFlag scope = ScopeFlag.Default)
         {
             var target = Key.Get(type);
-            Bind0(target);
+            Bind0(target, scope);
             return this;
         }
 
         // <summary> 
         // Bind for type with custom name
         // </summary>
-        public IDIContext Bind(string name, Type type)
+        public IDIContext Bind(string name, Type type, ScopeFlag scope = ScopeFlag.Default)
         {
             var target = Key.Get(name, type);
-            Bind0(target);
+            Bind0(target, scope);
             return this;
         }
 
@@ -51,7 +51,7 @@ namespace GameLib.DI
             AddBinding(mBinding);
             return this;
         }
-        public IDIContext BindInstance(string name, Type type,object instance)
+        public IDIContext BindInstance(string name, Type type, object instance)
         {
             var target = Key.Get(name, type);
             return BindInstance(target, instance);
@@ -89,7 +89,7 @@ namespace GameLib.DI
             {
                 ReflectionUtil.ThrowNoBindingFoundException(type);
             }
-            if(typedBindings.Count == 0)
+            if (typedBindings.Count == 0)
             {
                 ReflectionUtil.ThrowNoBindingFoundException(type);
             }
@@ -98,7 +98,7 @@ namespace GameLib.DI
             var namedBinding = typedBindings
                 .Where(b => b.Target.Name == name)
                 .ToHashSet();
-            if(namedBinding.Count == 0)
+            if (namedBinding.Count == 0)
             {
                 ReflectionUtil.ThrowNoBindingFoundException(name, type);
             }
@@ -117,7 +117,7 @@ namespace GameLib.DI
         /// <param name="type"></param>
         /// <returns></returns>
         public T GetInstance<T>(Type type)
-        { 
+        {
             // Filter By Type
             ISet<IBinding> myBindings = default;
             try
@@ -130,11 +130,11 @@ namespace GameLib.DI
             {
                 ReflectionUtil.ThrowNoBindingFoundException(type);
             }
-             if(myBindings.Count == 0)
+            if (myBindings.Count == 0)
             {
                 ReflectionUtil.ThrowNoBindingFoundException(type);
             }
-           var binding = ReflectionUtil.ResolvePriorBinding(myBindings, type);
+            var binding = ReflectionUtil.ResolvePriorBinding(myBindings, type);
             return GenInstance<T>(Key.Get(type), binding);
         }
 
@@ -146,19 +146,19 @@ namespace GameLib.DI
             binding = BindingWithInjection(k, binding);
             binding.Scope = ScopeFlag.Prototype; // All Directly Inject into a object see as  prototype, which was created by client
             var _ = GenInstance<object>(k, binding);
-            
+
             return this;
         }
         #endregion
 
 
-        private readonly IDictionary<TypeKey, ISet<IBinding>> bindings 
+        private readonly IDictionary<TypeKey, ISet<IBinding>> bindings
                 = new Dictionary<TypeKey, ISet<IBinding>>() { };
 
-        private readonly IDictionary<Key, InstanceBinding> scopeCahce 
-            = new Dictionary<Key,InstanceBinding>();
+        private readonly IDictionary<Key, InstanceBinding> scopeCahce
+            = new Dictionary<Key, InstanceBinding>();
 
-        private void Bind0(Key target)
+        private void Bind0(Key target, ScopeFlag scope)
         {
             var type = target.Type;
             if (ReflectionUtil.IsInterface(type))
@@ -170,28 +170,31 @@ namespace GameLib.DI
             }
             else if (!ReflectionUtil.IsAbstract(type))
             {
-                DoBind(target);
+                DoBind(target, scope);
             }
         }
 
         //private readonly ISet<Key> depChain = new HashSet<Key>();
-        private void DoBind(Key target)
+        private void DoBind(Key target, ScopeFlag scope)
         {
             // A Constructor should not be bound twice. with the same Key
             // For Reenterable, How to check a repeat Construcor???
             // A Key  is Unique ID for A bindings
             if (bindings.TryGetValue(target.KeyType, out ISet<IBinding> bindingSet))
             {
-                if (bindingSet.Where(b=>b.Target == target).Any())
+                if (bindingSet.Where(b => b.Target == target).Any())
                 {
                     return;
                 }
             }
 
             IBinding binding = GenerateConstuctorBinding(target);
+            if (scope != ScopeFlag.Default)
+            {
+                binding.Scope = scope;
+            }
 
             binding = BindingWithInjection(target, binding);
-
 
             AddBinding(binding);
 
@@ -202,7 +205,8 @@ namespace GameLib.DI
             DoAddBinding(binding.Target, binding);
 
             var ancestors = CollectAncestorsAndInterfaces(binding.Target.Type);
-            foreach (var ancestor in ancestors) {
+            foreach (var ancestor in ancestors)
+            {
                 DoAddBinding(Key.Get(ancestor), binding);
             }
         }
@@ -234,8 +238,8 @@ namespace GameLib.DI
             return ancestors.Union(interfaces).ToHashSet();
         }
 
-        readonly IDictionary<Key,IBinding> depCache = new Dictionary<Key,IBinding>();
-        private IBinding BindingWithInjection(Key target,IBinding binding)
+        readonly IDictionary<Key, IBinding> depCache = new Dictionary<Key, IBinding>();
+        private IBinding BindingWithInjection(Key target, IBinding binding)
         {
             Type type = target.Type;
 
@@ -243,47 +247,20 @@ namespace GameLib.DI
             {
                 binding.Scope = s;
             }
-            if(ReflectionUtil.TryGetPriorityOf(type, out int prioriy))
+            if (ReflectionUtil.TryGetPriorityOf(type, out int prioriy))
             {
                 binding.Priority = prioriy;
             }
-            
-            var access = BindingFlags.Public | BindingFlags.NonPublic |
-                         BindingFlags.Instance;
-            var fieldInfos = type.GetFields(access);
-            var propInfos = type.GetProperties(access);
-            ISet<IInjection> injections = new HashSet<IInjection>();
 
+            ReflectionUtil.CollectAllFieldAndPropsInHierachy(type,
+                out List<FieldInfo> fieldInfos,
+                out List<PropertyInfo> propInfos);
 
-            foreach (var propInfo in propInfos)
+            ReflectionUtil.CollectInjectionFromFieldsAndProps(
+                fieldInfos, propInfos, out ISet<IInjection> injections);
+
+            if (injections.Count == 1)
             {
-                if (propInfo.IsDefined(typeof(Injected), true))
-                {
-                    var k = ReflectionUtil.GenerateKeyForInjectedProperty(propInfo);
-
-                    var injection = new SetterInjection((instance, value) =>
-                    {
-                        propInfo.SetValue(instance, value);
-                    },k);
-                    injections.Add(injection);
-                }
-            }
-
-            foreach (var fieldInfo in fieldInfos)
-            {
-                if (fieldInfo.IsDefined(typeof(Injected), true))
-                {
-                    var k = ReflectionUtil.GenerateKeyForInjectedField(fieldInfo);
-                    var injection = new SetterInjection((instance, value) =>
-                    {
-
-                        fieldInfo.SetValue(instance, value);
-                    }, k);
-                    injections.Add(injection);
-                }
-            }
-
-            if (injections.Count == 1) {
                 binding = new InjectedBinding(binding, injections.First(), depCache);
             }
             if (injections.Count > 1)
@@ -294,9 +271,10 @@ namespace GameLib.DI
             return binding;
         }
 
+
         private IBinding GenerateConstuctorBinding(Key target)
         {
-            Type type= target.Type;
+            Type type = target.Type;
             IBinding binding;
 
             var injectedCtorInfos = type.GetConstructors()
@@ -309,11 +287,11 @@ namespace GameLib.DI
                 {
                     throw new DIException("More than one Contructor Defined by @" + typeof(Injected).Name);
                 }
-                binding = BindingFromInjectedConstructor(target, injectedCtorInfos.First());
+                binding = ReflectionUtil.BindingFromInjectedConstructor(target, injectedCtorInfos.First());
             }
             else
             {
-                binding = BindingFromEmptyConstructor(target);
+                binding = ReflectionUtil.BindingFromEmptyConstructor(target);
             }
 
             return binding;
@@ -331,31 +309,19 @@ namespace GameLib.DI
             return binding;
         }
 
-        private static IBinding BindingFromInjectedConstructor(Key target, ConstructorInfo injectedCtor)
-        {
-            IBinding binding;
 
-            var deps = injectedCtor.GetParameters()
-                    .ToList()
-                    .Select(param => param.ParameterType)
-                    .Select(t => Key.Get(t))
-                    .ToHashSet();
-
-            binding = Bindings.ToConstructor(target,
-                (object[] args) => injectedCtor.Invoke(args),
-                deps);
-            return binding;
-        }
         private T GenInstance<T>(Key target, IBinding binding)
         {
             var resolvedBinding = binding;
             object instance = default;
             if (binding.IsSington)
             {
-                if (scopeCahce.TryGetValue(target, out InstanceBinding scopedBinding)) {
+                if (scopeCahce.TryGetValue(target, out InstanceBinding scopedBinding))
+                {
                     resolvedBinding = scopedBinding;
                 }
-                else if (binding is InstanceBinding instanceBinding) {
+                else if (binding is InstanceBinding instanceBinding)
+                {
                     {
                         scopeCahce.Add(target, instanceBinding);
                     }
@@ -368,24 +334,24 @@ namespace GameLib.DI
             }
             if (null == instance)
             {
-                instance =  DoGenInstance(target, resolvedBinding);
+                instance = DoGenInstance(target, resolvedBinding);
             }
             return (T)instance;
         }
 
         private object DoGenInstance(Key target, IBinding binding)
         {
-                var builder = binding
-                                 .GenBuilder((k) =>
-                                 {
-                                     return LookupBinding(k, target.Type);
-                                 });
-                if (builder != null)
-                {
-                    var instance = builder();
-                    return instance;
-                }
-                throw new DIException("Invalid Constructor or instance was bound to:" + target.Type.FullName);
+            var builder = binding
+                             .GenBuilder((k) =>
+                             {
+                                 return LookupBinding(k, target.Type);
+                             });
+            if (builder != null)
+            {
+                var instance = builder();
+                return instance;
+            }
+            throw new DIException("Invalid Constructor or instance was bound to:" + target.Type.FullName);
         }
 
 
@@ -419,37 +385,37 @@ namespace GameLib.DI
 
             if (typedBindings.Count == 1)
             {
-                    // If only one coordiante rest, return it.
-                    // Not check Name
-                    return ScopeBinding(k, typedBindings.First());
+                // If only one coordiante rest, return it.
+                // Not check Name
+                return ScopeBinding(k, typedBindings.First());
             }
 
-                // Else User should Specific Name for detailed Binding.
+            // Else User should Specific Name for detailed Binding.
 
-                // Filter By Name
+            // Filter By Name
             var namedBindings = ResolveNamedBinding(k.Name, typedBindings, target);
             if (namedBindings.Count == 1) return ScopeBinding(k, namedBindings.First());
             else if (namedBindings.Count == 0)
             {
-                    Debug.LogWarning("No Binding found for: " + k.Type.FullName + " with name: "
-                                      + k.Name + ", IDIContext will still resolve By Priority.\n"
-                                      + "But, IDIContext suggest you to resolve this situation by specific proper Name in Injected Attribute");
+                Debug.LogWarning("No Binding found for: " + k.Type.FullName + " with name: "
+                                  + k.Name + ", IDIContext will still resolve By Priority.\n"
+                                  + "But, IDIContext suggest you to resolve this situation by specific proper Name in Injected Attribute");
             }
             IBinding priorBinding;
             // Filter By Priority
             if (namedBindings.Count == 0)
             {
-                    priorBinding = ReflectionUtil.ResolvePriorBinding(typedBindings, target);
+                priorBinding = ReflectionUtil.ResolvePriorBinding(typedBindings, target);
             }
             else
             {
-                    priorBinding = ReflectionUtil.ResolvePriorBinding(namedBindings, target);
+                priorBinding = ReflectionUtil.ResolvePriorBinding(namedBindings, target);
             }
 
             var scopedBindning = ScopeBinding(k, priorBinding);
 
             return scopedBindning;
-            
+
 
         }
 
@@ -462,7 +428,7 @@ namespace GameLib.DI
                 {
                     resolvedBinding = b;
                 }
-                else if(binding is InstanceBinding i)
+                else if (binding is InstanceBinding i)
                 {
                     scopeCahce.Add(k, i);
                 }

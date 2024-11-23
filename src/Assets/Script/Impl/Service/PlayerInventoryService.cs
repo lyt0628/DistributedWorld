@@ -1,10 +1,8 @@
-
-
-using QS.API.Service;
+using QS.Api.Service;
 
 namespace QS.Impl.Service
 {
-    class PlayerInventoryService : IPlayerInventoryService
+    public class PlayerInventoryService : IPlayerInventoryService
     {
 
     }

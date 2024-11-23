@@ -1,11 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-
-namespace QS.API
+namespace QS.Domain
 {
-    public interface IInputX 
+    public interface IInputX
     {
 
     }

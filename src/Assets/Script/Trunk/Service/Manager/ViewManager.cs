@@ -1,12 +1,10 @@
-
-
-using GameLib;
+using GameLib.Pattern.Message;
 using GameLib.View;
-using QS.API;
+using QS.Api;
 
 class ViewManager : IGameManager
 {
-    public ManagerStatus Status =>ManagerStatus.Initialing;
+    public ManagerStatus Status => ManagerStatus.Initialing;
 
     private readonly IMessager _messager = new Messager();
     public IMessager Messager => _messager;

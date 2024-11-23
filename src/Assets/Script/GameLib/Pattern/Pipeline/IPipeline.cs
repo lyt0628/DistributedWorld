@@ -3,7 +3,7 @@
 
 namespace GameLib.Pattern
 {
-    public interface IPipeline 
+    public interface IPipeline
     {
         public void AddFirst(string name, IPipelineHandler handler);
         public void AddLast(string name, IPipelineHandler handler);

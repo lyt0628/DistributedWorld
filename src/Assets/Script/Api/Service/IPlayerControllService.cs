@@ -1,18 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+using QS.Api.Service.DTO;
 using UnityEngine;
 
 
-namespace QS.API
+namespace QS.Api.Service
 {
     /// <summary>
-    /// A PlayerControllerService knows response getting Player Input from Data Layer,
-    /// which knows how to getting those data from User.
-    /// 
-    /// 玩家外观 调用 玩家控制器服务 来获取 计算后的 玩家 位移信息.
-    /// 
-    /// <seealso cref="QS.API.IPlayerLocationData"/>
-    /// <seealso cref="QS.API.IPlayerInputData"/>
+    /// A PlayerControllService takes responsibility for computing the controll information of player.
+    /// <seealso cref="Domain.IPlayerLocationData"/>
+    /// <seealso cref="Domain.IPlayerInputData"/>
     /// </summary>
     public interface IPlayerControllService
     {

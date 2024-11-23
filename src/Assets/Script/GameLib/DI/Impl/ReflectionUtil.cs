@@ -11,7 +11,7 @@ namespace GameLib.DI
 
         public static IBinding ResolvePriorBinding(ISet<IBinding> v, Type target)
         {
-            if (v.Count == 1) return v.First(); 
+            if (v.Count == 1) return v.First();
 
             var sortedBindings = v.OrderByDescending(b => b.Priority);
             var first = sortedBindings.First();
@@ -38,8 +38,9 @@ namespace GameLib.DI
             return type.Name;
         }
 
-        public static void GenerateInjecionFailException(Type target, string message) {
-            throw new DIException("Cannot inject into taret "+ target.FullName+", "+ message);
+        public static void GenerateInjecionFailException(Type target, string message)
+        {
+            throw new DIException("Cannot inject into taret " + target.FullName + ", " + message);
         }
 
 
@@ -51,41 +52,60 @@ namespace GameLib.DI
                 {
                     scope = s.Value;
                     return true;
-                }else
+                }
+                else
                 {
                     throw new DIException("Cannot Get Scope of: " + type.FullName);
                 }
-            }else
+            }
+            else
             {
                 scope = default;
                 return false;
             }
         }
 
-        public static bool TryGetPriorityOf(Type type,out int priority)
+        public static bool TryGetPriorityOf(Type type, out int priority)
         {
-             if (type.IsDefined(typeof(Priority)))
+            if (type.IsDefined(typeof(Priority)))
             {
                 if (type.GetCustomAttribute(typeof(Priority), true) is Priority p)
                 {
                     priority = p.Value;
                     return true;
 
-                }else
+                }
+                else
                 {
                     throw new DIException("Cannot Get Scope of: " + type.FullName);
                 }
-            }else
+            }
+            else
             {
                 priority = default;
                 return false;
-            }           
+            }
+        }
+        public static void CollectAllFieldAndPropsInHierachy(Type type, out List<FieldInfo> fieldInfos, out List<PropertyInfo> propInfos)
+        {
+            fieldInfos = new List<FieldInfo>();
+            propInfos = new List<PropertyInfo>();
+            var access = BindingFlags.Public | BindingFlags.NonPublic |
+                         BindingFlags.Instance | BindingFlags.FlattenHierarchy;
+
+            Type currentType = type;
+            while (currentType != null && currentType.GetType() != typeof(object))
+            {
+                fieldInfos.AddRange(currentType.GetFields(access));
+                propInfos.AddRange(currentType.GetProperties(access));
+                currentType = currentType.BaseType;
+            }
         }
 
         public static Key GenerateKeyForInjectedProperty(PropertyInfo propInfo)
         {
             var inj = propInfo.GetCustomAttribute(typeof(Injected)) as Injected;
-                            Key k;
+            Key k;
             if (inj.Name != null)
             {
                 k = Key.Get(inj.Name, propInfo.PropertyType);
@@ -101,7 +121,7 @@ namespace GameLib.DI
         public static Key GenerateKeyForInjectedField(FieldInfo propInfo)
         {
             var inj = propInfo.GetCustomAttribute(typeof(Injected)) as Injected;
-                            Key k;
+            Key k;
             if (inj.Name != null)
             {
                 k = Key.Get(inj.Name, propInfo.FieldType);
@@ -113,22 +133,78 @@ namespace GameLib.DI
             return k;
         }
 
+        public static void CollectInjectionFromFieldsAndProps(List<FieldInfo> fieldInfos, List<PropertyInfo> propInfos, out ISet<IInjection> injections)
+        {
+            injections = new HashSet<IInjection>();
+            foreach (var injection in from propInfo in propInfos
+                                      where propInfo.IsDefined(typeof(Injected), true)
+                                      let k = ReflectionUtil.GenerateKeyForInjectedProperty(propInfo)
+                                      let injection = new SetterInjection((instance, value) =>
+                                      {
+                                          propInfo.SetValue(instance, value);
+                                      }, k)
+                                      select injection)
+            {
+                injections.Add(injection);
+            }
+
+            foreach (var injection in from fieldInfo in fieldInfos
+                                      where fieldInfo.IsDefined(typeof(Injected), true)
+                                      let k = ReflectionUtil.GenerateKeyForInjectedField(fieldInfo)
+                                      let injection = new SetterInjection((instance, value) =>
+                                      {
+
+                                          fieldInfo.SetValue(instance, value);
+                                      }, k)
+                                      select injection)
+            {
+                injections.Add(injection);
+            }
+        }
+
+        public static IBinding BindingFromInjectedConstructor(Key target, ConstructorInfo injectedCtor)
+        {
+            IBinding binding;
+
+            var deps = injectedCtor.GetParameters()
+                    .ToList()
+                    .Select(param => param.ParameterType)
+                    .Select(t => Key.Get(t))
+                    .ToHashSet();
+
+            binding = Bindings.ToConstructor(target,
+                (object[] args) => injectedCtor.Invoke(args),
+                deps);
+            return binding;
+        }
+
+        public static IBinding BindingFromEmptyConstructor(Key target)
+        {
+            Type type = target.Type;
+            IBinding binding;
+
+            var emptyCtor = type.GetConstructor(Type.EmptyTypes) ?? throw new DIException("No Empty Constructor Found for: " + type.FullName);
+            binding = Bindings.ToConstructor(target,
+                                (object[] args) => emptyCtor.Invoke(args),
+                                Bindings.EmptyDeps);
+            return binding;
+        }
         public static void ThrowNoBindingFoundException(Type target)
         {
             throw new DIException(
-                    "No Bind Found for " + target.FullName); 
+                    "No Bind Found for " + target.FullName);
         }
 
         public static void ThrowNoBindingFoundException(string name, Type type)
         {
-                throw new DIException(
-                    "No Bind Found for " + type.FullName + "with name: " + name);
+            throw new DIException(
+                "No Bind Found for " + type.FullName + "with name: " + name);
         }
 
         public static void ThrowMoreThanOneBindingFoundFor(string name, Type type)
         {
-                throw new DIException(
-                    "More than one Binding Found for " + type.FullName + "with name: " + name);
+            throw new DIException(
+                "More than one Binding Found for " + type.FullName + "with name: " + name);
         }
 
         public static void ThrowConflictBindingsDIException(IOrderedEnumerable<IBinding> sortedBindings, Type target)

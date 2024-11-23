@@ -32,7 +32,7 @@
 //            {
 //                name = "TabView"
 //            };
-            
+
 //            widget.AddComponent<RectTransform>();
 //            var sizeFilter = widget.AddComponent<ContentSizeFitter>();
 //            sizeFilter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
@@ -45,7 +45,7 @@
 //            {
 //                widget.AddComponent<HorizontalLayoutGroup>();
 //            }
-        
+
 //            tabBar.Widget.transform.SetParent(widget.transform);
 //            tabContent.Widget.transform.SetParent(widget.transform);
 
@@ -78,7 +78,7 @@
 //            public TabBar(TabView tabView)
 //            {
 //                _tabView = tabView;
-                
+
 //            }
 
 //            protected override GameObject CreateWidget()
@@ -124,7 +124,7 @@
 
 //                return tabBar; 
 //            }
- 
+
 
 //            public void AddTab()
 //            {
@@ -138,7 +138,7 @@
 //                tab.AddComponent<Toggle>();
 //                tab.GetComponent<Toggle>().group = Widget.GetComponent<ToggleGroup>();
 //                tab.GetComponent<Toggle>().targetGraphic = background.GetComponent<Image>();
-        
+
 //                tab.transform.SetParent(Widget.transform);
 //                background.transform.SetParent(tab.transform);
 //                Debug.Log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"+tab);
@@ -156,7 +156,7 @@
 //                _tabView = tabView;
 //            }
 
-            
+
 //            protected override GameObject CreateWidget()
 //            {
 

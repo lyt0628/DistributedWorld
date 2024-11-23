@@ -1,14 +1,16 @@
-
-
-using GameLib.DI;
 using UnityEngine;
 
-namespace QS.API
+namespace QS.Api.Service.DTO
 {
 
-    public interface ICharacterTranslationDTO {
-        float Speed {  get; }
-        Vector3 Displacement {  get; }
+    /// <summary>
+    /// Data Transfer Object for Character Translation.
+    /// <seealso cref="IPlayerControllService"/>
+    /// </summary>
+    public interface ICharacterTranslationDTO
+    {
+        float Speed { get; }
+        Vector3 Displacement { get; }
         bool Jumping { get; }
 
     }

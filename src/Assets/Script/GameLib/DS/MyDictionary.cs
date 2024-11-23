@@ -1,12 +1,11 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyDictionary<K,V> : ISerializationCallbackReceiver
+public class MyDictionary<K, V> : ISerializationCallbackReceiver
 {
     [SerializeField] private List<K> _keys;
     [SerializeField] private List<V> _values;
-    private Dictionary<K, V> _dictionary = new Dictionary<K,V>();
+    private Dictionary<K, V> _dictionary = new Dictionary<K, V>();
 
     public V this[K key]
     {
@@ -27,7 +26,7 @@ public class MyDictionary<K,V> : ISerializationCallbackReceiver
     public void OnAfterDeserialize()
     {
         var len = _keys.Count;
-        Debug.Log("XXXXXXXXXXXXXX"+len);
+        Debug.Log("XXXXXXXXXXXXXX" + len);
         _dictionary = new Dictionary<K, V>();
         for (int i = 0; i < len; i++)
         {
