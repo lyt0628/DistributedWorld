@@ -1,6 +1,3 @@
-
-
-
 using QS.Api.Data;
 
 namespace QS.Impl.Data

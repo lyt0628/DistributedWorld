@@ -1,30 +1,27 @@
-
-
-
-using GameLib.Pattern;
 using System;
 using System.Collections.Generic;
 
-namespace GameLib.DI.Pattern
+namespace QS.GameLib.Pattern
 {
     /// <summary>
     /// A resources that are accessed by activeRecord Pattern.
     /// </summary>
     /// <typeparam name="T">The actual type of the Record</typeparam>
-    interface IActiveRepo<T> where T : IActiveRecord
+    interface IActiveRepo<T, R> 
+        where R : IActiveRecord<T>
     {
 
         /// <summary>
         /// Find a record by unique id and return it.
         /// </summary>
         /// <param name="id"></param>
-        T Find(int id);
+        R Find(Predicate<T> condition);
 
-        ICollection<T> Where(Predicate<T> condition);
+        ICollection<R> Where(Predicate<T> condition);
 
-        IList<T> Order(IComparer<T> comparer);
+        IList<R> Order(IComparer<T> comparer);
 
-        T Create();
+        R Create();
 
         void DestroyAll(Predicate<T> condition);
 

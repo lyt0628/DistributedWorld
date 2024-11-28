@@ -14,10 +14,10 @@ namespace GameLib.DI.Test
         public void Default_Constructor_Binding_With_Sington_Scope()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(Sington));
+            ctx.Bind<Sington>();
 
-            var obj1 = ctx.GetInstance<Sington>(typeof(Sington));
-            var obj2 = ctx.GetInstance<Sington>(typeof(Sington));
+            var obj1 = ctx.GetInstance<Sington>();
+            var obj2 = ctx.GetInstance<Sington>();
 
             Assert.IsNotNull(obj1);
             Assert.IsNotNull(obj2);
@@ -30,10 +30,10 @@ namespace GameLib.DI.Test
         public void Constructor_Binding_With_Prototype_Scope_Works()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(Proto));
+            ctx.Bind<Proto>();
 
-            var obj1 = ctx.GetInstance<Proto>(typeof(Proto));
-            var obj2 = ctx.GetInstance<Proto>(typeof(Proto));
+            var obj1 = ctx.GetInstance<Proto>();
+            var obj2 = ctx.GetInstance<Proto>();
 
             Assert.IsNotNull(obj1);
             Assert.IsNotNull(obj2);
@@ -56,7 +56,7 @@ namespace GameLib.DI.Test
             var ctx = IDIContext.New();
             try
             {
-                ctx.Bind(typeof(NoEmptyCtor));
+                ctx.Bind<NoEmptyCtor>();
             }
             catch (DIException e)
             {
@@ -71,9 +71,9 @@ namespace GameLib.DI.Test
         public void Bind_Is_Reenterable()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(Sington))
-                .Bind(typeof(Sington));
-            var instance = ctx.GetInstance<Sington>(typeof(Sington));
+            ctx.Bind<Sington>()
+                .Bind<Sington>();
+            var instance = ctx.GetInstance<Sington>();
             Assert.IsNotNull(instance);
         }
 

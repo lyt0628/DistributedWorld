@@ -1,5 +1,5 @@
-
 using UnityEngine;
+
 public class ShowFPS : MonoBehaviour
 {
     public static ShowFPS Instance { private set; get; }

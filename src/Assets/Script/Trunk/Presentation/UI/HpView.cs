@@ -1,8 +1,7 @@
-
 using GameLib.DI;
-using GameLib.Pattern.Message;
-using GameLib.View;
 using QS.Api.Data;
+using QS.GameLib.Pattern.Message;
+using QS.GameLib.View;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,7 +39,7 @@ class HpView : AbstractView
 
         combater.Messager.AddListener("HP", msg =>
         {
-            var msg0 = (SingleArgMessage<float>)msg;
+            var msg0 = (Msg1<float>)msg;
             Widget.GetComponent<Text>().text = "Hp:" + msg0.Value.ToString();
         });
     }

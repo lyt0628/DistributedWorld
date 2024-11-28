@@ -1,8 +1,6 @@
-
-
 using UnityEngine;
 
-namespace GameLib.Util.Raycast
+namespace QS.GameLib.Util.Raycast
 {
     public class RaycastHelper
     {

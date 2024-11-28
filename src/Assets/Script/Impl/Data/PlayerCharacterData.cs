@@ -1,6 +1,3 @@
-
-
-
 using QS.Api.Data;
 using System;
 using UnityEngine;

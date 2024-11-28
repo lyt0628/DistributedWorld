@@ -1,9 +1,6 @@
-
-
-
 using System;
 
-namespace GameLib.Pattern.Message
+namespace QS.GameLib.Pattern.Message
 {
     public interface IMessager
     {

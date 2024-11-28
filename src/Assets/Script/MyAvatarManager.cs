@@ -1,9 +1,8 @@
-using UnityEngine;
-
-
 /*
  * New Mdeol 
  */
+using UnityEngine;
+
 public class MyAvatarManager : MonoBehaviour
 {
 

@@ -1,26 +1,45 @@
-
-
-
-using GameLib.DI.Pattern;
 using System;
 using System.Collections.Generic;
 
-namespace GameLib.Pattern
+namespace QS.GameLib.Pattern
 {
-
-    public abstract class AbstractActiveRepo<T> : IActiveRepo<T> where T : IActiveRecord
+    
+    /// <summary>
+    /// ActiveRepo is the Object for accessing operations on group of record.
+    /// </summary>
+    /// <typeparam name="T">ActiveRecord</typeparam>
+    public abstract class AbstractActiveRepo<T,R> 
+        : IActiveRepo<T,R> 
+        where R : IActiveRecord<T>
     {
 
-        public abstract T Create();
+        /// <summary>
+        /// Create a new ActiveRecord
+        /// </summary>
+        /// <returns></returns>
+        public abstract R Create();
 
+        /// <summary>
+        /// Destroy all record by condition
+        /// </summary>
+        /// <param name="condition"></param>
         public abstract void DestroyAll(Predicate<T> condition);
 
-        public abstract T Find(int id);
+        /// <summary>
+        /// Find Record with id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public abstract R Find(Predicate<T> condition);
 
-        public abstract IList<T> Order(IComparer<T> comparer);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="comparer"></param>
+        /// <returns></returns>
+        public abstract IList<R> Order(IComparer<T> comparer);
 
-        public abstract ICollection<T> Where(Predicate<T> condition);
-
+        public abstract ICollection<R> Where(Predicate<T> condition);
     }
 
 }

@@ -1,7 +1,7 @@
 using GameLib.DI;
-using GameLib.Pattern.Message;
 using QS.Api.Data;
 using QS.Domain.Combat;
+using QS.GameLib.Pattern.Message;
 using System.Collections.Generic;
 using UnityEngine;
 

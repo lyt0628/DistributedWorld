@@ -19,9 +19,9 @@ namespace GameLib.DI.Test
         {
             var ctx = IDIContext.New();
             ctx
-                .Bind(typeof(Rocket))
-                .Bind(typeof(Child));
-            var c = ctx.GetInstance<Child>(typeof(Child));
+                .Bind<Rocket>()
+                .Bind<Child>();
+            var c = ctx.GetInstance<Child>();
             Assert.IsNotNull(c);
             Assert.IsNotNull(c.rocket);
         }

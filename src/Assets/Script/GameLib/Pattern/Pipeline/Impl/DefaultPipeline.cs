@@ -1,6 +1,6 @@
 using System;
 
-namespace GameLib.Pattern
+namespace QS.GameLib.Pattern.Pipeline
 {
     internal class DefaultPipeline : IPipeline
     {

@@ -19,7 +19,7 @@ namespace GameLib.DI.Test
             var ctx = IDIContext.New();
             var obj = new B();
 
-            ctx.Bind(typeof(A))
+            ctx.Bind<A>()
                 .Inject(obj);
             Assert.IsNotNull(obj);
             Assert.IsNotNull(obj.a);

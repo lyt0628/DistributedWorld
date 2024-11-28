@@ -1,7 +1,4 @@
-
-
-
-namespace GameLib
+namespace QS.GameLib.Pattern
 {
     interface IState : IIterable<IState>
     {

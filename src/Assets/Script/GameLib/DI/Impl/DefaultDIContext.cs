@@ -15,8 +15,9 @@ namespace GameLib.DI
         /// <summary>
         /// Bind for type, using The Type.FullName as name
         /// </summary>
-        public IDIContext Bind(Type type, ScopeFlag scope = ScopeFlag.Default)
+        public IDIContext Bind<T>(ScopeFlag scope = ScopeFlag.Default)
         {
+            var type = typeof(T);
             var target = Key.Get(type);
             Bind0(target, scope);
             return this;
@@ -25,8 +26,9 @@ namespace GameLib.DI
         // <summary> 
         // Bind for type with custom name
         // </summary>
-        public IDIContext Bind(string name, Type type, ScopeFlag scope = ScopeFlag.Default)
+        public IDIContext Bind<T>(string name, ScopeFlag scope = ScopeFlag.Default)
         {
+            var type = typeof(T);
             var target = Key.Get(name, type);
             Bind0(target, scope);
             return this;
@@ -75,8 +77,9 @@ namespace GameLib.DI
         /// <param name="name"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public T GetInstance<T>(string name, Type type)
+        public T GetInstance<T>(string name)
         {
+            var type = typeof(T);
             // Filter By Type
             ISet<IBinding> typedBindings = default;
             try
@@ -116,8 +119,9 @@ namespace GameLib.DI
         /// <typeparam name="T"></typeparam>
         /// <param name="type"></param>
         /// <returns></returns>
-        public T GetInstance<T>(Type type)
+        public T GetInstance<T>()
         {
+            var type = typeof(T);
             // Filter By Type
             ISet<IBinding> myBindings = default;
             try
@@ -152,11 +156,13 @@ namespace GameLib.DI
         #endregion
 
 
-        private readonly IDictionary<TypeKey, ISet<IBinding>> bindings
+        readonly IDictionary<TypeKey, ISet<IBinding>> bindings
                 = new Dictionary<TypeKey, ISet<IBinding>>() { };
 
-        private readonly IDictionary<Key, InstanceBinding> scopeCahce
+        readonly IDictionary<Key, InstanceBinding> scopeCahce
             = new Dictionary<Key, InstanceBinding>();
+
+        readonly IDictionary<Key, IBinding> depCache = new Dictionary<Key, IBinding>();
 
         private void Bind0(Key target, ScopeFlag scope)
         {
@@ -188,7 +194,7 @@ namespace GameLib.DI
                 }
             }
 
-            IBinding binding = GenerateConstuctorBinding(target);
+            IBinding binding =  GenerateConstuctorBinding(target);
             if (scope != ScopeFlag.Default)
             {
                 binding.Scope = scope;
@@ -238,7 +244,6 @@ namespace GameLib.DI
             return ancestors.Union(interfaces).ToHashSet();
         }
 
-        readonly IDictionary<Key, IBinding> depCache = new Dictionary<Key, IBinding>();
         private IBinding BindingWithInjection(Key target, IBinding binding)
         {
             Type type = target.Type;
@@ -296,19 +301,6 @@ namespace GameLib.DI
 
             return binding;
         }
-
-        private static IBinding BindingFromEmptyConstructor(Key target)
-        {
-            Type type = target.Type;
-            IBinding binding;
-
-            var emptyCtor = type.GetConstructor(Type.EmptyTypes) ?? throw new DIException("No Empty Constructor Found for: " + type.FullName);
-            binding = Bindings.ToConstructor(target,
-                                (object[] args) => emptyCtor.Invoke(args),
-                                Bindings.EmptyDeps);
-            return binding;
-        }
-
 
         private T GenInstance<T>(Key target, IBinding binding)
         {
@@ -393,7 +385,7 @@ namespace GameLib.DI
             // Else User should Specific Name for detailed Binding.
 
             // Filter By Name
-            var namedBindings = ResolveNamedBinding(k.Name, typedBindings, target);
+            var namedBindings = ReflectionUtil.ResolveNamedBinding(k.Name, typedBindings, target);
             if (namedBindings.Count == 1) return ScopeBinding(k, namedBindings.First());
             else if (namedBindings.Count == 0)
             {
@@ -444,13 +436,7 @@ namespace GameLib.DI
             return resolvedBinding;
         }
 
-        private static ISet<IBinding> ResolveNamedBinding(string name, ISet<IBinding> v, Type target)
-        {
-            var namedBindings = v.Where(b => name == b.Target.Name).ToHashSet();
-
-            return namedBindings;
-        }
-
+    
 
     }
 }

@@ -1,7 +1,3 @@
-
-
-
-
 using QS.Api.Setting;
 
 namespace QS.Impl.Setting

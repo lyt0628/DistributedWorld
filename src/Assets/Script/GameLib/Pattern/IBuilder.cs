@@ -1,6 +1,4 @@
-
-
-namespace GameLib.Pattern
+namespace QS.GameLib.Pattern
 {
     public interface IBuilder<T>
     {

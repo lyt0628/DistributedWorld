@@ -1,6 +1,4 @@
-
-
-namespace GameLib
+namespace QS.GameLib.Pattern
 {
     interface IIterable<T>
     {

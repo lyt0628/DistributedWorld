@@ -22,9 +22,9 @@ namespace GameLib.DI.Test.GenericInectionTest
         public void Gneric_Injection_Works()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(AInt))
-                .Bind(typeof(B));
-            var b = ctx.GetInstance<B>(typeof(B));
+            ctx.Bind<AInt>()
+                .Bind<B>();
+            var b = ctx.GetInstance<B>();
             Assert.IsNotNull(b);
             Assert.IsNotNull(b.aint);
         }

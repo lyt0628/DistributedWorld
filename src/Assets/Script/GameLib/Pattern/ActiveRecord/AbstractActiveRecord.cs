@@ -1,14 +1,24 @@
+using UnityEngine;
 
-
-
-namespace GameLib.Pattern
+namespace QS.GameLib.Pattern
 {
 
-    public abstract class AbstractActiveRecord : IActiveRecord
+    /// <summary>
+    /// 能不能使用组合的方式实现这个模版, 我不想破坏类结构
+    /// </summary>
+    public abstract class AbstractActiveRecord<T> : IActiveRecord<T>
     {
         bool newRecord = true;
         public bool NewRecord { get { return newRecord; } }
-        public abstract bool Persisted { get; protected set; }
+
+        protected T target;
+        public T Unwrap() { return target; }
+        public AbstractActiveRecord() {
+        }
+
+        public AbstractActiveRecord(T target) {
+            this.target = target;
+        }
 
         public bool Destroy()
         {
@@ -29,13 +39,19 @@ namespace GameLib.Pattern
         public bool Save()
         {
             if (BeforeSave())
-            {
-                if (DoSave())
+            {   if(NewRecord)
                 {
-                    if (newRecord != false) newRecord = false;
-                    AfterSave();
-                    return true;
+                    if (DoSave())
+                    {
+                        if (newRecord != false) newRecord = false;
+                        AfterSave();
+                        Debug.Log("Object saved and new record? " + newRecord);
+                        return true;
+                    }
                 }
+                Debug.LogError("You should not save a active record twice," +
+                                 "It does  do nothing.");
+                throw new System.InvalidOperationException();
             }
             return false;
         }
@@ -82,6 +98,10 @@ namespace GameLib.Pattern
             return true;
         }
 
+        public void Wrap(T target)
+        {
+            this.target = target; 
+        }
     }
 
 

@@ -1,5 +1,4 @@
-
-using GameLib;
+using QS.GameLib.Pattern;
 
 namespace QS.Api.Presentation.Interact
 {

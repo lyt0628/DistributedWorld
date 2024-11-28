@@ -9,6 +9,8 @@ namespace QS.Api.Service
     /// </summary>
     public interface IPlayerInventoryService
     {
+        public void AddItem(string itemName);
+        public void RemoveItem(string itemUUID);
 
     }
 }

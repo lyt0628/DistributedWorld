@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace GameLib
+namespace QS.GameLib.Pattern
 {
     public interface IListenable<T>
     {

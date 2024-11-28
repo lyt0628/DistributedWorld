@@ -1,6 +1,5 @@
-using GameLib.Util;
+using QS.GameLib.Util;
 using UnityEngine;
-
 
 public class FollowingCamera3P : MonoBehaviour
 {

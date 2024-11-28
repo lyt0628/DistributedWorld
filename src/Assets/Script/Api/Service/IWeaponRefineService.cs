@@ -3,7 +3,7 @@
 
 
 
-using QS.Domain.Item;
+using QS.Api.Domain.Item;
 
 namespace QS.Api.Service
 {

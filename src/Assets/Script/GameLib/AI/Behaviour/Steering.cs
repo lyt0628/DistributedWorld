@@ -1,8 +1,8 @@
-using UnityEngine;
-
 /*
  * A Data class stands for movement and rotation 
  */
+using UnityEngine;
+
 public class Steering
 {
     /*

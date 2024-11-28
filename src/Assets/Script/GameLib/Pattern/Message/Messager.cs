@@ -1,4 +1,4 @@
-namespace GameLib.Pattern.Message
+namespace QS.GameLib.Pattern.Message
 {
     using System;
     using System.Collections.Generic;

@@ -1,4 +1,4 @@
-namespace GameLib.Pattern
+namespace QS.GameLib.Pattern.Pipeline
 {
     internal class DefaultPipelineHandlerContext : IPipelineHandlerContext
     {
