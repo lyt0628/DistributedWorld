@@ -1,0 +1,19 @@
+{
+    "name": "QS.Impl",
+    "rootNamespace": "",
+    "references": [
+        "GUID:d4def0dd0832b834d9110e964b57d4a2",
+        "GUID:8c107b19aff0a0443a14684af05dbe35",
+        "GUID:c720f9517ccc66d46937442510310776",
+        "GUID:6f8aefceb089d824db5dea3dea157fa1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

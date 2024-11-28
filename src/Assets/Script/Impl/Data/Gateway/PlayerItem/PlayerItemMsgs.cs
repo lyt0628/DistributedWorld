@@ -1,6 +1,4 @@
-
-
-namespace QS.Impl.Data.Gateway
+namespace QS.Impl.Data.Gateway.PlayerItem
 {
     internal static class PlayerItemMsgs
     {

@@ -30,7 +30,7 @@ public class Character : MonoBehaviour
 
     void Awake()
     {
-        var ctx = GameManager.Instance.GlobalDIContext;
+        var ctx = TrunkGlobal.Instance.GlobalDIContext;
 
         _ = ctx.BindInstance("Player", gameObject)
            .BindInstance("PlayerTransform", transform);
@@ -39,7 +39,7 @@ public class Character : MonoBehaviour
 
     void Start()
     {
-        GameManager.Instance.GlobalDIContext.Inject(this);
+        TrunkGlobal.Instance.GlobalDIContext.Inject(this);
 
 
         /// 不能从这个来, 这个类是接口类, 我查询数据是为了创建
@@ -92,11 +92,13 @@ public class Character : MonoBehaviour
 
 
         playerItemRepoFacade.AddItem("Rust Sword");
-        var ws = playerItemRepoFacade.GetItems<Weapon>();
+        var ws = playerItemRepoFacade.GetItems<IWeapon>();
         foreach (var w in ws)
         {
+            // 虽然这个暴露是不得已的,但是, 主干层有时候也需要直接与领域模型接触
+            // 我不可能把所有的服务都放到Impl层
             w.Refine(10);
-            playerItemRepoFacade.UpdateItem(w);
+            //playerItemRepoFacade.UpdateItem(w);
             Debug.Log(w.Name);
             Debug.Log(w.Exp);
         }

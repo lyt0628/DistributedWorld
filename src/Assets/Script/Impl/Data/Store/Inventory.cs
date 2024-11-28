@@ -1,9 +1,9 @@
-using QS.Domain.Item;
+using QS.Impl.Domain.Item;
 using System.Collections.Generic;
 
 namespace QS.Impl.Data.Store
 {
-   internal class Inventory
+    internal class Inventory
     {
         readonly Dictionary<string, Cell> cells = new();
 

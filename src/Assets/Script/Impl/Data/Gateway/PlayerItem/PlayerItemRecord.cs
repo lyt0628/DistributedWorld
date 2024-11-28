@@ -5,8 +5,9 @@ using QS.GameLib.Pattern;
 using QS.GameLib.Pattern.Message;
 using QS.GameLib.Util;
 using QS.Impl.Data.Store;
+using QS.Impl.Domain.Item;
 
-namespace QS.Impl.Data.Gateway
+namespace QS.Impl.Data.Gateway.PlayerItem
 {
     /// <summary>
     /// 从世界物体拿原型(Find)的时候, 拿到的是世界物体的一个Clone,
@@ -27,15 +28,15 @@ namespace QS.Impl.Data.Gateway
         readonly PlayerItemRepo repo;
 
         internal PlayerItemRecord(
-            PlayerItemRepo repo, 
+            PlayerItemRepo repo,
             Inventory inventory,
-            Item target) 
+            Item target)
             : base(target)
         {
             this.repo = repo;
             this.inventory = inventory;
         }
-        internal PlayerItemRecord(PlayerItemRepo repo, Inventory inventory) 
+        internal PlayerItemRecord(PlayerItemRepo repo, Inventory inventory)
         {
             this.repo = repo;
             this.inventory = inventory;
@@ -66,7 +67,7 @@ namespace QS.Impl.Data.Gateway
         /// </summary>
         protected override void AfterUpdate()
         {
-            repo.Messager.Boardcast(PlayerItemMsgs.ITEM_UPDATED, 
+            repo.Messager.Boardcast(PlayerItemMsgs.ITEM_UPDATED,
                                     new Msg1<IItem>(target));
         }
 

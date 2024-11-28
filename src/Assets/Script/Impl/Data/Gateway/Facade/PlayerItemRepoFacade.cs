@@ -1,8 +1,9 @@
 using GameLib.DI;
 using QS.Api.Domain.Item;
-using QS.Domain.Item;
 using QS.GameLib.Pattern.Message;
 using QS.GameLib.Util;
+using QS.Impl.Data.Gateway.PlayerItem;
+using QS.Impl.Domain.Item;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace QS.Impl.Data.Gateway.Facade
     /// 外观类比较稳定, 可以放到接口
     /// 
     /// </summary>
-    class PlayerItemRepofacade
+    public class PlayerItemRepofacade
     {
         readonly WorldItemRepoFacade worldItems;
 

@@ -1,8 +1,4 @@
-
-
-
-
-namespace QS.Domain.Item
+namespace QS.Impl.Domain.Item
 {
     interface IItemAttribute_tag
     {

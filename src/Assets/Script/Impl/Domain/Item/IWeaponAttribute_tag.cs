@@ -1,6 +1,4 @@
-
-
-namespace QS.Domain.Item
+namespace QS.Impl.Domain.Item
 {
     interface IWeaponAttribute_tag
     {

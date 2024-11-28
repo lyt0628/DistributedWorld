@@ -1,7 +1,7 @@
 using QS.Api.Data;
 using UnityEngine;
 
-namespace QS.Impl
+namespace QS.Impl.Data
 {
     public class PlayerInputData : IPlayerInputData
     {

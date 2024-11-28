@@ -1,11 +1,12 @@
 using QS.Domain.Combat;
+using QS.Domain.Item;
 
-namespace QS.Domain.Item
+namespace QS.Impl.Domain.Item
 {
     /// <summary>
     /// The weapon that hold basic weapon function.
     /// </summary>
-    public class Weapon
+    internal class Weapon
         : Item, IWeapon, IWeaponAttribute_tag, IWeaponBreed_tag
     {
 

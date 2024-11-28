@@ -1,6 +1,7 @@
 using QS.Domain.Combat;
+using QS.Domain.Item;
 
-namespace QS.Domain.Item
+namespace QS.Impl.Domain.Item
 {
     /// <summary>
     /// The flywight of <see cref="Weapon"/>.

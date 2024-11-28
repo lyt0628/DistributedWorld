@@ -2,7 +2,7 @@ using GameLib.DI;
 using QS.Api.Data;
 using UnityEngine;
 
-namespace GameLib.Impl
+namespace QS.Impl.Data
 {
 
     public class PlayerLocationData : IPlayerLocationData

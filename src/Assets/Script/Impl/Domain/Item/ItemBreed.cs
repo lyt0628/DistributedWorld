@@ -1,6 +1,7 @@
 using QS.Api.Domain.Item;
+using QS.Domain.Item;
 
-namespace QS.Domain.Item
+namespace QS.Impl.Domain.Item
 {
     /// <summary>
     /// The FlyWight of Item. 

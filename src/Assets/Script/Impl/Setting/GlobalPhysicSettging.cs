@@ -1,6 +1,6 @@
 using QS.Api.Setting;
 
-namespace QS.Impl
+namespace QS.Impl.Setting
 {
 
     public class GlobalPhysicSetting : IGlobalPhysicSetting
