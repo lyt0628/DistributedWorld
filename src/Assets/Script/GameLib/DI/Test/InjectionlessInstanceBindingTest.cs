@@ -50,7 +50,7 @@ namespace GameLib.DI.Test
             catch (DIException e)
             {
                 Assert.IsTrue(
-                    e.Message.Contains("Same Priority Type was Found: "));
+                    e.Message.Contains("Conflict Binding was found"));
                 return;
             }
             InjectionlessConstructorBindingTest.Failed();
@@ -88,7 +88,7 @@ namespace GameLib.DI.Test
             catch (DIException e)
             {
                 Assert.IsTrue(
-                    e.Message.Contains("Same Priority Type was Found: "));
+                    e.Message.Contains("Conflict Binding was found"));
                 return;
             }
             InjectionlessConstructorBindingTest.Failed();

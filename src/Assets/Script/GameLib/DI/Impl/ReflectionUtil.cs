@@ -9,7 +9,7 @@ namespace GameLib.DI
     internal static class ReflectionUtil
     {
 
-        public static IBinding ResolvePriorBinding(ISet<IBinding> v, Type target)
+        public static IBinding ResolvePriorBinding(ISet<IBinding> v)
         {
             if (v.Count == 1) return v.First();
 
@@ -18,7 +18,7 @@ namespace GameLib.DI
             var second = sortedBindings.Skip(1).First();
             if (first.Priority == second.Priority)
             {
-                ThrowConflictBindingsDIException(sortedBindings, target);
+                ThrowConflictBindingsDIException(sortedBindings);
             }
             return first;
         }
@@ -190,11 +190,25 @@ namespace GameLib.DI
             return binding;
         }
 
-        public static ISet<IBinding> ResolveNamedBinding(string name, ISet<IBinding> v, Type target)
+        public static ISet<IBinding> ResolveNamedBinding(string name, ISet<IBinding> v)
         {
             var namedBindings = v.Where(b => name == b.Target.Name).ToHashSet();
 
             return namedBindings;
+        }
+
+
+        public static ISet<Type> CollectAncestorsAndInterfaces(Type type)
+        {
+            Type[] interfaces = type.GetInterfaces();
+            ISet<Type> ancestors = new HashSet<Type>();
+            Type currentType = type.BaseType;
+            while (currentType != null && currentType != typeof(object))
+            {
+                ancestors.Add(currentType);
+                currentType = currentType.BaseType;
+            }
+            return ancestors.Union(interfaces).ToHashSet();
         }
 
         public static void ThrowNoBindingFoundException(Type target)
@@ -215,7 +229,7 @@ namespace GameLib.DI
                 "More than one Binding Found for " + type.FullName + "with name: " + name);
         }
 
-        public static void ThrowConflictBindingsDIException(IOrderedEnumerable<IBinding> sortedBindings, Type target)
+        public static void ThrowConflictBindingsDIException(IOrderedEnumerable<IBinding> sortedBindings)
         {
             var conflictPriority = sortedBindings.First().Priority;
             ISet<Type> conflictTypes = new HashSet<Type>();
@@ -232,9 +246,7 @@ namespace GameLib.DI
                 msg += t.FullName + ", ";
             }
             msg += " ]";
-            ReflectionUtil.GenerateInjecionFailException(
-                target,
-                "Same Priority Type was Found: " + msg);
+            throw new DIException($"Conflict Binding was found {msg}");
         }
 
         public static void ThrowNoEmptyConstructorException(Type type)

@@ -1,7 +1,6 @@
+using QS.Domain.Item;
 
-
-
-namespace QS.Domain.Item
+namespace QS.Impl.Domain.Item
 {
 
     public interface IItemBreed_tag

@@ -1,14 +1,14 @@
 using GameLib.DI;
 using QS.GameLib.Util;
-using QS.Impl.Data.Gateway;
+using QS.Impl.Data.Gateway.WorldItem;
 
-namespace QS.Impl.Data
+namespace QS.Impl.Data.Loader
 {
     /// <summary>
     /// 数据加载器, 负责在游戏一开始加载
     /// WorldItemBreed和WorldItem
     /// </summary>
-    public class WorldItemDataLoader
+    internal class WorldItemDataLoader
     {
         readonly WeaponBreedRepo weaponBreedRepo;
         readonly WorldWeaponRepo weaponRepo;

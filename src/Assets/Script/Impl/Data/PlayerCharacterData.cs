@@ -8,25 +8,25 @@ namespace QS.Impl.Data
     {
 
         private GameObject activedCharacter;
-        private event Action activatedCharacterChangedCallback = () => { };
+        private event Action ActivatedCharacterChangedCallback = () => { };
         public GameObject ActivedCharacter
         {
             get { return activedCharacter; }
             set
             {
                 activedCharacter = value;
-                activatedCharacterChangedCallback();
+                ActivatedCharacterChangedCallback();
             }
         }
 
         public void AddListenerForActivatedCharacterChanged(Action callback)
         {
-            activatedCharacterChangedCallback += callback;
+            ActivatedCharacterChangedCallback += callback;
         }
 
         public void RemoveListenerForActivatedCharacterChanged(Action callback)
         {
-            activatedCharacterChangedCallback -= callback;
+            ActivatedCharacterChangedCallback -= callback;
         }
     }
 }

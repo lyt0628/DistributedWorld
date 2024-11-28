@@ -41,7 +41,7 @@ public class CombatorBehaviour : MonoBehaviour, IBuffedCombater<AbstractBuff>, I
 
     void Start()
     {
-        var ctx = GameManager.Instance.GlobalDIContext;
+        var ctx = TrunkGlobal.Instance.GlobalDIContext;
         ctx.Inject(this);
 
         playerCharacter.ActivedCharacter = gameObject;

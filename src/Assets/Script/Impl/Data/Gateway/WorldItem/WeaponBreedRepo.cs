@@ -1,13 +1,10 @@
-
-
-
-
 using QS.Domain.Item;
+using QS.Impl.Domain.Item;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace QS.Impl.Data.Gateway
+namespace QS.Impl.Data.Gateway.WorldItem
 {
     public class WeaponBreedRepo
         : ItemBreedRepo<WeaponBreed, WeaponBreedRecord>

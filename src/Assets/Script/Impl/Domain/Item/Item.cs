@@ -1,6 +1,7 @@
 using QS.Api.Domain.Item;
+using QS.Domain.Item;
 
-namespace QS.Domain.Item
+namespace QS.Impl.Domain.Item
 {
     public abstract class Item
         : IItem, IItemAttribute_tag
@@ -19,7 +20,7 @@ namespace QS.Domain.Item
             get => uuid;
             set
             {
-                if(uuid != null)
+                if (uuid != null)
                 {
                     throw new System.InvalidOperationException();
                 }

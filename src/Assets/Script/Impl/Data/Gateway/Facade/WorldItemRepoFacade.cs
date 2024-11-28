@@ -1,7 +1,8 @@
 using GameLib.DI;
 using QS.Api.Domain.Item;
-using QS.Domain.Item;
 using QS.GameLib.Util;
+using QS.Impl.Data.Gateway.WorldItem;
+using QS.Impl.Domain.Item;
 
 
 
@@ -12,7 +13,7 @@ namespace QS.Impl.Data.Gateway.Facade
     /// 有很多物体类型,创建一个外观类, 不让 这些物体的活动记录直接暴露
     /// 出去, 
     /// </summary>
-    class WorldItemRepoFacade
+    public class WorldItemRepoFacade
     {
 
         [Injected]

@@ -26,7 +26,7 @@ public class FollowingCamera3P : MonoBehaviour
 
     private void Awake()
     {
-        var ctx = GameManager.Instance.GlobalDIContext;
+        var ctx = TrunkGlobal.Instance.GlobalDIContext;
         ctx.BindInstance("MainCamera", GetType(), this);
 
     }

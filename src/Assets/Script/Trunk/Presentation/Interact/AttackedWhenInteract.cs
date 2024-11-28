@@ -13,7 +13,7 @@ namespace QS
 
         void Start()
         {
-            var ctx = GameManager.Instance.GlobalDIContext;
+            var ctx = TrunkGlobal.Instance.GlobalDIContext;
             ctx.Inject(this);
         }
 

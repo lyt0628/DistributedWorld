@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace QS.Impl.Service.DTO
 {
-    [Scope(Value = ScopeFlag.Prototype)]
     public class CharacterTranslationDTO : ICharacterTranslationDTO
     {
         public float Speed { get; set; }

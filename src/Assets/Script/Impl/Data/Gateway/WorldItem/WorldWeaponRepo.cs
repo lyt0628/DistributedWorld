@@ -1,11 +1,12 @@
 using QS.Domain.Item;
+using QS.Impl.Domain.Item;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace QS.Impl.Data.Gateway
+namespace QS.Impl.Data.Gateway.WorldItem
 {
-    public class WorldWeaponRepo
+    internal class WorldWeaponRepo
         : WorldItemRepo<Weapon, WorldWeaponRecord>
     {
         public override WorldWeaponRecord Create()
@@ -23,7 +24,7 @@ namespace QS.Impl.Data.Gateway
         public override WorldWeaponRecord Find(Predicate<Weapon> condition)
         {
             return store.GetAll(ItemType.Weapon)
-                .Select(i=>i as Weapon)
+                .Select(i => i as Weapon)
                 .Where(w => condition(w))
                 .Select(w => new WorldWeaponRecord(store, w))
                 .First();

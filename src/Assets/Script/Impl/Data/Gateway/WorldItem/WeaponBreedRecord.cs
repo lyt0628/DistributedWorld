@@ -1,8 +1,9 @@
 using QS.Domain.Combat;
 using QS.Domain.Item;
 using QS.Impl.Data.Store;
+using QS.Impl.Domain.Item;
 
-namespace QS.Impl.Data.Gateway
+namespace QS.Impl.Data.Gateway.WorldItem
 {
     public class WeaponBreedRecord
         : ItemBreedRecord<WeaponBreed>, IWeaponBreed, IWeaponBreed_tag

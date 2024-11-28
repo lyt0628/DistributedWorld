@@ -1,6 +1,6 @@
 using QS.Domain.Combat;
 
-namespace QS.Domain.Item
+namespace QS.Impl.Domain.Item
 {
     public interface IWeaponBreed_tag
     {

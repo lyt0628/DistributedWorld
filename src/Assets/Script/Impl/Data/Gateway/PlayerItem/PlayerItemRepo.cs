@@ -1,13 +1,13 @@
 using GameLib.DI;
-using QS.Domain.Item;
 using QS.GameLib.Pattern;
 using QS.GameLib.Pattern.Message;
 using QS.Impl.Data.Store;
+using QS.Impl.Domain.Item;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace QS.Impl.Data.Gateway
+namespace QS.Impl.Data.Gateway.PlayerItem
 {
     public class PlayerItemRepo
          : AbstractActiveRepo<Item, PlayerItemRecord>,
@@ -29,7 +29,7 @@ namespace QS.Impl.Data.Gateway
             throw new NotImplementedException();
         }
 
-        public override PlayerItemRecord Find( Predicate<Item> condition)
+        public override PlayerItemRecord Find(Predicate<Item> condition)
         {
             var i = inventory.GetAll()
                      .Where(i => condition(i))
@@ -52,7 +52,7 @@ namespace QS.Impl.Data.Gateway
         {
             return inventory.GetAll()
                 .Where(i => condition(i))
-                .Select(i => new PlayerItemRecord(this,inventory, i))
+                .Select(i => new PlayerItemRecord(this, inventory, i))
                 .ToList();
         }
     }
