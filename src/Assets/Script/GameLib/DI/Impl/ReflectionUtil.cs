@@ -6,7 +6,7 @@ using System.Reflection;
 
 namespace GameLib.DI
 {
-    static class ReflectionUtil
+    internal static class ReflectionUtil
     {
 
         public static IBinding ResolvePriorBinding(ISet<IBinding> v, Type target)
@@ -189,6 +189,14 @@ namespace GameLib.DI
                                 Bindings.EmptyDeps);
             return binding;
         }
+
+        public static ISet<IBinding> ResolveNamedBinding(string name, ISet<IBinding> v, Type target)
+        {
+            var namedBindings = v.Where(b => name == b.Target.Name).ToHashSet();
+
+            return namedBindings;
+        }
+
         public static void ThrowNoBindingFoundException(Type target)
         {
             throw new DIException(

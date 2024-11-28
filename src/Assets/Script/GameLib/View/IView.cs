@@ -1,6 +1,6 @@
-using GameLib.Pattern.Message;
+using QS.GameLib.Pattern.Message;
 
-namespace GameLib.View
+namespace QS.GameLib.View
 {
     public interface IView
     {

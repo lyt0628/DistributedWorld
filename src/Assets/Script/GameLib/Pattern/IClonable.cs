@@ -1,5 +1,4 @@
-
-namespace GameLib
+namespace QS.GameLib.Pattern
 {
     public interface IClonable<T>
     {

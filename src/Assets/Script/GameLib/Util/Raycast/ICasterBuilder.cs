@@ -1,6 +1,4 @@
-
-
-namespace GameLib.Uitl.RayCast
+namespace QS.GameLib.Uitl.RayCast
 {
     interface ICasterBuilder
     {

@@ -1,6 +1,6 @@
 using GameLib.DI;
-using GameLib.Pattern;
 using NUnit.Framework;
+using QS.GameLib.Pattern.Pipeline;
 
 public class CombatorIntegrationTest
 {
@@ -34,10 +34,10 @@ public class CombatorIntegrationTest
     public void CombatorIntegrationTestSimplePasses()
     {
         var ctx = IDIContext.New();
-        ctx.Bind(typeof(DefaultPipelineConext))
-            .Bind(typeof(PipelineHolderChild))
-            .Bind(typeof(Another));
-        var holder = ctx.GetInstance<Another>(typeof(Another)).child;
+        ctx.Bind<DefaultPipelineConext>()
+            .Bind<PipelineHolderChild>()
+            .Bind<Another>();
+        var holder = ctx.GetInstance<Another>().child;
         Assert.IsNotNull(holder);
         holder.check1();
         holder.check2();

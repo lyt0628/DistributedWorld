@@ -1,10 +1,8 @@
-
-
-using GameLib.Pattern.Message;
+using QS.GameLib.Pattern.Message;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GameLib.View
+namespace QS.GameLib.View
 {
     public abstract class AbstractView : IViewNode
     {
@@ -154,7 +152,7 @@ namespace GameLib.View
         {
             if (widget != null)
             {
-                GameObject.Destroy(widget);
+                Object.Destroy(widget);
             }
         }
 

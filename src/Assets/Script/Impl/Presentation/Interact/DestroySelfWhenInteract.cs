@@ -1,4 +1,3 @@
-
 using QS.Api.Presentation.Interact;
 using UnityEngine;
 

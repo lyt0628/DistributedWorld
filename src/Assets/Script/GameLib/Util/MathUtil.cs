@@ -1,7 +1,7 @@
 
 
 
-namespace GameLib.Util
+namespace QS.GameLib.Util
 {
     public static class MathUtil
     {

@@ -1,9 +1,8 @@
-using UnityEngine;
-
-
 /*
  * providing engoug infomation for Agnet 
  */
+using UnityEngine;
+
 public class AgentBahaviour : MonoBehaviour
 {
     // Start is called before the first frame update

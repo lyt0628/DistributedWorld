@@ -1,6 +1,4 @@
-
-
-namespace GameLib.View
+namespace QS.GameLib.View
 {
     public interface IViewNode : IView
     {

@@ -1,7 +1,4 @@
-
-
-
-namespace GameLib.Pattern
+namespace QS.GameLib.Pattern.Pipeline
 {
     public abstract class AbstractPipelineHandler : IPipelineHandler
     {

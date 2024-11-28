@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-namespace GameLib.Uitl.RayCast
+namespace QS.GameLib.Uitl.RayCast
 {
     static class RaycastUtil
     {

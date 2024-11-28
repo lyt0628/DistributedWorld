@@ -1,6 +1,4 @@
-
-
-namespace GameLib
+namespace QS.GameLib.Pattern
 {
     using System;
     public interface ISubcscriber<T>

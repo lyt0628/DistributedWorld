@@ -1,5 +1,4 @@
-
-using GameLib;
+using QS.GameLib.Pattern;
 using System;
 
 
@@ -11,7 +10,6 @@ namespace QS.Api
     /// </summary>
     public interface ILifecycleProivder : ISington<ILifecycleProivder>
     {
-
 
         bool Request(Lifecycles statge, Action callback);
 

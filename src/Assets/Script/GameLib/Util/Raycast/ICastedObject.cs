@@ -2,7 +2,7 @@
 
 using UnityEngine;
 
-namespace GameLib.Util.Raycast
+namespace QS.GameLib.Util.Raycast
 {
     public interface ICastedObject
     {

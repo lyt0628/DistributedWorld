@@ -1,6 +1,6 @@
-using GameLib.Pattern.Message;
-using GameLib.View;
 using QS.Api;
+using QS.GameLib.Pattern.Message;
+using QS.GameLib.View;
 
 class ViewManager : IGameManager
 {

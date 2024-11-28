@@ -1,5 +1,4 @@
-
-namespace GameLib.Util.Raycast
+namespace QS.GameLib.Util.Raycast
 {
     interface IRaycastStrategy
     {

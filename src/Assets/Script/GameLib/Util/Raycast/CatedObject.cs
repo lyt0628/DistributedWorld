@@ -1,9 +1,8 @@
-using GameLib.Util.Raycast;
-
+using QS.GameLib.Util.Raycast;
 using UnityEngine;
 
 
-namespace GameLib.Uitl.RayCast
+namespace QS.GameLib.Uitl.RayCast
 {
 
     public abstract class CastedObject : ICastedObject
@@ -52,13 +51,13 @@ namespace GameLib.Uitl.RayCast
 
         public ICastedObject MaxDistance(float distance)
         {
-            this._maxDistance = distance;
+            _maxDistance = distance;
             return this;
         }
 
         public ICastedObject LayerMask(int mask)
         {
-            this._layerMask = mask;
+            _layerMask = mask;
             return this;
         }
 

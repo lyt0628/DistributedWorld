@@ -54,10 +54,10 @@ namespace GameLib.DI.Test
         public void Concrete_Class_Injection_Works()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(A))
-                .Bind(typeof(B));
+            ctx.Bind<A>()
+                .Bind<B>();
 
-            var b = ctx.GetInstance<B>(typeof(B));
+            var b = ctx.GetInstance<B>();
             Assert.IsNotNull(b);
             Assert.IsNotNull(b.a);
         }
@@ -67,10 +67,10 @@ namespace GameLib.DI.Test
         {
             var ctx = IDIContext.New();
 
-            ctx.Bind(typeof(Cat))
-                .Bind(typeof(CatHolder));
+            ctx.Bind<Cat>()
+                .Bind<CatHolder>();
 
-            var holder = ctx.GetInstance<CatHolder>(typeof(CatHolder));
+            var holder = ctx.GetInstance<CatHolder>();
             Assert.IsNotNull(holder);
             Assert.IsNotNull(holder.cat);
         }
@@ -79,10 +79,10 @@ namespace GameLib.DI.Test
         public void Injection_Resolved_By_Name()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(Cat))
-                .Bind(typeof(Dog))
-                .Bind(typeof(DogHolder));
-            var holder = ctx.GetInstance<DogHolder>(typeof(DogHolder));
+            ctx.Bind<Cat>()
+                .Bind<Dog>()
+                .Bind<DogHolder>();
+            var holder = ctx.GetInstance<DogHolder>();
             Assert.IsNotNull(holder);
             Assert.IsNotNull(holder.dog);
             Assert.IsTrue(typeof(Dog) == holder.dog.GetType());
@@ -92,11 +92,11 @@ namespace GameLib.DI.Test
         public void Injecion_Resolved_By_Priority()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(RedKing))
-                .Bind(typeof(BlackKing))
-                .Bind(typeof(Kingdom));
+            ctx.Bind<RedKing>()
+                .Bind<BlackKing>()
+                .Bind<Kingdom>();
 
-            var kingdom = ctx.GetInstance<Kingdom>(typeof(Kingdom));
+            var kingdom = ctx.GetInstance<Kingdom>();
             Assert.IsNotNull(kingdom);
             Assert.IsTrue(typeof(RedKing) == kingdom.king.GetType());
         }
@@ -117,13 +117,13 @@ namespace GameLib.DI.Test
         public void Circur_Dependencies_Can_Be_Sloved()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(Head))
-            .Bind(typeof(Tail));
+            ctx.Bind<Head>()
+            .Bind<Tail>();
 
-            var head = ctx.GetInstance<Head>(typeof(Head));
+            var head = ctx.GetInstance<Head>();
             Assert.IsNotNull(head);
             Assert.IsNotNull(head.tail);
-            var tail = ctx.GetInstance<Tail>(typeof(Tail));
+            var tail = ctx.GetInstance<Tail>();
             Assert.IsNotNull(tail.head);
 
         }
@@ -132,11 +132,11 @@ namespace GameLib.DI.Test
         public void SetterInjection_Can_Be_Scoped()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(A))
-                .Bind(typeof(B))
-                .Bind(typeof(C));
-            var b = ctx.GetInstance<B>(typeof(B));
-            var c = ctx.GetInstance<C>(typeof(C));
+            ctx.Bind<A>()
+                .Bind<B>()
+                .Bind<C>();
+            var b = ctx.GetInstance<B>();
+            var c = ctx.GetInstance<C>();
             Assert.AreEqual(b.a, c.a);
         }
 
@@ -153,9 +153,9 @@ namespace GameLib.DI.Test
         public void Explicit_Scope_Bind_Works()
         {
             var ctx = IDIContext.New();
-            ctx.Bind(typeof(A), ScopeFlag.Prototype)
-                .Bind(typeof(D));
-            var d = ctx.GetInstance<D>(typeof(D));
+            ctx.Bind<A>(ScopeFlag.Prototype)
+                .Bind<D>();
+            var d = ctx.GetInstance<D>();
             Assert.IsNotNull(d);
             Assert.IsNotNull(d.a1);
             Assert.IsNotNull(d.a2);

@@ -1,4 +1,4 @@
-namespace GameLib
+namespace QS.GameLib.Pattern
 {
     public interface ISpawner<T>
     {

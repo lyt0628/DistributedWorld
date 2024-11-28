@@ -1,9 +1,7 @@
-
-
 using UnityEngine;
 
 
-namespace GameLib
+namespace QS.GameLib.Pattern
 {
     public class SingtonBehaviour<T> : MonoBehaviour where T : Component
     {

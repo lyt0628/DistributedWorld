@@ -1,7 +1,5 @@
 
-
-
-namespace GameLib.Pattern
+namespace QS.GameLib.Pattern.Pipeline
 {
     public interface IPipelineContext
     {
