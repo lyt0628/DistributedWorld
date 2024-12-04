@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AgentBahaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // DoIt is called before the first frame update
     void Start()
     {
 

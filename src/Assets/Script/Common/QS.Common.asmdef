@@ -1,0 +1,17 @@
+{
+    "name": "QS.Common",
+    "rootNamespace": "",
+    "references": [
+        "GUID:8c107b19aff0a0443a14684af05dbe35",
+        "GUID:c720f9517ccc66d46937442510310776"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

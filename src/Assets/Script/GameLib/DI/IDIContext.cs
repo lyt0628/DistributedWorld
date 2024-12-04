@@ -20,6 +20,12 @@ namespace GameLib.DI
         IDIContext BindInstance(Key target, object instance);
         IDIContext BindInstance(string name, Type type, object instance);
 
+        IDIContext BindExternalInstance(Type target, object instance);
+        IDIContext BindExternalInstance(object instance);
+        IDIContext BindExternalInstance(string name, object instance);
+        IDIContext BindExternalInstance(Key target, object instance);
+        IDIContext BindExternalInstance(string name, Type type, object instance);
+
         T GetInstance<T>();
         object GetInstance(Type type);
         T GetInstance<T>(string name);

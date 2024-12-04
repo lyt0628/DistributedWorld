@@ -15,6 +15,31 @@ namespace GameLib.DI
             throw new InvalidOperationException();
         }
 
+        public IDIContext BindExternalInstance(Type target, object instance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDIContext BindExternalInstance(object instance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDIContext BindExternalInstance(string name, object instance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDIContext BindExternalInstance(Key target, object instance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDIContext BindExternalInstance(string name, Type type, object instance)
+        {
+            throw new NotImplementedException();
+        }
+
         public IDIContext BindInstance(Type target, object instance)
         {
             throw new InvalidOperationException();
