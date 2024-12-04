@@ -40,7 +40,7 @@ namespace GameLib.DI
         private static readonly ISet<Key> keyCache = new HashSet<Key>();
         public static Key Get(Type type)
         {
-            var k = new Key(ReflectionUtil.GenerateNameOf(type), type);
+            var k = new Key(DIUtil.GenerateNameOf(type), type);
             return Resolve(k);
         }
 

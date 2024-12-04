@@ -18,7 +18,7 @@ class HpView : AbstractView
     public override void OnInit()
     {
         //Hide();
-        var ctx = TrunkGlobal.Instance.GlobalDIContext;
+        var ctx = TrunkGlobal.Instance.DI;
         ctx.Inject(this);
 
         var character = PlayerCharacter.ActivedCharacter;

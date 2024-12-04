@@ -1,7 +1,6 @@
 using GameLib.DI;
+using QS.Api.Data;
 using QS.Api.Service;
-using QS.Domain.Item;
-using QS.Impl.Data.Gateway.Facade;
 using UnityEngine;
 
 /*
@@ -26,21 +25,36 @@ public class Character : MonoBehaviour
     readonly IPlayerControllService playerControllService;
 
     [Injected]
-    PlayerItemRepofacade playerItemRepoFacade;
+    readonly IPlayerCharacterData playerCharacter;
+
+    //[Injected]
+    //PlayerItemRepository playerItemRepoFacade;
 
     void Awake()
     {
-        var ctx = TrunkGlobal.Instance.GlobalDIContext;
+        var ctx = TrunkGlobal.Instance.DI;
 
         _ = ctx.BindInstance("Player", gameObject)
            .BindInstance("PlayerTransform", transform);
+
     }
 
 
     void Start()
     {
-        TrunkGlobal.Instance.GlobalDIContext.Inject(this);
+        var ctx = TrunkGlobal.Instance.DI;
+         ctx.Inject(this);
+        playerCharacter.ActivedCharacter = gameObject;
 
+        var tRelay = playerControllService.GetPlayerTranslation();
+        tRelay.Subscrib((t) =>
+        {
+            var animator = GetComponent<Animator>();
+            animator.SetFloat("Speed", t.Speed);
+            animator.SetBool("Jumping", t.Jumping);
+
+            transform.position += t.Displacement;
+        });
 
         /// 不能从这个来, 这个类是接口类, 我查询数据是为了创建
         /// 是实现的目的, 因该依赖于其他数据入口
@@ -91,32 +105,28 @@ public class Character : MonoBehaviour
 
 
 
-        playerItemRepoFacade.AddItem("Rust Sword");
-        var ws = playerItemRepoFacade.GetItems<IWeapon>();
-        foreach (var w in ws)
-        {
-            // 虽然这个暴露是不得已的,但是, 主干层有时候也需要直接与领域模型接触
-            // 我不可能把所有的服务都放到Impl层
-            w.Refine(10);
-            //playerItemRepoFacade.UpdateItem(w);
-            Debug.Log(w.Name);
-            Debug.Log(w.Exp);
-        }
+        //playerItemRepoFacade.AddItem("Rust Sword");
+        //var ws = playerItemRepoFacade.GetItems<IWeapon>();
+        //foreach (var w in ws)
+        //{
+        //    // 虽然这个暴露是不得已的,但是, 主干层有时候也需要直接与领域模型接触
+        //    // 我不可能把所有的服务都放到Impl层
+        //    w.Refine(10);
+        //    //playerItemRepoFacade.UpdateItem(w);
+        //    Debug.Log(w.Name);
+        //    Debug.Log(w.Exp);
+        //}
 
     }
 
     // UpdateIfNeed is called once per frame
     void Update()
     {
-        var translationDTO = playerControllService.GetTranslation();
+        //var translationDTO = playerControllService.GetTranslation();
         var rotation = playerControllService.GetRotation();
 
 
-        var animator = GetComponent<Animator>();
-        animator.SetFloat("Speed", translationDTO.Speed);
-        animator.SetBool("Jumping", translationDTO.Jumping);
-
-        transform.position += translationDTO.Displacement;
+  
 
         transform.rotation = rotation;
 

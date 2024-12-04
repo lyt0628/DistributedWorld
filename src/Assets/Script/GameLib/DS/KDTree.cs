@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class KDTree : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // DoIt is called before the first frame update
     void Start()
     {
 

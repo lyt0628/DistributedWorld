@@ -68,6 +68,43 @@ namespace GameLib.DI
         {
             return BindInstance(name, instance.GetType(), instance);
         }
+       
+
+
+        // <summary> 
+        // Bind sington for type with type.FullName as name
+        // </summary>
+        public IDIContext BindExternalInstance(Type type, object instance)
+        {
+            return BindExternalInstance(Key.Get(type), instance);
+        }
+
+        // <summary> 
+        // Bind sington for Specific Key
+        // The Key.Name as name
+        // </summary>
+        public IDIContext BindExternalInstance(Key target, object instance)
+        {
+            var binding = Bindings.ToInstance(target, instance);
+            AddBinding(binding);
+            return this;
+        }
+        public IDIContext BindExternalInstance(string name, Type type, object instance)
+        {
+            var target = Key.Get(name, type);
+            return BindExternalInstance(target, instance);
+        }
+
+        public IDIContext BindExternalInstance(object instance)
+        {
+            return BindExternalInstance(instance.GetType(), instance);
+        }
+
+
+        public IDIContext BindExternalInstance(string name, object instance)
+        {
+            return BindExternalInstance(name, instance.GetType(), instance);
+        }
 
         /// <summary>
         /// Get instance By type and name. 
@@ -98,19 +135,35 @@ namespace GameLib.DI
         }
         public object GetInstance(Type type)
         {
+            if (!type.IsInterface)
+            {
+                Debug.LogError($"{type} is a concrete class");
+            }
             var key = Key.Get(type);
             return GetInstance(key);
         }
 
         public object GetInstance(string name, Type type)
         {
+            if (!type.IsInterface)
+            {
+                Debug.LogError($"{type} is a concrete class");
+            }
+
             var key = Key.Get(name, type);
+            
             return GetInstance(key);
         }
 
         object GetInstance(Key key)
         {
+            var type = key.Type;
+            if (!type.IsInterface)
+            {
+                Debug.LogError($"{type} is a concrete class");
+            }
             var binding = LookupBindingWithParent(key);
+
             return GenInstance(binding);
         }
 
@@ -155,14 +208,14 @@ namespace GameLib.DI
         void Bind0(Key target, ScopeFlag scope)
         {
             var type = target.Type;
-            if (ReflectionUtil.IsInterface(type))
+            if (DIUtil.IsInterface(type))
             {
                 if (!bindings.ContainsKey(target.KeyType))
                 {
                     bindings.Add(target.KeyType, Bindings.NewEmptyGenericBindingSet());
                 }
             }
-            else if (!ReflectionUtil.IsAbstract(type))
+            else if (!DIUtil.IsAbstract(type))
             {
                 DoBind(target, scope);
             }
@@ -208,7 +261,7 @@ namespace GameLib.DI
         {
             DoAddBinding(binding.Target, binding);
 
-            var ancestors = ReflectionUtil.CollectAncestorsAndInterfaces(binding.Target.Type);
+            var ancestors = DIUtil.CollectAncestorsAndInterfaces(binding.Target.Type);
             foreach (var ancestor in ancestors)
             {
                 DoAddBinding(Key.Get(ancestor), binding);
@@ -234,20 +287,20 @@ namespace GameLib.DI
         {
             Type type = target.Type;
 
-            if (ReflectionUtil.TryGetScopeof(type, out ScopeFlag s))
+            if (DIUtil.TryGetScopeof(type, out ScopeFlag s))
             {
                 binding.Scope = s;
             }
-            if (ReflectionUtil.TryGetPriorityOf(type, out int prioriy))
+            if (DIUtil.TryGetPriorityOf(type, out int prioriy))
             {
                 binding.Priority = prioriy;
             }
 
-            ReflectionUtil.CollectAllFieldAndPropsInHierachy(type,
+            DIUtil.CollectAllFieldAndPropsInHierachy(type,
                 out List<FieldInfo> fieldInfos,
                 out List<PropertyInfo> propInfos);
 
-            ReflectionUtil.CollectInjectionFromFieldsAndProps(
+            DIUtil.CollectInjectionFromFieldsAndProps(
                 fieldInfos, propInfos, out ISet<IInjection> injections);
 
             if (injections.Count == 1)
@@ -278,11 +331,11 @@ namespace GameLib.DI
                 {
                     throw new DIException("More than one Contructor Defined by @" + typeof(Injected).Name);
                 }
-                binding = ReflectionUtil.BindingFromInjectedConstructor(target, injectedCtorInfos.First());
+                binding = DIUtil.BindingFromInjectedConstructor(target, injectedCtorInfos.First());
             }
             else
             {
-                binding = ReflectionUtil.BindingFromEmptyConstructor(target);
+                binding = DIUtil.BindingFromEmptyConstructor(target);
             }
 
             return binding;
@@ -358,7 +411,7 @@ namespace GameLib.DI
             // Else User should Specific Name for detailed Binding.
 
             // Filter By Name
-            var namedBindings = ReflectionUtil.ResolveNamedBinding(k.Name, typedBindings);
+            var namedBindings = DIUtil.ResolveNamedBinding(k.Name, typedBindings);
             if (namedBindings.Count == 1) return ScopeBinding(k, namedBindings.First());
             else if (namedBindings.Count == 0)
             {
@@ -371,11 +424,11 @@ namespace GameLib.DI
             // Filter By Priority
             if (namedBindings.Count == 0)
             {
-                priorBinding = ReflectionUtil.ResolvePriorBinding(typedBindings);
+                priorBinding = DIUtil.ResolvePriorBinding(typedBindings);
             }
             else
             {
-                priorBinding = ReflectionUtil.ResolvePriorBinding(namedBindings);
+                priorBinding = DIUtil.ResolvePriorBinding(namedBindings);
             }
 
             return ScopeBinding(k, priorBinding);
@@ -407,6 +460,5 @@ namespace GameLib.DI
             return resolvedBinding;
         }
 
-      
-    }
+     }
 }

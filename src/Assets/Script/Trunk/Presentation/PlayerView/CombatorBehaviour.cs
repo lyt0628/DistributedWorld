@@ -1,14 +1,13 @@
 using GameLib.DI;
+using QS.Api.Combat.Domain;
 using QS.Api.Data;
-using QS.Domain.Combat;
+using QS.Combat.Domain;
 using QS.GameLib.Pattern.Message;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CombatorBehaviour : MonoBehaviour, IBuffedCombater<AbstractBuff>, IMessagerProvider
 {
-    [Injected]
-    readonly IPlayerCharacterData playerCharacter;
 
     [Injected]
     readonly AbstractCombater delegat;
@@ -39,13 +38,12 @@ public class CombatorBehaviour : MonoBehaviour, IBuffedCombater<AbstractBuff>, I
         ((IBuffable<AbstractBuff>)delegat).RemoveBuff(id, stage);
     }
 
+    void Awake()
+    {
+        TrunkGlobal.Instance.DI.Inject(this);
+    }
     void Start()
     {
-        var ctx = TrunkGlobal.Instance.GlobalDIContext;
-        ctx.Inject(this);
-
-        playerCharacter.ActivedCharacter = gameObject;
-
         delegat.CombatData = new CombatData()
         {
             Atn = 100,
