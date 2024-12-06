@@ -137,7 +137,7 @@ namespace GameLib.DI
         {
             if (!type.IsInterface)
             {
-                Debug.LogError($"{type} is a concrete class");
+                Debug.LogWarning($"{type} is a concrete class");
             }
             var key = Key.Get(type);
             return GetInstance(key);
@@ -147,7 +147,7 @@ namespace GameLib.DI
         {
             if (!type.IsInterface)
             {
-                Debug.LogError($"{type} is a concrete class");
+                Debug.LogWarning($"{type} is a concrete class");
             }
 
             var key = Key.Get(name, type);
@@ -160,7 +160,7 @@ namespace GameLib.DI
             var type = key.Type;
             if (!type.IsInterface)
             {
-                Debug.LogError($"{type} is a concrete class");
+                Debug.LogWarning($"{type} is a concrete class");
             }
             var binding = LookupBindingWithParent(key);
 
@@ -440,6 +440,7 @@ namespace GameLib.DI
             IBinding resolvedBinding = binding;
             if (binding.Scope == ScopeFlag.Sington)
             {
+
                 if (scopeCahce.TryGetValue(k, out InstanceBinding b))
                 {
                     resolvedBinding = b;

@@ -10,6 +10,7 @@ namespace QS.Api.Setting
     public interface IGlobalPhysicSetting
     {
         float Gravity { get; }
-
+        float ErrorTolerance { get; }
+        float HalfErrorTolerance { get; }
     }
 }

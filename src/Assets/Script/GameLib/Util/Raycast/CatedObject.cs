@@ -27,12 +27,12 @@ namespace QS.GameLib.Uitl.RayCast
 
         public static ICastedObject Ray(Vector3 pos, Vector3 direction)
         {
-            return new CastedRay(pos, direction);
+            return new CastedRay(pos, direction.normalized);
         }
 
         public static ICastedObject Capsule(Vector3 point1, Vector3 point2, float radius, Vector3 direction)
         {
-            return new CastedCapsule(point1, point2, radius, direction);
+            return new CastedCapsule(point1, point2, radius, direction.normalized);
         }
 
         public ICastedObject IgnoreTrigger(bool ignore = true)

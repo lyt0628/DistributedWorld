@@ -11,7 +11,7 @@ namespace QS.GameLib.Rx.Relay
         {
             this.observable = observable;
         }
-        IObservable<T> observable;
+        readonly IObservable<T> observable;
 
         public static Relay<T> Just(IEnumerable<T> values)
         {
@@ -34,6 +34,12 @@ namespace QS.GameLib.Rx.Relay
             return new Relay<T>(o);
         }
 
+        public Relay<U> Map <U> (Func<T,U> mapper)
+        {
+            var op = new MapOperator<T,U>(mapper);
+            observable.Subscribe(op);
+            return new Relay<U>(op);
+        }
 
         public Relay<T> Subscrib(Action<T> onNext)
         {
