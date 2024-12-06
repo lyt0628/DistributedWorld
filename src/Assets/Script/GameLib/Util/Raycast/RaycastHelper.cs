@@ -4,15 +4,43 @@ namespace QS.GameLib.Util.Raycast
 {
     public class RaycastHelper
     {
-        private readonly ICastedObject _castedObject;
-        private bool needUpdate = true;
-        private bool _hit = false;
-        public bool Hit { get { return _hit; } }
-        private RaycastHit hitInfo;
+        readonly ICastedObject _castedObject;
+        bool needUpdate = true;
+        bool _hit = false;
+        RaycastHit hitInfo;
+
+
+
+        public bool Hit { 
+            get 
+            {
+                UpdateIfNeed();
+                return _hit; 
+            } 
+        }
+        public float Distance 
+        {
+            get
+            {
+                UpdateIfNeed();
+                return Hit ? hitInfo.distance : float.PositiveInfinity;
+            }
+        }
+        public Vector3 Normal
+        {
+            get
+            {
+                UpdateIfNeed();
+                return hitInfo.normal;
+            }
+        }
+
+
         private RaycastHelper(ICastedObject castedObject)
         {
             _castedObject = castedObject;
         }
+
 
         public static RaycastHelper Of(ICastedObject castedObject)
         {
@@ -22,39 +50,39 @@ namespace QS.GameLib.Util.Raycast
         {
             needUpdate = true;
         }
-
-
-        public float Distance()
-        {
-            UpdateIfNeed();
-            return Hit ? hitInfo.distance : float.PositiveInfinity;
-        }
+       
 
         public bool IsCloserThan(float d)
         {
             UpdateIfNeed();
             if (!Hit) return false;
-            return Distance() < d;
+            return Distance < d;
         }
+        public bool IsCloserThanOrJust(float d)
+        {
+            UpdateIfNeed();
+            if (!Hit) return false;
+            return Distance <= d;
+        }
+        public bool IsFartherThanOrJust(float d)
+        {
+            UpdateIfNeed();
+            if (!Hit) return false;
+            return Distance >= d;        }
 
-        public bool IsFartherThan(float d)
+        void UpdateIfNeed()
         {
-            return !IsCloserThan(d);
-        }
-        private void UpdateIfNeed()
-        {
-            if (needUpdate)
+            if(!needUpdate) return;
+            needUpdate = false;
+
+            if (_castedObject.Cast(out RaycastHit hit))
             {
-                needUpdate = false;
-                if (_castedObject.Cast(out RaycastHit hit))
-                {
-                    _hit = true;
-                    hitInfo = hit;
-                }
-                else
-                {
-                    _hit = false;
-                }
+                _hit = true;
+                hitInfo = hit;
+            }
+            else
+            {
+                _hit = false;
             }
         }
     }

@@ -41,8 +41,7 @@ public class TrunkGlobal : SingtonBehaviour<TrunkGlobal>
         DI.Inject(this);
 
 
-
-        _managers.Add(new ViewManager());
+        //_managers.Add(new ViewManager());
 
         _managers.ForEach(manager => { manager.Startup(); });
 
@@ -50,19 +49,7 @@ public class TrunkGlobal : SingtonBehaviour<TrunkGlobal>
         {
             _managers.ForEach(manager => { manager.Update(); });
         });
-
-        Relay<string>
-            .Just(new List<string>() { "1", "2", "3" })
-            .Subscrib(s => Debug.Log(s));
-
-        Relay<string>
-            .Tick(() => "666", out IMotion motion)
-            .Subscrib(s => Debug.Log(s))
-            .Subscrib(s=>Debug.Log(s+"11111111"));
-        motion.Set();
-        motion.Set();
-        motion.Set();
-        motion.Set();
+   
 
     }
 
@@ -73,7 +60,6 @@ public class TrunkGlobal : SingtonBehaviour<TrunkGlobal>
             Application.Quit();
             Debug.Log("Quit");
         }
-
 
     }
 

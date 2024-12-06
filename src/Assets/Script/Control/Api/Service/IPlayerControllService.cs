@@ -1,4 +1,4 @@
-using QS.Api.Service.DTO;
+using QS.Api.Control.Service.DTO;
 using QS.GameLib.Rx.Relay;
 using UnityEngine;
 
@@ -15,11 +15,14 @@ namespace QS.Api.Service
     /// </summary>
     public interface IPlayerControllService
     {
-        ICharacterTranslation GetTranslation();
+        //ICharacterTranslationDTO GetTranslation();
 
-        Relay<ICharacterTranslation> GetPlayerTranslation();
+        Relay<ICharacterTranslationDTO> GetTranslation();
+        Relay<Quaternion> GetRotation();
 
-        Quaternion GetRotation();
+
+
+
     }
 
 }

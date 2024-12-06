@@ -1,10 +1,10 @@
 using GameLib.DI;
-using QS.Api.Service.DTO;
+using QS.Api.Control.Service.DTO;
 using UnityEngine;
 
 namespace QS.Impl.Service.DTO
 {
-    class CharacterTranslationDTO : ICharacterTranslation
+    class CharacterTranslationDTO : ICharacterTranslationDTO
     {
         public float Speed { get; set; }
 
