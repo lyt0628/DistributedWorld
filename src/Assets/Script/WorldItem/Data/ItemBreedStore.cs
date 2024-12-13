@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace QS.Impl.Data.Store
 {
-    public class ItemBreedSotre
+    class ItemBreedSotre
     {
         readonly Dictionary<string, ItemBreed> stores = new();
 

@@ -2,20 +2,22 @@
 
 
 using System.Collections.Generic;
+using System.Linq;
 
 namespace QS.GameLib.Rx.Relay
 {
     class MotionGroup : IMotion
     {
-        readonly List<IMotion> motions = new();
-        public void Add(IMotion motion)
+        readonly List<IDisposableMotion> motions = new();
+        public void Add(IDisposableMotion motion)
         {
             motions.Add(motion);
         }
 
         public void Set()
         {
-            motions.ForEach(m=>m.Set());
+            motions.RemoveAll(motion =>motion.IsDisposed);
+            motions.ForEach(motion=> motion.Set());
         }
     }
 }

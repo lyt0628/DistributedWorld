@@ -3,7 +3,7 @@ using QS.GameLib.Pattern.Pipeline;
 
 namespace QS.Combat.Domain
 {
-    public class AttackBuff : AbstractBuff
+    class AttackBuff : AbstractBuff<AttackMsg>
     {
         private readonly float atnBuff = 0;
         private readonly float matkBuff = 0;
@@ -13,13 +13,15 @@ namespace QS.Combat.Domain
             this.atnBuff = atnBuff;
             this.matkBuff = matkBuff;
         }
+
         public override BuffStages AttackStage => BuffStages.Attack;
 
-        public override void Read(IPipelineHandlerContext context, object msg)
+
+        protected override object MakeBuff(AttackMsg msg)
         {
-            var atk = msg as AttackMsg;
-            atk.atn_res = atk.atn * atnBuff;
-            atk.matk_res = atk.matk * matkBuff;
+            msg.atn_res = msg.atn * atnBuff;
+            msg.matk_res = msg.matk * matkBuff;
+            return msg;
         }
     }
 }

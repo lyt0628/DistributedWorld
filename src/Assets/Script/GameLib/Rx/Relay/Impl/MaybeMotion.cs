@@ -13,6 +13,7 @@ namespace QS.GameLib.Rx.Relay
         protected override void DoSet()
         {
             observer.OnNext(Value);
+            observer.OnCompleted();
         }
     }
 }

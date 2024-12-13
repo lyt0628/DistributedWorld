@@ -1,4 +1,3 @@
-using QS.Api.Service;
 using UnityEngine;
 
 namespace QS.Api.Control.Service.DTO
@@ -11,6 +10,7 @@ namespace QS.Api.Control.Service.DTO
     public interface ICharacterTranslationDTO
     {
         float Speed { get; }
+        Quaternion Rotation { get; }
         Vector3 Displacement { get; }
         bool Jumping { get; }
 

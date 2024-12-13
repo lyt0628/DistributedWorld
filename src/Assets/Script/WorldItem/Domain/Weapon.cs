@@ -6,7 +6,7 @@ namespace QS.WorldItem.Domain
     /// <summary>
     /// The weapon that hold basic weapon function.
     /// </summary>
-    internal class Weapon
+    class Weapon
         : Item, IWeapon, IWeaponAttribute_tag, IWeaponBreed_tag
     {
 

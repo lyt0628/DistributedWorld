@@ -1,4 +1,6 @@
 using QS.Api.Combat.Domain;
+using QS.Combat.Service;
+using QS.Common;
 using QS.GameLib.Pattern.Message;
 using QS.GameLib.Pattern.Pipeline;
 using System;
@@ -14,9 +16,12 @@ namespace QS.Combat.Domain
     /// 伤害=系数*攻击^2/系数*(系数*攻击+防御) 
     /// </summary>
     public abstract class AbstractCombater
-        : IBuffedCombater<AbstractBuff>, IMessagerProvider
+        : IBuffedCombater, IMessagerProvider
     {
-
+        public AbstractCombater() 
+        {
+            Messager = CombatGlobal.Instance.GetInstance<IMessager>(Api.Common.DINames.GameLib_Message_Messager);
+        }
         readonly IPipelineContext attackPipelineContext = IPipelineContext.New();
 
         readonly IPipelineContext injuredPipelineContext = IPipelineContext.New();
@@ -31,29 +36,16 @@ namespace QS.Combat.Domain
                 Messager.Boardcast("HP", new Msg1<float>(combatData.Hp));
             }
         }
-        public bool Combating { get; set; }
-        public List<ICombatable> Enemies { get; set; }
 
-        private readonly IMessager _messager = new Messager();
-        public IMessager Messager
-        {
-            get
-            {
-                return _messager;
-            }
-        }
+        public IMessager Messager{ get; }
 
         public virtual IAttack Attack()
         {
             var atk = new AttackMsg(CombatData.Atn, CombatData.Matk);
             attackPipelineContext.InBound(atk);
 
-            var result = new Attack
-            {
-                Atn = atk.atn_res,
-                Matk = atk.matk_res
-            };
-            return result;
+            var f = new AttackFactory();
+            return f.NewAttack(atk.atn_res, atk.matk_res);
         }
 
         public virtual void Injured(IAttack atk)
@@ -61,11 +53,20 @@ namespace QS.Combat.Domain
             var def = new InjureMsg(CombatData.Def, CombatData.Res);
             injuredPipelineContext.InBound(def);
 
-            CombatData.Hp = CombatData.Hp - atk.Atn * atk.Atn / (atk.Atn + def.def_res);
-            Messager.Boardcast("HP", new Msg1<float>(CombatData.Hp));
+            var hp = CombatData.Hp - atk.Atn * atk.Atn / (atk.Atn + def.def_res);
+            CombatData = new CombatData()
+            {
+                Hp = hp,
+                Mp = combatData.Mp,
+                Atn = combatData.Atn,
+                Matk = combatData.Matk,
+                Def = combatData.Def, 
+                Res = combatData.Res,
+            };
+
         }
 
-        public virtual void AddBuff(string id, AbstractBuff buff)
+        public virtual void AddBuff<T>(string id, AbstractBuff<T> buff) 
         {
             switch (buff.AttackStage)
             {

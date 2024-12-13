@@ -25,6 +25,6 @@ namespace QS.GameLib.Rx.Relay
             }
         }
 
-        protected abstract IMotion DoSubscribe(IObserver<T> observer);
+        protected abstract IDisposableMotion DoSubscribe(IObserver<T> observer);
     }
 }

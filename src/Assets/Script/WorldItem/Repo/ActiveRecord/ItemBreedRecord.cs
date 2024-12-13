@@ -5,7 +5,7 @@ using QS.WorldItem.Domain;
 
 namespace QS.WorldItem.Repo.ActiveRecord
 {
-    public abstract class ItemBreedRecord<T>
+    abstract class ItemBreedRecord<T>
         : AbstractActiveRecord<T>, IItemBreed, IItemBreed_tag
         where T : ItemBreed
     {

@@ -7,7 +7,8 @@
         "QS.Control",
         "QS.GameLib.Pattern",
         "QS.GameLib.DI",
-        "QS.GameLib.Rx"
+        "QS.GameLib.Rx",
+        "QS.Common"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

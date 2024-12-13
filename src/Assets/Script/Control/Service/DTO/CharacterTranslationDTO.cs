@@ -11,5 +11,7 @@ namespace QS.Impl.Service.DTO
         public Vector3 Displacement { get; set; }
 
         public bool Jumping { get; set; }
+
+        public Quaternion Rotation { get; set; }
     }
 }

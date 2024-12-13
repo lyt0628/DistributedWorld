@@ -3,10 +3,15 @@ using QS.Api.Combat.Domain;
 namespace QS.Combat.Domain
 {
 
-    public class Attack : IAttack
+    class Attack : IAttack
     {
-        public float Atn { get; set; }
-        public float Matk { get; set; }
+        public Attack(float atk, float matk) 
+        {
+            Atn = atk;
+            Matk = matk;
+        }
+        public float Atn { get;  }
+        public float Matk { get;}
 
     }
 }

@@ -2,11 +2,11 @@
     "name": "QS.WorldItem",
     "rootNamespace": "",
     "references": [
-        "GUID:c720f9517ccc66d46937442510310776",
         "GUID:ca95c17e3af08104290841b77c892efa",
-        "GUID:8c107b19aff0a0443a14684af05dbe35",
+        "GUID:502bf6b29f62d8640a15a79f571ff96d",
         "GUID:6f8aefceb089d824db5dea3dea157fa1",
-        "GUID:502bf6b29f62d8640a15a79f571ff96d"
+        "GUID:c720f9517ccc66d46937442510310776",
+        "GUID:8c107b19aff0a0443a14684af05dbe35"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

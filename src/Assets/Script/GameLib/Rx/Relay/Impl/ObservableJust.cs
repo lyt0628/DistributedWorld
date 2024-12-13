@@ -15,7 +15,7 @@ namespace QS.GameLib.Rx.Relay
             this.values = values;
         }
 
-        protected override IMotion DoSubscribe(IObserver<T> observer)
+        protected override IDisposableMotion DoSubscribe(IObserver<T> observer)
         {
             var motion = new JustMotion<T>(observer, values);
             motion.Set();

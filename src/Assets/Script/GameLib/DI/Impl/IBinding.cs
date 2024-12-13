@@ -4,14 +4,15 @@ namespace GameLib.DI
 {
     interface IBinding
     {
-        public Key Target { get; }
-        public ISet<Key> Dependencies { get; }
-        public ScopeFlag Scope { get; set; }
-        public int Priority { get; set; }
+        Key Target { get; }
+        ISet<Key> Dependencies { get; }
+        ScopeFlag Scope { get; set; }
+        int Priority { get; set; }
+        bool Lazy { get; set; }
 
-        public bool IsSington { get; }
-        public bool IsPrototype { get; }
+        bool IsSington { get; }
+        bool IsPrototype { get; }
 
-        public Builder GenBuilder(BindingLookup lookup);
+        Builder GenBuilder(BindingLookup lookup);
     }
 }

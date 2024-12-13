@@ -8,7 +8,6 @@ namespace QS.Control.Domain
 {
     class ControlledPointData : IControlledPointData
     {
-      
 
         public Vector3 Position { get; set; }
         public float Horizontal { get; set; }
@@ -17,5 +16,7 @@ namespace QS.Control.Domain
         public Vector3 BaseRight { get; set; }
         public Vector3 Baseforword { get; set; }
         public Vector3 BaseUp { get; set; }
+
+        public Quaternion Rotation { get; set; }
     }
 }

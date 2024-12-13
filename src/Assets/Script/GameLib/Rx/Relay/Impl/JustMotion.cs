@@ -16,7 +16,6 @@ namespace QS.GameLib.Rx.Relay
         }
 
 
-
         protected override void DoSet()
         {
             foreach (var obj in objects)

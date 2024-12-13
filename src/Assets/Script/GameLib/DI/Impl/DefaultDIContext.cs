@@ -145,10 +145,10 @@ namespace GameLib.DI
 
         public object GetInstance(string name, Type type)
         {
-            if (!type.IsInterface)
-            {
-                Debug.LogWarning($"{type} is a concrete class");
-            }
+            //if (!type.IsInterface)
+            //{
+            //    Debug.LogWarning($"{type} is a concrete class");
+            //}
 
             var key = Key.Get(name, type);
             
@@ -247,8 +247,16 @@ namespace GameLib.DI
             }
 
             binding = BindingWithInjection(target, binding);
-
-            AddBinding(binding);
+            //if (!binding.Lazy)
+            //{
+            //    Debug.Log("Not Lazy");
+            //}
+            if (!binding.Lazy && binding.IsSington)
+            {
+                var i = GenInstance(binding);
+                binding = Bindings.ToInstance(binding.Target, i);
+            }
+             AddBinding(binding);
 
         }
 
@@ -287,10 +295,12 @@ namespace GameLib.DI
         {
             Type type = target.Type;
 
-            if (DIUtil.TryGetScopeof(type, out ScopeFlag s))
+            if (DIUtil.TryGetScopeof(type, out ScopeFlag s, out bool l))
             {
                 binding.Scope = s;
+                binding.Lazy = l;
             }
+
             if (DIUtil.TryGetPriorityOf(type, out int prioriy))
             {
                 binding.Priority = prioriy;
@@ -305,12 +315,12 @@ namespace GameLib.DI
 
             if (injections.Count == 1)
             {
-                binding = new InjectedBinding(binding, injections.First(), depCache);
+                binding = new InjectedBinding(binding, injections.First(), binding.Lazy , depCache);
             }
             if (injections.Count > 1)
             {
                 var combinedInjecion = new MultipleInjection(injections);
-                binding = new InjectedBinding(binding, combinedInjecion, depCache);
+                binding = new InjectedBinding(binding, combinedInjecion, binding.Lazy, depCache);
             }
             return binding;
         }

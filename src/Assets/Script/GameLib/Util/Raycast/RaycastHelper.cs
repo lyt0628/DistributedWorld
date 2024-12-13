@@ -10,7 +10,6 @@ namespace QS.GameLib.Util.Raycast
         RaycastHit hitInfo;
 
 
-
         public bool Hit { 
             get 
             {
@@ -34,8 +33,14 @@ namespace QS.GameLib.Util.Raycast
                 return hitInfo.normal;
             }
         }
-
-
+        public GameObject Object
+        {
+            get
+            {
+                UpdateIfNeed();
+                return _hit ? hitInfo.collider.gameObject : null;
+            }
+        }
         private RaycastHelper(ICastedObject castedObject)
         {
             _castedObject = castedObject;
@@ -85,5 +90,7 @@ namespace QS.GameLib.Util.Raycast
                 _hit = false;
             }
         }
+
+
     }
 }

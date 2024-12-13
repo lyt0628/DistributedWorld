@@ -35,7 +35,7 @@ namespace QS.GameLib.View
         /*
          * Show This View. If View is not a Leaf, Show Children 
          */
-        virtual public void Show()
+        public void Show()
         {
             if (!Initialed)
             {
@@ -54,7 +54,7 @@ namespace QS.GameLib.View
             IsVisible = true;
         }
 
-        virtual public void Hide()
+        public void Hide()
         {
             if (!IsLeaf)
             {
@@ -90,7 +90,7 @@ namespace QS.GameLib.View
         virtual public void OnDeActive() { }
 
 
-        virtual public void Preload()
+        public void Preload()
         {
             if (!IsLeaf)
             {
@@ -98,10 +98,9 @@ namespace QS.GameLib.View
             }
             if (CreateWidget(out GameObject widget))
             {
+                Widget = widget;
                 OnInit();
             }
-            Widget = widget;
-
         }
 
         virtual public void OnInit()
@@ -113,6 +112,7 @@ namespace QS.GameLib.View
 
             Initialed = true;
         }
+
         virtual public void OnRealse()
         {
             if (!IsLeaf)
@@ -128,13 +128,11 @@ namespace QS.GameLib.View
 
 
         #endregion
-
         #region [[ViewNode]]
-        virtual public void Add(IViewNode view)
+        public void Add(IViewNode view)
         {
             children.Add(view);
         }
-
         #endregion
 
         #region [[Template Method]]
@@ -143,9 +141,9 @@ namespace QS.GameLib.View
          * Callback to create GameObject
          * @Return: if true the view will be preloaded.
          */
-        virtual protected bool CreateWidget(out GameObject widget)
+        protected virtual bool CreateWidget(out GameObject widget) 
         {
-            throw new System.NotImplementedException();
+            throw new System.InvalidOperationException();
         }
 
         virtual protected void ReleaseWidget(GameObject widget)

@@ -2,7 +2,7 @@ namespace QS.Api.Combat.Domain
 {
 
     /// <summary>
-    /// Depressed
+    ///  获取基础攻击属性
     /// </summary>
     public interface IAttackable
     {

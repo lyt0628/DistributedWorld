@@ -8,12 +8,12 @@ namespace QS.Api.Combat.Domain
 
     public interface ICombatData : IClonable<ICombatData>
     {
-        public float Hp { get; set; }
-        public float Mp { get; set; }
-        public float Atn { get; set; }
-        public float Def { get; set; }
-        public float Matk { get; set; }
-        public float Res { get; set; }
+        public float Hp { get; }
+        public float Mp { get; }
+        public float Atn { get; }
+        public float Def { get; }
+        public float Matk { get; }
+        public float Res { get; }
 
     }
 

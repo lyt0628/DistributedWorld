@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using UnityEngine;
 
 namespace GameLib.DI
 {
@@ -44,13 +45,18 @@ namespace GameLib.DI
         }
 
 
-        public static bool TryGetScopeof(Type type, out ScopeFlag scope)
+        public static bool TryGetScopeof(Type type, out ScopeFlag scope, out bool lazy)
         {
             if (type.IsDefined(typeof(Scope)))
             {
                 if (type.GetCustomAttribute(typeof(Scope), true) is Scope s)
                 {
                     scope = s.Value;
+                    lazy = s.Lazy;
+                    //if (!lazy)
+                    //{
+                    //    Debug.Log("Real Not Lazy");
+                    //}
                     return true;
                 }
                 else
@@ -60,7 +66,8 @@ namespace GameLib.DI
             }
             else
             {
-                scope = default;
+                scope = ScopeFlag.Sington;
+                lazy = true;
                 return false;
             }
         }

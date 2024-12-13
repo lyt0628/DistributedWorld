@@ -45,7 +45,7 @@ namespace QS.GameLib.Rx.Relay
             }
         }
 
-         protected override IMotion DoSubscribe(IObserver<T> observer)
+         protected override IDisposableMotion DoSubscribe(IObserver<T> observer)
         {
             var motion = new MaybeMotion<T>(observer);
             motions.Add(motion);

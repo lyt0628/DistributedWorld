@@ -8,6 +8,8 @@ namespace QS.GameLib.Pattern.Pipeline
         public void AddAfter(string baseName, string name, IPipelineHandler handler);
         public void Remove(string name);
         public void Remove(IPipelineHandler handler);
+        //TODO: RemoveByType
+        //public void Remove<T>(T handler) where T : IPipelineHandler;
 
     }
 

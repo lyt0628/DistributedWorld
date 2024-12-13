@@ -10,6 +10,8 @@ namespace QS.GameLib.Rx.Relay
         readonly Action<T> onNext;
         readonly Action<Exception> onError;
         readonly Action onComplete;
+        private IDisposable _disposable;
+        public IDisposable Disposable { get { return _disposable; } }
         public ObserverWrapper(Action<T> onNext, Action<Exception> onError, Action onComplete)
         {
             this.onNext = onNext;
@@ -47,5 +49,9 @@ namespace QS.GameLib.Rx.Relay
             onNext.Invoke(item);
         }
 
+        public void OnSubscribe(IDisposable disposable)
+        {
+            _disposable = disposable;
+        }
     }
 }

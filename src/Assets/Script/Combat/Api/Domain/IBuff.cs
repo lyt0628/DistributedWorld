@@ -7,6 +7,5 @@ namespace QS.Api.Combat.Domain
 
         public string Id { get; }
 
-
     }
 }
