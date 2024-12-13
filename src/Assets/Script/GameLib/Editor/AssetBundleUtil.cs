@@ -62,11 +62,11 @@ public class AssetBundleUtil
         GameObject.Instantiate(asset);
     }
 
-    [MenuItem("GameLib/Resource/Unload All AssetBundles")]
+    [MenuItem("GameLib/Resource/Unload Objects AssetBundles")]
     static void UnloadAllAssetBundle()
     {
         AssetBundle.UnloadAllAssetBundles(true);
-        Debug.Log("All AssetBundles were unload.");
+        Debug.Log("Objects AssetBundles were unload.");
     }
 
 }

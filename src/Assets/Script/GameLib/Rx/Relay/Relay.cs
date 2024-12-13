@@ -41,10 +41,19 @@ namespace QS.GameLib.Rx.Relay
             return new Relay<U>(op);
         }
 
+
         public Relay<T> Subscrib(Action<T> onNext)
         {
             var observer = new ObserverWrapper<T>(onNext);
             observable.Subscribe(observer);
+            return this;
+        }
+
+        public Relay<T> Subscrib(Action<T> onNext, out IDisposable disposable)
+        {
+            var observer = new ObserverWrapper<T>(onNext);
+            observable.Subscribe(observer);
+            disposable = observer.Disposable;
             return this;
         }
 
@@ -54,6 +63,13 @@ namespace QS.GameLib.Rx.Relay
             observable.Subscribe(observer);
             return this;
         }
+        public Relay<T> Subscrib(Action<T> onNext, Action<Exception> onError, out IDisposable disposable)
+        {
+            var observer = new ObserverWrapper<T>(onNext, onError);
+            observable.Subscribe(observer);
+            disposable = observer.Disposable;
+            return this;
+        }
 
         public Relay<T> Subscrib(Action<T> onNext, Action onComplete)
         {
@@ -61,5 +77,14 @@ namespace QS.GameLib.Rx.Relay
             observable.Subscribe(observer);
             return this;
         }
+
+        public Relay<T> Subscrib(Action<T> onNext, Action onComplete, out IDisposable disposable)
+        {
+            var observer = new ObserverWrapper<T>(onNext, onComplete);
+            observable.Subscribe(observer);
+            disposable = observer.Disposable;
+            return this;
+        }
+
     }
 }

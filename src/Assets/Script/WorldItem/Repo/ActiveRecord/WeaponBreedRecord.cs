@@ -4,7 +4,7 @@ using QS.WorldItem.Domain;
 
 namespace QS.WorldItem.Repo.ActiveRecord
 {
-    public class WeaponBreedRecord
+    class WeaponBreedRecord
         : ItemBreedRecord<WeaponBreed>, IWeaponBreed, IWeaponBreed_tag
     {
         public WeaponBreedRecord(ItemBreedSotre store, WeaponBreed breed)

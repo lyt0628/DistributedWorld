@@ -11,13 +11,18 @@ namespace QS.Impl
     /// </summary>
     public class LifecycleProvider : SingtonBehaviour<LifecycleProvider>, ILifecycleProivder
     {
-        private event Action UpdateCallbacks ;
-        private event Action LateUPdateCallbacks ;
+        event Action UpdateCallbacks ;
+        event Action LateUPdateCallbacks ;
+        event Action StartCallbacks;
+       
 
         public bool Request(Lifecycles statge, Action callback)
         {
             switch (statge)
             {
+                case Lifecycles.Start:
+                    StartCallbacks += callback;
+                    break;
                 case Lifecycles.Update:
                     UpdateCallbacks += callback;
                     break;
@@ -30,6 +35,10 @@ namespace QS.Impl
             return true;
         }
 
+        void Start()
+        {
+            StartCallbacks?.Invoke();
+        }
         void Update()
         {
             UpdateCallbacks?.Invoke();

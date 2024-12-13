@@ -24,6 +24,9 @@ namespace QS.GameLib.Rx.Relay
             observers.ForEach(x => x.OnNext(u));
         }
 
+        public void OnSubscribe(IDisposable disposable)
+        {
+        }
 
         public void Subscribe(IObserver<U> observer)
         {

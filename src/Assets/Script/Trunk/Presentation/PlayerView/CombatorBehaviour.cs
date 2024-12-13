@@ -1,26 +1,30 @@
 using GameLib.DI;
+using Newtonsoft.Json;
 using QS.Api.Combat.Domain;
 using QS.Api.Data;
 using QS.Combat.Domain;
 using QS.GameLib.Pattern.Message;
+using QS.UI;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CombatorBehaviour : MonoBehaviour, IBuffedCombater<AbstractBuff>, IMessagerProvider
+public class CombatorBehaviour 
+    : MonoBehaviour, IBuffedCombater, IMessagerProvider
 {
 
     [Injected]
     readonly AbstractCombater delegat;
 
-    public bool Combating { get => ((ICombater)delegat).Combating; set => ((ICombater)delegat).Combating = value; }
-    public List<ICombatable> Enemies { get => ((ICombater)delegat).Enemies; set => ((ICombater)delegat).Enemies = value; }
-    public ICombatData CombatData { get => ((ICombatable)delegat).CombatData; set => ((ICombatable)delegat).CombatData = value; }
+    [Injected]
+    readonly IPlayerCharacterData playerCharacter;
+
+    public ICombatData CombatData { get => ((ICombatable)delegat).CombatData;  }
 
     public IMessager Messager => ((IMessagerProvider)delegat).Messager;
 
-    public void AddBuff(string id, AbstractBuff buff)
+    public void AddBuff<T>(string id, AbstractBuff<T> buff)
     {
-        ((IBuffable<AbstractBuff>)delegat).AddBuff(id, buff);
+        ((IBuffable)delegat).AddBuff(id, buff);
     }
 
     public IAttack Attack()
@@ -35,15 +39,24 @@ public class CombatorBehaviour : MonoBehaviour, IBuffedCombater<AbstractBuff>, I
 
     public void RemoveBuff(string id, BuffStages stage)
     {
-        ((IBuffable<AbstractBuff>)delegat).RemoveBuff(id, stage);
+        ((IBuffable)delegat).RemoveBuff(id, stage);
     }
 
-    void Awake()
-    {
-        TrunkGlobal.Instance.DI.Inject(this);
-    }
+
     void Start()
     {
+        TrunkGlobal.Instance.DI.Inject(this);
+        delegat.CombatData = new CombatData()
+        {
+            Atn = 0,
+            Matk = 0,
+            Def = 0,
+            Res = 0,
+            Hp = 0,
+            Mp = 0
+        };
+
+        playerCharacter.ActivedCharacter = gameObject;
         delegat.CombatData = new CombatData()
         {
             Atn = 100,
@@ -53,6 +66,11 @@ public class CombatorBehaviour : MonoBehaviour, IBuffedCombater<AbstractBuff>, I
             Hp = 100,
             Mp = 100
         };
+        var j = JsonConvert.SerializeObject(CombatData);
+        Debug.Log(j);
+        var c = JsonConvert.DeserializeObject<CombatData>(j);
+        delegat.CombatData = c;
+
     }
 
 }

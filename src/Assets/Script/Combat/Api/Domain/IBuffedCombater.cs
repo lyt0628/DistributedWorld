@@ -1,8 +1,9 @@
 namespace QS.Api.Combat.Domain
 {
 
-    public interface IBuffedCombater<T> : ICombater, IBuffable<T> where T : IBuff
+    public interface IBuffedCombater : ICombater, IBuffable 
     {
+
     }
 
 }

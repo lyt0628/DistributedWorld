@@ -10,12 +10,14 @@ namespace GameLib.DI
         private readonly IDictionary<Key, IBinding> depChain;
         public InjectedBinding(IBinding rawBinding,
                                IInjection injection,
+                               bool lazy,
                                IDictionary<Key, IBinding> depChain)
             : base(rawBinding.Target,
                   rawBinding.Dependencies
                   .Union(injection.Dependencies)
                   .ToHashSet(),
-                  rawBinding.Scope)
+                  rawBinding.Scope, 
+                  lazy)
         {
             this.injection = injection;
             this.rawBinding = rawBinding;

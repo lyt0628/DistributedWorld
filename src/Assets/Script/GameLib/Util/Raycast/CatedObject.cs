@@ -14,9 +14,9 @@ namespace QS.GameLib.Uitl.RayCast
 
         public bool Cast(out RaycastHit hitInfo)
         {
-
             return CastOne(_maxDistance, _layerMask, _triggerInteraction, out hitInfo);
         }
+
         public RaycastHit[] CastAll()
         {
             return CastEvery(_maxDistance, _layerMask, _triggerInteraction);
@@ -87,12 +87,11 @@ namespace QS.GameLib.Uitl.RayCast
             }
         }
 
-
         internal class CastedCapsule : CastedObject
         {
             private Vector3 _point1;
             private Vector3 _point2;
-            private float _radius;
+            private readonly float _radius;
             private Vector3 _direction;
             public CastedCapsule(Vector3 point1, Vector3 point2, float radius, Vector3 direction)
             {

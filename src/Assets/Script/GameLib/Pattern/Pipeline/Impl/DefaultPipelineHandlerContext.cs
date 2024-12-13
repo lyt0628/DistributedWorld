@@ -1,6 +1,6 @@
 namespace QS.GameLib.Pattern.Pipeline
 {
-    internal class DefaultPipelineHandlerContext : IPipelineHandlerContext
+    class DefaultPipelineHandlerContext : IPipelineHandlerContext
     {
         public DefaultPipelineHandlerContext(
             IPipeline pipeline, string handlerName, IPipelineHandler handler,
@@ -22,14 +22,24 @@ namespace QS.GameLib.Pattern.Pipeline
         public void Write(object msg)
         {
             var ctx = InBound ? NextHandlerContext : PreHandlerContext;
-            ctx.InBound = InBound;
+            if (ctx != null)
+            {
+                ctx.InBound = InBound;
+                ctx.Next(msg);
+            }
 
-            ctx.Next(msg);
         }
 
         public void Next(object msg)
         {
-            Handler.Write(this, msg);
+            if (InBound)
+            {
+                Handler.Read(this, msg);
+            }
+            else
+            {
+                Handler.Write(this, msg);
+            }
         }
 
 

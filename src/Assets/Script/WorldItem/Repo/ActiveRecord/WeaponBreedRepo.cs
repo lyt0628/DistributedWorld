@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace QS.WorldItem.Repo.ActiveRecord
 {
-    public class WeaponBreedRepo
+    class WeaponBreedRepo
         : ItemBreedRepo<WeaponBreed, WeaponBreedRecord>
     {
         public override WeaponBreedRecord Create()

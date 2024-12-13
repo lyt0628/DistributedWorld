@@ -4,8 +4,7 @@
 
 
 using QS.Api.Control.Domain;
-using QS.Api.Control.Exception;
-using QS.Api.Service;
+using QS.Api.Control.Error;
 using QS.Control.Domain;
 using QS.GameLib.Rx.Relay;
 using QS.GameLib.Util;
@@ -50,8 +49,7 @@ namespace QS.Control.Service
         {
             try
             {
-
-            return relays[uuid];
+                return relays[uuid];
             }
             catch (Exception)
             {

@@ -1,0 +1,32 @@
+# 这个配置文件保持SKill的资源, 这个资源应当是与Handler约定好的
+# 这个配置文件有一系列表数组组成, 里面必须包含SkillKey, 以及与 Handler 或者 Builder 约定好的资源(特效,以及动画在这边定义)
+# 对于约定好的字段, 制定好Key后其他的就可以不必定义了, 除非与约定不一致
+# 名称决定使用蛇形命名法, SimpleSkills 就保持 简单的 Instantiate + Anim + Lua 的实现就好, 当然也可以提供 C# 实现, 常用的不常变的Skill 就用 
+
+################################
+[[skill_asset]]
+anim_trigger = 'SK00001_FireBall' # 约定好 技能动画的Trigger是 SK<技能NO>_<技能名称>_<patch>, 没有指定patch的话, 就没有后面那一串了
+
+[skill_asset.key] 
+no = '00001' #必须指定
+name = 'FireBall' # 必须指定
+# Precast
+[[skill_asset.precast.enter.prefab]] # 需要被实例化的 prefab 是一个表数组
+key = 'BD' # 用于加载资源的Key, 这个需要进一步约定
+static = false # 是否这个 prefab 生成在 玩家的 局部空间(会跟随玩家移动), true的话, 生成后就不在移动了, 默认是true
+auto_destoye = 3.3 # 需不需要 程序帮忙销毁这个prefab, 单位是秒, 不指定就是0, 表示程序就不帮忙干活
+[skill_asset.precast.enter.prefab.mount] # 挂载点子表 不指定就是在角色原点的位置
+position = 'FX_LHand' # 预定义好的挂载点的名称
+x_offset = 3.3 # 允许指定一定程度的偏移, 如果偏差太多, 可以酌情联系程序进行挂载点的增加
+y_offset = 0 # 这些偏移的默认值都是 0
+z_offset = 0
+x_rotation = 10 # 用欧拉角指定旋转 注意. 动态的效果请联系程序帮忙写脚本
+
+# Casting
+[skill_asset.precast]
+
+################################### 每个Skill 定义结束后, 这样标识一下
+[[skill_asset]]
+[skill_asset.key]
+no = '00002' # 这个编号最好按顺序来, 如果要分工, 分文件的化, 预先约定好分配, 总之保持 no 唯一
+name = 'IceWave'

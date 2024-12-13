@@ -30,8 +30,9 @@ namespace QS.Control.Service
                 .Map(p =>
             {
                 return ComputeTranslation(p);
-                });
+             });
         }
+
 
 
         ICharacterTranslationDTO ComputeTranslation(IControlledPoint point)
@@ -106,14 +107,31 @@ namespace QS.Control.Service
                 disp.x = 0f;
             }
 
-            Debug.Log($"IsGrounded:{isGrounded}\t VertSpeed:{point.VerticalSpeed} \n" +
-                        $"\t Disp:{disp}\t Pos: {pos}");
+            //Debug.Log($"IsGrounded:{isGrounded}\t VertSpeed:{point.VerticalSpeed} \n" +
+            //            $"\t Disp:{disp}\t Pos: {pos}");
             var translation = ControlGlobal.Instance.DI.GetInstance<CharacterTranslationDTO>();
             translation.Displacement = disp;
             translation.Speed = hVelocity.magnitude;
+            translation.Rotation = ComputeRotation(hor, vert, R, F, point.PointData.Rotation);
             translation.Jumping = false;
             return translation;
         }
 
+
+        Quaternion ComputeRotation(float hor, float vert, Vector3 baseRight, 
+            Vector3 baseForword, Quaternion quaternion)
+        {
+            Quaternion rotation = quaternion;
+            var face = hor * baseRight + vert * baseForword;
+            if (face.magnitude == 0f) return rotation;
+            face.y = 0;
+            face = face.normalized;
+
+            rotation = Quaternion.LookRotation(face);
+
+            return Quaternion.Slerp(quaternion,
+                rotation,
+                5f * Time.deltaTime);
+        }
     }
 }

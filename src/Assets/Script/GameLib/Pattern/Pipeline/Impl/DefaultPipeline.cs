@@ -117,13 +117,11 @@ namespace QS.GameLib.Pattern.Pipeline
             }
             else
             {
+                tail.NextHandlerContext = handlerCtx;
+                
 
-                DefaultPipelineHandlerContext pre = tail.NextHandlerContext;
-                DefaultPipelineHandlerContext next = tail;
-                tail.PreHandlerContext = handlerCtx;
-                pre.NextHandlerContext = handlerCtx;
-                handlerCtx.NextHandlerContext = next;
-                handlerCtx.PreHandlerContext = pre;
+                handlerCtx.NextHandlerContext = null;
+                handlerCtx.PreHandlerContext = tail;
 
                 tail = handlerCtx;
             }

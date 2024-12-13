@@ -4,33 +4,35 @@ namespace GameLib.DI
 {
     abstract class AbstractBinding : IBinding
     {
-        private readonly Key target;
-        private readonly ISet<Key> dependencies;
-        private ScopeFlag scope;
-        private int priority;
+        readonly ISet<Key> dependencies;
+
+        readonly Key target;
 
         public AbstractBinding(Key target,
                             ISet<Key> dependencies,
                             ScopeFlag scope = ScopeFlag.Sington,
+                            bool lazy=true,
                             int priority = 0)
         {
             this.target = target;
             this.dependencies = dependencies;
-            this.scope = scope;
-            this.priority = priority;
+            Scope = scope;
+            Priority = priority;
+            Lazy = lazy;
         }
 
         public Key Target => target;
 
         public ISet<Key> Dependencies => dependencies;
 
-        public ScopeFlag Scope { get { return scope; } set { scope = value; } }
+        public ScopeFlag Scope { get; set; }
 
-        public bool IsSington => scope == ScopeFlag.Sington;
+        public bool IsSington => Scope == ScopeFlag.Sington || Scope == ScopeFlag.Default;
 
-        public bool IsPrototype => scope == ScopeFlag.Prototype;
+        public bool IsPrototype => Scope == ScopeFlag.Prototype;
 
-        public int Priority { get => priority; set => priority = value; }
+        public int Priority { get; set; }
+        public bool Lazy { get; set; }
 
         public abstract Builder GenBuilder(BindingLookup lookup);
     }

@@ -3,7 +3,7 @@ using QS.Api.WorldItem.Domain;
 namespace QS.WorldItem.Domain
 {
 
-    public interface IItemBreed_tag
+    interface IItemBreed_tag
     {
         string Name { set; }
 

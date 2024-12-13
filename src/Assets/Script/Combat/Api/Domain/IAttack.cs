@@ -5,8 +5,8 @@ namespace QS.Api.Combat.Domain
     */
     public interface IAttack
     {
-        float Atn { get; set; }
-        float Matk { get; set; }
+        float Atn { get; }
+        float Matk { get; }
     }
 }
 

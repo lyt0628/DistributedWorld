@@ -5,12 +5,22 @@ using System;
 
 namespace QS.GameLib.Rx.Relay
 {
-    abstract class AbstractMotion<T> : IMotion
+    abstract class AbstractMotion<T> : IDisposableMotion
     {
         protected IObserver<T> observer;
         public AbstractMotion(IObserver<T> observer)
         {
             this.observer = observer;
+        }
+
+        bool _isDisposed = false;
+        public bool IsDisposed => _isDisposed;
+        
+        
+
+        public void Dispose()
+        {
+            _isDisposed = true;
         }
 
         public void Set()
@@ -25,5 +35,7 @@ namespace QS.GameLib.Rx.Relay
         }
 
         protected abstract void DoSet();
+
+     
     }
 }

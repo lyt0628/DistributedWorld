@@ -1,0 +1,18 @@
+{
+    "name": "QS.Deps",
+    "rootNamespace": "",
+    "references": [
+        "QS.Common",
+        "QS.GameLib.DI",
+        "QS.GameLib.Pattern"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

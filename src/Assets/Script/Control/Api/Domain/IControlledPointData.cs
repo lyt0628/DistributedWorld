@@ -11,6 +11,7 @@ namespace QS.Api.Control.Domain
     public interface IControlledPointData
     {
         Vector3 Position { get; set; }
+        Quaternion Rotation { get; set; }
         float Horizontal { get; set; }
         float Vertical { get; set; }
         bool Jump { get; set; }

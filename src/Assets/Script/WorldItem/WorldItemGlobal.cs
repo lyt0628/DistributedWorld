@@ -3,6 +3,7 @@
 
 
 using GameLib.DI;
+using QS.Api.Common;
 using QS.Api.WorldItem.Service;
 using QS.Common;
 using QS.GameLib.Pattern;
@@ -12,21 +13,23 @@ using QS.WorldItem.Service;
 
 namespace QS.WorldItem
 {
-    public class WorldItemGlobal : Sington<WorldItemGlobal>, IBindingProvider
+    public class WorldItemGlobal : ModuleGlobal<WorldItemGlobal>
     {
         internal IDIContext DI { get; } = IDIContext.New();
 
+        protected override IDIContext DIContext => DI;
+
         public WorldItemGlobal()
         {
-
             DI.Bind<ItemSotre>()
               .Bind<WorldWeaponRepo>()
               .Bind<WorldItemService>();
         }
 
-        public void ProvideBinding(IDIContext context)
+        public override void ProvideBinding(IDIContext context)
         {
             context.BindExternalInstance(DI.GetInstance<IWorldItemService>());
         }
+
     }
 }

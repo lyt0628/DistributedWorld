@@ -14,7 +14,7 @@ namespace QS.GameLib.Rx.Relay
         }
 
 
-        protected override IMotion DoSubscribe(IObserver<T> observer)
+        protected override IDisposableMotion DoSubscribe(IObserver<T> observer)
         {
             return new TickMotion<T>(observer, supplier);
         }
