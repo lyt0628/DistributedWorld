@@ -11,9 +11,6 @@ namespace QS.Common
     {
         void ProvideBinding(IDIContext context);
 
-        T GetInstance<T>();
-        T GetInstance<T>(string name);
-
     }
 
 }

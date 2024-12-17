@@ -1,6 +1,6 @@
 
 using GameLib.DI;
-using QS.Api.Character.Instruction;
+using QS.Api.Chara.Instruction;
 using QS.Api.Common;
 using QS.Api.Executor.Domain;
 using QS.Api.Skill.Domain;
@@ -12,6 +12,7 @@ using QS.GameLib.Pattern.Message;
 using QS.GameLib.Pattern.Pipeline;
 using QS.GameLib.Util;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace QS.Skill.Handler
@@ -27,93 +28,75 @@ namespace QS.Skill.Handler
         [Injected]
         readonly ISimpleSkillAnimCfg animCfg;
 
-        readonly string skillNo;
-        readonly string skillName;
-        Action PrecastEnterCallbacks;
-        Action PrecastExitCallbacks;
-        Action CastingEnterCallbacks;
-        Action CastingExitCallbacks;
-        Action PostcastEnterCallbacks;
-        Action PostcastExitCallbacks;
+        readonly List<ISimpleSkillSubHandler> subHandlers = new();
 
-        void PrecastEnter(IMessage m) => PrecastEnterCallbacks?.Invoke();
-        void PrecastExit(IMessage m) => PrecastExitCallbacks?.Invoke();
-        void CastingEnter(IMessage m) => CastingEnterCallbacks?.Invoke();
-        void CastingExit(IMessage m) => CastingExitCallbacks?.Invoke();
-        void PostcastEnter(IMessage m) => PostcastEnterCallbacks?.Invoke();
-        void PostcastExit(IMessage m) => PostcastExitCallbacks?.Invoke();
-        public SimpleSkillAblity(Character character ,string skillNo, string skillName)
+        readonly ISkillKey key;
+
+        void PrecastEnter(IMessage m)
+        {
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastEnter), PrecastEnter);
+            subHandlers.ForEach(h => h.OnPrecastEnter(Character));
+        }
+        void PrecastExit(IMessage m)
+        {
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastExit), PrecastExit);
+            subHandlers.ForEach(h=>h.OnPrecastExit(Character));
+        }
+        void CastingEnter(IMessage m) {
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.CastingEnter), CastingEnter);
+            subHandlers.ForEach(h => h.OnCastingEnter(Character));
+        }
+        void CastingExit(IMessage m) {
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.CastingExit), CastingExit);
+            subHandlers.ForEach(h => h.OnCastingExit(Character));
+        }
+        void PostcastEnter(IMessage m) {
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastEnter), PostcastEnter);
+            subHandlers.ForEach(h => h.OnPostcastEnter(Character));
+        }
+        void PostcastExit(IMessage m) {
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastExit), PostcastExit);
+            subHandlers.ForEach(h => h.OnPostcastExit(Character));
+        }
+
+        public SimpleSkillAblity(Character character, ISkillKey key)
             :base(character)
         {
-            this.skillNo = skillNo;
-            this.skillName = skillName;
-            PrecastEnterCallbacks = ()=> Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PrecastEnter), PrecastEnter);
-            PrecastExitCallbacks = ()=> Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PrecastExit), PrecastExit);
-            CastingEnterCallbacks = ()=> Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.CastingEnter), CastingEnter);
-            CastingExitCallbacks = ()=> Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.CastingExit), CastingExit);
-            PostcastEnterCallbacks = ()=> Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PostcastEnter), PostcastEnter);
-            PostcastExitCallbacks = ()=> Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PostcastExit), PostcastExit);
+            this.key = key;
             SkillGlobal.Instance.DI.Inject(this);
         }
 
         private void AddListener()
         {
-            Character.Messager.AddListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PrecastEnter), PrecastEnter);
-            Character.Messager.AddListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PrecastExit), PrecastExit);
-            Character.Messager.AddListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.CastingEnter), CastingEnter);
-            Character.Messager.AddListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.CastingExit), CastingExit);
-            Character.Messager.AddListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PostcastEnter), PostcastEnter);
-            Character.Messager.AddListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PostcastExit), PostcastExit);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastEnter), PrecastEnter);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastExit), PrecastExit);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.CastingEnter), CastingEnter);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.CastingExit), CastingExit);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastEnter), PostcastEnter);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastExit), PostcastExit);
         }
 
         private void RemoveListener()
         {
-            Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PrecastEnter), PrecastEnter);
-            Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PrecastExit), PrecastExit);
-            Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.CastingEnter), CastingEnter);
-            Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.CastingExit), CastingExit);
-            Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PostcastEnter), PostcastEnter);
-            Character.Messager.RemoveListener(animCfg.GetMsg(skillNo, skillName, SimpleSkillStage.PostcastExit), PostcastExit);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastEnter), PrecastEnter);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastExit), PrecastExit);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.CastingEnter), CastingEnter);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.CastingExit), CastingExit);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastEnter), PostcastEnter);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastExit), PostcastExit);
 
         }
 
-        public void AddSubHandler(SimpleSkillStage stage, Action subHandler)
-        {
-
-            switch (stage)
-            {
-                case SimpleSkillStage.PrecastEnter:
-                    PrecastEnterCallbacks += subHandler;
-                    break;
-                case SimpleSkillStage.PrecastExit:
-                    PrecastExitCallbacks += subHandler;
-                    break;
-                case SimpleSkillStage.CastingEnter:
-                    CastingEnterCallbacks += subHandler;
-                    break;
-                case SimpleSkillStage.CastingExit:
-                    CastingExitCallbacks += subHandler;
-                    break;
-                case SimpleSkillStage.PostcastEnter:
-                    PostcastEnterCallbacks += subHandler;
-                    break;
-                case SimpleSkillStage.PostcastExit:
-                    PostcastExitCallbacks += subHandler;
-                    break;
-                default:
-                    break;
-            }
-        }
 
         public override void Read(IPipelineHandlerContext context, object msg)
         {
             if(ReflectionUtil.IsChildOf<ISimpleSkillInstr>(msg))
             {
-                Debug.Log("simple skill triggered");
+                RemoveListener(); // Remove Previous Listeners
                 AddListener();
                 if (Character.TryGetComponent<Animator>(out var anim))
                 {
-                    anim.SetTrigger(animCfg.GetTrigger(skillNo, skillName)) ;
+                    anim.SetTrigger(animCfg.GetTrigger(key)) ;
                 }
             }
 
@@ -125,6 +108,11 @@ namespace QS.Skill.Handler
             }
 
             context.Write(msg);
+        }
+
+        public void AddSubHandler(ISimpleSkillSubHandler subHandler)
+        {
+            subHandlers.Add(subHandler);
         }
     }
 }

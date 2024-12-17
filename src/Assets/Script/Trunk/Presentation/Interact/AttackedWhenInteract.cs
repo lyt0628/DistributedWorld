@@ -1,47 +1,44 @@
 
 
 using GameLib.DI;
+using QS.Api.Chara.Service;
 using QS.Api.Combat.Domain;
 using QS.Api.Combat.Service;
 using QS.Api.Data;
 using QS.Api.Presentation.Interact;
+using QS.Chara.Domain;
 using QS.Combat.Domain;
 using UnityEngine;
 
 namespace QS
 {
-    public class AttackedWhenInteract : MonoBehaviour, IInteractable, IAttackable
+    public class AttackedWhenInteract : MonoBehaviour, IInteractable
     {
         [Injected]
-        IPlayerCharacterData PlayerCharacter { get; set; }
+        readonly IPlayerCharacterData playerCharacter;
 
         [Injected]
-        IAttackFactory AttackFactory { get; set; }
+        readonly ICharaInsrFactory instructionFactory;
 
         void Start()
         {
-            var ctx = TrunkGlobal.Instance.DI;
-            ctx.Inject(this);
+            TrunkGlobal.Instance.DI.Inject(this);
         }
 
-
-        public IAttack Attack()
-        {
-            return AttackFactory.NewAttack(120, 0);
-        }
 
         public void Interact()
         {
-            var character = PlayerCharacter.ActivedCharacter;
+            var character = playerCharacter.ActivedCharacter;
             if (character != null)
             {
-                var combator = character.GetComponent<CombatorBehaviour>();
-                combator?.Injured(Attack());
+                var c= character.GetComponent<Character>();
+                c.Execute(instructionFactory.Injured(120, 0));
             }
             else
             {
                 Debug.LogError("activedCharacter does not exists!!!");
             }
+            
         }
     }
 }

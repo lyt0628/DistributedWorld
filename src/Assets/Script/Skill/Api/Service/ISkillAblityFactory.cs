@@ -10,7 +10,7 @@ namespace QS.Api.Skill.Service
 {
     public interface ISkillAblityFactory
     {
-        ISimpleSkillHandler Simple(Chara.Domain.Character character, string skillNo, string skillName);
+        ISimpleSkillHandler Simple(Character character, ISkillKey key);
 
     }
 }

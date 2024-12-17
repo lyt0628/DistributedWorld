@@ -16,6 +16,8 @@ namespace QS.Common.Util.Detector
            colliderRelay.Subscrib((c) => detector.SetCollider(c));
         }
 
+        public bool Enabled => detector.Enabled;
+
         public IEnumerable<GameObject> Detect()
         {
             return detector.Detect();

@@ -1,7 +1,9 @@
 using GameLib.DI;
 using Mono.Reflection;
-using QS.Api.Character.Service;
+using QS.Api;
+using QS.Api.Chara.Service;
 using QS.Api.Common;
+using QS.Api.Common.Util.Detector;
 using QS.Api.Control.Domain;
 using QS.Api.Control.Service;
 using QS.Api.Data;
@@ -10,9 +12,12 @@ using QS.Api.Executor.Service;
 using QS.Api.Skill.Domain;
 using QS.Api.Skill.Service;
 using QS.Chara.Domain;
+using QS.Executor;
 using QS.GameLib.Pattern.Message;
 using QS.GameLib.Rx.Relay;
 using QS.GameLib.Util;
+using System;
+using System.Linq;
 using UnityEngine;
 
 /*
@@ -36,7 +41,7 @@ public class PlayerCharacter : Character
     [Injected]
     readonly IInstructionFactory instructionFactory;
     [Injected]
-    readonly IInstructionHandlerFactory instructionHandlerFactory;
+    readonly IHandlerFactory instructionHandlerFactory;
     [Injected]
     readonly ICharaInsrFactory characterInsructionFactory;
     [Injected]
@@ -48,6 +53,8 @@ public class PlayerCharacter : Character
 
     [Injected]
     readonly IPlayerLocationData playerLocation;
+    [Injected]
+    readonly IDetectorFactory detectorFactory;
 
     void Start()
     {
@@ -56,12 +63,24 @@ public class PlayerCharacter : Character
         var animator = GetComponent<Animator>();
         var combat = GetComponent<CombatorBehaviour>();
 
+
+        var handler = instructionHandlerFactory.Filter(this);
+        AddLast(MathUtil.UUID(), handler);
         AddLast(MathUtil.UUID(), instructionHandlerFactory.Move(this, transform, animator));
         AddLast(MathUtil.UUID(), instructionHandlerFactory.Instantiate(this));
         AddLast(MathUtil.UUID(), charaAbilityFactory.Injured(this, combat));
-        var h = skillAblityFactory.Simple(this, "00001", "FireBall");
-        h.AddSubHandler(SimpleSkillStage.CastingEnter, () => Debug.Log("CCCXXX"));
+        var h = skillAblityFactory.Simple(this, ISkillKey.New("00001", "FireBall"));
+        var subh = new SabreAttack();
+        TrunkGlobal.Instance.DI.Inject(subh);
+        h.AddSubHandler(subh);
+
+        var life = TrunkGlobal.Instance.GetInstance<ILifecycleProivder>();
+        // 对于简单的武器攻击, 使用碰撞体检测器就OK了
+
+
+
         AddLast(MathUtil.UUID(), h);
+
     }
 
     void Update()
@@ -73,6 +92,8 @@ public class PlayerCharacter : Character
         if(Input.GetKeyDown(KeyCode.F))
         {
             Execute(skillInstrFactory.Simple("00001", "FireBall"));
+            var animator = GetComponent<Animator>();
+            animator.SetTrigger("Attack");
         }
 
         Execute(instructionFactory.Move(

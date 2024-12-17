@@ -2,6 +2,7 @@ using GameLib.DI;
 using KeraLua;
 using Newtonsoft.Json;
 using QS.Api;
+using QS.Api.Common;
 using QS.Chara;
 using QS.Combat;
 using QS.Combat.Domain;
@@ -16,7 +17,7 @@ using QS.Skill;
 using QS.WorldItem;
 using UnityEngine;
 
-public class TrunkGlobal : SingtonBehaviour<TrunkGlobal>
+public class TrunkGlobal : SingtonBehaviour<TrunkGlobal>, IInstanceProvider
 {
     internal IDIContext DI { get; } = IDIContext.New();
     
@@ -42,6 +43,16 @@ public class TrunkGlobal : SingtonBehaviour<TrunkGlobal>
           .Bind<HpUI>();
 
         DI.Inject(this);
+    }
+
+    public T GetInstance<T>()
+    {
+        return DI.GetInstance<T>();
+    }
+
+    public T GetInstance<T>(string name)
+    {
+        return DI.GetInstance<T>(name);
     }
 
     void Update()

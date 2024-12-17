@@ -14,9 +14,8 @@ namespace QS.Impl
         event Action UpdateCallbacks ;
         event Action LateUPdateCallbacks ;
         event Action StartCallbacks;
-       
 
-        public bool Request(Lifecycles statge, Action callback)
+        public void Request(Lifecycles statge, Action callback)
         {
             switch (statge)
             {
@@ -29,10 +28,7 @@ namespace QS.Impl
                 case Lifecycles.LateUpdate:
                     LateUPdateCallbacks += callback;
                     break;
-                default:
-                    return false;
             }
-            return true;
         }
 
         void Start()
@@ -46,6 +42,22 @@ namespace QS.Impl
         void LateUpdate()
         {
             LateUPdateCallbacks?.Invoke();
+        }
+
+        public void Cancel(Lifecycles statge, Action callback)
+        {
+             switch (statge)
+            {
+                case Lifecycles.Start:
+                    StartCallbacks -= callback;
+                    break;
+                case Lifecycles.Update:
+                    UpdateCallbacks -= callback;
+                    break;
+                case Lifecycles.LateUpdate:
+                    LateUPdateCallbacks -= callback;
+                    break;
+            }
         }
     }
 }

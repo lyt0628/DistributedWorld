@@ -113,7 +113,7 @@ namespace QS.Control.Service
             translation.Displacement = disp;
             translation.Speed = hVelocity.magnitude;
             translation.Rotation = ComputeRotation(hor, vert, R, F, point.PointData.Rotation);
-            translation.Jumping = false;
+            translation.Jumping = !isGrounded;
             return translation;
         }
 

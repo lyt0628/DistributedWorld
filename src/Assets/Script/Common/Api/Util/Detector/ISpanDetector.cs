@@ -7,5 +7,6 @@ namespace QS.Api.Common.Util.Detector
     {
         void Enable();
         void Disable();
+        bool Enabled { get; }
     }
 }

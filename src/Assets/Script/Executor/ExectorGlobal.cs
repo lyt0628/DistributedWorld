@@ -19,6 +19,9 @@ namespace QS.Executor
         public ExecutorGlobal()
         {
             ControlGlobal.Instance.ProvideBinding(DI);
+
+            // 提供一些预制的Executor
+            var e = new BaseExecutor();
         }
 
         public override void ProvideBinding(IDIContext context)

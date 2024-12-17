@@ -1,12 +1,10 @@
-
-
+using QS.Api.Combat.Domain;
 using QS.Api.Executor.Domain;
 
-namespace QS.Api.Character.Instruction
+namespace QS.Api.Chara.Instruction
 {
     public interface IInjuredInstruction : IInstruction
     {
-          float Atk { get; }
-          float Matk { get; }
+        IAttack Attack { get; }
     }
 }

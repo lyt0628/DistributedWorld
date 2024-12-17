@@ -1,5 +1,5 @@
 using GameLib.DI;
-using QS.Api.Character.Instruction;
+using QS.Api.Chara.Instruction;
 using QS.Api.Combat.Domain;
 using QS.Api.Combat.Service;
 using QS.Api.Executor.Domain;
@@ -22,8 +22,6 @@ namespace QS.Chara.Domain.Handler
     /// </summary>
     public class InjuredInstructionHandler : AbstractHandler
     {
-        [Injected]
-        readonly IAttackFactory attackFactory;
 
         readonly IInjurable injurable;
 
@@ -42,8 +40,7 @@ namespace QS.Chara.Domain.Handler
             }
             
             var i = (IInjuredInstruction)msg;
-
-            injurable.Injured(attackFactory.NewAttack(i.Atk, i.Matk));
+            injurable.Injured(i.Attack);
         }
     }
 }

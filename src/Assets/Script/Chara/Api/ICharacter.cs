@@ -7,7 +7,7 @@ using UnityEngine;
 
 
 
-namespace QS.Api.Character
+namespace QS.Api.Chara
 {
     /// <summary>
     /// 角色是游戏中的核心定义, 它表示领域而不是实现,
@@ -15,7 +15,8 @@ namespace QS.Api.Character
     /// 现在专注于描述领域 角色会使用技能,但技能本身与角色不耦合
     /// 技能只是一个特别的Handler能处理一些技能指令
     /// </summary>
-    public interface ICharacter  : IRelayExecutor,  IMessagerProvider, IAnimAware
+    public interface ICharacter
+        : IRelayExecutor, IMessagerProvider, IAnimAware
     {
 
     }

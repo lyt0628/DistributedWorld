@@ -1,7 +1,9 @@
 
 
 
-using QS.Api.Character.Instruction;
+using QS.Api.Chara.Instruction;
+using QS.Api.Combat.Domain;
+using QS.Api.Combat.Service;
 
 namespace QS.Chara.Domain.Instruction
 {
@@ -9,13 +11,15 @@ namespace QS.Chara.Domain.Instruction
     {
         public InjuredInstr(float atk, float matk)
         {
-            Atk = atk;
-            Matk = matk;
+            var atkFactory = CharaGlobal.Instance.GetInstance<IAttackFactory>();
+            Attack = atkFactory.NewAttack(atk, matk);
+        }
+        public InjuredInstr(IAttack attack) 
+        {
+            Attack = attack;
         }
 
-        public float Atk { get; }
-
-        public float Matk { get; }
+        public IAttack Attack { get; }
     }
 
 }

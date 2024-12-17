@@ -23,8 +23,6 @@ namespace QS.Api.Skill.Domain.Instruction
 
         public interface ISimpleSkillInstr : IInstruction 
         {
-            string SkillNo { get; }
-            string SkillName { get; }
-
+            ISkillKey Key { get; }
         }
 }
