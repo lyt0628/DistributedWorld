@@ -1,18 +1,16 @@
 
 
+using QS.Api.Skill.Domain;
 using QS.Api.Skill.Domain.Instruction;
 
 namespace QS.Skill.Domain.Instruction
 {
     class SimpleSkillInstr : ISimpleSkillInstr
     {
-        public SimpleSkillInstr(string skillNo, string skillName) 
-        { 
-            SkillNo = skillNo;
-            SkillName = skillName;
+        public SimpleSkillInstr(ISkillKey key) 
+        {
+            Key = key;
         }
-        public string SkillNo { get; }
-
-        public string SkillName { get; }
+        public ISkillKey Key { get; }
     }
 }

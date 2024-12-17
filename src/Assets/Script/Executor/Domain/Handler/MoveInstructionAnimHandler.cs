@@ -11,6 +11,7 @@ namespace QS.Executor.Domain.Handler
         public class Msg
         {
            public float speed;
+            public bool jump;
         }
         readonly Animator _animator;
         public MoveInstructionAnimHandler(Animator animator)
@@ -23,6 +24,7 @@ namespace QS.Executor.Domain.Handler
         {
             Msg m = (Msg)msg;
             _animator.SetFloat("Speed", m.speed);
+            _animator.SetBool("Jumping",m.jump);
         }
     }
 }

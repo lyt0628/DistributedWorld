@@ -8,7 +8,7 @@ namespace QS.Api.Skill.Domain
 {
     public interface ISimpleSkillHandler : IInstructionHandler
     {
-        public void AddSubHandler(SimpleSkillStage stage, Action subHandler);
+        public void AddSubHandler(ISimpleSkillSubHandler subHandler);
         
     }
 }

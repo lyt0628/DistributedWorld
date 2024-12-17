@@ -14,7 +14,10 @@ namespace QS.Common.Util.Detector
         Collider collider;
         bool enable = false;
         AbstractColliderReporter reporter;
-        CollideStage stage;
+        readonly CollideStage stage;
+
+        public bool Enabled => enable;
+
         public CollideDetector(CollideStage stage) 
         { 
             this.stage = stage;
@@ -48,7 +51,7 @@ namespace QS.Common.Util.Detector
             }
             if(collider == null)
             {
-                throw new Exception("[CollideDetector] Collider is null");
+                throw new InvalidOperationException("[CollideDetector] Collider is null");
             }
             return reporter.Report().Select(c=>c.gameObject);
         }
@@ -80,16 +83,21 @@ namespace QS.Common.Util.Detector
 
         abstract class AbstractColliderReporter : MonoBehaviour, IColliderReporter
         {
-            List<Collider> colliders = new();
+            List<Collider> colliders;
+
+            private void Start()
+            {
+                colliders = new List<Collider>();
+            }
             public AbstractColliderReporter(string uuid) 
             {
                 UUID = uuid;
             }
             public IEnumerable<Collider> Report()
             {
-                var c = colliders;
-                colliders = new();
-                return c;
+               var res = colliders.ToArray();
+                colliders.Clear();
+                return res;
             }
 
             public string UUID { get; }

@@ -1,6 +1,8 @@
 
 
 
+using QS.Skill.Domain;
+
 namespace QS.Api.Skill.Domain
 {
     /// <summary>
@@ -19,6 +21,16 @@ namespace QS.Api.Skill.Domain
         string Name { get; }
 
         string Patch { get; }
+
+        public static ISkillKey New(string no, string name, string patch)
+        {
+            return new SkillKey(no, name, patch);
+        }
+
+        public static ISkillKey New(string no, string name)
+        {
+            return new SkillKey(no, name);
+        }
 
     }
 }

@@ -32,9 +32,9 @@ namespace QS.Api.Skill.Predefine
         /// <param name="name"></param>
         /// <param name="stage"></param>
         /// <returns></returns>
-        string GetMsg(string no, string name, SimpleSkillStage stage); // 先查配置文件, 没找到就生成默认约定好的名称
+        string GetMsg(ISkillKey key, SimpleSkillStage stage); // 先查配置文件, 没找到就生成默认约定好的名称
 
-        string GetTrigger(string no, string name);
+        string GetTrigger(ISkillKey key);
             
     }
 }

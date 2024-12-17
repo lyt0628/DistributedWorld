@@ -9,7 +9,7 @@ using QS.GameLib.Pattern;
 namespace QS.Api.Common
 {
     public abstract class ModuleGlobal<T>
-        : Sington<T>, IBindingProvider where T : new()
+        : Sington<T>, IBindingProvider, IInstanceProvider where T : new()
     {
         protected abstract IDIContext DIContext {get;}
 

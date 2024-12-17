@@ -64,7 +64,8 @@ namespace QS.Executor.Domain.Handler
 
             msg = new MoveInstructionAnimHandler.Msg()
             {
-                speed = translation.Speed
+                speed = translation.Speed,
+                jump = translation.Jumping
             };
             context.Write(msg);
         }

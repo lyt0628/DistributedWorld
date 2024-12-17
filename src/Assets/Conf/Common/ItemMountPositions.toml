@@ -1,0 +1,5 @@
+# 这个配置文件用来定义物体挂载点, 包括 Weapon, Seal, Prop, Assory...
+[[item_mount_positions]] # 挂载点同样是一个简单的表数组
+id = 'LHand' # Id 用来被具体的物体引用, 来确定位置
+position= 'UpperArm.L' # 挂载的位置是具体的父骨骼名称, 这个遵从Unity基本重定向的那几个骨骼, 当然动画会拓展, 但是要求基本的几个骨骼都要有, 名称约定好就是这个. 项目使用Blender作为模型工具, 这个左右规范跟着Blender来就好
+offset = [3, 22, 1] # 三元组来定义Offset xyz

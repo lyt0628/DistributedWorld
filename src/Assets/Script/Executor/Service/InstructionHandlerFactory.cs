@@ -14,8 +14,13 @@ using UnityEngine;
 
 namespace QS.Executor.Service
 {
-    class InstructionHandlerFactory : IInstructionHandlerFactory
+    class InstructionHandlerFactory : IHandlerFactory
     {
+        public IFilterHandler Filter(IRelayExecutor executor)
+        {
+            return new FilterHandler(executor);
+        }
+
         public IInstructionHandler Instantiate(IRelayExecutor executor)
         {
 

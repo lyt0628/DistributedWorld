@@ -10,7 +10,8 @@ namespace QS.Api
     /// </summary>
     public interface ILifecycleProivder : ISington<ILifecycleProivder>
     {
-        bool Request(Lifecycles statge, Action callback);
+        void Request(Lifecycles statge, Action callback);
+        void Cancel(Lifecycles statge, Action callback);
 
     }
 

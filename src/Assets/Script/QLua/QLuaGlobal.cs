@@ -28,7 +28,7 @@ namespace QS.QLua
             DI.BindExternalInstance(DepsGlobal.Instance.GetInstance<Lua>(Api.Deps.DINames.Lua_Skill));
             //var lua = DI.GetInstance<Lua>(Api.Deps.DINames.Lua_Skill);
             //var instructionFactory = DI.GetInstance<IInstructionFactory>();
-            //var instructionHandlerFactory = DI.GetInstance<IInstructionHandlerFactory>();
+            //var instructionHandlerFactory = DI.GetInstance<IHandlerFactory>();
             //lua["i"] = instructionFactory.Instantiate("BD", null);
             //lua["h"] = instructionHandlerFactory.Instantiate();
             //IPipelineHandler h = (IPipelineHandler)lua["h"];

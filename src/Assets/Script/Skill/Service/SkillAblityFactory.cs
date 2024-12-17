@@ -12,9 +12,9 @@ namespace QS.Skill.Service
 {
     class SkillAblityFactory : ISkillAblityFactory
     {
-        public ISimpleSkillHandler Simple(Character character, string skillNo, string skillName)
+        public ISimpleSkillHandler Simple(Character character,ISkillKey key)
         {
-            return new SimpleSkillAblity(character, skillNo, skillName);
+            return new SimpleSkillAblity(character, key);
         }
     }
 }

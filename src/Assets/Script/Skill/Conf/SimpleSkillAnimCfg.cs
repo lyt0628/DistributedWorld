@@ -5,14 +5,14 @@ namespace QS.Skill.Conf
 {
     class SimpleSkillAnimCfg : ISimpleSkillAnimCfg
     {
-        public string GetMsg(string no, string name, SimpleSkillStage stage)
+        public string GetMsg(ISkillKey key, SimpleSkillStage stage)
         {
-            return string.Format(ISimpleSkillAnimCfg.MSG_Format, no, name, stage);
+            return string.Format(ISimpleSkillAnimCfg.MSG_Format, key.No, key.Name, stage);
         }
 
-        public string GetTrigger(string no, string name)
+        public string GetTrigger(ISkillKey key)
         {
-            return string.Format(ISimpleSkillAnimCfg.Trigger_Format, no, name);
+            return string.Format(ISimpleSkillAnimCfg.Trigger_Format, key.No, key.Name);
         }
     }
 }

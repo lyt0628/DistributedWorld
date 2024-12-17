@@ -3,7 +3,7 @@
 
 
 using GameLib.DI;
-using QS.Api.Character.Service;
+using QS.Api.Chara.Service;
 using QS.Api.Common;
 using QS.Chara.Service;
 using QS.Combat;
