@@ -8,9 +8,9 @@ namespace QS.Combat.Service
 {
     class BuffFactory : IBuffFactory
     {
-        public IBuff AttackBuff(float atk, float matk)
+        public IBuff AttackBuff(float atkRatio, float matkRatio)
         {
-            return new AttackBuff(atk, matk);
+            return new AttackBuff(atkRatio, matkRatio);
         }
     }
 }

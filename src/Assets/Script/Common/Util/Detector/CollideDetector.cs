@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace QS.Common.Util.Detector
 {
@@ -13,34 +14,57 @@ namespace QS.Common.Util.Detector
     {
         Collider collider;
         bool enable = false;
-        AbstractColliderReporter reporter;
+        ReporterBehaviour<Collider> reporter;
         readonly CollideStage stage;
+        readonly bool useTrigger;
 
         public bool Enabled => enable;
+      
 
-        public CollideDetector(CollideStage stage) 
+        public CollideDetector(CollideStage stage, bool useTrigger=false) 
         { 
             this.stage = stage;
+            this.useTrigger = useTrigger;
+           
         }
-        public CollideDetector(Collider collider, CollideStage stage) 
+        public CollideDetector(Collider collider, CollideStage stage, bool useTrigger=false) 
         { 
             this.collider = collider; 
             this.stage = stage;
+            this.useTrigger = useTrigger;
+            Assert.AreEqual(useTrigger, collider.isTrigger);
         }
 
         public void Enable()
         {
             enable = true;
-            reporter = stage switch
+            if (useTrigger) 
             {
-                CollideStage.Enter => collider.gameObject.AddComponent<ColliderEnterReporter>(),
-                CollideStage.Stay => collider.gameObject.AddComponent<ColliderStayReporter>(),
-                CollideStage.Exit => collider.gameObject.AddComponent<ColliderExitReporter>(),
-                CollideStage.EnterAndStay => collider.gameObject.AddComponent<ColliderEnterAndStayReporter>(),
-                CollideStage.EnterAndExit => collider.gameObject.AddComponent<ColliderEnterAndExitReporter>(),
-                CollideStage.StayAndExit => collider.gameObject.AddComponent<ColliderStayAndExitReporter>(),
-                _ => collider.gameObject.AddComponent<ColliderAllReporter>(),
-            };
+                reporter = stage switch
+                {
+                    CollideStage.Enter => collider.gameObject.AddComponent<TriggerEnterAndExitReporter>(),
+                    CollideStage.Stay => collider.gameObject.AddComponent<TriggerStayReporter>(),
+                    CollideStage.Exit => collider.gameObject.AddComponent<TriggerExitReporter>(),
+                    CollideStage.EnterAndStay => collider.gameObject.AddComponent<TriggerEnterAndStayReporter>(),
+                    CollideStage.EnterAndExit => collider.gameObject.AddComponent<TriggerEnterAndExitReporter>(),
+                    CollideStage.StayAndExit => collider.gameObject.AddComponent<TriggerStayAndExitReporter>(),
+                    _ => collider.gameObject.AddComponent<TriggerAllStageReporter>(),
+                };
+            }
+            else
+            {
+                reporter = stage switch
+                {
+                    CollideStage.Enter => collider.gameObject.AddComponent<CollisionEnterReporter>(),
+                    CollideStage.Stay => collider.gameObject.AddComponent<CollisionStayReporter>(),
+                    CollideStage.Exit => collider.gameObject.AddComponent<CollisionExitReporter>(),
+                    CollideStage.EnterAndStay => collider.gameObject.AddComponent<CollisionEnterAndStayReporter>(),
+                    CollideStage.EnterAndExit => collider.gameObject.AddComponent<CollisionEnterAndExitReporter>(),
+                    CollideStage.StayAndExit => collider.gameObject.AddComponent<CollisionStayAndExitReporter>(),
+                    _ => collider.gameObject.AddComponent<CollisionAllStageReporter>(),
+                };
+            }
+            reporter.Initialize();
         }
 
         public IEnumerable<GameObject> Detect()
@@ -62,6 +86,8 @@ namespace QS.Common.Util.Detector
             if (enable && reporter != null)
             {
                 GameObject.Destroy(reporter);
+
+                //GameObject.DestroyImmediate(reporter);
             }
             enable = false;
         }
@@ -72,147 +98,11 @@ namespace QS.Common.Util.Detector
             {
                 throw new InvalidOperationException("You cannot change collider when CollideDetector is enabled");
             }
+            Assert.AreEqual(useTrigger, collider.isTrigger);
             this.collider = collider;
         }
     
-        interface IColliderReporter
-        {
-            IEnumerable<Collider> Report();
-            string UUID { get; }
-        }
-
-        abstract class AbstractColliderReporter : MonoBehaviour, IColliderReporter
-        {
-            List<Collider> colliders;
-
-            private void Start()
-            {
-                colliders = new List<Collider>();
-            }
-            public AbstractColliderReporter(string uuid) 
-            {
-                UUID = uuid;
-            }
-            public IEnumerable<Collider> Report()
-            {
-               var res = colliders.ToArray();
-                colliders.Clear();
-                return res;
-            }
-
-            public string UUID { get; }
-            protected void AddCollider(Collider collider)
-            {
-                colliders.Add(collider);
-            }
-        }
-
-        class ColliderEnterReporter : AbstractColliderReporter
-        {
-            public ColliderEnterReporter(string uuid) : base(uuid)
-            {
-            }
-
-            private void OnCollisionEnter(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-        }
-
-        class ColliderStayReporter : AbstractColliderReporter
-        {
-            public ColliderStayReporter(string uuid) : base(uuid)
-            {
-            }
-
-            private void OnCollisionStay(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-        }
-
-        class ColliderExitReporter : AbstractColliderReporter
-        {
-            public ColliderExitReporter(string uuid) : base(uuid)
-            {
-            }
-
-            private void OnCollisionExit(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-        }
-
-        class ColliderEnterAndStayReporter : AbstractColliderReporter
-        {
-            public ColliderEnterAndStayReporter(string uuid) : base(uuid)
-            {
-            }
-
-            private void OnCollisionEnter(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-
-            private void OnCollisionStay(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-        }
-
-        class ColliderEnterAndExitReporter : AbstractColliderReporter
-        {
-            public ColliderEnterAndExitReporter(string uuid) : base(uuid)
-            {
-            }
-
-            private void OnCollisionEnter(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-
-            private void OnCollisionExit(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-        }
-    
-        class ColliderStayAndExitReporter : AbstractColliderReporter
-        {
-            public ColliderStayAndExitReporter(string uuid) : base(uuid)
-            {
-            }
-
-            private void OnCollisionStay(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-            private void OnCollisionExit(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-        }
-
-        class ColliderAllReporter : AbstractColliderReporter
-        {
-            public ColliderAllReporter(string uuid) : base(uuid)
-            {
-            }
-
-            private void OnCollisionEnter(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-
-            private void OnCollisionStay(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-
-            private void OnCollisionExit(Collision collision)
-            {
-                AddCollider(collision.collider);
-            }
-        }
+      
+     
     }
 }

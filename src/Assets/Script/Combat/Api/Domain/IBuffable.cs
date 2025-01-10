@@ -6,7 +6,7 @@ namespace QS.Api.Combat.Domain
     {
         public void AddBuff<T>(string id, AbstractBuff<T> buff);
 
-        public void RemoveBuff(string id, BuffStages stage);
+        public void RemoveBuff(string id, BuffStage stage);
 
     }
 

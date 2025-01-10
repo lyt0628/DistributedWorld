@@ -4,11 +4,7 @@
 using GameLib.DI;
 using QS.Api.Common;
 using QS.Api.Inventory.Service;
-using QS.Common;
-using QS.GameLib.Pattern;
-using QS.Impl.Data.Store;
-using QS.Inventory.Repo;
-using QS.Inventory.Repo.ActiveRecord;
+
 using QS.Inventory.Service;
 
 namespace QS.Inventory
@@ -21,14 +17,12 @@ namespace QS.Inventory
 
         public InventoryGlobal() 
         {
-            DI.Bind<InventoryStore>()
-              .Bind<PlayerItemRepository>()
-              .Bind<PlayerItemRepo>()
-              .Bind<PlayerInventoryService>();
+            DI
+                .Bind<DefaultInventory>();
         }
         public override void ProvideBinding(IDIContext context)
         {
-            context.BindExternalInstance(DI.GetInstance<IPlayerInventoryService>());
+            context.BindExternalInstance(DI.GetInstance<IInventory>());
         }
     }
 }

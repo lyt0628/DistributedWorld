@@ -9,8 +9,10 @@ using QS.GameLib.Pattern;
 namespace QS.Api.Common
 {
     public abstract class ModuleGlobal<T>
-        : Sington<T>, IBindingProvider, IInstanceProvider where T : new()
+        : Sington<T>, IResourceInitializer , IBindingProvider, IInstanceProvider where T : new()
     {
+        public ResourceInitStatus ResourceStatus { get; protected set; } = ResourceInitStatus.Initializing;
+
         protected abstract IDIContext DIContext {get;}
 
         public R GetInstance<R>()
@@ -21,6 +23,11 @@ namespace QS.Api.Common
         public R GetInstance<R>(string name)
         {
             return DIContext.GetInstance<R>(name);
+        }
+
+        public virtual void Initialize()
+        {
+            ResourceStatus = ResourceInitStatus.Started;
         }
 
         public abstract void ProvideBinding(IDIContext context);

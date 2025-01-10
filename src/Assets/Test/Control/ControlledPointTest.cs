@@ -18,8 +18,8 @@ public class ControlledPointTest
         var di =  IDIContext.New();
         ControlGlobal.Instance.ProvideBinding(di);
 
-        var ds = di.GetInstance<IControlledPointDataSource>();
-        var control = di.GetInstance<IControlledPointService>();
+        var ds = di.GetInstance<ICharaTranslationProxyDataSource>();
+        var control = di.GetInstance<ICharaTranslationControl>();
         Assert.IsNotNull(ds);
         Assert.IsNotNull(control);
 
@@ -33,7 +33,7 @@ public class ControlledPointTest
         var di =  IDIContext.New();
         ControlGlobal.Instance.ProvideBinding(di);
 
-        var ds = di.GetInstance<IControlledPointDataSource>();
+        var ds = di.GetInstance<ICharaTranslationProxyDataSource>();
         var data = ds.Create();
         Assert.IsNotNull(data);
 
@@ -44,19 +44,19 @@ public class ControlledPointTest
         var di =  IDIContext.New();
         ControlGlobal.Instance.ProvideBinding(di);
 
-        var ds = di.GetInstance<IControlledPointDataSource>();
-        var control = di.GetInstance<IControlledPointService>();
+        var ds = di.GetInstance<ICharaTranslationProxyDataSource>();
+        var control = di.GetInstance<ICharaTranslationControl>();
 
         var data = ds.Create();
         data.Vertical = 0f;
         data.Horizontal = 0f;
         data.Jump = false;
         data.BaseRight = Vector3.right;
-        data.Baseforword = Vector3.forward;
+        data.BaseForword = Vector3.forward;
         data.BaseUp = Vector3.up;
         
 
-        var dataRelay = Relay<IControlledPointData>
+        var dataRelay = Relay<ICharaTranslationSnapshot>
             .Tick(() => data, out IMotion motion);
 
         var uuid = ds.New(dataRelay);

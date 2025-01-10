@@ -68,28 +68,28 @@ namespace QS.Combat.Domain
 
         public virtual void AddBuff<T>(string id, AbstractBuff<T> buff) 
         {
-            switch (buff.AttackStage)
+            switch (buff.Stage)
             {
-                case BuffStages.Attack:
+                case BuffStage.Attack:
                     attackPipelineContext.Pipeline.AddLast(id, buff);
                     break;
-                case BuffStages.Injure:
+                case BuffStage.Injure:
                     injuredPipelineContext.Pipeline.AddLast(id, buff);
                     break;
-                case BuffStages.None:
+                case BuffStage.None:
                     break;
                 default: throw new InvalidOperationException();
             }
         }
 
-        public void RemoveBuff(string id, BuffStages stage)
+        public void RemoveBuff(string id, BuffStage stage)
         {
             switch (stage)
             {
-                case BuffStages.Attack:
+                case BuffStage.Attack:
                     attackPipelineContext.Pipeline.Remove(id);
                     break;
-                case BuffStages.Injure:
+                case BuffStage.Injure:
                     injuredPipelineContext.Pipeline.Remove(id);
                     break;
             }

@@ -5,22 +5,22 @@ namespace QS.Combat.Domain
 {
     class AttackBuff : AbstractBuff<AttackMsg>
     {
-        private readonly float atnBuff = 0;
-        private readonly float matkBuff = 0;
+         public float AtkRatio { get; }
+         public float MatkRatio { get; }
 
         public AttackBuff(float atnBuff, float matkBuff)
         {
-            this.atnBuff = atnBuff;
-            this.matkBuff = matkBuff;
+            this.AtkRatio = atnBuff;
+            this.MatkRatio = matkBuff;
         }
 
-        public override BuffStages AttackStage => BuffStages.Attack;
+        public override BuffStage Stage => BuffStage.Attack;
 
 
         protected override object MakeBuff(AttackMsg msg)
         {
-            msg.atn_res = msg.atn * atnBuff;
-            msg.matk_res = msg.matk * matkBuff;
+            msg.atn_res = msg.atn * AtkRatio;
+            msg.matk_res = msg.matk * MatkRatio;
             return msg;
         }
     }
