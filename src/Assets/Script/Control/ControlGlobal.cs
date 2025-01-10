@@ -28,9 +28,9 @@ namespace QS.Control
             CommonGlobal.Instance.ProvideBinding(DI);
 
             DI
-                .Bind<CharacterTranslationDTO>()
-                .Bind<ControlledPointDataSource>()
-                .Bind<ControlledPointService>();
+                .Bind<CharaTranslation>()
+                .Bind<CharaTranslationProxyDataSource>()
+                .Bind<CharaTranslationControl>();
         }
 
         public override void ProvideBinding(IDIContext context)
@@ -38,8 +38,8 @@ namespace QS.Control
 
             // 注意声明和获取的接口要一致
             context
-                 .BindExternalInstance(DI.GetInstance<IControlledPointDataSource_tag>())
-                .BindExternalInstance(DI.GetInstance<IControlledPointService>());
+                 .BindExternalInstance(DI.GetInstance<ICharaTranslationProxyDataSource_tag>())
+                 .BindExternalInstance(DI.GetInstance<ICharaTranslationControl>());
         }
 
     }

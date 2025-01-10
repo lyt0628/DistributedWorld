@@ -33,9 +33,9 @@ namespace QS.Common.Util.Detector
             return new RelayCastDetector(d, objRelay);
         }
 
-        public ISpanDetector Collide(Collider collider, CollideStage stage)
+        public ISpanDetector Collide(Collider collider, CollideStage stage, bool useTrigger = true)
         {
-            return new CollideDetector(collider, stage);
+            return new CollideDetector(collider, stage, useTrigger);
         }
 
         public ISpanDetector CollideRelay(Relay<Collider> colliderRelay, CollideStage stage)

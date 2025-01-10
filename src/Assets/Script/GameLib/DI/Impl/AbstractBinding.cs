@@ -21,6 +21,9 @@ namespace GameLib.DI
             Lazy = lazy;
         }
 
+        /// <summary>
+        /// 綁定的實際類型鍵， 即實例類的Key
+        /// </summary>
         public Key Target => target;
 
         public ISet<Key> Dependencies => dependencies;

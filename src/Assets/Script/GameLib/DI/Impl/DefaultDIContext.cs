@@ -450,26 +450,39 @@ namespace GameLib.DI
             IBinding resolvedBinding = binding;
             if (binding.Scope == ScopeFlag.Sington)
             {
-
+                // 類型和名稱共同構成 一個綁定的Key
+                // 默認綁定的名稱和實例類的名稱一樣，
+                // 只綁定一個實例的時候，不會查詢名稱，所以根據接口查找可以找到
+                // 但是這邊做緩存的時候，是根據完整的key來做的
+                // 我得爲父類一起緩存才行，不然緩存在不同層級會失效
                 if (scopeCahce.TryGetValue(k, out InstanceBinding b))
                 {
                     resolvedBinding = b;
                 }
                 else if (binding is InstanceBinding i)
                 {
-                    scopeCahce.Add(k, i);
+                    DoScopeBinding(k, i);
                 }
                 else
                 {
                     var instance = GenInstance(binding);
                     var instanceBinding = new InstanceBinding(k, instance);
                     resolvedBinding = instanceBinding;
-                    scopeCahce.Add(k, instanceBinding);
+                    DoScopeBinding(k, instanceBinding);
                 }
             }
 
             return resolvedBinding;
         }
 
-     }
+        private void DoScopeBinding(Key k, InstanceBinding i)
+        {
+            scopeCahce.Add(k, i);
+            var ancestors = DIUtil.CollectAncestorsAndInterfaces(k.Type);
+            foreach (var ancestor in ancestors)
+            {
+                scopeCahce.Add(Key.Get(ancestor), i);
+            }
+        }
+    }
 }

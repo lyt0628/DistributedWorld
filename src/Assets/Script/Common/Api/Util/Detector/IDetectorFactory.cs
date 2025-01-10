@@ -17,7 +17,7 @@ namespace QS.Api.Common.Util.Detector
         IDetector CastAllRelay(Relay<ICastedObject> objRelay);
         IDetector Overlap(IOverlapArea area);
         IDetector OverlapRelay(Relay<IOverlapArea> areaRelay);
-        ISpanDetector Collide(Collider collider, CollideStage stage);
+        ISpanDetector Collide(Collider collider, CollideStage stage, bool useTrigger=true);
         ISpanDetector CollideRelay(Relay<Collider> colliderRelay, CollideStage stage);
         IDetector Group(IEnumerable<IDetector> detectors);
 

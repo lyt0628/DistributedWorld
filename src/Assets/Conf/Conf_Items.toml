@@ -1,0 +1,9 @@
+# 算了，應爲想使用自動的 名稱轉換，這邊使用 大駝峯吧
+
+
+[[weapons]]
+Name = "Sword"
+Sprite = "sword64x64"
+Prefab = "sword"
+Description = "A sword for fighting"
+MainBuff = { Type = 'Attack',  AtkRatio = 1.1, MatkRatio = 1.1 }

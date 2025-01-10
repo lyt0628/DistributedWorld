@@ -1,3 +1,22 @@
 {
-	"name": "QS.Agent"
+    "name": "QS.Agent",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f5f467f13167fdb47a9d2e74fc52267c",
+        "GUID:41cc75f48fe4b3c4490ec0592b776b0f",
+        "GUID:c720f9517ccc66d46937442510310776",
+        "GUID:6f8aefceb089d824db5dea3dea157fa1",
+        "GUID:973bfc1afd4ceae439856546748cd491",
+        "GUID:502bf6b29f62d8640a15a79f571ff96d",
+        "GUID:8c107b19aff0a0443a14684af05dbe35"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

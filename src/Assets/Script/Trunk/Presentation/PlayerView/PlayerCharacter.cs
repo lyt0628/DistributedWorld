@@ -1,5 +1,4 @@
 using GameLib.DI;
-using Mono.Reflection;
 using QS.Api;
 using QS.Api.Chara.Service;
 using QS.Api.Common;
@@ -9,15 +8,18 @@ using QS.Api.Control.Service;
 using QS.Api.Data;
 using QS.Api.Executor.Domain;
 using QS.Api.Executor.Service;
+using QS.Api.Skill;
 using QS.Api.Skill.Domain;
-using QS.Api.Skill.Service;
 using QS.Chara.Domain;
 using QS.Executor;
 using QS.GameLib.Pattern.Message;
 using QS.GameLib.Rx.Relay;
 using QS.GameLib.Util;
+using QS.Skill;
 using System;
+using System.Collections;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /*
@@ -47,9 +49,12 @@ public class PlayerCharacter : Character
     [Injected]
     readonly ICharaAblityFactory charaAbilityFactory;
     [Injected]
+    readonly ISkillRepo skillRepo;
+    [Injected]
     readonly ISkillInstrFactory skillInstrFactory;
     [Injected]
     readonly ISkillAblityFactory skillAblityFactory;
+
 
     [Injected]
     readonly IPlayerLocationData playerLocation;
@@ -66,41 +71,58 @@ public class PlayerCharacter : Character
 
         var handler = instructionHandlerFactory.Filter(this);
         AddLast(MathUtil.UUID(), handler);
-        AddLast(MathUtil.UUID(), instructionHandlerFactory.Move(this, transform, animator));
+        AddLast(MathUtil.UUID(), charaAbilityFactory.Translate(this, transform, animator));
         AddLast(MathUtil.UUID(), instructionHandlerFactory.Instantiate(this));
-        AddLast(MathUtil.UUID(), charaAbilityFactory.Injured(this, combat));
-        var h = skillAblityFactory.Simple(this, ISkillKey.New("00001", "FireBall"));
-        var subh = new SabreAttack();
-        TrunkGlobal.Instance.DI.Inject(subh);
-        h.AddSubHandler(subh);
+        AddLast(MathUtil.UUID(), instructionHandlerFactory.Injured(this, combat));
 
-        var life = TrunkGlobal.Instance.GetInstance<ILifecycleProivder>();
-        // 对于简单的武器攻击, 使用碰撞体检测器就OK了
-
-
-
-        AddLast(MathUtil.UUID(), h);
 
     }
+    bool flg = false;
+
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        // 這個狀態是異步的東西，得通過全局事件管線來通知
+        if (!flg && Input.GetMouseButtonDown(0)
+            && SkillGlobal.Instance.ResourceStatus == ResourceInitStatus.Started)
         {
-            Execute(instructionFactory.Instantiate("BD", transform));
+            var sk = skillRepo.GetSkill("00001");
+            AddLast(MathUtil.UUID(), skillAblityFactory.Create(this, sk));
+
+            flg = true;
         }
-        if(Input.GetKeyDown(KeyCode.F))
+        if ( Input.GetMouseButtonDown(1))
         {
-            Execute(skillInstrFactory.Simple("00001", "FireBall"));
-            var animator = GetComponent<Animator>();
-            animator.SetTrigger("Attack");
+            var sk = skillRepo.GetSkill("00001");
+            var skInstr = skillInstrFactory.Create(sk);
+            Execute(skInstr);
+            Messager.Boardcast("SK00001_FireBall_CastingEnter", Msg0.Instance);
+            StartCoroutine(MsgDelay());
+     
         }
 
-        Execute(instructionFactory.Move(
-            Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), Input.GetButtonDown("Jump"),
+        //if (Input.GetKeyDown(KeyCode.J))
+        //{
+        //    Execute(instructionFactory.Instantiate("BD", transform));
+        //}
+        //if(Input.GetKeyDown(KeyCode.F))
+        //{
+        //    Execute(skillInstrFactory.Create("00001", "FireBall"));
+        //    var animator = GetComponent<Animator>();
+        //    animator.SetTrigger("Attack");
+
+        //}
+        if (Input.GetMouseButton(0))
+        {
+            var animator = GetComponent<Animator>();
+            animator.SetTrigger("Punch");
+        }
+
+        Execute(characterInsructionFactory.Translate(
+            Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 
+            Input.GetKey(KeyCode.LeftShift) ,Input.GetButtonDown("Jump"),
             playerLocation.Right, playerLocation.Forward, Vector3.up));
     }
-
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
@@ -112,4 +134,11 @@ public class PlayerCharacter : Character
     }
 
 
+
+
+    IEnumerator MsgDelay()
+    {
+        yield return new WaitForSeconds(1);
+        Messager.Boardcast("SK00001_FireBall_CastingExit", Msg0.Instance);
+    }
 }

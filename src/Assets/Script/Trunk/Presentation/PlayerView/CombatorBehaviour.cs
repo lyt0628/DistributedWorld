@@ -37,7 +37,7 @@ public class CombatorBehaviour
         ((IInjurable)delegat).Injured(attack);
     }
 
-    public void RemoveBuff(string id, BuffStages stage)
+    public void RemoveBuff(string id, BuffStage stage)
     {
         ((IBuffable)delegat).RemoveBuff(id, stage);
     }

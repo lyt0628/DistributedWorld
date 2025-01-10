@@ -12,7 +12,7 @@ namespace QS.Combat.Domain
             Id = MathUtil.UUID();
         }
 
-        public abstract BuffStages AttackStage { get; }
+        public abstract BuffStage Stage { get; }
         public string Id { get; }
 
         public override void Read(IPipelineHandlerContext context, object msg)

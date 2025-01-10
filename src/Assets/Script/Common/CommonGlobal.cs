@@ -6,6 +6,7 @@ using QS.Api.Common;
 using QS.Api.Common.Util.Detector;
 using QS.Api.Setting;
 using QS.Common.Util.Detector;
+using QS.Common.Util.Mounter;
 using QS.GameLib.Pattern;
 using QS.GameLib.Pattern.Message;
 using QS.Impl;
@@ -25,10 +26,13 @@ namespace QS.Common
                 // GameLib 
                 .Bind<Messager>(DINames.GameLib_Message_Messager, ScopeFlag.Prototype)
                 //
+               
                 .Bind<GlobalPhysicSetting>()
                 .BindInstance(LifecycleProvider.Instance)
+
                 .BindExternalInstance(DINames.MsgBus, new Messager())
-                .BindExternalInstance(new DetectorFactory());
+                .BindExternalInstance(new DetectorFactory())
+                .BindExternalInstance(new MounterFactory());
         }
 
         public override void ProvideBinding(IDIContext context)
