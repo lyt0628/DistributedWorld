@@ -2,11 +2,13 @@ namespace QS.GameLib.Pattern.Message
 {
     using System;
     using System.Collections.Generic;
+    using UnityEngine;
 
     public class Messager : IMessager
     {
 
         private Dictionary<string, Action<IMessage>> m_broker = new();
+
 
         public void AddListener(string type, Action<IMessage> handler)
         {
@@ -28,12 +30,12 @@ namespace QS.GameLib.Pattern.Message
         }
         public void Boardcast(string type, IMessage msg)
         {
-
+            Debug.Log($"{type} >>> {msg}");
             if (type == null || !m_broker.ContainsKey(type)) return;
             m_broker[type]?.Invoke(msg);
         }
 
-
+    
     }
 }
 

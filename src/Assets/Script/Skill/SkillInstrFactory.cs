@@ -15,12 +15,7 @@ namespace QS.Skill.Service
 
         public IInstruction Create(ISkill skill)
         {
-            
-            if(skill is ISimpleSkill simpleSkill)
-            {
-                return new SimpleSkillInstr(simpleSkill);
-            }
-            throw new System.NotImplementedException();
+            return new CastSkillInstr(skill);
         }
     }
 }

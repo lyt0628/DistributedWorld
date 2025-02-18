@@ -16,8 +16,11 @@ namespace QS.GameLib.Rx.Relay
 
         public void Set()
         {
-            motions.RemoveAll(motion =>motion.IsDisposed);
-            motions.ForEach(motion=> motion.Set());
+            motions.RemoveAll(motion =>motion.Disposed);
+            motions
+                .Where(motion => !motion.Paused)
+                .ToList()
+                .ForEach(motion=> motion.Set());
         }
     }
 }

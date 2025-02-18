@@ -1,0 +1,20 @@
+.qs-fill-slider {
+    height: 16px;
+    width: 200px;
+}
+
+.qs-fill-slider__input {
+    background-color: var(--unity-colors-slider_groove-background);
+    width: 200px;
+}
+
+.qs-fill-slider__fill-area {
+    position: absolute;
+    height: 10px;
+    width: 10%;
+    background-color: rgb(255, 0, 0);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 8px;
+}

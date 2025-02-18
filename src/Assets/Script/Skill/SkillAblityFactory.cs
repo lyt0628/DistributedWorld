@@ -18,10 +18,16 @@ namespace QS.Skill.Service
 
         public IInstructionHandler Create(Character character,ISkill skill)
         {
+            
+            if (skill is PhasedSimpleSkill phasedSkill)
+            {
+                return new PhasedSimpleSkillAbility(character, phasedSkill);
+            }
 
             if (skill is ISimpleSkill simpleSkill) { 
                 return new SimpleSkillAblity(character, simpleSkill);
             }
+
             throw new System.Exception();
         }
     }

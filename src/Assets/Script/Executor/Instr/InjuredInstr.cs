@@ -4,6 +4,7 @@
 using QS.Api.Chara.Instruction;
 using QS.Api.Combat.Domain;
 using QS.Api.Combat.Service;
+using QS.Api.Executor.Domain;
 using QS.Executor;
 
 namespace QS.Chara.Domain.Instruction

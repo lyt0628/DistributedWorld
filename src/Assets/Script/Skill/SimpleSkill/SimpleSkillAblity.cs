@@ -15,6 +15,7 @@ using QS.Skill.SimpleSkill;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace QS.Skill.Handler
 {
@@ -25,27 +26,38 @@ namespace QS.Skill.Handler
     /// 一個簡單技能實例只能處理一種技能
     /// </summary>
      class SimpleSkillAblity 
-        : Ablity, ISimpleSkillHandler
+        : Ability, ISimpleSkillAbility
     {
         [Injected]
         readonly ISimpleSkillAnimCfg animCfg;
         [Injected]
         readonly ISubHandlerRegistry handlerRegistry;
+        public UnityEvent OnPrecastCallbacks = new();
+        public UnityEvent OnCastingCallbacks = new();
+        public UnityEvent OnPostcastCallbacks = new();
+        public UnityEvent OnShutdownCallbacks = new();
+        public UnityEvent OnCancelCallbacks = new();
 
         readonly List<ISimpleSkillSubHandler> subHandlers = new();
 
         public ISimpleSkill Skill { get; }
+
+        public virtual SimpleSkillStage CurrentStage { get; protected set; } = SimpleSkillStage.Shutdown;
+
         readonly ISkillKey key;
 
         /// <summary>
         /// 只有需要被使用的時候才會被創建，因此直接在構造器中
         /// 編寫資源加載邏輯即可。和常規的類是一樣的
+        /// 
+        /// 连续技在设计中是由简单技能复合而成的。如何链接这个过程
+        /// 显然应该使用链表这个数据结构然后由第一个技能触发后一个技能
+        /// 合理的方式也是用子处理器实现，缺点是领域的问题。
+        /// 这样子无法体现连续技这个模型，但或许不错呢
         /// </summary>
         /// <param name="character"></param>
         /// <param name="skill"></param>
-
-        public SimpleSkillAblity(Character character,ISimpleSkill skill)
-            : base(character)
+        public SimpleSkillAblity(Character character,ISimpleSkill skill) : base(character)
         {
             SkillGlobal.Instance.DI.Inject(this);
 
@@ -56,87 +68,83 @@ namespace QS.Skill.Handler
                 var handler = handlerRegistry.GetSubHandler(h);
                 AddSubHandler(handler);
                 handler.PreLoad(character, this);
-
             }
 
         }
-
-
-        void PrecastEnter(IMessage m)
+        protected virtual void OnPrecast(IMessage m)
         {
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastEnter), PrecastEnter);
-            subHandlers.ForEach(h => h.OnPrecastEnter(Character, this));
+            CurrentStage = SimpleSkillStage.Precast;
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.Precast), OnPrecast);
+            subHandlers.ForEach(h => h.OnPrecast(Character, this));
+            OnPrecastCallbacks.Invoke();
         }
-        void PrecastExit(IMessage m)
+
+        protected virtual void OnCasting(IMessage m) {
+            CurrentStage = SimpleSkillStage.Casting;
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.Casting), OnCasting);
+            subHandlers.ForEach(h => h.OnCasting(Character, this));
+            OnCastingCallbacks.Invoke();
+        }
+
+        protected virtual void OnPostcast(IMessage m) {
+            CurrentStage = SimpleSkillStage.Postcast;
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.Postcast), OnPostcast);
+            subHandlers.ForEach(h => h.OnPostcast(Character, this));
+            OnPostcastCallbacks.Invoke();
+        }
+
+        protected virtual void OnShutdown(IMessage m)
         {
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastExit), PrecastExit);
-            subHandlers.ForEach(h=>h.OnPrecastExit(Character, this));
+            CurrentStage = SimpleSkillStage.Shutdown;
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.Shutdown), OnShutdown);
+            subHandlers.ForEach(h => h.OnShutdown(Character, this));
+            OnShutdownCallbacks.Invoke();
         }
-        void CastingEnter(IMessage m) {
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.CastingEnter), CastingEnter);
-            subHandlers.ForEach(h => h.OnCastingEnter(Character, this));
-        }
-        void CastingExit(IMessage m) {
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.CastingExit), CastingExit);
-            subHandlers.ForEach(h => h.OnCastingExit(Character, this));
-        }
-        void PostcastEnter(IMessage m) {
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastEnter), PostcastEnter);
-            subHandlers.ForEach(h => h.OnPostcastEnter(Character, this));
-        }
-        void PostcastExit(IMessage m) {
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastExit), PostcastExit);
-            subHandlers.ForEach(h => h.OnPostcastExit(Character, this));
-        }
-
-        private void AddListener()
+        protected void AddListener()
         {
-            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastEnter), PrecastEnter);
-            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastExit), PrecastExit);
-            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.CastingEnter), CastingEnter);
-            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.CastingExit), CastingExit);
-            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastEnter), PostcastEnter);
-            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastExit), PostcastExit);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.Precast), OnPrecast);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.Casting), OnCasting);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.Postcast), OnPostcast);
+            Character.Messager.AddListener(animCfg.GetMsg(key, SimpleSkillStage.Shutdown), OnShutdown);
         }
 
-        private void RemoveListener()
+        protected void RemoveListener()
         {
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastEnter), PrecastEnter);
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PrecastExit), PrecastExit);
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.CastingEnter), CastingEnter);
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.CastingExit), CastingExit);
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastEnter), PostcastEnter);
-            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.PostcastExit), PostcastExit);
-
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.Precast), OnPostcast);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.Casting), OnCasting);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.Postcast), OnPostcast);
+            Character.Messager.RemoveListener(animCfg.GetMsg(key, SimpleSkillStage.Shutdown), OnShutdown);
         }
-
 
         public override void Read(IPipelineHandlerContext context, object msg)
         {
-            if(msg is ISimpleSkillInstr skillInstr)
+            if(msg is ICastSkillInstr skillInstr)
             {
-                
-                if (skillInstr.Skill.Key != key) {
-                   context.Write(msg);
-                }
-
-                RemoveListener(); // Remove Previous Listeners
-                AddListener();
-                if (Character.TryGetComponent<Animator>(out var anim))
+                if (skillInstr.Skill.Key != key)
                 {
-                    var trigger = animCfg.GetAnimTrigger(key);
-                    anim.SetTrigger(trigger);
-                    //Debug.Log(trigger);
+                    context.Write(msg);
+                }
+                OnInstructed();
+                if(CurrentStage == SimpleSkillStage.Shutdown)
+                {
+                    Cast();
                 }
             }
-            else if (ReflectionUtil.IsChildOf<IInjuredInstr>(msg))
-            {
-                Debug.Log("Injured, skill interrupted");
-                RemoveListener();
-                Debug.Log("[SimpleSkillHandler] TODO:Cleanup");
-            }
+            // 先不考虑打断
+            //else if (ReflectionUtil.IsChildOf<IInjuredInstr>(msg))
+            //{
+            //    Debug.Log("Combat, skill interrupted");
+            //    RemoveListener();
+            //    Debug.Log("[SimpleSkillHandler] TODO:Cleanup");
+            //}
 
             context.Write(msg);
+        }
+
+        protected virtual void OnInstructed()
+        {
+            subHandlers.ForEach(h => h.OnInstructed(Character, this));
+            
         }
 
         public void AddSubHandler(ISimpleSkillSubHandler subHandler)
@@ -149,6 +157,26 @@ namespace QS.Skill.Handler
             return (T)subHandlers.Find(h=>h is T);
         }
 
+        public virtual void Cast()
+        {
+            if (Character.TryGetComponent<Animator>(out var anim))
+            {
+                var trigger = animCfg.GetAnimTrigger(key);
+                anim.SetTrigger(trigger);
+                Debug.Log(trigger);
+            }
+            RemoveListener(); // Remove Previous Listeners
+            AddListener();
+        }
 
+
+
+        public virtual void Cancel()
+        {
+            RemoveListener();
+            subHandlers.ForEach(h => h.OnCancel(Character, this));
+            OnCancelCallbacks.Invoke();
+            CurrentStage = SimpleSkillStage.Shutdown;
+        }
     }
 }

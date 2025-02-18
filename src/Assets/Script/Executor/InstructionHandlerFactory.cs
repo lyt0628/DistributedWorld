@@ -28,9 +28,9 @@ namespace QS.Executor.Service
 
             return new InstantiateInstructionHandler(executor);
         }
-        public IInstructionHandler Injured(IRelayExecutor executor, IInjurable injurable)
+        public IInstructionHandler Combat(IRelayExecutor executor, IBuffedCombater combator)
         {
-            var h = new InjuredAbility(executor, injurable);
+            var h = new CombatorHandler(executor, combator);
             ExecutorGlobal.Instance.DI.Inject(h);
             return h;
         }

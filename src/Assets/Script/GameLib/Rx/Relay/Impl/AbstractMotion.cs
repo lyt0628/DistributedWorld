@@ -13,15 +13,10 @@ namespace QS.GameLib.Rx.Relay
             this.observer = observer;
         }
 
-        bool _isDisposed = false;
-        public bool IsDisposed => _isDisposed;
-        
-        
+        public bool Disposed { get; set; } = false;
 
-        public void Dispose()
-        {
-            _isDisposed = true;
-        }
+        public bool Paused { get; set; } = false;
+
 
         public void Set()
         {

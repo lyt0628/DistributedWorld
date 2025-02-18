@@ -6,6 +6,8 @@ using QS.Api.Common;
 using QS.Chara;
 using QS.Common;
 using QS.Executor;
+using QS.PlayerControl;
+using QS.Skill;
 
 namespace QS.Agent
 {
@@ -18,6 +20,8 @@ namespace QS.Agent
             CommonGlobal.Instance.ProvideBinding(DI);
             ExecutorGlobal.Instance.ProvideBinding(DI);
             CharaGlobal.Instance.ProvideBinding(DI);
+            PlayerControlGlobal.Instance.ProvideBinding(DI);
+            SkillGlobal.Instance.ProvideBinding(DI);
 
             DI.Bind<Steering>();
         }

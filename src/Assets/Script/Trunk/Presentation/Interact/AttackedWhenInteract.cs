@@ -4,11 +4,11 @@ using GameLib.DI;
 using QS.Api.Chara.Service;
 using QS.Api.Combat.Domain;
 using QS.Api.Combat.Service;
-using QS.Api.Data;
 using QS.Api.Executor.Service;
 using QS.Api.Presentation.Interact;
 using QS.Chara.Domain;
 using QS.Combat.Domain;
+using QS.PlayerControl;
 using UnityEngine;
 
 namespace QS

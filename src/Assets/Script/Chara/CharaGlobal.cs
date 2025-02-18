@@ -8,7 +8,7 @@ using QS.Api.Common;
 using QS.Chara.Service;
 using QS.Combat;
 using QS.Common;
-using QS.Control;
+using QS.Motor;
 using QS.Executor;
 
 namespace QS.Chara
@@ -19,7 +19,7 @@ namespace QS.Chara
         public CharaGlobal()
         {
             CommonGlobal.Instance.ProvideBinding(DI);
-            ControlGlobal.Instance.ProvideBinding(DI);
+            MotorGlobal.Instance.ProvideBinding(DI);
             CombatGlobal.Instance.ProvideBinding(DI);
             ExecutorGlobal.Instance.ProvideBinding(DI);
 

@@ -6,6 +6,7 @@ using QS.Api.Chara.Service;
 using QS.Api.Executor.Domain;
 using QS.Api.Executor.Domain.Instruction;
 using QS.Api.Executor.Service;
+using QS.PlayerControl;
 using UnityEngine;
 
 namespace QS.Agent
@@ -18,10 +19,23 @@ namespace QS.Agent
     {
         [Injected]
         readonly ICharaInsrFactory instructionFactory;
+        [Injected]
+        readonly IPlayerCharacterData playerChara;
 
-        public IInstruction GetTranslateInstr()
+        public Transform robot;
+
+        public ICharaControlInstr GetTranslateInstr()
         {
-            return instructionFactory.Translate( 1, 0, true, false, Vector3.right, Vector3.forward, Vector3.up);
+            var direction = playerChara.ActivedCharacter.transform.position - robot.position;
+            if (direction.magnitude < 1) {
+                direction = Vector3.zero;
+            }
+            else
+            {
+                direction = direction.normalized * 0.9f;
+            }
+
+            return instructionFactory.CharaControl(direction.x, direction.z, true, false, false);
         }
     }
 }

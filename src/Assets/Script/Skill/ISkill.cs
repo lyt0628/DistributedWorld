@@ -36,10 +36,11 @@ namespace QS.Api.Skill.Domain
     /// 設計到展示的東西，比方說技能的描述，圖標，等級 這些東西
     /// 額外做定義，額外做配置，把這些東西，放到上層來做會更好
     /// 這個Skill模塊，只是用來做這些技能的實施的，不必涉及這些
+    /// 
+    /// 指令只是一个外观，在模块内部可以提供更加直接的接口来调用。
     /// </summary>
     public interface ISkill
     {
         ISkillKey Key { get; }
-
     }
 }

@@ -177,5 +177,21 @@ namespace QS.GameLib.Pattern.Pipeline
             }
             DoRemove(n);
         }
+
+        public T Get<T>() where T : IPipelineHandler
+        {
+            var node = root;
+            T result = default;
+            while (node != null)
+            {
+                if(node.Handler is T h)
+                {
+                    result = h;
+                    break;
+                }
+                node = node.NextHandlerContext;
+            }
+            return result;
+        }
     }
 }

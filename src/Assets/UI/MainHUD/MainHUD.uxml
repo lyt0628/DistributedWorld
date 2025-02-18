@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainHUD/MainHUD.uss?fileID=7433441132597879392&amp;guid=4608992313c03ed44a0dbb757d36b85a&amp;type=3#MainHUD" />
+    <Style src="project://database/Assets/Script/UI/Library/FillSlider.uss?fileID=7433441132597879392&amp;guid=096aef6fb6fa36b4b9ae97a991217b00&amp;type=3#FillSlider" />
+    <QSUILibrary.FillSlider value="60" name="FillSlider" style="height: 17px; width: 231px;" />
+</ui:UXML>
