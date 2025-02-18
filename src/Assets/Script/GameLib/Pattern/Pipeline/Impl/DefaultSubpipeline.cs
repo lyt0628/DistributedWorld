@@ -53,6 +53,11 @@ namespace QS.GameLib.Pattern.Pipeline
             subpipelineContext.Pipeline.Remove(trunk);
         }
 
+        public T Get<T>() where T : IPipelineHandler
+        {
+            return subpipelineContext.Pipeline.Get<T>();
+        }
+
         class PipelineTunkHandler : IPipelineHandler
         {
             readonly IPipelineHandlerContext superPipelineNextHandlerContext;

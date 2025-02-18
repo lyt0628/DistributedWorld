@@ -11,8 +11,10 @@ using QS.Common;
 using QS.Executor;
 using QS.Skill.Conf;
 using QS.Skill.Domain.Instruction;
+using QS.Skill.Handler;
 using QS.Skill.Service;
 using QS.Skill.SimpleSkill;
+using QS.Skill.Skills;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,7 +54,9 @@ namespace QS.Skill
                 .Bind<SkillAblityFactory>()
                 .Bind<MountSubHandler>()
                 .Bind<CollideAttackSubHandler>()
+                .Bind<ScriptableSubHandler>()
                 .BindExternalInstance(new DefaultSkillRepo())
+                .Bind<ShuffleStep>()
                 .BindExternalInstance(DepsGlobal.Instance.GetInstance<Lua>(Api.Deps.DINames.Lua_Skill));
             DI.Inject(this);
 
@@ -76,24 +80,24 @@ namespace QS.Skill
 
         public override void Initialize()
         {
-            var handle = Addressables.LoadAssetAsync<TextAsset>("Conf_SimpleSkills");
+            var handle = Addressables.LoadAssetsAsync<TextAsset>("SimpleSkillConf", null);
             handle.Completed += LoadSimpleSkills;
         }
         
-        void LoadSimpleSkills(AsyncOperationHandle<TextAsset> handle)
+        void LoadSimpleSkills(AsyncOperationHandle<IList<TextAsset>> handle)
         {
             Assert.AreEqual(AsyncOperationStatus.Succeeded, handle.Status,
                 "Failed to load simple skills configuration!!!");
 
-            var skillDoc = tomlParser.Parse(handle.Result.text);
-            var skills = skillDoc.GetArray("Skills");
-            foreach (var skill  in skills)
+            foreach (var conf in handle.Result)
             {
-                
-                var sk = TomletMain.To<DefaultSimpleSkill>(skill);
-               
-                skillRepo.AddSkill(sk);
-
+                var skillDoc = tomlParser.Parse(conf.text);
+                var skills = skillDoc.GetArray("Skills");
+                foreach (var skill in skills)
+                {
+                    var sk = TomletMain.To<ISkill>(skill);
+                    skillRepo.AddSkill(sk);
+                }
             }
 
             base.Initialize();
@@ -142,12 +146,9 @@ namespace QS.Skill
 
                     return tomlValue.StringValue switch
                     {
-                        "PrecastEnter" => SimpleSkillStage.PrecastEnter,
-                        "PrecastExit" => SimpleSkillStage.PrecastExit,
-                        "CastingEnter" => SimpleSkillStage.CastingEnter,
-                        "CastingExit" => SimpleSkillStage.CastingExit,
-                        "PostcastEnter" => SimpleSkillStage.PostcastEnter,
-                        "PostcastExit" => SimpleSkillStage.PostcastExit,
+                        "Precast" => SimpleSkillStage.Precast,
+                        "Casting" => SimpleSkillStage.Casting,
+                        "Postcast" => SimpleSkillStage.Postcast,
                         _ => throw new System.Exception()
                     };
                 }
@@ -161,13 +162,12 @@ namespace QS.Skill
                 },
                 tomlValue =>
                 {
-
                     if (tomlValue is not TomlTable table)
                     {
-                        throw new TomlTypeMismatchException(typeof(TomlTable), tomlValue.GetType(), typeof(DefaultSimpleSkill));
+                        throw new TomlTypeMismatchException(typeof(TomlTable), tomlValue.GetType(), typeof(SimpleSkill.DefaultSimpleSkill));
                     }
                     var key = TomletMain.To<ISkillKey>(table.GetValue("Key"));
-                    var handlers = table.GetArray("Handlers").Select(v=>v.StringValue).ToArray();
+                    var handlers = table.GetArray("Handlers").Select(v => v.StringValue).ToArray();
                     var sk = new DefaultSimpleSkill(key, handlers);
                     // 每個在C#實現的處理器，自己定義自己的配置方式
                     foreach (var h in handlers)
@@ -177,8 +177,45 @@ namespace QS.Skill
                     }
 
                     return sk;
-                }
-                );
+                });
+            TomletMain.RegisterMapper<PhasedSimpleSkill>(
+                key =>throw new System.Exception(),
+                tomlValue =>
+                {
+                    if (tomlValue is not TomlTable table)
+                    {
+                        throw new TomlTypeMismatchException(typeof(TomlTable), tomlValue.GetType(), typeof(PhasedSimpleSkill));
+                    }
+                    var key = TomletMain.To<ISkillKey>(table.GetValue("Key"));
+                    var skill = new PhasedSimpleSkill(key);
+                    foreach (var phase in table.GetArray("Phases"))
+                    {
+                        skill.AddPhase(TomletMain.To<DefaultSimpleSkill>(phase));
+                    }
+                    return skill;
+                });
+            TomletMain.RegisterMapper<ISkill>(
+                key => throw new System.Exception(),
+                tomlValue =>
+                {
+                    if (tomlValue is not TomlTable table)
+                    {
+                        throw new TomlTypeMismatchException(typeof(TomlTable), tomlValue.GetType(), typeof(ISkill));
+                    }
+                    if(table.TryGetValue("Type", out var type))
+                    {
+                        return type.StringValue switch
+                        {
+                            "Default" => TomletMain.To<DefaultSimpleSkill>(tomlValue),
+                            "Phased" => TomletMain.To<PhasedSimpleSkill>(tomlValue),
+                            _ => throw new System.Exception()
+                        };
+                    }
+                    else
+                    {
+                        return TomletMain.To<DefaultSimpleSkill>(tomlValue);
+                    } 
+                });
         }
 
     }

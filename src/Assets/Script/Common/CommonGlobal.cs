@@ -6,7 +6,6 @@ using QS.Api.Common;
 using QS.Api.Common.Util.Detector;
 using QS.Api.Setting;
 using QS.Common.Util.Detector;
-using QS.Common.Util.Mounter;
 using QS.GameLib.Pattern;
 using QS.GameLib.Pattern.Message;
 using QS.Impl;
@@ -14,6 +13,12 @@ using QS.Impl.Setting;
 
 namespace QS.Common
 {
+    /// <summary>
+    /// 接下來得先做一些內容了，
+    /// 
+    /// Item，Weapon， Chara，Terrian，建築，特效，
+    /// 動畫， UI
+    /// </summary>
     public class CommonGlobal : ModuleGlobal<CommonGlobal>
     {
         internal IDIContext DI { get; } = IDIContext.New();
@@ -29,10 +34,8 @@ namespace QS.Common
                
                 .Bind<GlobalPhysicSetting>()
                 .BindInstance(LifecycleProvider.Instance)
-
-                .BindExternalInstance(DINames.MsgBus, new Messager())
                 .BindExternalInstance(new DetectorFactory())
-                .BindExternalInstance(new MounterFactory());
+                .BindExternalInstance(DINames.MsgBus, new Messager());
         }
 
         public override void ProvideBinding(IDIContext context)

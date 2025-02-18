@@ -11,6 +11,6 @@ namespace QS.Agent
     /// </summary>
     interface ISteering
     {
-        IInstruction GetTranslateInstr();
+        ICharaControlInstr GetTranslateInstr();
     }
 }

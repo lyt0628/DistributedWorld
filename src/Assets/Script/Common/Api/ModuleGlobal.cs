@@ -5,15 +5,19 @@
 using GameLib.DI;
 using QS.Common;
 using QS.GameLib.Pattern;
+using QS.GameLib.Pattern.Message;
 
 namespace QS.Api.Common
 {
     public abstract class ModuleGlobal<T>
-        : Sington<T>, IResourceInitializer , IBindingProvider, IInstanceProvider where T : new()
+        : Sington<T>, IMessagerProvider, IModuleGlobal where T : IModuleGlobal, new()
     {
         public ResourceInitStatus ResourceStatus { get; protected set; } = ResourceInitStatus.Initializing;
 
         protected abstract IDIContext DIContext {get;}
+
+        public IMessager Messager { get; } = new Messager();
+        public static string MSG_READY = "ready";
 
         public R GetInstance<R>()
         {
@@ -25,12 +29,18 @@ namespace QS.Api.Common
             return DIContext.GetInstance<R>(name);
         }
 
+        public void ReviceBinding(object instance)
+        {
+            DIContext.BindExternalInstance(instance);
+        }
         public virtual void Initialize()
         {
             ResourceStatus = ResourceInitStatus.Started;
+            Messager.Boardcast(MSG_READY, Msg0.Instance);
         }
 
-        public abstract void ProvideBinding(IDIContext context);
+        public virtual void ProvideBinding(IDIContext context) { }
+
 
     }
 }

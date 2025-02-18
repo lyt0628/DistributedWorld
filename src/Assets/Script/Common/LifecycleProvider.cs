@@ -1,6 +1,7 @@
 using QS.Api;
 using QS.GameLib.Pattern;
 using System;
+using UnityEngine.Events;
 
 namespace QS.Impl
 {
@@ -11,6 +12,11 @@ namespace QS.Impl
     /// </summary>
     public class LifecycleProvider : SingtonBehaviour<LifecycleProvider>, ILifecycleProivder
     {
+
+        public UnityEvent UpdateAction { get; } = new(); 
+
+
+
         event Action UpdateCallbacks ;
         event Action LateUPdateCallbacks ;
         event Action StartCallbacks;
@@ -38,6 +44,7 @@ namespace QS.Impl
         void Update()
         {
             UpdateCallbacks?.Invoke();
+            UpdateAction?.Invoke();
         }
         void LateUpdate()
         {

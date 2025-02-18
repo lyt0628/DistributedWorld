@@ -4,7 +4,8 @@
 using GameLib.DI;
 using QS.Api.Common;
 using QS.Api.Executor.Domain;
-using QS.Control;
+using QS.Combat;
+using QS.Motor;
 using QS.Executor.Domain.Handler;
 using QS.Executor.Service;
 
@@ -18,7 +19,8 @@ namespace QS.Executor
 
         public ExecutorGlobal()
         {
-            ControlGlobal.Instance.ProvideBinding(DI);
+            CombatGlobal.Instance.ProvideBinding(DI);
+            MotorGlobal.Instance.ProvideBinding(DI);
 
             // 提供一些预制的Executor
             var e = new BaseExecutor();

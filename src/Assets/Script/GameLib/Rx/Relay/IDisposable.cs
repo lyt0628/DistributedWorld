@@ -8,7 +8,8 @@ namespace QS.GameLib.Rx.Relay
     /// </summary>
     public interface IDisposable
     {
-        void Dispose();
-        bool IsDisposed { get; }
+     
+        bool Disposed { get; set; }
+        bool Paused { get; set; }
     }
 }

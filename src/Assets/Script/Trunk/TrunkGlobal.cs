@@ -9,12 +9,13 @@ using QS.Chara;
 using QS.Combat;
 using QS.Combat.Domain;
 using QS.Common;
-using QS.Control;
+using QS.Motor;
 using QS.Executor;
 using QS.GameLib.Pattern;
 using QS.Inventory;
 using QS.PlayerControl;
 using QS.Skill;
+using QS.UI;
 using QS.WorldItem;
 using System.Collections;
 using System.Collections.Generic;
@@ -26,53 +27,49 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 /// 遊戲的主控制器，負責初始化遊戲的各個模組
 /// 並在初始化各個模塊後，加載場景
 /// </summary>
-public class TrunkGlobal : SingtonBehaviour<TrunkGlobal>, IInstanceProvider
+public class TrunkGlobal : SingtonBehaviour<TrunkGlobal>, ITrunkGlobal
 {
     internal IDIContext DI { get; } = IDIContext.New();
-    readonly List<IResourceInitializer> modules = new();
+    readonly List<IModuleGlobal> modules = new();
 
 
     public override void Awake()
     {
         base.Awake();
-        DepsGlobal.Instance.ProvideBinding(DI);
-        modules.Add(DepsGlobal.Instance);
-        CommonGlobal.Instance.ProvideBinding(DI);
-        modules.Add(CommonGlobal.Instance);
-        CombatGlobal.Instance.ProvideBinding(DI);
-        modules.Add(CombatGlobal.Instance);
-        WorldItemGlobal.Instance.ProvideBinding(DI);
-        modules.Add(WorldItemGlobal.Instance);
-        InventoryGlobal.Instance.ProvideBinding(DI);
-        modules.Add(InventoryGlobal.Instance);
-        ControlGlobal.Instance.ProvideBinding(DI);
-        modules.Add(ControlGlobal.Instance);
-        ExecutorGlobal.Instance.ProvideBinding(DI);
-        modules.Add(ExecutorGlobal.Instance);
-        SkillGlobal.Instance.ProvideBinding(DI);
-        modules.Add(SkillGlobal.Instance);
-        CharaGlobal.Instance.ProvideBinding(DI);
-        modules.Add(CharaGlobal.Instance);
-        PlayerControlGlobal.Instance.ProvideBinding(DI);
-        modules.Add(PlayerControlGlobal.Instance);
-        AgentGlobal.Instance.ProvideBinding(DI);
-        modules.Add(AgentGlobal.Instance);
+        /// 綁定比較複雜，我不希望遇上併發問題，很麻煩
+        InitBinding();
+        StartCoroutine(InitModules());
+    }
 
-       StartCoroutine(InitModules());
+    private void InitBinding()
+    {
+        modules.Add(DepsGlobal.Instance);
+        modules.Add(CommonGlobal.Instance);
+        modules.Add(CombatGlobal.Instance);
+        modules.Add(WorldItemGlobal.Instance);
+        modules.Add(InventoryGlobal.Instance);
+        modules.Add(MotorGlobal.Instance);
+        modules.Add(ExecutorGlobal.Instance);
+        modules.Add(SkillGlobal.Instance);
+        modules.Add(CharaGlobal.Instance);
+        modules.Add(PlayerControlGlobal.Instance);
+        modules.Add(AgentGlobal.Instance);
+        modules.Add(UIGlobal.Instance);
+
+        modules.ForEach(m =>
+        {
+            m.ProvideBinding(DI);
+            m.ReviceBinding(this);
+        });
 
         DI
           .BindInstance(TrunkDINames.Trunk_GLOBAL, this)
           .Bind<DefaultCombator>(ScopeFlag.Prototype)
-          .Bind<HpUI>();
+          .Bind<MainHUD>();
 
         DI.Inject(this);
-
-    
-
-        
-
     }
-  
+
     public T GetInstance<T>()
     {
         return DI.GetInstance<T>();

@@ -42,6 +42,11 @@ namespace QS.Api.Executor.Domain
             _pipelineContext.InBound(instruction);
         }
 
+        public T Get<T>() where T : IInstructionHandler
+        {
+            return _pipelineContext.Pipeline.Get<T>();
+        }
+
         public void Remove(string name)
         {
             _pipelineContext.Pipeline.Remove(name);

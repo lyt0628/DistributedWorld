@@ -6,9 +6,8 @@ using UnityEngine;
 
 namespace QS.Executor
 {
-    public class ExecutorBehaviour : MonoBehaviour, IRelayExecutor
+    public class ExecutorBehaviour : MonoBehaviour, IRelayExecutor 
     {
-
         readonly IRelayExecutor executor = new BaseExecutor();
 
         public void AddAfter(string baseName, string name, IInstructionHandler handler)
@@ -39,6 +38,11 @@ namespace QS.Executor
         public void Execute(IInstruction instruction)
         {
             executor.Execute(instruction);
+        }
+
+        public T Get<T>() where T : IInstructionHandler
+        {
+            return executor.Get<T>();
         }
 
         public void Remove(string name)

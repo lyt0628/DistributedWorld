@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Tmp/PositioningTest/PositioningTest.uss?fileID=7433441132597879392&amp;guid=bcb9fbdeaa0431140a39918119ad93ae&amp;type=3#PositioningTest" />
+    <ui:VisualElement class="box" />
+    <ui:VisualElement class="box" />
+    <ui:Label text="Relative\nPos\n25, 0" name="relative" enable-rich-text="true" parse-escape-sequences="true" />
+    <ui:VisualElement class="box" />
+    <ui:VisualElement class="box" />
+    <ui:Label text="Absolute\nPos\n25, 25" name="absolutePositionElement" parse-escape-sequences="true" display-tooltip-when-elided="false" />
+</ui:UXML>

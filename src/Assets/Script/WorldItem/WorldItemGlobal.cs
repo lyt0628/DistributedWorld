@@ -54,6 +54,8 @@ namespace QS.WorldItem
             context
                 .BindExternalInstance(DI.GetInstance<IItemBreedRepo>())
                 .BindExternalInstance(DI.GetInstance<IItemFactory>());
+
+           
         }
 
         public override void Initialize()
@@ -68,7 +70,7 @@ namespace QS.WorldItem
             Assert.AreEqual(AsyncOperationStatus.Succeeded, handle.Status,
                 "Failed to load items configuration!!!");
 
-            //Debug.Log(handle.Result.text);
+            //Debug.Log(handle.State.text);
             var itemDoc = tomlParser.Parse(handle.Result.text);
             var breeds = itemDoc.GetArray("weapons");
 

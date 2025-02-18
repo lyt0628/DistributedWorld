@@ -22,6 +22,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b5da13ecc5ff9c4bb68795b45284491
+    m_Address: PUI_DialoguePannel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 601f42438248f6443b7a022b46646271
     m_Address: PF_BD
     m_ReadOnly: 0
@@ -32,8 +37,25 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b11a6c1676493dd4093faec33da4e8dd
+    m_Address: Assets/Conf/SimpleSkillConfigurations/SK00002_Tap.toml
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SimpleSkillConf
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc735d9bb653b5640b31c675d5837a30
     m_Address: Conf_SimpleSkills
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - SimpleSkillConf
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd9598c8433f94348abffc43ee094164
+    m_Address: PUI_MainHUD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d43a84137ea2198409ec3203587895db
+    m_Address: RustSword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

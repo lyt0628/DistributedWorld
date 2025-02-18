@@ -3,104 +3,28 @@
   "WorkspaceRootPath": "D:\\learn-u3d\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|d:\\learn-u3d\\src\\assets\\script\\skill\\simpleskill\\collideattacksubhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\script\\skill\\simpleskill\\collideattacksubhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|d:\\learn-u3d\\src\\assets\\script\\ui\\uiglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\script\\ui\\uiglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\api\\util\\detector\\idetectorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\api\\util\\detector\\idetectorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\script\\chara\\abilities\\abstractcharacontrolability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\script\\chara\\abilities\\abstractcharacontrolability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\detectorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\detectorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A4A9AF-FB41-1EA6-485D-31E084E3B53C}|QS.Executor.csproj|D:\\learn-u3d\\src\\assets\\script\\executor\\baseexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A4A9AF-FB41-1EA6-485D-31E084E3B53C}|QS.Executor.csproj|solutionrelative:assets\\script\\executor\\baseexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\script\\skill\\simpleskill\\isimpleskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\script\\skill\\simpleskill\\isimpleskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2A4A9AF-FB41-1EA6-485D-31E084E3B53C}|QS.Executor.csproj|D:\\learn-u3d\\src\\assets\\script\\executor\\irelayexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2A4A9AF-FB41-1EA6-485D-31E084E3B53C}|QS.Executor.csproj|solutionrelative:assets\\script\\executor\\irelayexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\collidedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\collidedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92D436D0-B852-97C5-F178-390D29608639}|QS.PlayerControl.csproj|D:\\learn-u3d\\src\\assets\\script\\playercontrol\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D436D0-B852-97C5-F178-390D29608639}|QS.PlayerControl.csproj|solutionrelative:assets\\script\\playercontrol\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\reporters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\reporters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\ireporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\ireporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\reporterbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\reporterbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\setting\\globalphysicsettging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\setting\\globalphysicsettging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\script\\skill\\simpleskill\\baseattacksubhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\script\\skill\\simpleskill\\baseattacksubhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\script\\skill\\simpleskill\\defaultsimpleskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\script\\skill\\simpleskill\\defaultsimpleskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\abstractcastdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\abstractcastdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\castalldetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\castalldetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\combatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\combatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\presentation\\playerview\\followingcamera3p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\presentation\\playerview\\followingcamera3p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\script\\skill\\skillglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\script\\skill\\skillglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\trunkglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\trunkglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\relaycollidedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\relaycollidedetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\commonglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\commonglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{49D7B947-D0AB-2A23-1A18-EECE94BDC676}|QS.GameLib.DI.csproj|D:\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\emptydicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49D7B947-D0AB-2A23-1A18-EECE94BDC676}|QS.GameLib.DI.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\emptydicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\script\\skill\\simpleskill\\mountprefab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\script\\skill\\simpleskill\\mountprefab.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\myavatarmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\myavatarmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\icastdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\icastdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\util\\detector\\detectorgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\util\\detector\\detectorgroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\script\\chara\\abilities\\characontrolmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\script\\chara\\abilities\\characontrolmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,308 +34,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ISimpleSkill.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\ISimpleSkill.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Skill\\SimpleSkill\\ISimpleSkill.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\ISimpleSkill.cs",
-              "RelativeToolTip": "Assets\\Script\\Skill\\SimpleSkill\\ISimpleSkill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:38:25.862Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IDetectorFactory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Api\\Util\\Detector\\IDetectorFactory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Api\\Util\\Detector\\IDetectorFactory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Api\\Util\\Detector\\IDetectorFactory.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Api\\Util\\Detector\\IDetectorFactory.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAnwAwAAAAFAAAAAAAAAA==",
+              "Title": "AbstractCharaControlAbility.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Chara\\Abilities\\AbstractCharaControlAbility.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Chara\\Abilities\\AbstractCharaControlAbility.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Chara\\Abilities\\AbstractCharaControlAbility.cs",
+              "RelativeToolTip": "Assets\\Script\\Chara\\Abilities\\AbstractCharaControlAbility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:35:38.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReporterBehaviour.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\ReporterBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\ReporterBehaviour.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\ReporterBehaviour.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\ReporterBehaviour.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwA0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:48:37.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IReporter.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\IReporter.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\IReporter.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\IReporter.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\IReporter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:46:29.324Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CastAllDetector.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\CastAllDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\CastAllDetector.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\CastAllDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\CastAllDetector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T08:07:26.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GlobalPhysicSettging.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Setting\\GlobalPhysicSettging.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Setting\\GlobalPhysicSettging.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Setting\\GlobalPhysicSettging.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Setting\\GlobalPhysicSettging.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T07:25:39.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FollowingCamera3P.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\FollowingCamera3P.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\FollowingCamera3P.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\FollowingCamera3P.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\FollowingCamera3P.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T07:25:35.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CollideAttackSubHandler.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\CollideAttackSubHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Skill\\SimpleSkill\\CollideAttackSubHandler.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\CollideAttackSubHandler.cs",
-              "RelativeToolTip": "Assets\\Script\\Skill\\SimpleSkill\\CollideAttackSubHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T02:42:17.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PlayerCharacter.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\PlayerCharacter.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\PlayerCharacter.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\PlayerCharacter.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\PlayerCharacter.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAywIUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:48:34.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TrunkGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\TrunkGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\TrunkGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\TrunkGlobal.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\TrunkGlobal.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAqwGYAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T07:06:09.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Reporters.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\Reporters.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\Reporters.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\Reporters.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\Reporters.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAywLQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T05:06:27.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DefaultSimpleSkill.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\DefaultSimpleSkill.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Skill\\SimpleSkill\\DefaultSimpleSkill.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\DefaultSimpleSkill.cs",
-              "RelativeToolTip": "Assets\\Script\\Skill\\SimpleSkill\\DefaultSimpleSkill.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA0wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T05:02:16.306Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CombatorBehaviour.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\CombatorBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\CombatorBehaviour.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\Presentation\\PlayerView\\CombatorBehaviour.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\Presentation\\PlayerView\\CombatorBehaviour.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAADwv0EAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:49:22.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CollideDetector.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\CollideDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\CollideDetector.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\CollideDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\CollideDetector.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwGUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:20:51.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CommonGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\CommonGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\CommonGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\CommonGlobal.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\CommonGlobal.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAADwvxAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:18:37.495Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SkillGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SkillGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Skill\\SkillGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SkillGlobal.cs",
-              "RelativeToolTip": "Assets\\Script\\Skill\\SkillGlobal.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAUwDUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:17:48.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "EmptyDIContext.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\EmptyDIContext.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\EmptyDIContext.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\EmptyDIContext.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\EmptyDIContext.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAcwFUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:17:42.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "MountPrefab.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\MountPrefab.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Skill\\SimpleSkill\\MountPrefab.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\MountPrefab.cs",
-              "RelativeToolTip": "Assets\\Script\\Skill\\SimpleSkill\\MountPrefab.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAADwvyoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T04:00:21.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "MyAvatarManager.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\MyAvatarManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\MyAvatarManager.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\MyAvatarManager.cs",
-              "RelativeToolTip": "Assets\\Script\\MyAvatarManager.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAUwAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T03:55:29.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "DetectorGroup.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\DetectorGroup.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\DetectorGroup.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\DetectorGroup.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\DetectorGroup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T02:55:41.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AbstractCastDetector.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\AbstractCastDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\AbstractCastDetector.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\AbstractCastDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\AbstractCastDetector.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAADwvxkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T02:51:53.008Z"
+              "WhenOpened": "2025-02-16T09:18:21.542Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DetectorFactory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\DetectorFactory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\DetectorFactory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\DetectorFactory.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\DetectorFactory.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAsAAAAsAAAAAAAAAA==",
+              "Title": "BaseExecutor.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Executor\\BaseExecutor.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Executor\\BaseExecutor.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Executor\\BaseExecutor.cs",
+              "RelativeToolTip": "Assets\\Script\\Executor\\BaseExecutor.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvwwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T02:50:58.493Z"
+              "WhenOpened": "2025-02-16T09:16:36.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RelayCollideDetector.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\RelayCollideDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\RelayCollideDetector.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\RelayCollideDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\RelayCollideDetector.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAhwBwAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IRelayExecutor.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Executor\\IRelayExecutor.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Executor\\IRelayExecutor.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Executor\\IRelayExecutor.cs",
+              "RelativeToolTip": "Assets\\Script\\Executor\\IRelayExecutor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T02:48:28.912Z"
+              "WhenOpened": "2025-02-16T09:16:08.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ICastDetector.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\ICastDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Util\\Detector\\ICastDetector.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Util\\Detector\\ICastDetector.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Util\\Detector\\ICastDetector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "PlayerCharacter.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\PlayerControl\\PlayerCharacter.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerControl\\PlayerCharacter.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\PlayerControl\\PlayerCharacter.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerControl\\PlayerCharacter.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAADwv5EAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T02:44:00.913Z"
+              "WhenOpened": "2025-02-15T17:02:35.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BaseAttackSubHandler.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\BaseAttackSubHandler.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Skill\\SimpleSkill\\BaseAttackSubHandler.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Skill\\SimpleSkill\\BaseAttackSubHandler.cs",
-              "RelativeToolTip": "Assets\\Script\\Skill\\SimpleSkill\\BaseAttackSubHandler.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "CharaControlMove.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Chara\\Abilities\\CharaControlMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Chara\\Abilities\\CharaControlMove.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Chara\\Abilities\\CharaControlMove.cs",
+              "RelativeToolTip": "Assets\\Script\\Chara\\Abilities\\CharaControlMove.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwD0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T02:42:20.069Z"
+              "WhenOpened": "2025-02-15T16:57:24.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIGlobal.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\UIGlobal.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI\\UIGlobal.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\UIGlobal.cs",
+              "RelativeToolTip": "Assets\\Script\\UI\\UIGlobal.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T16:56:49.303Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,5 +1,6 @@
 using QS.GameLib.Pattern;
 using System;
+using UnityEngine.Events;
 
 
 namespace QS.Api
@@ -12,7 +13,7 @@ namespace QS.Api
     {
         void Request(Lifecycles statge, Action callback);
         void Cancel(Lifecycles statge, Action callback);
-
+        UnityEvent UpdateAction { get; } 
     }
 
 }
