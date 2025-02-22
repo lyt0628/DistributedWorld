@@ -41,7 +41,7 @@ namespace QS.Combat
         public override void ProvideBinding(IDIContext context)
         {
             context
-                .Bind<DefaultCombator>()
+                .Bind<DefaultCombator>(ScopeFlag.Prototype)
                 .BindExternalInstance(DI.GetInstance<IBuffFactory>())
                 .BindExternalInstance(DI.GetInstance<IAttackFactory>());
         }

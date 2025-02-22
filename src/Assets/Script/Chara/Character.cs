@@ -1,6 +1,7 @@
 using QS.Api.Chara;
 using QS.Executor;
 using QS.GameLib.Pattern.Message;
+using UnityEngine;
 
 
 
@@ -16,6 +17,7 @@ namespace QS.Chara.Domain
 
         public void AnimAware(string param)
         {
+            Debug.Log($"AnimEvent: {param}");
             Messager.Boardcast(param, Msg0.Instance);
         }
         public virtual bool Frozen { get; set; }

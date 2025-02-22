@@ -85,7 +85,7 @@ namespace QSUILibrary
             // Register a callback after custom style resolution.
             RegisterCallback<CustomStyleResolvedEvent>(evt => CustomStylesResolved(evt));
 
-            // Register a callback to generate the visual content of the control.
+            // Register a callback to generate the visual contentLabel of the control.
             generateVisualContent += context => GenerateVisualContent(context);
 
             progress = 0.0f;

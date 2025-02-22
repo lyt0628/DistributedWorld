@@ -9,17 +9,16 @@ namespace QS.WorldItem.Domain
     /// 這些切換都是領域邏輯，這邊按照 ECS 模式是最好的選擇了 
     /// </summary>
     class DefaultWeapon
-        : BaseItem, IWeapon
+        : BaseItem<IWeaponBreed>, IWeapon
     {
-        public DefaultWeapon(IWeaponBreed breed, string uuid) : base(breed, uuid)
+        public DefaultWeapon(IWeaponBreed breed, string uuid) : base( breed,uuid)
         {
-            MainBuff = breed.MainBuff;
             Exp = 0;
         }
 
         public float Exp { get; private set; }
 
-        public IBuff MainBuff { get; }
+        public IBuff MainBuff => Breed.MainBuff;
 
         public void Refine(float exp)
         {

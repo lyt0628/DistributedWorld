@@ -35,6 +35,11 @@ namespace QS.GameLib.Uitl.RayCast
             return new CastedCapsule(point1, point2, radius, direction.normalized);
         }
 
+        public static ICastedObject Sphere(Vector3 position, float radius, Vector3 direction)
+        {
+            return new CastedSphere(position, radius, direction);
+        }
+
         public ICastedObject IgnoreTrigger(bool ignore = true)
         {
             if (ignore)
@@ -76,6 +81,7 @@ namespace QS.GameLib.Uitl.RayCast
                 _position = position;
                 _direction = direction;
             }
+
             protected override bool CastOne(float maxDistance, int layermask, QueryTriggerInteraction triggerInteraction, out RaycastHit hitInfo)
             {
                 return Physics.Raycast(_position, _direction, out hitInfo, maxDistance, layermask, triggerInteraction);
@@ -111,6 +117,28 @@ namespace QS.GameLib.Uitl.RayCast
             }
         }
 
+
+        internal class CastedSphere : CastedObject
+        {
+            private Vector3 _position;
+            private Vector3 _direction;
+            float _radius;
+            public CastedSphere(Vector3 position, float radius, Vector3 direction)
+            {
+                _position = position;
+                _direction = direction;
+                _radius = radius;
+            }
+            protected override RaycastHit[] CastEvery(float maxDistance, int layermask, QueryTriggerInteraction triggerInteraction)
+            {
+                return Physics.SphereCastAll(_position, _radius, _direction, maxDistance, layermask, triggerInteraction);
+            }
+
+            protected override bool CastOne(float maxDistance, int layermask, QueryTriggerInteraction triggerInteraction, out RaycastHit hitInfo)
+            {
+                return Physics.SphereCast(_position, _radius, _direction, out hitInfo, maxDistance, layermask, triggerInteraction);
+            }
+        }
 
 
     }

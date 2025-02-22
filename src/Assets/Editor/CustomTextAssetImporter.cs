@@ -11,12 +11,12 @@ public class CustomTextAssetImporter : ScriptedImporter
 {
     public override void OnImportAsset(AssetImportContext ctx)
     {
-        string content = File.ReadAllText(ctx.assetPath);  
+        string content = File.ReadAllText(ctx.assetPath, System.Text.Encoding.UTF8);  
 
         TextAsset textAsset = new(content);
         var hash = new HashCode();
         hash.Add(content);
-        
+       
         ctx.AddObjectToAsset(hash.ToHashCode().ToString(), textAsset);
         ctx.SetMainObject(textAsset);
 

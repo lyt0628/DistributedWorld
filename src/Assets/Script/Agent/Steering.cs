@@ -6,7 +6,7 @@ using QS.Api.Chara.Service;
 using QS.Api.Executor.Domain;
 using QS.Api.Executor.Domain.Instruction;
 using QS.Api.Executor.Service;
-using QS.PlayerControl;
+using QS.Player;
 using UnityEngine;
 
 namespace QS.Agent
@@ -20,7 +20,7 @@ namespace QS.Agent
         [Injected]
         readonly ICharaInsrFactory instructionFactory;
         [Injected]
-        readonly IPlayerCharacterData playerChara;
+        readonly IPlayerData playerChara;
 
         public Transform robot;
 

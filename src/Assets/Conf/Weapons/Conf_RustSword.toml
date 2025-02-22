@@ -1,0 +1,10 @@
+# 算了，應爲想使用自動的 名稱轉換，這邊使用 大駝峯吧
+
+# 掛載方式最好統一, 但是沒辦法，如果是從 附加模型的方式 必須得 指定骨架和網格，如果是新物體的方式 必須預先準備好Animator，自己準備好一切， 自己觸發
+# 相同的地方是 可能（基本上是一定是）需要覆蓋 Aniamtor，
+[[weapons]]
+Name = "RustSword"
+Image = "img_weapon_rustSword"
+Prefab = "RustSword" # 從3D軟件導入的模型也是有物體概念的，這些物體 被理解爲 Unity的 Prefab 
+Description = "Rust Sword， it seems bad soon"
+MainBuff = { Type = 'Attack',  AtkRatio = 1.1, MatkRatio = 1.1 }

@@ -7,11 +7,15 @@ namespace QS.GameLib.Rx.Relay
 {
     public class Relay<T>
     {
-        Relay(IObservable<T> observable) 
+        protected Relay(IObservable<T> observable) 
         {
             this.observable = observable;
         }
-        readonly IObservable<T> observable;
+        protected readonly IObservable<T> observable;
+        public static Relay<T> Of(IObservable<T> observable)
+        {
+            return new Relay<T>(observable);
+        }
 
         public static Relay<T> Just(IEnumerable<T> values)
         {
@@ -41,6 +45,11 @@ namespace QS.GameLib.Rx.Relay
             return new Relay<U>(op);
         }
 
+        public Relay<U> Operate<U>(IOperator<T, U> op)
+        {
+            observable.Subscribe(op);
+            return new Relay<U>(op);
+        }
 
         public Relay<T> Subscrib(Action<T> onNext)
         {

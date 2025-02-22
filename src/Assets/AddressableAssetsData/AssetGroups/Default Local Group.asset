@@ -17,6 +17,16 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: f61930a8464308a4a97129856cdc6098
   m_SerializeEntries:
+  - m_GUID: 2397fb494d90ad64ba47e7ee7006ebfe
+    m_Address: img_prop_hpBottle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 364fc5d892924184183be9d67f7bccf9
+    m_Address: Slot
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 487328560927a9842bd8b1cd3a903487
     m_Address: PF_Frame_001
     m_ReadOnly: 0
@@ -32,30 +42,68 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 9438d9337d063c940a06f9b45a4d864e
-    m_Address: Conf_Items
+  - m_GUID: 8a113e6a5cddd8542b369734d0c837c1
+    m_Address: Assets/Conf/Props/Conf_MPBottle.toml
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - Conf_Prop
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8af33adf502022646aee3da20c5d14eb
+    m_Address: Assets/Conf/Props/Conf_HPBottle.toml
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Conf_Prop
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9438d9337d063c940a06f9b45a4d864e
+    m_Address: Assets/Conf/Weapons/Conf_RustSword.toml
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Conf_Weapon
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b11a6c1676493dd4093faec33da4e8dd
     m_Address: Assets/Conf/SimpleSkillConfigurations/SK00002_Tap.toml
     m_ReadOnly: 0
     m_SerializedLabels:
-    - SimpleSkillConf
+    - Conf_SimpleSkill
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5f1e3dd6f32d6d479b88d6eeb9357e9
+    m_Address: img_prop_mpBottle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bc735d9bb653b5640b31c675d5837a30
     m_Address: Conf_SimpleSkills
     m_ReadOnly: 0
     m_SerializedLabels:
-    - SimpleSkillConf
+    - Conf_SimpleSkill
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bd9598c8433f94348abffc43ee094164
     m_Address: PUI_MainHUD
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d07c8764a67b0484295d9d0aedfcd0a3
+    m_Address: Img_LightBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d43a84137ea2198409ec3203587895db
     m_Address: RustSword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dfd971fbf2cd8544ab76ca5c4c99e60e
+    m_Address: LP_Test
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e804902833965b446a3c2a8918dd25c9
+    m_Address: PUI_Inventory
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ea04d9d32721c124395dbf467f37c6f8
+    m_Address: img_weapon_rustSword
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

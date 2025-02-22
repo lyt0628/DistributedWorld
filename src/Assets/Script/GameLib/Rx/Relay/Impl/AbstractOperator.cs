@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace QS.GameLib.Rx.Relay
 {
-    abstract class AbstractOperator<T, U> : IOperator<T, U>
+    public abstract class AbstractOperator<T, U> : IOperator<T, U>
     {
         readonly List<IObserver<U>> observers = new();
         public void OnCompleted()
@@ -20,7 +20,7 @@ namespace QS.GameLib.Rx.Relay
         }
         public void OnNext(T t)
         {
-            U u = Operate(t);
+            U u = OperateAsync(t);
             observers.ForEach(x => x.OnNext(u));
         }
 
@@ -40,7 +40,7 @@ namespace QS.GameLib.Rx.Relay
 
         }
 
-        protected abstract U Operate(T t);
+        protected abstract U OperateAsync(T t);
 
     }
 }

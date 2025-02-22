@@ -1,34 +1,63 @@
+using QS.Api.Common;
 using QS.Api.WorldItem.Domain;
+using Tomlet.Attributes;
+using UnityEngine;
+using UnityEngine.Events;
 
 namespace QS.WorldItem.Domain
 {
 
-    public abstract class BaseItem : IItem 
+    public abstract class BaseItem<T> : IItem where T : IItemBreed
     {
-        public BaseItem(IItemBreed breed, string uuid)
+        public BaseItem(T breed ,string uuid)
         {
-            // 類對象這邊使用即時複製的方式，單純覺得這樣可以而以
             UUID = uuid;
-            Name = breed.Name;
-            Type = breed.Type;
-            Sprite = breed.Sprite;
-            Prefab = breed.Prefab;
-            Description = breed.Description;
+            this.Breed = breed;
         }
-
+        protected T Breed { get; } 
 
         public string UUID { get; }
 
-        public string Name { get; }
+        public string Name => Breed.Name;
 
-        public ItemType Type { get; }
+        public ItemType Type => Breed.Type;
 
-        public string Sprite {  get; }
+        /// <summary>
+        /// 武器预制体的地址
+        /// </summary>
+        public string Prefab => Breed.Prefab;
+        /// <summary>
+        /// 物品的描述，运行富文本
+        /// </summary>
+        public string Description => Breed.Description;
 
-        public string Prefab {  get; }
+        public Sprite Image => Breed.Image;
 
-        public string Description { get; }
+        public ResourceInitStatus ResourceStatus { get; protected set; } = ResourceInitStatus.Shutdown;
 
+        public UnityEvent OnReady { get; } = new();
 
+        public void Initialize()
+        {
+            if(Breed.ResourceStatus == ResourceInitStatus.Started)
+            {
+                ResourceStatus = ResourceInitStatus.Started;
+            }
+            else if(Breed.ResourceStatus == ResourceInitStatus.Initializing)
+            {
+                Breed.OnReady.AddListener(()=>
+                {
+                    ResourceStatus = ResourceInitStatus.Started;
+                    OnReady.Invoke();
+                });
+            }
+
+            Breed.OnReady.AddListener(() =>
+            {
+                ResourceStatus = ResourceInitStatus.Started;
+                OnReady.Invoke();
+            });
+            Breed.Initialize();
+        }
     }
 }

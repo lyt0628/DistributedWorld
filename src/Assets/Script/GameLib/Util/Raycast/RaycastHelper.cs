@@ -33,6 +33,16 @@ namespace QS.GameLib.Util.Raycast
                 return hitInfo.normal;
             }
         }
+
+        public Vector3 Point
+        {
+            get
+            {
+                UpdateIfNeed();
+                return hitInfo.point;
+            }
+        }
+
         public GameObject Object
         {
             get

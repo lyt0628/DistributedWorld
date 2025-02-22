@@ -20,9 +20,16 @@ namespace QS.WorldItem.Service
         [Injected]
         IItemBreedRepo breedRepo;
 
+        public IProp CreateProp(string name)
+        {
+            var pb = breedRepo.GetItemBreed<IPropBreed>(name);
+            var p = new DefaultProp(pb, MathUtil.UUID());
+            return p;
+        }
+
         public IWeapon CreateWeapon(string name)
         {
-            var wb = breedRepo.GetWeaponBreed(name);
+            var wb = breedRepo.GetItemBreed<IWeaponBreed>(name);
             var w = new DefaultWeapon(wb, MathUtil.UUID());
             return w;
         }

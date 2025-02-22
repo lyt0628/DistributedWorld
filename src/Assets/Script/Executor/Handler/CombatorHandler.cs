@@ -14,7 +14,10 @@ using UnityEngine.Events;
 
 namespace QS.Chara.Domain.Handler
 {
-    public class CombatDataChangedEvent : UnityEvent<ICombatData>
+    /// <summary>
+    /// New, Old, Max
+    /// </summary>
+    public class CombatDataChangedEvent : UnityEvent<ICombatData, ICombatData, ICombatData>
     {
     }
 
@@ -31,6 +34,7 @@ namespace QS.Chara.Domain.Handler
             :base(executor)
         {
             this.combator = combator;
+            
         }
 
         public override void Read(IPipelineHandlerContext context, object msg)
@@ -40,9 +44,9 @@ namespace QS.Chara.Domain.Handler
                 context.Write(msg);
                 return;
             }
-            
+            var oldData = combator.CombatData;
             combator.Injured(instr.Attack);
-            CombatDataChanged.Invoke(combator.CombatData);
+            CombatDataChanged.Invoke(combator.CombatData, oldData, combator.MaxCombatData);
         }
     }
 }

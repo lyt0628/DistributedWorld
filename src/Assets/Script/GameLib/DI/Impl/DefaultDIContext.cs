@@ -478,10 +478,14 @@ namespace GameLib.DI
         private void DoScopeBinding(Key k, InstanceBinding i)
         {
             scopeCahce.Add(k, i);
+            
             var ancestors = DIUtil.CollectAncestorsAndInterfaces(k.Type);
             foreach (var ancestor in ancestors)
             {
-                scopeCahce.Add(Key.Get(ancestor), i);
+                /// 用户有自定义名称
+                /// 不管什么时候绑定时候Key，都是用真实的Name进行绑定，
+                /// 只是拿的时候，如果发现只有一个绑定就不要求名字
+                scopeCahce.Add(Key.Get(i.Target.Name, ancestor), i);
             }
         }
     }

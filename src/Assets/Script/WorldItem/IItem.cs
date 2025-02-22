@@ -9,5 +9,6 @@ namespace QS.Api.WorldItem.Domain
     public interface IItem : IItemBreed
     {
         string UUID { get; }
+
     }
 }

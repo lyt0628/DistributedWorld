@@ -1,4 +1,5 @@
 using QS.Api.WorldItem.Domain;
+using QS.WorldItem;
 
 namespace QS.Api.WorldItem.Service
 {
@@ -10,5 +11,6 @@ namespace QS.Api.WorldItem.Service
     public interface IItemFactory
     {
         IWeapon CreateWeapon(string name); 
+        IProp CreateProp(string name);
     }
 }

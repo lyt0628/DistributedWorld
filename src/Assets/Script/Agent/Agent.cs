@@ -31,40 +31,38 @@ namespace QS.Agent
             
             AgentGlobal.Instance.DI.Inject(this);
 
-            SkillGlobal.Instance.Messager.AddListener(SkillGlobal.MSG_READY, (_) =>
+            SkillGlobal.Instance.OnReady.AddListener(() =>
             {
                 ISkillRepo skillRepo = SkillGlobal.Instance.GetInstance<ISkillRepo>();
                 AddLast(MathUtil.UUID(),
                     skillAblityFactory.Create(this, skillRepo.GetSkill("00002")));
 
-               
                 var sk = skillRepo.GetSkill("00002");
                 tapInstr = skillInstrFactory.Create(sk);
             });
-
 
             steering.robot = transform;
             var animator = GetComponent<Animator>();
             AddLast(MathUtil.UUID(), 
                     instructionHandlerFactory.CharaControl(this));
 
-            var h = Addressables.LoadAssetAsync<GameObject>("RustSword");
-            h.Completed += (h) =>
-            {
-                var go = GameObject.Instantiate(h.Result);
+            //var h = Addressables.LoadAssetAsync<GameObject>("RustSword");
+            //h.Completed += (h) =>
+            //{
+            //    var go = GameObject.Instantiate(h.Result);
 
-                // 這也是變化點，必須得封裝起來
-                var originalMesh = transform.Find("Mesh").GetComponent<SkinnedMeshRenderer>();
-                var mesh = go.transform.Find("RustSword");
-                var skin = mesh.GetComponent<SkinnedMeshRenderer>();
-                var skeleton = go.transform.Find("Skeleton");
+            //    // 這也是變化點，必須得封裝起來
+            //    var originalMesh = transform.Find("Mesh").GetComponent<SkinnedMeshRenderer>();
+            //    var mesh = go.transform.Find("RustSword");
+            //    var skin = mesh.GetComponent<SkinnedMeshRenderer>();
+            //    var skeleton = go.transform.Find("Skeleton");
 
-                AnimationUtil.RebindSkeleton(gameObject.transform, originalMesh,
-                                            "Skeleton", skeleton.transform, skin.bones);
+            //    AnimationUtil.RebindSkeleton(gameObject.transform, originalMesh,
+            //                                "Skeleton", skeleton.transform, skin.bones);
 
-                mesh.transform.parent = transform;
-                GetComponent<Animator>().Rebind();
-            };
+            //    mesh.transform.parent = transform;
+            //    GetComponent<Animator>().Rebind();
+            //};
         }
 
         private void Update()
