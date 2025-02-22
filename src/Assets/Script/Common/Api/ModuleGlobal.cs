@@ -6,6 +6,8 @@ using GameLib.DI;
 using QS.Common;
 using QS.GameLib.Pattern;
 using QS.GameLib.Pattern.Message;
+using System.Threading.Tasks;
+using UnityEngine.Events;
 
 namespace QS.Api.Common
 {
@@ -17,7 +19,9 @@ namespace QS.Api.Common
         protected abstract IDIContext DIContext {get;}
 
         public IMessager Messager { get; } = new Messager();
+        
         public static string MSG_READY = "ready";
+        public UnityEvent OnReady { get; } = new();
 
         public R GetInstance<R>()
         {
@@ -36,11 +40,11 @@ namespace QS.Api.Common
         public virtual void Initialize()
         {
             ResourceStatus = ResourceInitStatus.Started;
+            OnReady?.Invoke();
             Messager.Boardcast(MSG_READY, Msg0.Instance);
         }
 
         public virtual void ProvideBinding(IDIContext context) { }
-
 
     }
 }

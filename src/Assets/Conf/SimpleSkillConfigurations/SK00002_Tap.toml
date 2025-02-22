@@ -5,14 +5,14 @@ Type = "Phased"
 
 [[Skills.Phases]]
 Key = {No="00002", Name="Tap"}
-Handlers = ['Mount', 'CollideAttack', 'Scriptable']
+Handlers = [ 'CollideAttack', 'Mount', 'Scriptable']
 
 Attack={Atk=10.0, Matk=1.0}
-Colliders=['W_Sword']
+Colliders=['ATK_RHand']
 
 [[Skills.Phases.Mount.Casting.Prefabs]] # 定義爲階段下的預製體子表
 Address = 'PF_Frame_001' # 預製體的索引
-MountPoint = "W_Sword"
+MountPoint = "ATK_RHand"
 InWorldSpace= false
 DestroyDelay=1.0
 

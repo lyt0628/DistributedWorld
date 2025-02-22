@@ -31,10 +31,7 @@ namespace GameLib.DI
 
         public override int GetHashCode()
         {
-            var hash = 17;
-            hash = hash * 23 + _name.GetHashCode();
-            hash = hash * 23 + _type.GetHashCode();
-            return hash;
+            return HashCode.Combine(_name, _type);
         }
 
         private static readonly ISet<Key> keyCache = new HashSet<Key>();

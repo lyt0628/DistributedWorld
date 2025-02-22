@@ -3,7 +3,7 @@
 
 namespace QS.GameLib.Rx.Relay
 {
-    interface IDisposableMotion : IMotion, IDisposable
+    public interface IDisposableMotion : IMotion, IDisposable
     {
 
     }

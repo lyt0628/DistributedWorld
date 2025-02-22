@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace QS.Common.ComputingService
 {
-    public abstract class AbstractComputingService<T,R,S> where T :new() where S : new()
+    public abstract class AbstractComputingService<T,R,S> where S : new()
     {
         protected readonly DataSource<T, S> dataSource;
 

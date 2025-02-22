@@ -1,6 +1,0 @@
-
-
-namespace QS.Motor
-{
-
-}

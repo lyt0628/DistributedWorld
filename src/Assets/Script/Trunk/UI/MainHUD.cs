@@ -7,8 +7,10 @@ using QS.Chara.Domain;
 using QS.Chara.Domain.Handler;
 
 using QS.GameLib.Pattern.Message;
+using QS.Player;
 using QS.PlayerControl;
 using QS.Stereotype;
+using QS.Trunk.UI;
 using QSUILibrary;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -25,19 +27,22 @@ namespace QS.UI
         protected override string Address => "PUI_MainHUD";
 
         [Injected]
-        readonly IPlayerCharacterData playerCharacter;
+        readonly IPlayerData playerCharacter;
+        [Injected]
+        readonly PlayerControls playerControls;
 
         FillSlider hpBar;
+        FillSlider mpBar;
 
         protected override bool DoPreload() => true;
-        public override bool IsResident => true;
 
         protected override void OnDocumentLoaded(UIDocument document)
         {
             document.name = "MainHUD";
             var root = document.rootVisualElement;
 
-            hpBar = root.Q<FillSlider>();
+            hpBar = root.Q<FillSlider>("hpBar");
+            mpBar = root.Q<FillSlider>("mpBar");
 
             var character = playerCharacter.ActivedCharacter;
             if (character)
@@ -46,6 +51,9 @@ namespace QS.UI
             }
             playerCharacter
                 .CharacterChanged.AddListener(OnActiveCharacterChanged);
+
+
+
 
         }
 
@@ -56,17 +64,12 @@ namespace QS.UI
             var combatorHandler = chara.Get<CombatorHandler>();
             combatorHandler.CombatDataChanged.AddListener(OnCombatDataChanged);
 
-            //if (!chara.TryGetComponent<CombatorBehaviour>(out var combater)) Debug.LogError("Combater Is Null");
-            //hpBar.value = combater.CombatData.Hp / 100;
-            //combater.Messager.AddListener("HP", msg =>
-            //{
-            //    hpBar.value = ((Msg1<float>)msg).Value / 100;
-            //});
         }
 
-        void OnCombatDataChanged(ICombatData combatData)
+        void OnCombatDataChanged(ICombatData newData, ICombatData oldData, ICombatData maxData)
         {
-            hpBar.value = combatData.Hp / 100;
+            hpBar.value = newData.Hp / maxData.Hp;
+            mpBar.value = newData.Mp / maxData.Mp;
         }
 
     }

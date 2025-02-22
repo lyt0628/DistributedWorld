@@ -33,7 +33,7 @@ namespace QS.GameLib.Util
                 pressed = true;
                 return false;
             }
-            Debug.Log($"Long Press: {Time.time - startTime}");
+            //Debug.Log($"Long Press: {Time.time - startTime}");
             return Time.time - startTime >= duration;
             
         }

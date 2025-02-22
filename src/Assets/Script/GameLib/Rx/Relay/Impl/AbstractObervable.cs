@@ -7,7 +7,7 @@ namespace QS.GameLib.Rx.Relay
 {
     abstract class AbstractObservable<T> : IObservable<T>, IMotionProvider
     {
-        readonly MotionGroup motions = new();
+        readonly DisposableMotionGroup motions = new();
         public IMotion Get()
         {
             return motions;

@@ -7,7 +7,7 @@ namespace QS.Impl.Setting
     {
         public float Gravity => -10f;
 
-        public float ErrorTolerance => 0.015f;
+        public float ErrorTolerance => 0.01f;
 
         public float HalfErrorTolerance => ErrorTolerance / 2;
     }

@@ -4,12 +4,14 @@ using QS.GameLib.Rx.Relay;
 using QS.UI;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace QS.GameLib.View
 {
 
     /// <summary>
     /// 這個是 是UGUI綁定的，得稍加修改才行
+    /// 不行，有所依赖的话，必须把依赖加进来才行，像是指令 InputSystem，
     /// </summary>
     public abstract class AbstractView : IViewNode
     {
@@ -35,13 +37,15 @@ namespace QS.GameLib.View
         /// <summary>
         /// 指示視圖是否整個遊戲過程需要用
         /// </summary>
-        public virtual bool IsResident{ get; protected set; }
+        public virtual bool IsResident { get; protected set; } = true;
 
         protected readonly IMessager globalMessager;
         public virtual IMessager Messager => globalMessager;
 
         public ResourceInitStatus ResourceStatus { get; protected set; } = ResourceInitStatus.Shutdown;
-       
+
+        public UnityEvent OnReady { get; } = new();
+
         public void Show()
         {
             // 初始化的時候暫時不接受處理，等到Flow完成後再來
@@ -90,10 +94,7 @@ namespace QS.GameLib.View
 
         }
 
-        protected virtual bool DoPreload()
-        {
-            return false;
-        }
+        protected virtual bool DoPreload() => false;
 
         protected abstract void DoShow();
 
@@ -112,11 +113,13 @@ namespace QS.GameLib.View
             {
                 children.ForEach(x => x.Initialize());
             }
+
         }
 
         protected virtual void DoInit()
         {
             ResourceStatus = ResourceInitStatus.Started;
+            OnReady.Invoke();
         }
 
         public virtual void Shutdown()

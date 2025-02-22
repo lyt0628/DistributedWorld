@@ -12,7 +12,7 @@ namespace QS.GameLib.Rx.Relay
         {
             this.mapper = mapper;
         }
-        protected override U Operate(T t)
+        protected override U OperateAsync(T t)
         {
             return mapper(t);
         }

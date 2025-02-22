@@ -1,0 +1,6 @@
+# 
+[[Props]]
+Name = "HpBottle"
+Image = "img_prop_hpBottle"
+Prefab = "HpBottle"
+Description = "Recovery a little HP"

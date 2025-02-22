@@ -2,6 +2,7 @@
 
 
 
+using Cysharp.Threading.Tasks;
 using GameLib.DI;
 using QS.Api.Combat.Domain;
 using QS.Api.Common;
@@ -13,6 +14,7 @@ using QS.Common;
 using QS.GameLib.Pattern;
 using QS.WorldItem.Domain;
 using QS.WorldItem.Service;
+using System.Collections.Generic;
 using Tomlet;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -29,11 +31,8 @@ namespace QS.WorldItem
         [Injected]
         readonly TomlParser tomlParser;
 
-       
         [Injected]
         readonly DefaultItemBreedRepo breedRepo;
-
-
 
         public WorldItemGlobal()
         {
@@ -58,30 +57,58 @@ namespace QS.WorldItem
            
         }
 
-        public override void Initialize()
+        public override async void Initialize()
         {
-            var handle = Addressables.LoadAssetAsync<TextAsset>("Conf_Items");
-            handle.Completed += LoadItems;
+            var h1 = Addressables.LoadAssetsAsync<TextAsset>("Conf_Weapon", null);
+            h1.Completed += LoadWeapons;
+            var h2 = Addressables.LoadAssetsAsync<TextAsset>("Conf_Prop", null);
+            h2.Completed += LoadProps;
+            
+
+            var tasks = new List<UniTask>
+            {
+                h1.ToUniTask(),
+                h2.ToUniTask()
+            };
+            // 用UniTask 可以优雅地保持时序
+            await UniTask.WhenAll(tasks);
+            base.Initialize();
+        }
+        void LoadWeapons(AsyncOperationHandle<IList<TextAsset>> handle)
+        {
+            foreach (var conf in handle.Result)
+            {
+                ParseWeapon(conf);
+            }
         }
 
-        void LoadItems(AsyncOperationHandle<TextAsset> handle)
+        private void ParseWeapon(TextAsset asset)
         {
-
-            Assert.AreEqual(AsyncOperationStatus.Succeeded, handle.Status,
-                "Failed to load items configuration!!!");
-
-            //Debug.Log(handle.State.text);
-            var itemDoc = tomlParser.Parse(handle.Result.text);
+            var itemDoc = tomlParser.Parse(asset.text);
             var breeds = itemDoc.GetArray("weapons");
 
             foreach (var breed in breeds)
             {
                 breedRepo.AddWeaponBreed(TomletMain.To<DefaultWeaponBreed>(breed));
             }
-
-
-            base.Initialize();
         }
 
+        void LoadProps(AsyncOperationHandle<IList<TextAsset>> handle)
+        {
+            foreach (var conf in handle.Result)
+            {
+                ParseProp(conf);
+            }
+        }
+        private void ParseProp(TextAsset asset)
+        {
+            var itemDoc = tomlParser.Parse(asset.text);
+            var breeds = itemDoc.GetArray("Props");
+
+            foreach (var breed in breeds)
+            {
+                breedRepo.AddPropBreed(TomletMain.To<DefaultPropBreed>(breed));
+            }
+        }
     }
 }

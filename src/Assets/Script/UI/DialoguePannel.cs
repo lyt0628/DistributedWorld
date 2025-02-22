@@ -6,11 +6,12 @@ using UnityEngine.UIElements;
 
 namespace QS.UI
 {
-    [Scope(Value = ScopeFlag.Sington, Lazy = false)]
     public class DialoguePannel : BaseDocument
     {
         Label contentLabel;
+        Label speakerLabel;
         string _content = "Welcome To My Game";
+        string _speaker = "lyt0628";
         public string Content
         {
             get { return _content; }
@@ -21,18 +22,28 @@ namespace QS.UI
             }
         }
 
+        public string Speaker
+        {
+            get { return _speaker; }
+            set
+            {
+                _speaker = value;
+                speakerLabel.text = _speaker;
+            }
+        }
+
         protected override string Address => "PUI_DialoguePannel";
         protected override bool DoPreload() => true;
         public override bool IsResident => true;
         public override bool BlockPlayerControl => true;
         protected override void OnDocumentLoaded(UIDocument document)
         {
-            document.name = "DialoguePannel";
-            contentLabel = document.rootVisualElement.Q<Label>("Content");
-
-            document.rootVisualElement.RegisterCallback<ClickEvent>(_ => Hide());
-
             Hide();
+
+            document.name = "DialoguePannel";
+            contentLabel = document.rootVisualElement.Q<Label>("content");
+            speakerLabel = document.rootVisualElement.Q<Label>("speaker");
+            
         }
 
     }

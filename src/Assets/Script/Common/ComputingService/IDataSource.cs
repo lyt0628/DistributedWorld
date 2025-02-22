@@ -5,10 +5,8 @@ using QS.GameLib.Rx.Relay;
 
 namespace QS.Common.ComputingService
 {
-    public interface IDataSource<T> where T : new()
+    public interface IDataSource<T>
     {
-
-        //T Create();
 
         string Add(Relay<T> data);
 

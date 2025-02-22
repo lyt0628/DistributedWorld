@@ -4,6 +4,7 @@ using QS.Api.Common;
 using QS.GameLib.Util;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace QS.Common.Util.Detector
 {
@@ -25,6 +26,8 @@ namespace QS.Common.Util.Detector
 
         public ResourceInitStatus ResourceStatus { get; private set; } = ResourceInitStatus.Initializing;
 
+        public UnityEvent OnReady { get; } = new();
+
         protected void Add(T collider)
         {
             colliders.Add(collider);
@@ -35,6 +38,7 @@ namespace QS.Common.Util.Detector
             colliders ??= new List<T>();
             UUID ??= MathUtil.UUID();
             ResourceStatus = ResourceInitStatus.Started;
+            OnReady.Invoke();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace UnityStandardAssets.CrossPlatformInput
         // depending on whether the USE_MOBILE_INPUT define is declared.
 
         // This define is set or unset by a menu item that is included with
-        // the Cross Platform Input package.
+        // the Cross Platform GrivityInput package.
 
 
 #if !UNITY_EDITOR

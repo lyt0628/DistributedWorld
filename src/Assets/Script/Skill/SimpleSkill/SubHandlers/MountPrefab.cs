@@ -6,6 +6,7 @@ using QS.Api.Skill.Domain;
 using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Events;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace QS.Skill.SimpleSkill
@@ -40,12 +41,15 @@ namespace QS.Skill.SimpleSkill
 
         public ResourceInitStatus ResourceStatus { get; private set; } = ResourceInitStatus.Initializing;
 
+        public UnityEvent OnReady { get; } = new();
+
         public void Initialize()
         {
             var handle = Addressables.LoadAssetAsync<GameObject>(Address);
             handle.Completed += (h) => {
                 Prefab = h.Result;
                 ResourceStatus = ResourceInitStatus.Started;
+                OnReady.Invoke();
             };
 
         }

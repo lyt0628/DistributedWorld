@@ -13,8 +13,6 @@ namespace QS.UI
     public abstract class BaseDocument : AbstractView
     {
 
-
-
         public override bool IsVisible => Document.rootVisualElement.visible;
         protected abstract string Address { get; }
         protected UIDocument Document { get; private set;}

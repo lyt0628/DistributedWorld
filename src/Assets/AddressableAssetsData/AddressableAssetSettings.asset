@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: f61930a8464308a4a97129856cdc6098
   m_currentHash:
     serializedVersion: 2
-    Hash: 665851256b4111048b99bebe974f3587
+    Hash: 61deb52c98ed5ee851d19e1b189bfc47
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -86,7 +86,9 @@ MonoBehaviour:
     m_ProfileVersion: 1
   m_LabelTable:
     m_LabelNames:
-    - SimpleSkillConf
+    - Conf_SimpleSkill
+    - Conf_Prop
+    - Conf_Weapon
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: ac9cd504153c42c408cecece11e8d047, type: 2}

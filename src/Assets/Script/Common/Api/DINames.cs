@@ -20,5 +20,7 @@ namespace QS.Api.Common
         /// </summary>
         public const string GameLib_Message_Messager = "Messager";
 
+        public const string Lua_GameLogic = "Lua_GameLogic";
+
     }
 }

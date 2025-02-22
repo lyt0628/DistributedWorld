@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using GameLib.DI;
 using NLua;
 using QS.Api;
@@ -9,6 +10,7 @@ using QS.Api.Skill.Domain;
 using QS.Chara;
 using QS.Common;
 using QS.Executor;
+using QS.GameLib.Rx.Relay;
 using QS.Skill.Conf;
 using QS.Skill.Domain.Instruction;
 using QS.Skill.Handler;
@@ -18,6 +20,7 @@ using QS.Skill.Skills;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Tomlet;
 using Tomlet.Exceptions;
 using Tomlet.Models;
@@ -39,6 +42,9 @@ namespace QS.Skill
         readonly DefaultSkillRepo skillRepo;
         [Injected]
         readonly ISubHandlerRegistry simpleSkillSubHandlerRegistry;
+        [Injected(Name = QS.Api.Common.DINames.Lua_GameLogic)]
+        readonly Lua lua;
+
         public SkillGlobal()
         {
             ExecutorGlobal.Instance.ProvideBinding(DI);
@@ -46,6 +52,14 @@ namespace QS.Skill
 
             DI
                 .BindExternalInstance(DepsGlobal.Instance.GetInstance<TomlParser>())
+                // Lua 环境应该由上层模块注入
+                // 游戏逻辑使用独立的一个Lua环境
+                // 就现在而言，有 技能脚本 和 道具脚本 两个使用场景
+                // 但只用一个环境， 技能和道具只会定义自己的东西
+                // 需要全局环境吗，比如说玩家的信息？这种就没办法在
+                // 各自的模块中实现的，虽然各个模块都能加载Lua脚本，但是
+                // Lua 脚本本身因该认为是 Trunk 层的，因为作为C#使用的话，也就应该定义在Trunk层
+                //.BindExternalInstance(DepsGlobal.Instance.GetInstance<Lua>(QS.Api.Deps.DINames.Lua_Skill))
                 .BindExternalInstance(CommonGlobal.Instance.GetInstance<IDetectorFactory>())
                 .BindExternalInstance(CommonGlobal.Instance.GetInstance<ILifecycleProivder>())
                 .BindExternalInstance(new SimpleSkillAnimCfg())
@@ -56,14 +70,7 @@ namespace QS.Skill
                 .Bind<CollideAttackSubHandler>()
                 .Bind<ScriptableSubHandler>()
                 .BindExternalInstance(new DefaultSkillRepo())
-                .Bind<ShuffleStep>()
-                .BindExternalInstance(DepsGlobal.Instance.GetInstance<Lua>(Api.Deps.DINames.Lua_Skill));
-            DI.Inject(this);
-
-            // 完成了系統內部的聯合，在加載外部資源
-            RegisterTomlType();
-
-
+                .Bind<ShuffleStep>();
         }
 
    
@@ -75,15 +82,41 @@ namespace QS.Skill
                 .BindExternalInstance(DI.GetInstance<ISkillRepo>())
                 .BindExternalInstance(DI.GetInstance<ISkillAblityFactory>())
                 .BindExternalInstance(DI.GetInstance<ISkillInstrFactory>());
-
         }
 
-        public override void Initialize()
+
+        public override async void Initialize()
         {
-            var handle = Addressables.LoadAssetsAsync<TextAsset>("SimpleSkillConf", null);
-            handle.Completed += LoadSimpleSkills;
+            DI.Inject(this);
+
+            // 完成了系統內部的聯合，在加載外部資源
+            RegisterTomlType();
+
+            /// 先不考虑加载时序问题
+            var h1 = Addressables.LoadAssetsAsync<TextAsset>("Conf_SimpleSkill", null);
+            h1.Completed += LoadSimpleSkills;
+
+            var h2 = Addressables.LoadAssetAsync<TextAsset>("LP_Test");
+            h2.Completed += LoadTest;
+
+            var tasks = new List<UniTask>
+            {
+                h1.ToUniTask(),
+                h2.ToUniTask()
+            };
+            // 用UniTask 可以优雅地保持时序
+            await UniTask.WhenAll(tasks);
+            base.Initialize();
         }
-        
+        void LoadTest(AsyncOperationHandle<TextAsset> handle)
+        {
+            var trunk = DI.GetInstance<ITrunkGlobal>();
+            trunk.OnReady.AddListener(() =>
+            {
+                lua.DoString(handle.Result.text);
+            });
+            
+        }
         void LoadSimpleSkills(AsyncOperationHandle<IList<TextAsset>> handle)
         {
             Assert.AreEqual(AsyncOperationStatus.Succeeded, handle.Status,
@@ -99,8 +132,8 @@ namespace QS.Skill
                     skillRepo.AddSkill(sk);
                 }
             }
+            
 
-            base.Initialize();
         }
 
 

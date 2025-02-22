@@ -20,8 +20,16 @@ namespace QS.Combat.Domain
     {
         public AbstractCombater(ICombatData maxCombatData) 
         {
-            MaxCombatData = maxCombatData;
-            combatDataFull = MaxCombatData;
+            MaxCombatData = new CombatData()
+            {
+                Atn = 100,
+                Matk = 100,
+                Def = 100,
+                Res = 100,
+                Hp = 100,
+                Mp = 100
+            };
+            CombatData = MaxCombatData;
             Messager = new Messager();
         }
 
@@ -31,19 +39,9 @@ namespace QS.Combat.Domain
 
         readonly IPipelineContext injuredPipelineContext = IPipelineContext.New();
         
-        public ICombatData combatDataFull;
 
-        protected ICombatData _combatData;
         public ICombatData MaxCombatData { get; }
-        public ICombatData CombatData
-        {
-            get => _combatData;
-            set
-            {
-                _combatData = value;
-                Messager.Boardcast("HP", new Msg1<float>(_combatData.Hp));
-            }
-        }
+        public ICombatData CombatData { get; set; }
 
         public IMessager Messager{ get; }
 
@@ -65,11 +63,11 @@ namespace QS.Combat.Domain
             CombatData = new CombatData()
             {
                 Hp = hp,
-                Mp = _combatData.Mp,
-                Atn = _combatData.Atn,
-                Matk = _combatData.Matk,
-                Def = _combatData.Def, 
-                Res = _combatData.Res,
+                Mp = CombatData.Mp,
+                Atn = CombatData.Atn,
+                Matk = CombatData.Matk,
+                Def = CombatData.Def, 
+                Res = CombatData.Res,
             };
 
         }

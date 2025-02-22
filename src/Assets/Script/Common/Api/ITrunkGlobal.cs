@@ -1,5 +1,7 @@
 
 
+using UnityEngine.Events;
+
 namespace QS.Api.Common
 {
     /// <summary>
@@ -7,6 +9,9 @@ namespace QS.Api.Common
     /// </summary>
     public interface ITrunkGlobal : IInstanceProvider
     {
-
+        /// <summary>
+        /// 当整个游戏都加载完毕，进入游戏欢迎界面
+        /// </summary>
+        UnityEvent OnReady { get; }
     }
 }

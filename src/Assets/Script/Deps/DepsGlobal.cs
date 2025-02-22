@@ -13,9 +13,16 @@ public class DepsGlobal : ModuleGlobal<DepsGlobal>
     internal IDIContext DI = IDIContext.New();
     public DepsGlobal()
     {
+        //var skLua =  new Lua();
+        //RegisterDebugFunctions(skLua);
         DI
-            .BindExternalInstance(new TomlParser())
-            .BindExternalInstance(QS.Api.Deps.DINames.Lua_Skill, new Lua());
+            .BindExternalInstance(new TomlParser());
+            //.BindExternalInstance(QS.Api.Deps.DINames.Lua_GameLogic, new Lua())
+            // 不能通过ProvideBinding提供，因为现在的这个Lua环境是不完全的，不可用
+            // 因此不能暴露出去，不对，从根本上，这个加载Lua的任务就应该放在Trunk层才对
+            // 如果这么做的话，各个层甚至连配置文件都没法加载了
+            // 这没办法的，从上层向下注入吧，这是可以接受的
+            //.BindExternalInstance(QS.Api.Deps.DINames.Lua_Skill, skLua);
 
         RegisterTomlType();
     }
@@ -63,7 +70,7 @@ public class DepsGlobal : ModuleGlobal<DepsGlobal>
 
     public override void ProvideBinding(IDIContext context)
     {
-        context.BindExternalInstance(DI.GetInstance<Lua>());
+        //context.BindExternalInstance(DI.GetInstance<Lua>());
 
         // var ax = new AX()
         // {
@@ -81,4 +88,11 @@ public class DepsGlobal : ModuleGlobal<DepsGlobal>
     //{
     //    public string name;
     //}
+
+    public static void RegisterDebugFunctions(Lua lua)
+    {
+        lua["DebugLog"] = new Action<object>(Debug.Log);
+        lua["DebugLogWarning"] = new Action<object>(Debug.LogWarning);
+        lua["DebugLogError"] = new Action<object>(Debug.LogError);
+    }
 }

@@ -4,7 +4,7 @@ using System;
 
 namespace QS.GameLib.Rx.Relay
 {
-    public interface IObserver<T>
+    public interface IObserver<in T>
     {
         void OnSubscribe(IDisposable disposable);
         void OnNext(T item);

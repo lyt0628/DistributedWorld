@@ -9,13 +9,11 @@ using System;
 namespace QS.Common.ComputingService
 {
     public class DataSource<T,S> : IDataSource<T>
-        where T : new() where S : new()
+         where S : new()
     {
 
         readonly Dictionary<string, S> states = new();
         readonly Dictionary<string, Relay<T>> inputs = new();
-
-        //public T Create()=>new();
 
         public string Add(Relay<T> data)
         {
