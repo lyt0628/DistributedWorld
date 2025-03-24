@@ -17,7 +17,7 @@ local actions = {
     [M.COMMON_WANDER] = CS.QS.Agent.WanderAction,
     [M.COMMON_PATH_MOVE] = CS.QS.Agent.PathMoveAction,
     [M.COMMON_DODGE] = CS.QS.Agent.DodgeAction,
-    [M.SK_LIGHT_ATTACK] = CS.QS.Agent.SKLightAttackAction
+    [M.SK_LIGHT_ATTACK] = CS.QS.Agent.KatanaLightAttackAction
 }
 
 function M.create(id, ...)

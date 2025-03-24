@@ -50,3 +50,6 @@ src/Assets/Models
 
 **/*.psd
 **/*.fbx
+
+
+src/.vs/

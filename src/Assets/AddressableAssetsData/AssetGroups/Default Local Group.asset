@@ -134,6 +134,11 @@ MonoBehaviour:
     m_SerializedLabels:
     - Conf_Weapon
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95ff394227ee9e44c95186c4ab9f5a38
+    m_Address: w_Arrow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: a3d01843d9f2b554db50d8165ac4dd0f
     m_Address: Lua_UI_DialogPanel_Option
     m_ReadOnly: 0

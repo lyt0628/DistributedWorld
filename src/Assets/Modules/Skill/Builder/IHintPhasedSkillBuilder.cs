@@ -10,9 +10,10 @@ namespace QS.Skill
 {
     public interface IHintPhasedSkillBuilder
     {
-        IHintPhasedSkillBuilder Begin(Character chara,
-                                      Func<IInstruction, bool> canHandleFunc,
-                                      out ICurrySkillStageFactory stageFacotry);
+        public IHintPhasedSkillBuilder Begin(Character chara,
+                                             Func<IInstruction, bool> canHandleFunc,
+                                             out ICurrySkillStageFactory stageFactory,
+                                             Action doSwitchSkillPhaseCB = null);
         IHintPhasedSkillBuilder NewPhase(float animOffset);
         IHintPhasedSkillBuilder Precast(IState<SkillStage> state);
         IHintPhasedSkillBuilder Casting(IState<SkillStage> state);

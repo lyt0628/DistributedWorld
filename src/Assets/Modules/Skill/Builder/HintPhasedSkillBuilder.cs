@@ -27,14 +27,13 @@ namespace QS.Skill
         public SkillStage CurrentStage { get; private set; }
 
 
-        public IHintPhasedSkillBuilder Begin(Character chara, Func<IInstruction, bool> canHandleFunc, out ICurrySkillStageFactory stageFactory)
+        public IHintPhasedSkillBuilder Begin(Character chara, Func<IInstruction, bool> canHandleFunc, out ICurrySkillStageFactory stageFactory, Action doSwitchSkillPhaseCB = null)
         {
             phaseCount = 0;
             stageFactory = this.stageFactory;
             stages = new List<IState<SkillStage>>();
             animOffsets = new List<float>();
-            m_PhasedSkill = new DDHintPhasedSkill(chara, canHandleFunc);
-
+            m_PhasedSkill = new DDHintPhasedSkill(chara, canHandleFunc, doSwitchSkillPhaseCB);
             return this;
         }
 

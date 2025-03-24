@@ -60,6 +60,9 @@ namespace QS.Player
         public override GameUnit Unit => m_Unit;
         GameUnit m_Unit;
 
+
+        public GameObject prefabArrow;
+        public Transform mountPointArrow;
         protected override void Start()
         {
             CharaGlobal.Instance.Inject(this);
@@ -298,7 +301,7 @@ namespace QS.Player
                                 .Recoveried(katanaLT_stageFacotry.Void())
 
                                 .NewPhase(0.1f)
-                                                              .Precast(katanaLT_stageFacotry.MsgSwitch("Combo",
+                                        .Precast(katanaLT_stageFacotry.MsgSwitch("Combo",
                                         onEnter: () => ControlFSM.SwitchTo(CharaState.RootMotion),
                                         interruptable: true,
                                         onInterruptCB: () =>
@@ -349,7 +352,7 @@ namespace QS.Player
                                     }))
                                 .Recoveried(katanaLT_stageFacotry.Void())
                                 .NewPhase(0.1f)
-                                                              .Precast(katanaLT_stageFacotry.MsgSwitch("Combo",
+                                        .Precast(katanaLT_stageFacotry.MsgSwitch("Combo",
                                         onEnter: () => ControlFSM.SwitchTo(CharaState.RootMotion),
                                         interruptable: true,
                                         onInterruptCB: () =>
@@ -401,6 +404,8 @@ namespace QS.Player
                                 .Build();
 
 
+            GameObject arrow = default;
+            Arrow arrowCtrl = default;
             var bowLightAttack = phasedSkillBuilder
                                 .Begin(this,
                                        canHandleFunc: (i) =>
@@ -415,41 +420,32 @@ namespace QS.Player
                                        },
                                        out var bowLT_stageFacotry)
                                 .NewPhase(0.1f)
+                                // 这边遇到要跨越闭包生命周期的引用，就只能把它实现成独立的类了
+                                // 但这边还不需要 Arrow 实例化之后，就和我一点关系都没有了，它会自己管理自己
                                 .Precast(katanaLT_stageFacotry.MsgSwitch("BowShoot",
-                                        onEnter: () => ControlFSM.SwitchTo(CharaState.RootMotion),
+                                        onEnter: () =>
+                                        {
+                                            ControlFSM.SwitchTo(CharaState.RootMotion);
+                                        },
                                         interruptable: true,
                                         onInterruptCB: () =>
                                         {
                                             ControlFSM.SwitchTo(CharaState.Idle);
                                         }))
-                                .Casting(katanaLT_stageFacotry.Detect(
-                                        detectorProvider: () => spanDetector,
-                                        beforeDetectCB: () => spanDetector.Enable(),
-                                        onEndDetectCB: (_) => spanDetector.Disable(),
-                                        onDetectedPerFrameCB: (_, objs) =>
-                                        {
-                                            foreach (var target in objs)
-                                            {
-                                                if (!target.TryGetComponent<Character>(out var executor))
-                                                {
-                                                    continue;
-                                                }
-                                                executor.Execute(attackedInstr);
-
-                                                var positionDelta = wepaon.position - target.transform.position;
-                                                var localDir = target.transform.InverseTransformDirection(positionDelta);
-                                                hitInstr.AttackDir = localDir;
-                                                hitInstr.AttackForce = 0.3f;
-                                                hitInstr.HitStopTime = .3f;
-                                                executor.Execute(hitInstr);
-
-                                            }
-                                        },
-                                        onInterruptCB: () =>
-                                        {
-                                            spanDetector.Disable();
-                                            ControlFSM.SwitchTo(CharaState.Idle);
-                                        }))
+                                .Casting(katanaLT_stageFacotry.MsgSwitch(
+                                    onEnter: () =>
+                                    {
+                                        arrow = GameObject.Instantiate(prefabArrow);
+                                        arrow.transform.parent = mountPointArrow;
+                                        arrow.transform.localPosition = Vector3.zero;
+                                        arrow.transform.localRotation = Quaternion.identity;
+                                        arrowCtrl = arrow.AddComponent<Arrow>();
+                                    },
+                                    interruptable: true,
+                                    onInterruptCB: () =>
+                                    {
+                                        ControlFSM.SwitchTo(CharaState.Idle);
+                                    }))
                                 .Postcast(katanaLT_stageFacotry.MsgSwitch(
                                     interruptable: true,
                                     onInterruptCB: () =>
@@ -458,12 +454,62 @@ namespace QS.Player
                                     }))
                                 .Shutdown(katanaLT_stageFacotry.MsgSwitch(
                                     interruptable: true,
-                                    onExit: () => ControlFSM.SwitchTo(CharaState.Idle),
+                                    onExit: () =>
+                                    {
+                                        ControlFSM.SwitchTo(CharaState.Idle);
+                                        arrowCtrl.Shoot(transform.forward, gameObject,attackedInstr);
+                                    },
                                     onInterruptCB: () =>
                                     {
                                         ControlFSM.SwitchTo(CharaState.Idle);
                                     }))
                                 .Recoveried(katanaLT_stageFacotry.Void())
+
+                                 .NewPhase(0.1f)
+                                .Precast(katanaLT_stageFacotry.MsgSwitch("Combo",
+                                        onEnter: () =>
+                                        {
+                                            ControlFSM.SwitchTo(CharaState.RootMotion);
+                                        },
+                                        interruptable: true,
+                                        onInterruptCB: () =>
+                                        {
+                                            ControlFSM.SwitchTo(CharaState.Idle);
+                                        }))
+                                .Casting(katanaLT_stageFacotry.MsgSwitch(
+                                    onEnter: () =>
+                                    {
+                                        arrow = GameObject.Instantiate(prefabArrow);
+                                        arrow.transform.parent = mountPointArrow;
+                                        arrow.transform.localPosition = Vector3.zero;
+                                        arrow.transform.localRotation = Quaternion.identity;
+                                        arrowCtrl = arrow.AddComponent<Arrow>();
+                                    },
+                                    interruptable: true,
+                                    onInterruptCB: () =>
+                                    {
+                                        ControlFSM.SwitchTo(CharaState.Idle);
+                                    }))
+                                .Postcast(katanaLT_stageFacotry.MsgSwitch(
+                                    interruptable: true,
+                                    onInterruptCB: () =>
+                                    {
+                                        ControlFSM.SwitchTo(CharaState.Idle);
+                                    }))
+                                .Shutdown(katanaLT_stageFacotry.MsgSwitch(
+                                    onExit: () =>
+                                    {
+                                        ControlFSM.SwitchTo(CharaState.Idle);
+                                        arrowCtrl.Shoot(transform.forward,gameObject, attackedInstr);
+                                    },
+                                    interruptable: true,
+                                    onInterruptCB: () =>
+                                    {
+                                        ControlFSM.SwitchTo(CharaState.Idle);
+
+                                    }))
+                                .Recoveried(katanaLT_stageFacotry.Void())
+                               
                 .Build();
             HandlerGroup.Add(katanaLightAttack);
             HandlerGroup.Add(bowLightAttack);

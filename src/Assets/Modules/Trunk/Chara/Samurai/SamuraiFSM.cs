@@ -65,7 +65,17 @@ namespace QS.Chara
                     CharaState.Jumping => katanaJump,
                     _ => throw new System.NotImplementedException(),
                 },
-                2 => bowMove,
+                2 => state switch
+                {
+                    CharaState.Idle => bowMove,
+                    CharaState.Walking => bowMove,
+                    CharaState.Runing => bowMove,
+                    CharaState.RootMotion => rootMotionControl,
+                    CharaState.Hit => katanaHit,
+                    CharaState.Dodge => kanataDodge,
+                    CharaState.Jumping => katanaJump,
+                    _ => throw new System.NotImplementedException(),
+                },
                 _ => throw new System.NotImplementedException(),
             };
         }

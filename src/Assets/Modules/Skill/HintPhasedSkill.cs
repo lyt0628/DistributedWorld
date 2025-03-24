@@ -74,6 +74,7 @@ namespace QS.Skill
             GetState(SkillStage.Shutdown).Exit();
 
             // 立即切到下一个技能
+            DoSwitchSkillPhase();
             CurrentSkill++;
             CurrentSkill %= PhaseCount;
 
@@ -81,6 +82,14 @@ namespace QS.Skill
             GetState(SkillStage.Precast).Enter();
 
             //SwitchTo(SkillStage.Precast);
+        }
+
+        /// <summary>
+        /// 完成切换技能的实际任务，一般是触发下一的状态的状态机
+        /// </summary>
+        protected virtual void DoSwitchSkillPhase()
+        {
+
         }
 
         /// <summary>

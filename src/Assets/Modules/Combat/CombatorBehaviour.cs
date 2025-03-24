@@ -54,7 +54,7 @@ namespace QS.Combat
             }
 
             OnStateChanged.Invoke();
-            //Debug.Log($".................attacked {gameObject.name}");
+            Debug.Log($".................attacked {name}");
         }
 
         internal void TakeHeal(float hpDelta)

@@ -20,6 +20,7 @@ namespace QS.Skill
         const int SKILL_STAGE_SIZE = 5;
 
         readonly Func<IInstruction, bool> canHandleFunc;
+        readonly Action doSwitchSkillPhaseCB;
         //public Func<BaseSkill, int, SkillStage, bool> OnInterruptCB;
         public override int PhaseCount => m_PhaseCount;
         internal int m_PhaseCount;
@@ -30,7 +31,8 @@ namespace QS.Skill
         public DDHintPhasedSkill(Character chara,
                                  Func<IInstruction, bool> canHandleFunc,
                                  List<IState<SkillStage>> states,
-                                 List<float> animOffsets)
+                                 List<float> animOffsets,
+                                 Action doSwitchSkillPhaseCB = null)
             : base(chara)
         {
             // 技能数目必须能为阶段的倍数
@@ -40,30 +42,17 @@ namespace QS.Skill
             this.Stages = states;
             this.canHandleFunc = canHandleFunc;
             this.AnimOffsets = animOffsets;
+            this.doSwitchSkillPhaseCB = doSwitchSkillPhaseCB;
         }
 
-        public DDHintPhasedSkill(Character chara, Func<IInstruction, bool> canHandleFunc)
+        public DDHintPhasedSkill(Character chara, Func<IInstruction, bool> canHandleFunc, Action doSwitchSkillPhaseCB)
             : base(chara)
         {
             this.canHandleFunc = canHandleFunc;
+            this.doSwitchSkillPhaseCB = doSwitchSkillPhaseCB;
         }
 
-        //[Obsolete]
-        //public override void OnInterrupt()
-        //{
-        //    if (OnInterruptCB == null || !Casting) return;
-        //    var canInt = OnInterruptCB.Invoke(this, CurrentSkill, CurrentState);
-        //    if (canInt)
-        //    {
-        //        canSwitchSkill = false;
-        //        while (Casting)
-        //        {
-        //            NextStage();
-        //        }
-        //        CurrentSkill = 0;
-        //        CurrentState = SkillStage.Recoveried;
-        //    }
-        //}
+        protected override void DoSwitchSkillPhase() => doSwitchSkillPhaseCB?.Invoke();
 
         public override bool CanHandle(IInstruction instruction) => canHandleFunc(instruction);
 

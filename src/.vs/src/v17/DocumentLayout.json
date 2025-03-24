@@ -3,36 +3,76 @@
   "WorkspaceRootPath": "D:\\learn-u3d\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|d:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\samuraifsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\samuraifsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\player\\lightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\player\\lightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|d:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\arrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\ghostsamurai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\ghostsamurai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|d:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bowlightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bowlightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|d:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\hintphasedskillbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\hintphasedskillbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\ihintphasedskillbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\ihintphasedskillbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|d:\\learn-u3d\\src\\assets\\modules\\combat\\combator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|solutionrelative:assets\\modules\\combat\\combator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|d:\\learn-u3d\\src\\assets\\modules\\skill\\dd\\ddhintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|D:\\learn-u3d\\src\\assets\\modules\\combat\\combatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|solutionrelative:assets\\modules\\combat\\combatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\player\\lightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\player\\lightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\samuraiaimmove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\samuraiaimmove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\dd\\ddhintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\dd\\ddhintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\currystagefacotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\currystagefacotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\hintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\hintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|d:\\learn-u3d\\src\\assets\\modules\\skill\\detectskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\detectskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\samuraimove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\samuraimove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\agent\\samurai\\katanalightattackaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\agent\\samurai\\katanalightattackaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\samuraifsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\samuraifsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\katanalightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\katanalightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\modules\\worlditem\\worlditemglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\modules\\worlditem\\worlditemglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bowlightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bowlightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\lifecycleprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,16 +83,12 @@
       "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\trunkglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|d:\\learn-u3d\\src\\assets\\modules\\trunk\\luautil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\luautil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\luautil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\switchweaponinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\switchweaponinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\katanalightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\katanalightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\skillglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\modules\\chara\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\modules\\chara\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\samuraimove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\samuraimove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\modules\\worlditem\\domain\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\samuraistaticaim_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\samuraistaticaim_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\samuraiaimmove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\samuraiaimmove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\katana\\samuraidodge_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -195,10 +223,6 @@
       "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\ui\\mainhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\currystagefacotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\currystagefacotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\iskillstagefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\iskillstagefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -223,24 +247,8 @@
       "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\dd\\ddsimpleskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\detectskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\detectskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\msgswitchskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\msgswitchskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\hintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\hintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|D:\\learn-u3d\\src\\assets\\modules\\combat\\iattackedinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|solutionrelative:assets\\modules\\combat\\iattackedinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|D:\\learn-u3d\\src\\assets\\modules\\combat\\combatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|solutionrelative:assets\\modules\\combat\\combatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\ihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -266,11 +274,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 363,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "LightAttackInstr.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\LightAttackInstr.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Player\\LightAttackInstr.cs",
@@ -284,80 +292,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SamuraiFSM.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
-              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAswDMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Combator.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\Combator.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Combat\\Combator.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\Combator.cs",
+              "RelativeToolTip": "Assets\\Modules\\Combat\\Combator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T08:55:02.338Z",
+              "WhenOpened": "2025-03-24T13:37:18.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Arrow.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\Arrow.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\Arrow.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\Arrow.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\Arrow.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAmwD4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T13:01:40.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GhostSamurai.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\GhostSamurai.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\GhostSamurai.cs",
               "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\GhostSamurai.cs",
               "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\GhostSamurai.cs",
-              "ViewState": "AgIAAMMBAAAAAAAAAAAAANIBAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAMABAAAAAAAAAAAIwMwBAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-23T05:31:18.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerInput.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
-              "RelativeToolTip": "Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAswFcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:09:35.647Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BowLightAttackInstr.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
-              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T08:47:02.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "HintPhasedSkillBuilder.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\HintPhasedSkillBuilder.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\HintPhasedSkillBuilder.cs",
               "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\HintPhasedSkillBuilder.cs",
               "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\HintPhasedSkillBuilder.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAwB8AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAiwDkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T08:50:55.206Z",
+              "WhenOpened": "2025-03-24T11:37:51.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CombatorBehaviour.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\CombatorBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Combat\\CombatorBehaviour.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\CombatorBehaviour.cs",
+              "RelativeToolTip": "Assets\\Modules\\Combat\\CombatorBehaviour.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAA2wDsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:04:41.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IHintPhasedSkillBuilder.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\IHintPhasedSkillBuilder.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\IHintPhasedSkillBuilder.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\IHintPhasedSkillBuilder.cs",
-              "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\IHintPhasedSkillBuilder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Title": "SamuraiAimMove_Bow.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T08:14:55.389Z",
+              "WhenOpened": "2025-03-23T16:52:07.379Z",
               "EditorCaption": ""
             },
             {
@@ -368,66 +376,101 @@
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DD\\DDHintPhasedSkill.cs",
               "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDHintPhasedSkill.cs",
               "RelativeToolTip": "Assets\\Modules\\Skill\\DD\\DDHintPhasedSkill.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAowEQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T08:52:23.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TrunkGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\TrunkGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\TrunkGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\TrunkGlobal.cs",
-              "RelativeToolTip": "Assets\\Modules\\Trunk\\TrunkGlobal.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAxwF0AAAAsAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "CurryStageFacotry.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwBEAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T08:44:30.945Z",
+              "WhenOpened": "2025-03-23T08:08:34.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LifecycleProvider.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\LifecycleProvider.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\LifecycleProvider.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\LifecycleProvider.cs",
-              "RelativeToolTip": "Assets\\Modules\\Common\\LifecycleProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "HintPhasedSkill.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\HintPhasedSkill.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\HintPhasedSkill.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\HintPhasedSkill.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\HintPhasedSkill.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAcwFkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T05:25:29.562Z",
+              "WhenOpened": "2025-03-23T07:13:16.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "LuaUtil.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\LuaUtil.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\LuaUtil.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\LuaUtil.cs",
-              "RelativeToolTip": "Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "Title": "DetectSkillState.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DetectSkillState.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DetectSkillState.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DetectSkillState.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\DetectSkillState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T08:47:56.44Z",
+              "WhenOpened": "2025-03-24T11:29:46.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "SwitchWeaponInstr.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
-              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Title": "SamuraiMove_Bow.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAIwAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T08:36:41.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T14:21:03.554Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "KatanaLightAttackAction.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Agent\\Samurai\\KatanaLightAttackAction.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Agent\\Samurai\\KatanaLightAttackAction.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Agent\\Samurai\\KatanaLightAttackAction.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Agent\\Samurai\\KatanaLightAttackAction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:58:50.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SamuraiFSM.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAYwEMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:55:02.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PlayerInput.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswFcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:09:35.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "KatanaLightAttackInstr.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\KatanaLightAttackInstr.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\KatanaLightAttackInstr.cs",
@@ -439,7 +482,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
+              "Title": "WorldItemGlobal.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\WorldItemGlobal.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\WorldItem\\WorldItemGlobal.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\WorldItemGlobal.cs",
+              "RelativeToolTip": "Assets\\Modules\\WorldItem\\WorldItemGlobal.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAiwA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T10:51:17.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BowLightAttackInstr.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:47:02.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TrunkGlobal.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\TrunkGlobal.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\TrunkGlobal.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\TrunkGlobal.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\TrunkGlobal.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAxwF0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T08:44:30.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LifecycleProvider.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\LifecycleProvider.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\LifecycleProvider.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\LifecycleProvider.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\LifecycleProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T05:25:29.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LuaUtil.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:47:56.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SwitchWeaponInstr.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:36:41.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "SkillGlobal.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\SkillGlobal.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\SkillGlobal.cs",
@@ -451,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "IInstructionFiler.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IInstructionFiler.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Common\\IInstructionFiler.cs",
@@ -463,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "Character.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\Character.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\Character.cs",
@@ -475,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "IWeapon.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\Domain\\IWeapon.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\WorldItem\\Domain\\IWeapon.cs",
@@ -487,19 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SamuraiMove_Bow.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
-              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T14:21:03.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "IMaterial.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\Domain\\IMaterial.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\WorldItem\\Domain\\IMaterial.cs",
@@ -511,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "SamuraiStaticAim_Bow.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiStaticAim_Bow.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiStaticAim_Bow.cs",
@@ -523,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "SamuraiGrounded_Katana.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiGrounded_Katana.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiGrounded_Katana.cs",
@@ -535,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "CharaStateBase.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\CharaStateBase.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaFSM\\CharaStateBase.cs",
@@ -547,19 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SamuraiAimMove_Bow.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
-              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T16:52:07.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "SamuraiDodge_Katana.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiDodge_Katana.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiDodge_Katana.cs",
@@ -571,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "SamuraiTransitionKatana2Bow.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiTransitionKatana2Bow.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiTransitionKatana2Bow.cs",
@@ -583,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "WorldItems.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\WorldItems.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\WorldItem\\WorldItems.cs",
@@ -595,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "IHandlerGroup.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IHandlerGroup.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Common\\IHandlerGroup.cs",
@@ -607,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "CharaGlobal.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaGlobal.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaGlobal.cs",
@@ -619,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "SkillTable.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\SkillTable.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\SkillTable.cs",
@@ -631,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "FilterHandler.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FilterHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FilterHandler.cs",
@@ -643,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "ISkillTable.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\ISkillTable.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\ISkillTable.cs",
@@ -655,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "FSMBehaviour.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\FSMBehaviour.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FSM\\FSMBehaviour.cs",
@@ -667,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 39,
               "Title": "SamuraiRunEnd_Katana.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunEnd_Katana.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunEnd_Katana.cs",
@@ -679,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 40,
               "Title": "ConfigConstants.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\ConfigConstants.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\ConfigConstants.cs",
@@ -691,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "SamuraiRunStart_Katana.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunStart_Katana.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunStart_Katana.cs",
@@ -703,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "SamuraiRunEnd_Katana.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs",
@@ -711,11 +802,12 @@
               "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:31:34.285Z"
+              "WhenOpened": "2025-03-23T06:31:34.285Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "SamuraiJump_Katana.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs",
@@ -723,11 +815,12 @@
               "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T05:47:17.065Z"
+              "WhenOpened": "2025-03-23T05:47:17.065Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "DefaultCharaControlMotor.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\DefaultCharaControlMotor.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaFSM\\DefaultCharaControlMotor.cs",
@@ -739,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "BaseSkill.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\BaseSkill.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\BaseSkill.cs",
@@ -751,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "CharaControlState.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\CharaControlState.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaFSM\\CharaControlState.cs",
@@ -763,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 45,
               "Title": "BaseDocument.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\BaseDocument.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\UI\\BaseDocument.cs",
@@ -775,7 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "SamuraiHit_Katana.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs",
@@ -783,11 +876,12 @@
               "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T11:38:49.388Z"
+              "WhenOpened": "2025-03-23T11:38:49.388Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 46,
               "Title": "AbstractView.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\AbstractView.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\UI\\AbstractView.cs",
@@ -799,7 +893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 47,
               "Title": "AnimUtil.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\AnimUtil.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\AnimUtil.cs",
@@ -811,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 48,
               "Title": "FSM.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\FSM.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FSM\\FSM.cs",
@@ -823,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 49,
               "Title": "ITransition.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\ITransition.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FSM\\ITransition.cs",
@@ -835,7 +929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 50,
               "Title": "ICharaStateTransition.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\ICharaStateTransition.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaFSM\\ICharaStateTransition.cs",
@@ -847,7 +941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 51,
               "Title": "IState.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\IState.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FSM\\IState.cs",
@@ -859,7 +953,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 52,
               "Title": "BaseUI.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\BaseUI.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\UI\\BaseUI.cs",
@@ -871,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 53,
               "Title": "ViewNoteUI.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\UI\\ViewNoteUI.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\UI\\ViewNoteUI.cs",
@@ -883,7 +977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 54,
               "Title": "MainHUD.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\UI\\MainHUD.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\UI\\MainHUD.cs",
@@ -895,19 +989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "CurryStageFacotry.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
-              "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T08:08:34.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "ISKillStageFactory.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\ISKillStageFactory.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\ISKillStageFactory.cs",
@@ -919,7 +1001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "SkillStageFactory.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\SkillStageFactory.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\SkillStageFactory.cs",
@@ -931,7 +1013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "DDMsgSwithSkillState.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDMsgSwithSkillState.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DD\\DDMsgSwithSkillState.cs",
@@ -943,7 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 58,
               "Title": "DDDetectSkillStage.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDDetectSkillStage.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DD\\DDDetectSkillStage.cs",
@@ -955,7 +1037,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 59,
               "Title": "BaseSkillState.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\BaseSkillState.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\BaseSkillState.cs",
@@ -967,7 +1049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 60,
               "Title": "DDSimpleSkill.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDSimpleSkill.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DD\\DDSimpleSkill.cs",
@@ -979,43 +1061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "DetectSkillState.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DetectSkillState.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DetectSkillState.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DetectSkillState.cs",
-              "RelativeToolTip": "Assets\\Modules\\Skill\\DetectSkillState.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T07:45:25.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "MsgSwitchSkillState.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\MsgSwitchSkillState.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\MsgSwitchSkillState.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\MsgSwitchSkillState.cs",
-              "RelativeToolTip": "Assets\\Modules\\Skill\\MsgSwitchSkillState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T07:44:34.942Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "HintPhasedSkill.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\HintPhasedSkill.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\HintPhasedSkill.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\HintPhasedSkill.cs",
-              "RelativeToolTip": "Assets\\Modules\\Skill\\HintPhasedSkill.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAkwBEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T07:13:16.251Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 61,
               "Title": "IAttackedInstr.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\IAttackedInstr.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Combat\\IAttackedInstr.cs",
@@ -1027,19 +1073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "CombatorBehaviour.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\CombatorBehaviour.cs",
-              "RelativeDocumentMoniker": "Assets\\Modules\\Combat\\CombatorBehaviour.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\CombatorBehaviour.cs",
-              "RelativeToolTip": "Assets\\Modules\\Combat\\CombatorBehaviour.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwEkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T06:04:41.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "IHandler.cs",
               "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Modules\\Common\\IHandler.cs",
