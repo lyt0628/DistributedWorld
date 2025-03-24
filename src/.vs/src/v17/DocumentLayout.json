@@ -3,160 +3,260 @@
   "WorkspaceRootPath": "D:\\learn-u3d\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49D7B947-D0AB-2A23-1A18-EECE94BDC676}|QS.GameLib.DI.csproj|d:\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\defaultdicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49D7B947-D0AB-2A23-1A18-EECE94BDC676}|QS.GameLib.DI.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\defaultdicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\player\\playerinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\ui\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\ui\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|d:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\samuraifsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\samuraifsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\defaultitembreedrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\defaultitembreedrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\player\\lightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\player\\lightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\playerglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\playerglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\ghostsamurai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\ghostsamurai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49D7B947-D0AB-2A23-1A18-EECE94BDC676}|QS.GameLib.DI.csproj|d:\\learn-u3d\\src\\assets\\script\\gamelib\\di\\impl\\emptydicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49D7B947-D0AB-2A23-1A18-EECE94BDC676}|QS.GameLib.DI.csproj|solutionrelative:assets\\script\\gamelib\\di\\impl\\emptydicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|d:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bowlightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bowlightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\trunkglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\trunkglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|d:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\hintphasedskillbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\hintphasedskillbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\ui\\mainhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\ui\\mainhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\ihintphasedskillbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\ihintphasedskillbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\ui\\hpui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\ui\\hpui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|d:\\learn-u3d\\src\\assets\\modules\\skill\\dd\\ddhintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\dd\\ddhintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\script\\trunk\\dialoguenpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\trunk\\dialoguenpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\lifecycleprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\lifecycleprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\trunkglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\trunkglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|d:\\learn-u3d\\src\\assets\\script\\ui\\abstractview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\script\\ui\\abstractview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|d:\\learn-u3d\\src\\assets\\modules\\trunk\\luautil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\luautil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|D:\\learn-u3d\\src\\assets\\script\\ui\\uiglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\script\\ui\\uiglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\switchweaponinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\switchweaponinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|D:\\learn-u3d\\src\\assets\\script\\ui\\dialoguepannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\script\\ui\\dialoguepannel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\katanalightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\katanalightattackinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|d:\\learn-u3d\\src\\assets\\script\\ui\\defaultuistack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\script\\ui\\defaultuistack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\skillglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\skillglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|D:\\learn-u3d\\src\\assets\\script\\ui\\iuistack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\script\\ui\\iuistack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\iinstructionfiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\iinstructionfiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|d:\\learn-u3d\\src\\assets\\script\\ui\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\script\\ui\\iview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\modules\\chara\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\modules\\chara\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\worlditemglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\worlditemglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\samuraimove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\samuraimove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\api\\moduleglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\api\\moduleglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\modules\\worlditem\\domain\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\modules\\worlditem\\domain\\iweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\iinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\iinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\modules\\worlditem\\domain\\imaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\modules\\worlditem\\domain\\imaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\defaultpropbreed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\defaultpropbreed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\modules\\chara\\charafsm\\charastatebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\modules\\chara\\charafsm\\charastatebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\defaultprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\defaultprop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\katana\\samuraigrounded_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\katana\\samuraigrounded_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\samuraistaticaim_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\samuraistaticaim_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\followingcamera3p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\followingcamera3p.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\bow\\samuraiaimmove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\bow\\samuraiaimmove_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\playercontrolcallbacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\playercontrolcallbacks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\katana\\samuraidodge_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\katana\\samuraidodge_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\baseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\samuraitransitionkatana2bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\samuraitransitionkatana2bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\defaultitemfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\defaultitemfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\modules\\worlditem\\worlditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\modules\\worlditem\\worlditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\iitemfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\iitemfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\ihandlergroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\ihandlergroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\defaultinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\defaultinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\modules\\chara\\charaglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\modules\\chara\\charaglobal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\script\\common\\miscutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\script\\common\\miscutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\skilltable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\skilltable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\iitembreedrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\iitembreedrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\filterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\filterhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\iweaponbreed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\iweaponbreed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\iskilltable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\iskilltable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|D:\\learn-u3d\\src\\assets\\script\\worlditem\\defaultweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C4C3E78-F9BD-A7C9-4739-631A28AB10D4}|QS.WorldItem.csproj|solutionrelative:assets\\script\\worlditem\\defaultweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\fsm\\fsmbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\fsm\\fsmbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\learn-u3d\\src\\Temp\\Compiled-Nature-Terrain-Diffuse.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\Compiled-Nature-Terrain-Diffuse.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\katana\\samurairunend_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\katana\\samurairunend_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\ui\\dialoguepannel\\dialoguepannel.uxml||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\ui\\dialoguepannel\\dialoguepannel.uxml||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\configconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\configconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\learn-u3d\\src\\Assets\\Script\\Inventory\\DefaultInventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Inventory\\DefaultInventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\chara\\samurai\\katana\\samurairunstart_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\chara\\samurai\\katana\\samurairunstart_katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\iplayerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\iplayerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\modules\\chara\\charafsm\\defaultcharacontrolmotor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\modules\\chara\\charafsm\\defaultcharacontrolmotor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F82C266-B129-FC86-404A-370C3030009B}|Assembly-CSharp-Editor.csproj|D:\\learn-u3d\\src\\assets\\editor\\customtextassetimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F82C266-B129-FC86-404A-370C3030009B}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\editor\\customtextassetimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\baseskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\baseskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|D:\\learn-u3d\\src\\assets\\script\\player\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{806EDE6E-095D-9207-7234-94312F724786}|QS.Player.csproj|solutionrelative:assets\\script\\player\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\modules\\chara\\charafsm\\characontrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\modules\\chara\\charafsm\\characontrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\learn-u3d\\src\\Assets\\Script\\Inventory\\IInventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Inventory\\IInventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|D:\\learn-u3d\\src\\assets\\modules\\ui\\basedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\modules\\ui\\basedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|D:\\learn-u3d\\src\\assets\\modules\\ui\\abstractview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\modules\\ui\\abstractview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\modules\\chara\\animutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\modules\\chara\\animutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\fsm\\fsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\fsm\\fsm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\fsm\\itransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\fsm\\itransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|D:\\learn-u3d\\src\\assets\\modules\\chara\\charafsm\\icharastatetransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0945740-2E57-3C2F-71CD-B9A8BF4EEF0E}|QS.Chara.csproj|solutionrelative:assets\\modules\\chara\\charafsm\\icharastatetransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\fsm\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\fsm\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|D:\\learn-u3d\\src\\assets\\modules\\ui\\baseui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3700DD9A-3418-0020-C6FA-AAADD444072D}|QS.UI.csproj|solutionrelative:assets\\modules\\ui\\baseui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\ui\\viewnoteui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\ui\\viewnoteui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|D:\\learn-u3d\\src\\assets\\modules\\trunk\\ui\\mainhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CFFDA30-0E63-039E-0DCA-DAC117CE2649}|Assembly-CSharp.csproj|solutionrelative:assets\\modules\\trunk\\ui\\mainhud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\currystagefacotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\currystagefacotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\iskillstagefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\iskillstagefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\builder\\skillstagefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\builder\\skillstagefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\dd\\ddmsgswithskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\dd\\ddmsgswithskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\dd\\dddetectskillstage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\dd\\dddetectskillstage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\baseskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\baseskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\dd\\ddsimpleskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\dd\\ddsimpleskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\detectskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\detectskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\msgswitchskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\msgswitchskillstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|D:\\learn-u3d\\src\\assets\\modules\\skill\\hintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{089EB280-8257-54F9-3AD7-77B3DE2EC6EA}|QS.Skill.csproj|solutionrelative:assets\\modules\\skill\\hintphasedskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|D:\\learn-u3d\\src\\assets\\modules\\combat\\iattackedinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|solutionrelative:assets\\modules\\combat\\iattackedinstr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|D:\\learn-u3d\\src\\assets\\modules\\combat\\combatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06384FD7-D08F-52B4-C95B-C501ABA6D6D2}|QS.Combat.csproj|solutionrelative:assets\\modules\\combat\\combatorbehaviour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|D:\\learn-u3d\\src\\assets\\modules\\common\\ihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BC24B3F-6CFB-F6F2-F3F1-17CF7840B5C5}|QS.Common.csproj|solutionrelative:assets\\modules\\common\\ihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -165,499 +265,789 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 363,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmptyDIContext.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\EmptyDIContext.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\EmptyDIContext.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\EmptyDIContext.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\EmptyDIContext.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAIA3wFQAAAA0AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LightAttackInstr.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\LightAttackInstr.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Player\\LightAttackInstr.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\LightAttackInstr.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Player\\LightAttackInstr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T11:31:06.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TrunkGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\TrunkGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\TrunkGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\TrunkGlobal.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\TrunkGlobal.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAD4v1IAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:16:23.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\PlayerGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerGlobal.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\PlayerGlobal.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAowCQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:07:22.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainHUD.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\UI\\MainHUD.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\UI\\MainHUD.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\UI\\MainHUD.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\UI\\MainHUD.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAvwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T12:59:24.712Z",
+              "WhenOpened": "2025-03-24T08:22:49.037Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\UI\\Inventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\UI\\Inventory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\UI\\Inventory.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\UI\\Inventory.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAjwB4AAAAFAAAAAAAAAA==",
+              "Title": "SamuraiFSM.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiFSM.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T12:00:10.165Z",
+              "WhenOpened": "2025-03-24T08:55:02.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HpUI.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\UI\\HpUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\UI\\HpUI.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\UI\\HpUI.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\UI\\HpUI.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "GhostSamurai.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\GhostSamurai.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\GhostSamurai.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\GhostSamurai.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\GhostSamurai.cs",
+              "ViewState": "AgIAAMMBAAAAAAAAAAAAANIBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:17:20.92Z",
+              "WhenOpened": "2025-03-23T05:31:18.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DefaultDIContext.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
-              "RelativeToolTip": "Assets\\Script\\GameLib\\DI\\Impl\\DefaultDIContext.cs",
-              "ViewState": "AgIAAN0BAAAAAAAAAADwv98BAAAhAAAAAAAAAA==",
+              "Title": "PlayerInput.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Player\\PlayerInput.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswFcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T10:59:07.93Z",
+              "WhenOpened": "2025-03-23T16:09:35.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DialogueNPC.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\DialogueNPC.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Trunk\\DialogueNPC.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Trunk\\DialogueNPC.cs",
-              "RelativeToolTip": "Assets\\Script\\Trunk\\DialogueNPC.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAowCQAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "BowLightAttackInstr.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\BowLightAttackInstr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:18:40.619Z",
+              "WhenOpened": "2025-03-24T08:47:02.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DefaultItemBreedRepo.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultItemBreedRepo.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\DefaultItemBreedRepo.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultItemBreedRepo.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\DefaultItemBreedRepo.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAewCsAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "HintPhasedSkillBuilder.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\HintPhasedSkillBuilder.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\HintPhasedSkillBuilder.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\HintPhasedSkillBuilder.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\HintPhasedSkillBuilder.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwB8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T07:37:10.553Z",
+              "WhenOpened": "2025-03-24T08:50:55.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IHintPhasedSkillBuilder.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\IHintPhasedSkillBuilder.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\IHintPhasedSkillBuilder.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\IHintPhasedSkillBuilder.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\IHintPhasedSkillBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T08:14:55.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DDHintPhasedSkill.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDHintPhasedSkill.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DD\\DDHintPhasedSkill.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDHintPhasedSkill.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\DD\\DDHintPhasedSkill.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T08:52:23.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "PlayerControls.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerControls.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\PlayerControls.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerControls.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\PlayerControls.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAjwBEAAAAVAAAAAAAAAA==",
+              "Title": "TrunkGlobal.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\TrunkGlobal.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\TrunkGlobal.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\TrunkGlobal.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\TrunkGlobal.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAxwF0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T09:34:42.916Z",
+              "WhenOpened": "2025-03-23T08:44:30.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LifecycleProvider.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\LifecycleProvider.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\LifecycleProvider.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\LifecycleProvider.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\LifecycleProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T05:25:29.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AbstractView.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\AbstractView.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\UI\\AbstractView.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\AbstractView.cs",
-              "RelativeToolTip": "Assets\\Script\\UI\\AbstractView.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAUwC4AAAAzAAAAAAAAAA==",
+              "Title": "LuaUtil.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\LuaUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T10:54:00.697Z",
+              "WhenOpened": "2025-03-24T08:47:56.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UIGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\UIGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\UI\\UIGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\UIGlobal.cs",
-              "RelativeToolTip": "Assets\\Script\\UI\\UIGlobal.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAArwBwAAAA7AAAAAAAAAA==",
+              "Title": "SwitchWeaponInstr.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SwitchWeaponInstr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T04:58:05.351Z",
+              "WhenOpened": "2025-03-24T08:36:41.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "DialoguePannel.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\DialoguePannel.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\UI\\DialoguePannel.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\DialoguePannel.cs",
-              "RelativeToolTip": "Assets\\Script\\UI\\DialoguePannel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "KatanaLightAttackInstr.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\KatanaLightAttackInstr.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\KatanaLightAttackInstr.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\KatanaLightAttackInstr.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\KatanaLightAttackInstr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:22:15.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T08:46:45.552Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "DefaultUIStack.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\DefaultUIStack.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\UI\\DefaultUIStack.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\DefaultUIStack.cs",
-              "RelativeToolTip": "Assets\\Script\\UI\\DefaultUIStack.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Title": "SkillGlobal.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\SkillGlobal.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\SkillGlobal.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\SkillGlobal.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\SkillGlobal.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T10:50:11.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T07:37:42.4Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "IUIStack.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\IUIStack.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\UI\\IUIStack.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\IUIStack.cs",
-              "RelativeToolTip": "Assets\\Script\\UI\\IUIStack.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAwAAAATAAAAAAAAAA==",
+              "Title": "IInstructionFiler.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IInstructionFiler.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\IInstructionFiler.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IInstructionFiler.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\IInstructionFiler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T10:49:56.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T05:58:04.385Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "IView.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\IView.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\UI\\IView.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\UI\\IView.cs",
-              "RelativeToolTip": "Assets\\Script\\UI\\IView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxIAAAAAAAAAAAAAAA==",
+              "Title": "Character.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\Character.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\Character.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\Character.cs",
+              "RelativeToolTip": "Assets\\Modules\\Chara\\Character.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAmwEoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T10:50:54.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DefaultPropBreed.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultPropBreed.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\DefaultPropBreed.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultPropBreed.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\DefaultPropBreed.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T09:38:46.567Z"
+              "WhenOpened": "2025-03-24T08:20:52.928Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ModuleGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Api\\ModuleGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\Api\\ModuleGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\Api\\ModuleGlobal.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\Api\\ModuleGlobal.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAWwCgAAAAJAAAAAAAAAA==",
+              "Title": "IWeapon.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\Domain\\IWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\WorldItem\\Domain\\IWeapon.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\Domain\\IWeapon.cs",
+              "RelativeToolTip": "Assets\\Modules\\WorldItem\\Domain\\IWeapon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T09:53:33.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IInventory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\IInventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\IInventory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\IInventory.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\IInventory.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAvwA0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T07:36:09.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T06:58:09.743Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "WorldItemGlobal.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\WorldItemGlobal.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\WorldItemGlobal.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\WorldItemGlobal.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\WorldItemGlobal.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAiwEsAAAAJAAAAAAAAAA==",
+              "Title": "SamuraiMove_Bow.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiMove_Bow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:25:55.705Z"
+              "WhenOpened": "2025-03-23T14:21:03.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DefaultProp.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultProp.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\DefaultProp.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultProp.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\DefaultProp.cs",
+              "DocumentIndex": 18,
+              "Title": "IMaterial.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\Domain\\IMaterial.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\WorldItem\\Domain\\IMaterial.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\Domain\\IMaterial.cs",
+              "RelativeToolTip": "Assets\\Modules\\WorldItem\\Domain\\IMaterial.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T09:38:45.787Z"
+              "WhenOpened": "2025-03-24T06:58:07.748Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "PlayerCharacter.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerCharacter.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\PlayerCharacter.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerCharacter.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\PlayerCharacter.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAjwEMAAAASAAAAAAAAAA==",
+              "Title": "SamuraiStaticAim_Bow.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiStaticAim_Bow.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiStaticAim_Bow.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiStaticAim_Bow.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiStaticAim_Bow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T09:35:06.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T16:53:06.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PlayerControlCallbacks.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerControlCallbacks.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\PlayerControlCallbacks.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerControlCallbacks.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\PlayerControlCallbacks.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAjwA0AAAATAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "SamuraiGrounded_Katana.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiGrounded_Katana.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiGrounded_Katana.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiGrounded_Katana.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiGrounded_Katana.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:19:41.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T11:19:20.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BaseItem.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\BaseItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\BaseItem.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\BaseItem.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\BaseItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "CharaStateBase.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\CharaStateBase.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaFSM\\CharaStateBase.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\CharaStateBase.cs",
+              "RelativeToolTip": "Assets\\Modules\\Chara\\CharaFSM\\CharaStateBase.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T07:37:40.812Z"
+              "WhenOpened": "2025-03-23T11:38:51.402Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "FollowingCamera3P.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\FollowingCamera3P.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\FollowingCamera3P.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\FollowingCamera3P.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\FollowingCamera3P.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAewAsAAAABAAAAAAAAAA==",
+              "Title": "SamuraiAimMove_Bow.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Bow\\SamuraiAimMove_Bow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:23:14.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T16:52:07.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SamuraiDodge_Katana.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiDodge_Katana.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiDodge_Katana.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiDodge_Katana.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiDodge_Katana.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T05:47:16.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SamuraiTransitionKatana2Bow.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiTransitionKatana2Bow.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiTransitionKatana2Bow.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiTransitionKatana2Bow.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiTransitionKatana2Bow.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:38:17.567Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "DefaultItemFactory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultItemFactory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\DefaultItemFactory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultItemFactory.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\DefaultItemFactory.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAArwBcAAAAJAAAAAAAAAA==",
+              "Title": "WorldItems.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\WorldItems.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\WorldItem\\WorldItems.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\WorldItem\\WorldItems.cs",
+              "RelativeToolTip": "Assets\\Modules\\WorldItem\\WorldItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:19:07.966Z"
+              "WhenOpened": "2025-03-24T05:57:25.869Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "IItemFactory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\IItemFactory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\IItemFactory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\IItemFactory.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\IItemFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswA0AAAAAAAAAAAAAAA==",
+              "Title": "IHandlerGroup.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IHandlerGroup.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\IHandlerGroup.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IHandlerGroup.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\IHandlerGroup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:17:26.9Z"
+              "WhenOpened": "2025-03-23T17:02:37.412Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "DefaultInventory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\DefaultInventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\DefaultInventory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\DefaultInventory.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\DefaultInventory.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
+              "Title": "CharaGlobal.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaGlobal.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaGlobal.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaGlobal.cs",
+              "RelativeToolTip": "Assets\\Modules\\Chara\\CharaGlobal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T07:47:39.04Z"
+              "WhenOpened": "2025-03-23T16:59:47.934Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "MiscUtil.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\MiscUtil.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Common\\MiscUtil.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Common\\MiscUtil.cs",
-              "RelativeToolTip": "Assets\\Script\\Common\\MiscUtil.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAvwCgAAAAQAAAAAAAAAA==",
+              "Title": "SkillTable.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\SkillTable.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\SkillTable.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\SkillTable.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\SkillTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:31:11.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "IWeaponBreed.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\IWeaponBreed.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\IWeaponBreed.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\IWeaponBreed.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\IWeaponBreed.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAewA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:25:59.433Z"
+              "WhenOpened": "2025-03-23T15:44:20.83Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "IItemBreedRepo.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\IItemBreedRepo.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\IItemBreedRepo.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\IItemBreedRepo.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\IItemBreedRepo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswA0AAAAAAAAAAAAAAA==",
+              "Title": "FilterHandler.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FilterHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FilterHandler.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FilterHandler.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\FilterHandler.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:25:29.216Z"
+              "WhenOpened": "2025-03-23T05:49:24.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ISkillTable.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\ISkillTable.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\ISkillTable.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\ISkillTable.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\ISkillTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T15:40:52.466Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "DefaultWeapon.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultWeapon.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\WorldItem\\DefaultWeapon.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\WorldItem\\DefaultWeapon.cs",
-              "RelativeToolTip": "Assets\\Script\\WorldItem\\DefaultWeapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxAAAAAJAAAAAAAAAA==",
+              "Title": "FSMBehaviour.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\FSMBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FSM\\FSMBehaviour.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\FSMBehaviour.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\FSM\\FSMBehaviour.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:27:16.63Z"
+              "WhenOpened": "2025-03-23T07:35:53.637Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "Compiled-Nature-Terrain-Diffuse.shader",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Temp\\Compiled-Nature-Terrain-Diffuse.shader",
-              "RelativeDocumentMoniker": "Temp\\Compiled-Nature-Terrain-Diffuse.shader",
-              "ToolTip": "D:\\learn-u3d\\src\\Temp\\Compiled-Nature-Terrain-Diffuse.shader",
-              "RelativeToolTip": "Temp\\Compiled-Nature-Terrain-Diffuse.shader",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2025-02-22T04:53:01.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "IInventory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Inventory\\IInventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Inventory\\IInventory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Inventory\\IInventory.cs",
-              "RelativeToolTip": "Assets\\Script\\Inventory\\IInventory.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Title": "SamuraiRunEnd_Katana.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunEnd_Katana.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunEnd_Katana.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunEnd_Katana.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunEnd_Katana.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:15:48.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "DefaultInventory.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Inventory\\DefaultInventory.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Inventory\\DefaultInventory.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Inventory\\DefaultInventory.cs",
-              "RelativeToolTip": "Assets\\Script\\Inventory\\DefaultInventory.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:15:45.419Z"
+              "WhenOpened": "2025-03-23T16:39:32.706Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "DialoguePannel.uxml",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\UI\\DialoguePannel\\DialoguePannel.uxml",
-              "RelativeDocumentMoniker": "Assets\\UI\\DialoguePannel\\DialoguePannel.uxml",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\UI\\DialoguePannel\\DialoguePannel.uxml",
-              "RelativeToolTip": "Assets\\UI\\DialoguePannel\\DialoguePannel.uxml",
+              "Title": "ConfigConstants.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\ConfigConstants.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\ConfigConstants.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\ConfigConstants.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\ConfigConstants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-02-21T13:17:58.483Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T16:39:02.41Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "CustomTextAssetImporter.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Editor\\CustomTextAssetImporter.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\CustomTextAssetImporter.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Editor\\CustomTextAssetImporter.cs",
-              "RelativeToolTip": "Assets\\Editor\\CustomTextAssetImporter.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvxAAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 34,
+              "Title": "SamuraiRunStart_Katana.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunStart_Katana.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunStart_Katana.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunStart_Katana.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\Katana\\SamuraiRunStart_Katana.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T12:54:31.504Z"
+              "WhenOpened": "2025-03-23T11:17:00.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "PlayerData.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerData.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\PlayerData.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\PlayerData.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\PlayerData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 61,
+              "Title": "SamuraiRunEnd_Katana.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiRunEnd_Katana.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T12:48:56.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T06:31:34.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "SamuraiJump_Katana.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiJump_Katana.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T05:47:17.065Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "IPlayerData.cs",
-              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\IPlayerData.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Player\\IPlayerData.cs",
-              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Script\\Player\\IPlayerData.cs",
-              "RelativeToolTip": "Assets\\Script\\Player\\IPlayerData.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBYAAAAAAAAAAAAAAA==",
+              "Title": "DefaultCharaControlMotor.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\DefaultCharaControlMotor.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaFSM\\DefaultCharaControlMotor.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\DefaultCharaControlMotor.cs",
+              "RelativeToolTip": "Assets\\Modules\\Chara\\CharaFSM\\DefaultCharaControlMotor.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwDQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T12:47:07.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-23T12:08:32.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "BaseSkill.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\BaseSkill.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\BaseSkill.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\BaseSkill.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\BaseSkill.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:28:30.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CharaControlState.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\CharaControlState.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaFSM\\CharaControlState.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\CharaControlState.cs",
+              "RelativeToolTip": "Assets\\Modules\\Chara\\CharaFSM\\CharaControlState.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:18:25.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "BaseDocument.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\BaseDocument.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\UI\\BaseDocument.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\BaseDocument.cs",
+              "RelativeToolTip": "Assets\\Modules\\UI\\BaseDocument.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:07:28.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "SamuraiHit_Katana.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\Chara\\Samurai\\SamuraiHit_Katana.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T11:38:49.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AbstractView.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\AbstractView.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\UI\\AbstractView.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\AbstractView.cs",
+              "RelativeToolTip": "Assets\\Modules\\UI\\AbstractView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T14:07:27.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AnimUtil.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\AnimUtil.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\AnimUtil.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\AnimUtil.cs",
+              "RelativeToolTip": "Assets\\Modules\\Chara\\AnimUtil.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAowEEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:32:35.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "FSM.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\FSM.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FSM\\FSM.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\FSM.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\FSM\\FSM.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:34:26.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ITransition.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\ITransition.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FSM\\ITransition.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\ITransition.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\FSM\\ITransition.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwBQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T11:39:44.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ICharaStateTransition.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\ICharaStateTransition.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Chara\\CharaFSM\\ICharaStateTransition.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Chara\\CharaFSM\\ICharaStateTransition.cs",
+              "RelativeToolTip": "Assets\\Modules\\Chara\\CharaFSM\\ICharaStateTransition.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T11:47:11.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IState.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\IState.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\FSM\\IState.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\FSM\\IState.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\FSM\\IState.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwBIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T11:39:48.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "BaseUI.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\BaseUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\UI\\BaseUI.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\UI\\BaseUI.cs",
+              "RelativeToolTip": "Assets\\Modules\\UI\\BaseUI.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvxkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T08:56:39.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ViewNoteUI.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\UI\\ViewNoteUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\UI\\ViewNoteUI.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\UI\\ViewNoteUI.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\UI\\ViewNoteUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T08:53:35.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "MainHUD.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\UI\\MainHUD.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Trunk\\UI\\MainHUD.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Trunk\\UI\\MainHUD.cs",
+              "RelativeToolTip": "Assets\\Modules\\Trunk\\UI\\MainHUD.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwD4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T08:44:12.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CurryStageFacotry.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\CurryStageFacotry.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T08:08:34.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ISKillStageFactory.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\ISKillStageFactory.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\ISKillStageFactory.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\ISKillStageFactory.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\ISKillStageFactory.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA7wA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:58:57.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "SkillStageFactory.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\SkillStageFactory.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\Builder\\SkillStageFactory.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\Builder\\SkillStageFactory.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\Builder\\SkillStageFactory.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:57:15.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "DDMsgSwithSkillState.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDMsgSwithSkillState.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DD\\DDMsgSwithSkillState.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDMsgSwithSkillState.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\DD\\DDMsgSwithSkillState.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADwvw0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:39:56.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "DDDetectSkillStage.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDDetectSkillStage.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DD\\DDDetectSkillStage.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDDetectSkillStage.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\DD\\DDDetectSkillStage.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA+wDIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:38:04.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "BaseSkillState.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\BaseSkillState.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\BaseSkillState.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\BaseSkillState.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\BaseSkillState.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAkwCsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:28:31.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DDSimpleSkill.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDSimpleSkill.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DD\\DDSimpleSkill.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DD\\DDSimpleSkill.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\DD\\DDSimpleSkill.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAA4wC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:38:33.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "DetectSkillState.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DetectSkillState.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\DetectSkillState.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\DetectSkillState.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\DetectSkillState.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:45:25.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "MsgSwitchSkillState.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\MsgSwitchSkillState.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\MsgSwitchSkillState.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\MsgSwitchSkillState.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\MsgSwitchSkillState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:44:34.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "HintPhasedSkill.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\HintPhasedSkill.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Skill\\HintPhasedSkill.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Skill\\HintPhasedSkill.cs",
+              "RelativeToolTip": "Assets\\Modules\\Skill\\HintPhasedSkill.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAkwBEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T07:13:16.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IAttackedInstr.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\IAttackedInstr.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Combat\\IAttackedInstr.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\IAttackedInstr.cs",
+              "RelativeToolTip": "Assets\\Modules\\Combat\\IAttackedInstr.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:04:50.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "CombatorBehaviour.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\CombatorBehaviour.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Combat\\CombatorBehaviour.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Combat\\CombatorBehaviour.cs",
+              "RelativeToolTip": "Assets\\Modules\\Combat\\CombatorBehaviour.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwEkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:04:41.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IHandler.cs",
+              "DocumentMoniker": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Modules\\Common\\IHandler.cs",
+              "ToolTip": "D:\\learn-u3d\\src\\Assets\\Modules\\Common\\IHandler.cs",
+              "RelativeToolTip": "Assets\\Modules\\Common\\IHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-23T06:03:25.874Z"
             }
           ]
         }

@@ -1,0 +1,22 @@
+{
+    "name": "QS.Quest",
+    "rootNamespace": "",
+    "references": [
+        "GUID:502bf6b29f62d8640a15a79f571ff96d",
+        "GUID:4dc0b0072ce764a4989f8e097c85e9ae",
+        "GUID:8c107b19aff0a0443a14684af05dbe35",
+        "GUID:41cc75f48fe4b3c4490ec0592b776b0f",
+        "GUID:c720f9517ccc66d46937442510310776",
+        "GUID:6f8aefceb089d824db5dea3dea157fa1",
+        "GUID:89401473d595f4847a5b797bb3d513c8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

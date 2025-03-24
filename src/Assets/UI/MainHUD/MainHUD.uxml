@@ -1,8 +1,40 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="PartyCharaInfo" src="project://database/Assets/UI/MainHUD/PartyCharaInfo.uxml?fileID=9197481963319205126&amp;guid=d8a5062125dd1974ba7568cb23916b70&amp;type=3#PartyCharaInfo" />
+    <ui:Template name="ActionBox" src="project://database/Assets/UI/MainHUD/ActionBox.uxml?fileID=9197481963319205126&amp;guid=8771ee74a02973a40ba8ef1a0fd21b14&amp;type=3#ActionBox" />
     <Style src="project://database/Assets/UI/MainHUD/MainHUD.uss?fileID=7433441132597879392&amp;guid=4608992313c03ed44a0dbb757d36b85a&amp;type=3#MainHUD" />
-    <Style src="project://database/Assets/Script/UI/Library/FillSlider.uss?fileID=7433441132597879392&amp;guid=096aef6fb6fa36b4b9ae97a991217b00&amp;type=3#FillSlider" />
-    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/simple%20UI%20&amp;%20icons/other/user_name.png?fileID=2800000&amp;guid=cf9f303cfb921a54c9b9127af2f877c0&amp;type=3#user_name&quot;); height: 120px; width: 350px; flex-direction: row; max-height: 120px;">
-        <QSUILibrary.FillSlider value="60" name="hpBar" style="height: 17px; width: 138px; position: absolute; top: 26px; left: 137px;" />
-        <QSUILibrary.FillSlider value="60" name="mpBar" style="height: 17px; width: 138px; position: absolute; top: 47px; left: 157px;" />
+    <Style src="project://database/Assets/Modules/UI/Library/FillSlider.uss?fileID=7433441132597879392&amp;guid=096aef6fb6fa36b4b9ae97a991217b00&amp;type=3#FillSlider" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="leftArea" style="flex-grow: 1; flex-direction: column; align-items: flex-start; justify-content: center; width: 130px; flex-basis: 1px; visibility: hidden;">
+            <ui:Instance template="PartyCharaInfo" name="PartyCharaInfo" />
+            <ui:Instance template="PartyCharaInfo" name="PartyCharaInfo" />
+            <ui:Instance template="PartyCharaInfo" name="PartyCharaInfo" />
+            <ui:Instance template="PartyCharaInfo" name="PartyCharaInfo" />
+        </ui:VisualElement>
+        <ui:VisualElement name="midArea" style="flex-grow: 2; flex-basis: 2%; flex-shrink: 1;">
+            <ui:VisualElement name="menu" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Menu/Menu%20Bar%20Background%20Splat.png?fileID=2800000&amp;guid=6e1d6418d6159f9448959e61a1a4cf7e&amp;type=3#Menu Bar Background Splat&quot;);" />
+            <ui:VisualElement style="flex-grow: 5; flex-direction: column-reverse;">
+                <ui:VisualElement name="actionBar" style="flex-grow: 4; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Action%20Bar/Action%20Bar%20Background%20Splat.png?fileID=2800000&amp;guid=79cd89c22adfa184a96e8321d8492192&amp;type=3#Action Bar Background Splat&quot;); flex-direction: row; flex-wrap: nowrap; visibility: visible; display: none;">
+                    <ui:Instance template="ActionBox" name="ActionBox" style="max-width: 100px; min-width: 100px; max-height: 100px;" />
+                    <ui:Instance template="ActionBox" name="ActionBox" style="max-width: 100px; min-width: 100px; max-height: 100px;" />
+                    <ui:Instance template="ActionBox" name="ActionBox" style="max-width: 100px; min-width: 100px; max-height: 100px;" />
+                    <ui:Instance template="ActionBox" name="ActionBox" style="max-width: 100px; min-width: 100px; max-height: 100px;" />
+                    <ui:Instance template="ActionBox" name="ActionBox" style="max-width: 100px; min-width: 100px; max-height: 100px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="activeCharaInfo" style="flex-grow: 4;">
+                    <ui:VisualElement name="hpBar" style="flex-grow: 1;">
+                        <ui:VisualElement name="bg" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Player%20Bars/Player%20Health%20Bar%20Empty.png?fileID=2800000&amp;guid=e03ef5ae862a35040b407c76bd2b1936&amp;type=3#Player Health Bar Empty&quot;); position: absolute; width: 100%; height: 100%;" />
+                        <ui:VisualElement name="hpValue" style="flex-grow: 1; position: absolute; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Player%20Bars/Player%20Health%20Bar%20Full.png?fileID=2800000&amp;guid=3bcbd4dd506f28149a09055526cec615&amp;type=3#Player Health Bar Full&quot;); width: 100%; height: 100%;" />
+                        <ui:VisualElement name="frame" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Player%20Bars/Player%20Cast%20Bar%20Frame.png?fileID=2800000&amp;guid=eba51179d3378db4f8f6e1cde7e15ee2&amp;type=3#Player Cast Bar Frame&quot;); position: absolute; width: 100%; height: 100%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="manaBar" style="flex-grow: 1;">
+                        <ui:VisualElement name="bg" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Player%20Bars/Player%20Mana%20Bar%20Empty.png?fileID=2800000&amp;guid=9edb1deff48d6a1429b72bd458536f11&amp;type=3#Player Mana Bar Empty&quot;); position: absolute; width: 100%; height: 100%;" />
+                        <ui:VisualElement name="manaValue" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Player%20Bars/Player%20Mana%20Bar%20Full.png?fileID=2800000&amp;guid=c903f1cf847071a468e8a9411d460e99&amp;type=3#Player Mana Bar Full&quot;); position: absolute; width: 100%; height: 100%;" />
+                        <ui:VisualElement name="manaFrame" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Player%20Bars/Player%20Mana%20Bar%20Frame.png?fileID=2800000&amp;guid=7906ed5d424f15a4b8119d138c981b53&amp;type=3#Player Mana Bar Frame&quot;); position: absolute; width: 100%; height: 100%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 15;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="rightArea" style="flex-grow: 1; flex-basis: 1%;" />
     </ui:VisualElement>
 </ui:UXML>

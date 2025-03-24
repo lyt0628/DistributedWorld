@@ -19,7 +19,6 @@
 [[Skills]]
 Key = {No="00001", Name="FireBall"}
 Handlers = ['Mount', 'CollideAttack', 'Scriptable']
-
 Attack={Atk=10.0, Matk=1.0}
 
 Colliders=['W_Sword']

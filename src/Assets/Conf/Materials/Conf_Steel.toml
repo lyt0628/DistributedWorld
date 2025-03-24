@@ -1,0 +1,6 @@
+[[materials]]
+name = "Steel"
+image = "img_prop_hpBottle"
+prefab = "MpBottle"
+desc = "Material to refine weapon"
+

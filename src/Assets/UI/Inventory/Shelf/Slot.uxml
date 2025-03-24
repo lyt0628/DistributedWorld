@@ -1,6 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="slot" style="flex-grow: 1; width: 60px; height: 80px; max-width: 60px; max-height: 80px; min-width: 50px; min-height: 50px; background-color: rgba(176, 171, 54, 0); background-image: none;">
-        <ui:VisualElement name="image" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Effect/Texture/Material/Fire_0007.png?fileID=2800000&amp;guid=c938d18290b02bb438ebefd684545845&amp;type=3#Fire_0007&quot;);" />
-        <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name" style="font-size: 11px; background-color: rgb(255, 255, 255); color: rgb(47, 8, 9); -unity-text-align: upper-center;" />
-    </ui:VisualElement>
-</ui:UXML>

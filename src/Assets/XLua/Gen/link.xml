@@ -1,0 +1,26 @@
+﻿
+
+<linker>
+
+	<assembly fullname="mscorlib">
+	    <type fullname="System.Collections.Generic.Dictionary`2[System.String,System.Int32]" preserve="all"/>
+		
+	</assembly>
+
+	<assembly fullname="QS.Common">
+	    <type fullname="QS.PlayerControl.PlayerControls" preserve="all"/>
+		<type fullname="QS.PlayerControl.PlayerControls+DialoguePanelActions" preserve="all"/>
+		
+	</assembly>
+
+	<assembly fullname="XLua">
+	    <type fullname="Tutorial.BaseClass" preserve="all"/>
+		<type fullname="Tutorial.TestEnum" preserve="all"/>
+		<type fullname="Tutorial.DerivedClass" preserve="all"/>
+		<type fullname="Tutorial.ICalc" preserve="all"/>
+		<type fullname="Tutorial.DerivedClassExtensions" preserve="all"/>
+		<type fullname="Tutorial.DerivedClass+TestEnumInner" preserve="all"/>
+		
+	</assembly>
+
+</linker>

@@ -1,6 +1,7 @@
 # 
-[[Props]]
-Name = "HpBottle"
-Image = "img_prop_hpBottle"
-Prefab = "HpBottle"
-Description = "Recovery a little HP"
+[[props]]
+name = "HpBottle"
+isDepletable = true
+image = "img_prop_hpBottle"
+prefab = "MpBottle"
+desc = "Recovery a little MP"
