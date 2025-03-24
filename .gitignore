@@ -44,3 +44,9 @@ sysinfo.txt
 *.log
 
 **/Effect/**/*
+
+src/Assets/Temp
+src/Assets/Models
+
+**/*.psd
+**/*.fbx

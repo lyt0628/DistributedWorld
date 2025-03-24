@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="slot" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/Character%20&amp;%20Inventory/Invetory%20Slot.png?fileID=2800000&amp;guid=d8354b14f5da284479572a7e7c37ac73&amp;type=3#Invetory Slot&quot;); max-width: 50px; max-height: 50px; width: 50px; height: 50px; min-width: 50px; min-height: 50px; margin-left: 2px;">
+        <ui:VisualElement name="image" style="flex-grow: 1; background-image: none;" />
+        <ui:Label tabindex="-1" text="1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="amount" style="position: absolute; max-width: 10px; max-height: 10px; -unity-text-align: middle-center; white-space: normal; font-size: 7px; height: 10px; color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

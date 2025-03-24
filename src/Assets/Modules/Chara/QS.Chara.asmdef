@@ -1,0 +1,26 @@
+{
+    "name": "QS.Chara",
+    "rootNamespace": "",
+    "references": [
+        "GUID:502bf6b29f62d8640a15a79f571ff96d",
+        "GUID:8c107b19aff0a0443a14684af05dbe35",
+        "GUID:41cc75f48fe4b3c4490ec0592b776b0f",
+        "GUID:6f8aefceb089d824db5dea3dea157fa1",
+        "GUID:c720f9517ccc66d46937442510310776",
+        "GUID:ca95c17e3af08104290841b77c892efa",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:593a5b492d29ac6448b1ebf7f035ef33",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:84651a3751eca9349aac36a66bba901b",
+        "GUID:4dc0b0072ce764a4989f8e097c85e9ae"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

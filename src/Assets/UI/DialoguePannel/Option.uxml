@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="option" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="bg" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Temp/PaintedUI/Main%20Windows/Widnow%20Frame.png?fileID=2800000&amp;guid=0426a0fb09162ad418cc92ad39b368f5&amp;type=3#Widnow Frame&quot;); flex-direction: row;">
+            <ui:VisualElement name="icon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Temp/PaintedUI/Icons/Arrow%20Up%201.png?fileID=2800000&amp;guid=028b59852be21494b926c4fdedb638cf&amp;type=3#Arrow Up 1&quot;); -unity-background-scale-mode: scale-to-fit;" />
+            <ui:VisualElement style="flex-grow: 5; align-items: stretch; justify-content: center; margin-left: 10px;">
+                <ui:Label tabindex="-1" text="Welcom to MyGame" parse-escape-sequences="true" display-tooltip-when-elided="true" name="optionContent" style="color: rgb(255, 152, 152);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

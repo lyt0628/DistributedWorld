@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/InventoryUI/InventoryUI.uss?fileID=7433441132597879392&amp;guid=0b85d2448629b034f934701af5a872ee&amp;type=3#InventoryUI" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement name="inventoryPannel" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/Main%20Windows/Widnow%20Frame%20Large.png?fileID=2800000&amp;guid=f5e16e6e287b16d4a8bb3fb7c82f65b8&amp;type=3#Widnow Frame Large&quot;); flex-direction: row;">
+            <ui:VisualElement name="shelf" style="flex-grow: 1; padding-top: 5px; padding-bottom: 5px; align-self: flex-end; width: 70%; max-width: 70%; min-width: 70%;">
+                <ui:VisualElement name="tabs" style="flex-grow: 0; flex-direction: row; min-height: 30px;">
+                    <ui:ScrollView mode="Horizontal" nested-interaction-kind="StopScrolling" usage-hints="None" focusable="true" style="flex-direction: row; align-items: flex-end; opacity: 1; flex-grow: 0;">
+                        <ui:VisualElement name="weaponTab" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/Character%20&amp;%20Inventory/Inventory%20Tab%20Selected.png?fileID=2800000&amp;guid=fe2c91fc1e3058147adca7b91e631a76&amp;type=3#Inventory Tab Selected&quot;); align-items: center; justify-content: space-around; align-self: auto; text-overflow: clip;">
+                            <ui:Label tabindex="-1" text="Weapon" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(0, 0, 0); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="propTab" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/Character%20&amp;%20Inventory/Inventory%20Tab%20UnSelected.png?fileID=2800000&amp;guid=5292f4c0b256028469cc15c015035c7f&amp;type=3#Inventory Tab UnSelected&quot;); align-items: center; justify-content: center;">
+                            <ui:Label tabindex="-1" text="Prop" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="materialTab" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/Character%20&amp;%20Inventory/Inventory%20Tab%20UnSelected.png?fileID=2800000&amp;guid=5292f4c0b256028469cc15c015035c7f&amp;type=3#Inventory Tab UnSelected&quot;); flex-direction: column; align-items: center; justify-content: center;">
+                            <ui:Label tabindex="-1" text="Material" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="sealTab" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/Character%20&amp;%20Inventory/Inventory%20Tab%20UnSelected.png?fileID=2800000&amp;guid=5292f4c0b256028469cc15c015035c7f&amp;type=3#Inventory Tab UnSelected&quot;); flex-direction: column; align-items: center; justify-content: center;">
+                            <ui:Label tabindex="-1" text="Seal" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="noteTab" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/Character%20&amp;%20Inventory/Inventory%20Tab%20UnSelected.png?fileID=2800000&amp;guid=5292f4c0b256028469cc15c015035c7f&amp;type=3#Inventory Tab UnSelected&quot;); flex-direction: column; align-items: center; justify-content: center;">
+                            <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" text="Note" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: middle-left;" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                <ui:VisualElement name="slotGrid" style="flex-grow: 8; flex-direction: row; flex-wrap: wrap;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="infoPannel" style="flex-grow: 1; min-width: 150px; flex-shrink: 1; max-width: 200px;">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Action%20Bar/Action%20Bar%20Skill%20Slot.png?fileID=2800000&amp;guid=23a62ef30c0ece04f97c0da1ab7f73b3&amp;type=3#Action Bar Skill Slot&quot;);">
+                    <ui:VisualElement name="itemImage" style="flex-grow: 1;" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 2; background-image: url(&quot;project://database/Assets/PaintedUI/Main%20Windows/Widnow%20Frame%202.png?fileID=2800000&amp;guid=19ff4e91b8fb14642b2a4dd8ad120797&amp;type=3#Widnow Frame 2&quot;);">
+                    <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" name="itemDesc" style="color: rgb(245, 195, 195); flex-wrap: wrap;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

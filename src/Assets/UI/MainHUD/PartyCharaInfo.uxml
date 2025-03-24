@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement view-data-key="TeamCharacterInfo" style="flex-grow: 1; max-height: 50px; height: 50px; max-width: 300px; min-width: 100px; width: 120px;">
+        <ui:Label tabindex="-1" text="Character Name" parse-escape-sequences="true" display-tooltip-when-elided="true" style="color: rgb(255, 255, 255); height: 18px; -unity-text-align: middle-left;" />
+        <ui:VisualElement style="flex-grow: 1; height: 10px; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Party%20Frame/Party%20Member%20Health%20Bar%20Full.png?fileID=2800000&amp;guid=c5acfddebf9d5084b8730fc97dee418d&amp;type=3#Party Member Health Bar Full&quot;); transform-origin: left top;">
+            <ui:VisualElement style="flex-grow: 1; transform-origin: left top; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Party%20Frame/Party%20Member%20Health%20Bar%20Frame.png?fileID=2800000&amp;guid=b7f861dba42a61c458cdfb34d66b6e6c&amp;type=3#Party Member Health Bar Frame&quot;);" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Party%20Frame/Party%20Member%20Mana%20Bar%20Full.png?fileID=2800000&amp;guid=897727621a72f2944809257db3af0773&amp;type=3#Party Member Mana Bar Full&quot;); height: 10px; transform-origin: left top; translate: 0 0;" />
+    </ui:VisualElement>
+</ui:UXML>

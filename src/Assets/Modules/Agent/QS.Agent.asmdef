@@ -1,0 +1,32 @@
+{
+    "name": "QS.Agent",
+    "rootNamespace": "",
+    "references": [
+        "GUID:41cc75f48fe4b3c4490ec0592b776b0f",
+        "GUID:c720f9517ccc66d46937442510310776",
+        "GUID:6f8aefceb089d824db5dea3dea157fa1",
+        "GUID:973bfc1afd4ceae439856546748cd491",
+        "GUID:502bf6b29f62d8640a15a79f571ff96d",
+        "GUID:8c107b19aff0a0443a14684af05dbe35",
+        "GUID:89401473d595f4847a5b797bb3d513c8",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:84651a3751eca9349aac36a66bba901b",
+        "GUID:ca95c17e3af08104290841b77c892efa",
+        "GUID:fb1494adacad919489692a0ccb5f6fe6",
+        "GUID:fb9fa63a4a4f9244ca48968dde13a5d4",
+        "GUID:50334f2d08bff85469a93e7473b13c01",
+        "GUID:d503a5ba599e8794496f5c78dd8af75a",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:5c01796d064528144a599661eaab93a6",
+        "GUID:c1042c6d41cbeaf44bf0021cde1531fa"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

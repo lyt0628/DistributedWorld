@@ -1,0 +1,6 @@
+[[notes]]
+name = "ManaUsage"
+content ='Mana is magic.'
+image = "img_prop_hpBottle"
+prefab = "MpBottle"
+desc = "About the usage of Mana."

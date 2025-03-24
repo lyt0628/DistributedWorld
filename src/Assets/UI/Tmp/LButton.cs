@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UIElements;
 
 
@@ -27,9 +24,9 @@ public partial class LButton : VisualElement
         // 向來Unity 是通過反射來拿這邊的值的
         // 那麼定義了這個屬性就是註冊了
         UxmlStringAttributeDescription m_String = new()
-            { name = "my-string", defaultValue = "default_value" };
+        { name = "my-string", defaultValue = "default_value" };
         UxmlIntAttributeDescription m_Int = new()
-            { name = "my-int", defaultValue = 2 };
+        { name = "my-int", defaultValue = 2 };
 
         public override void Init(VisualElement ve, IUxmlAttributes bag, CreationContext cc)
         {

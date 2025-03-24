@@ -17,18 +17,56 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: f61930a8464308a4a97129856cdc6098
   m_SerializeEntries:
+  - m_GUID: 1ab7a60cd8e7bb548982afab6cd3bf77
+    m_Address: Assets/Conf/Notes/Conf_ManaUsage.toml
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Conf_Note
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 2397fb494d90ad64ba47e7ee7006ebfe
     m_Address: img_prop_hpBottle
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 364fc5d892924184183be9d67f7bccf9
+  - m_GUID: 29d8b8cc84be03644b6d9b446467a892
+    m_Address: Lua_GameAI_Samurai_Focus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f136e22664e23d4ab448cca7bba46a6
     m_Address: Slot
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 401d1d194544de5468e1a3e9185d82d4
+    m_Address: Assets/LuaScript/GameAI/actions.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Lua_Module
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 487328560927a9842bd8b1cd3a903487
     m_Address: PF_Frame_001
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4daac09121d4ebc448e94972536385fe
+    m_Address: Assets/Conf/Props/Conf_HPBottle.toml
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Conf_Prop
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4fc30d3aae33b684ab2f7d6cb4d949ec
+    m_Address: Lua_UI_DialogPanel_OptionList
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5292f4c0b256028469cc15c015035c7f
+    m_Address: ui_img_inventoy_tab_unselected
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53aa6c9850dc22548bf4f6a26101e961
+    m_Address: Lua_UI_DialogPanel
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -37,8 +75,45 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d47d6f97ebb4f944838423c9164a9ec
+    m_Address: Lua_UI_MainHUD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 601f42438248f6443b7a022b46646271
     m_Address: PF_BD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 682a34fa7889e5c4a905c3db43bf2880
+    m_Address: Lines_NPC1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c770ecd3b83445438c46322a04360df
+    m_Address: YouDieUI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 738dfef090a7a394584febc590ab2f8f
+    m_Address: uidoc_DialogPannel_Option
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78ea66691a11b754e9352052123d2ca9
+    m_Address: Assets/LuaScript/Instrs.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Lua_Module
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86da291ae3db66d478f11879e409b324
+    m_Address: Assets/Conf/Materials/Conf_Steel.toml
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Conf_Material
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86ea63db4ee8ad04e95982e544b0905b
+    m_Address: Trail
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -48,17 +123,21 @@ MonoBehaviour:
     m_SerializedLabels:
     - Conf_Prop
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 8af33adf502022646aee3da20c5d14eb
-    m_Address: Assets/Conf/Props/Conf_HPBottle.toml
+  - m_GUID: 8a8076502ca63154b9083563946bfa98
+    m_Address: PUI_InventoryUI
     m_ReadOnly: 0
-    m_SerializedLabels:
-    - Conf_Prop
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 9438d9337d063c940a06f9b45a4d864e
     m_Address: Assets/Conf/Weapons/Conf_RustSword.toml
     m_ReadOnly: 0
     m_SerializedLabels:
     - Conf_Weapon
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3d01843d9f2b554db50d8165ac4dd0f
+    m_Address: Lua_UI_DialogPanel_Option
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b11a6c1676493dd4093faec33da4e8dd
     m_Address: Assets/Conf/SimpleSkillConfigurations/SK00002_Tap.toml
@@ -87,7 +166,19 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d43a84137ea2198409ec3203587895db
+  - m_GUID: d5fac3f49523e484e8c02b53f2293457
+    m_Address: Assets/LuaScript/alias.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Lua_Module
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dc9fd24d46a6f1c4086b176374a6ab3b
+    m_Address: Assets/LuaScript/dinames.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Lua_Module
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dee764e862056a84eba16ef4942d217b
     m_Address: RustSword
     m_ReadOnly: 0
     m_SerializedLabels: []
@@ -97,13 +188,35 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e804902833965b446a3c2a8918dd25c9
-    m_Address: PUI_Inventory
+  - m_GUID: e337b1c6b8002e84fa9d83321cc5a8b7
+    m_Address: Assets/LuaScript/common.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Lua_Module
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e36759cdbea4b114eb9b71f5743e9725
+    m_Address: Assets/LuaScript/util.lua
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Lua_Module
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e5d07bf93c1619445abaaf9ce7025455
+    m_Address: V_NoteView
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: ea04d9d32721c124395dbf467f37c6f8
     m_Address: img_weapon_rustSword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec363f67f09e69943b504cd27d7dd4df
+    m_Address: Lua_Main
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe2c91fc1e3058147adca7b91e631a76
+    m_Address: ui_img_inventoy_tab_selected
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

@@ -1,0 +1,55 @@
+
+[[Skills]]
+Key = {No="002", Name="Tap"}
+Type = "Phased"
+
+[[Skills.Phases]]
+ComboOffset = 0.26
+[Skills.Phases.Skill]
+Key = {No="002", Name="Tap"}
+Handlers = ['CollideAttack' ] # , 'Scriptable', 'Mount'
+
+
+Attack={Atk=60.0, Matk=0.0}
+Colliders=['ATK_Weapon']
+
+# [[Skills.Phases.Skill.Mount.Casting.Prefabs]] # 定義爲階段下的預製體子表
+# Address = 'Trail' # 預製體的索引
+# MountPoint = "ATK_Weapon"
+# InWorldSpace= false
+# DestroyDelay=1.0
+# Offset={x=0.0,y=0.0,z=0.0}
+
+
+[[Skills.Phases]]
+ComboOffset = 0.06
+
+[Skills.Phases.Skill]
+Key = {No="002", Name="Tap2"}
+Handlers = ['CollideAttack' ] #  , 'Mount', 'Scriptable' , 'Mount'
+
+Attack={Atk=60.0, Matk=0.0}
+Colliders=['ATK_Weapon']
+
+# [[Skills.Phases.Skill.Mount.Casting.Prefabs]] # 定義爲階段下的預製體子表
+# Address = 'Sword Slash 10' # 預製體的索引
+# MountPoint = "ATK_Weapon"
+# InWorldSpace= false
+DestroyDelay=1.0
+
+
+[[Skills.Phases]]
+[Skills.Phases.Skill]
+Key = {No="002", Name="Tap3"}
+Handlers = ['CollideAttack' ] #  , 'Mount', 'Scriptable' , 'Mount'
+postcastTime = 0.3
+
+Attack={Atk=60.0, Matk=0.0}
+Colliders=['ATK_Weapon']
+
+# [[Skills.Phases.Skill.Mount.Casting.Prefabs]] # 定義爲階段下的預製體子表
+# Address = 'Sword Slash 10' # 預製體的索引
+# MountPoint = "ATK_Weapon"
+# InWorldSpace= false
+# DestroyDelay=1.0
+

@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="action" style="flex-grow: 1; max-width: 100px;">
+        <ui:VisualElement name="actionFrame" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/PaintedUI/HUD/Action%20Bar/Action%20Bar%20Skill%20Slot.png?fileID=2800000&amp;guid=23a62ef30c0ece04f97c0da1ab7f73b3&amp;type=3#Action Bar Skill Slot&quot;); max-width: 100px;">
+            <ui:VisualElement name="actionIcon" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/VFX/Texture/Material/Fire_0007.png?fileID=2800000&amp;guid=c938d18290b02bb438ebefd684545845&amp;type=3#Fire_0007&quot;);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
